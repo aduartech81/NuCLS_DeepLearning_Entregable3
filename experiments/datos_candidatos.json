@@ -1,0 +1,43 @@
+{
+  "seleccion_previa_a_rendimiento": "2026-11-18",
+  "estado": "preseleccion_condicionada_no_congelada",
+  "politica": "Misma tarea de clasificación de núcleos, taxonomía nativa por conjunto. Todos los modelos con cabeza K correspondiente, entrenados y evaluados dentro de cada conjunto. No transferir etiquetas tumor/linfocito/estroma mediante equivalencias falsas. Comparabilidad con rúbrica debe explicitarse.",
+  "descargados_y_auditados": false,
+  "hashes": null,
+  "candidatos": [
+    {
+      "nombre": "PanNuke",
+      "url": "https://warwick.ac.uk/fac/cross_fac/tia/data/pannuke/",
+      "clases": "5 nativas; inflamatorio no equivale a linfocito",
+      "ejes": [
+        "órganos múltiples",
+        "taxonomía y tamaño"
+      ],
+      "licencia": "CC BY-NC-SA 4.0, verificada en página oficial",
+      "riesgo": "Origen TCGA potencialmente compartido con NuCLS; auditar slide/paciente antes de confirmar"
+    },
+    {
+      "nombre": "Lizard",
+      "url": "https://openaccess.thecvf.com/content/ICCV2021W/CDPath/papers/Graham_Lizard_A_Large-Scale_Dataset_for_Colonic_Nuclear_Instance_Segmentation_and_ICCVW_2021_paper.pdf",
+      "clases": "6 nativas; epitelial no equivale a tumor",
+      "ejes": [
+        "colon frente a mama",
+        "taxonomía y anotación"
+      ],
+      "licencia": "Verificar licencia de la versión descargada",
+      "riesgo": "Incluye fuentes PanNuke y CoNSeP. Excluir fuentes compartidas ANTES de partir; verificar hashes y duplicados aproximados"
+    },
+    {
+      "nombre": "MoNuSAC",
+      "url": "https://monusac-2020.grand-challenge.org/Data/",
+      "clases": "4 nativas; sin clase estroma",
+      "ejes": [
+        "órganos múltiples",
+        "taxonomía y protocolo de anotación"
+      ],
+      "licencia": "Acceso oficial devolvió 403; licencia y versión sin verificar",
+      "riesgo": "TCGA: posibles pacientes compartidos con NuCLS/PanNuke; no asumir independencia"
+    }
+  ],
+  "no_usar_como_tercer_conjunto_independiente": "CoNSeP junto con Lizard sin depuración; PCam tampoco sustituye clasificación nuclear multiclase."
+}

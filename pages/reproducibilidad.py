@@ -1,0 +1,7 @@
+from pathlib import Path
+import json
+import dash
+from dash import html
+ROOT=Path(__file__).resolve().parents[1]
+dash.register_page(__name__,path='/reproducibilidad',name='Reproducibilidad')
+layout=html.Div([html.Span('05 / EVIDENCIA Y REPRODUCCIÓN',className='eyebrow'),html.H1('Cada afirmación, con su alcance.'),html.P('Actualización documental: 20 noviembre 2026. Desarrollo independiente; no es un reporte de entrenamiento E3 concluido.',className='lead'),html.Div([html.H2('Disponible'),html.Ul([html.Li('Candidato implementado y protocolo de piloto.'),html.Li('Antecedentes con nivel de lectura y fuente.'),html.Li('Tablas históricas E2 con procedencia.'),html.Li('Cuaderno RunPod con auditoría, checkpoints y protección contra ejecución duplicada.')])],className='panel'),html.Div([html.H2('Por acreditar con evidencia experimental'),html.P('Pesos CICO, comparación final, datos externos auditados e inferencia CPU pública. No se sustituyen por ejemplos sintéticos.')],className='panel'),html.A('Leer el libro de E3 →',href='/libro/',className='button'),html.H2('Publicación independiente'),html.P('La web no ejecuta entrenamiento ni recibe imágenes de pacientes. El servicio E2 y el ZIP entregado conservan su identidad.'),html.H2('Autoría'),html.P('Se utilizó asistencia de IA en preparación y revisión. El autor verifica las fuentes y debe comprender, explicar y defender el mecanismo y sus resultados.')])

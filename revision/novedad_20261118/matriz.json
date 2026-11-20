@@ -1,0 +1,58 @@
+[
+  {
+    "titulo": "NuClass",
+    "url": "https://arxiv.org/html/2511.13586v1",
+    "lectura": "Método completo consultado",
+    "antecedente": "Fusión local/global con compuerta e incertidumbre; antecedente directo de la motivación.",
+    "diferencia_o_limite": "CICO propone corrección acotada de logits por dispersión D4, no mezcla convexa de probabilidades de dos expertos. No basta para acreditar novedad."
+  },
+  {
+    "titulo": "Context-aware learning (2022)",
+    "url": "https://academic.oup.com/bioinformatics/article/38/10/2892/6551249",
+    "lectura": "Método consultado",
+    "antecedente": "Agregación multiescala y codificación de contexto con tareas auxiliares.",
+    "diferencia_o_limite": "CICO no estima frecuencias ni mapas de localización. Repositorio enlazado DonRabbit devolvió 404; no se declara inspección de implementación."
+  },
+  {
+    "titulo": "VOLTA",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11087497/",
+    "lectura": "Resumen y repositorio consultados",
+    "antecedente": "Representación celular contrastiva que incorpora entorno.",
+    "diferencia_o_limite": "CICO es supervisado con límite explícito; falta revisar detalle completo de pérdidas de VOLTA. Repositorio listado, no auditado línea a línea."
+  },
+  {
+    "titulo": "Rotation Equivariant CNNs (2018)",
+    "url": "https://arxiv.org/abs/1806.03962",
+    "lectura": "Resumen consultado",
+    "antecedente": "Simetrías de rotación/reflexión aplicadas a histopatología.",
+    "diferencia_o_limite": "D4 no es una contribución original de CICO."
+  },
+  {
+    "titulo": "Contrastive and uncertainty-aware nuclei (2024)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38850962/",
+    "lectura": "Resumen consultado",
+    "antecedente": "Contexto local y atención de incertidumbre en clasificación nuclear.",
+    "diferencia_o_limite": "Falta texto completo para descartar coincidencia del mecanismo; contexto+incertidumbre no es novedad."
+  },
+  {
+    "titulo": "Equi-ViT (2026)",
+    "url": "https://arxiv.org/html/2601.09130v1",
+    "lectura": "Texto HTML consultado; sin auditoría de código",
+    "antecedente": "Embedding de parches con convolución equivariante para histopatología.",
+    "diferencia_o_limite": "CICO agrega ocho vistas de un encoder compartido y limita una corrección de logits. La simetría no es una novedad."
+  },
+  {
+    "titulo": "DSF-CNN (2020)",
+    "url": "https://arxiv.org/abs/2004.03037",
+    "lectura": "Resumen primario consultado",
+    "antecedente": "Filtros orientables y convoluciones de grupo en histología.",
+    "diferencia_o_limite": "Antecedente de eficiencia mediante simetrías. La comparación debe contabilizar los ocho pases de CICO."
+  },
+  {
+    "titulo": "MOSAIC (2026)",
+    "url": "https://www.sciencedirect.com/science/article/pii/S016926072600101X",
+    "lectura": "Descripción editorial localizada; texto no recuperado (403)",
+    "antecedente": "Contexto multiescala y fusión consciente de orientación en segmentación y clasificación.",
+    "diferencia_o_limite": "Alerta de proximidad conceptual. No se descarta coincidencia sin revisar el método completo."
+  }
+]

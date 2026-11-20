@@ -1,0 +1,59 @@
+{
+  "version": "piloto-desarrollo-v1",
+  "fecha": "2026-11-18",
+  "scope": "exploratorio_train_validation_only",
+  "manifest_sha256": "623adf36520751addc324e44cd1b89d95e47842e53cda494914c0248a8be86d4",
+  "classes": [
+    "tumor_nonMitotic",
+    "lymphocyte",
+    "nonTILnonMQ_stromal"
+  ],
+  "counts": {
+    "train": 14539,
+    "validation": 2049
+  },
+  "patients": {
+    "train": 83,
+    "validation": 21
+  },
+  "seeds": [
+    6101,
+    6102,
+    6103,
+    6104,
+    6105
+  ],
+  "model_config": {
+    "width": 16,
+    "classes": 3,
+    "beta": 0.5,
+    "penalty": 1.0
+  },
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "epochs": 25,
+  "patience": 5,
+  "min_epochs": 5,
+  "batch": 32,
+  "mean": [
+    0.6392034726251884,
+    0.45917053999289786,
+    0.6277451963521469
+  ],
+  "std": [
+    0.2139743515891908,
+    0.22149669223009963,
+    0.1742893379690752
+  ],
+  "selection": "highest validation macro_f1; ties earliest epoch",
+  "search_trials": 1,
+  "confirmatory": false,
+  "delta": 0.02,
+  "power_target_final": 0.9,
+  "final_R": null,
+  "class_labels_es": [
+    "tumor",
+    "linfocito",
+    "estroma"
+  ]
+}

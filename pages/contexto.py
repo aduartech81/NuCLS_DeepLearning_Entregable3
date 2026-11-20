@@ -1,0 +1,11 @@
+import dash
+from dash import html
+
+dash.register_page(__name__, path="/", name="Contexto")
+def card(n,t,s): return html.Div([html.Small(n),html.H3(t),html.P(s)],className="card")
+layout=html.Div([
+ html.Div([html.Span("ENTREGABLE 03 · PROTOTIPO DE INVESTIGACIÓN",className="eyebrow"),html.H1(["Comprender el núcleo.",html.Br(),html.Span("Controlar el contexto.",className="accent")]),html.P("Clasificación nuclear con una contribución contextual acotada y sensible al desacuerdo entre orientaciones. Candidato de diseño: CICO; novedad bibliográfica todavía no establecida.",className="lead"),html.A("Explorar los modelos →",href="/modelos",className="button")],className="hero"),
+ html.Div([card("01 / HIPÓTESIS","Contexto con límite","Una corrección acotada puede reducir dependencia del entorno. Su beneficio predictivo debe comprobarse."),card("02 / PROPIEDAD","Simetría D4","Agregación de ocho orientaciones exactas. Garantía algebraica de invariancia; no cubre rotaciones arbitrarias."),card("03 / EVALUACIÓN","Separar evidencia","La reserva de E2 ya fue observada. No se considera una prueba nueva para diseñar E3.")],className="grid"),
+ html.H2("De la imagen a una decisión verificable"),html.Div([html.Div(x,className="stage") for x in ["Recorte RGB", "8 vistas D4", "Centro + entorno", "Desacuerdo y límite", "3 logits"]],className="flow"),
+ html.Div([html.H2("La propiedad no sustituye al experimento"),html.P("Se implementó el candidato desde operaciones de tensores. El piloto E3 está ejecutándose en RunPod. La página Piloto muestra la última evidencia recibida y su nivel de verificación. No hay resultados de superioridad. El centro geométrico debe cotejarse con la posición nuclear; su campo receptivo también incorpora contexto."),html.P("Entrega: sábado 21 de noviembre, 10:00 a. m. · Libro, servicio Dash y evidencias de E3 independientes de E1 y del paquete E2 entregado.")],className="panel"),
+ html.H2("Plan de validación"),html.Ol([html.Li("Contrastar el mecanismo con trabajos cercanos y documentar la búsqueda reproducible."),html.Li("Congelar datos, comparación, presupuesto y variantes antes del entrenamiento."),html.Li("Ejecutar piloto, potencia y ablaciones; evaluar con unidades de independencia explícitas."),html.Li("Exportar pesos verificados a ONNX e integrar inferencia CPU y resultados trazables.")])])

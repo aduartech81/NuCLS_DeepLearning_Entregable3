@@ -1,0 +1,79 @@
+[
+  {
+    "bloque": "A",
+    "componente": "Correcciones E2",
+    "peso": 7,
+    "requisito": "Trazabilidad con evidencia e impacto; auditoría de fuga; congelar resultados con hashes.",
+    "estado": "Parcial: ver tabla de correcciones."
+  },
+  {
+    "bloque": "B",
+    "componente": "Configuraciones y exportación",
+    "peso": 7,
+    "requisito": "Selección por validación; reentrenamiento de política común; exportación, metadata y round-trip; costo CPU.",
+    "estado": "Código de exportación preparado; falta artefacto entrenado, round-trip y costo CPU."
+  },
+  {
+    "bloque": "C",
+    "componente": "Dashboard: contexto y EDA",
+    "peso": 8,
+    "requisito": "Dash multipágina, filtros globales y callbacks; datos, calidad, dominio e interpretación.",
+    "estado": "Dash multipágina local con contexto y datos; falta validar filtros globales contra guía."
+  },
+  {
+    "bloque": "D",
+    "componente": "Dashboard: modelos",
+    "peso": 9,
+    "requisito": "Top10, baselines y original; inferencia CPU, incertidumbre, explicación y aviso fuera de dominio.",
+    "estado": "Referencias históricas y curva piloto disponibles; inferencia CPU aún no habilitada."
+  },
+  {
+    "bloque": "E",
+    "componente": "Diseño, UX y despliegue",
+    "peso": 5,
+    "requisito": "Render Web Service independiente, responsividad, privacidad, validación de entrada y prueba de humo.",
+    "estado": "Paquete Render independiente preparado; despliegue público aún no acreditado."
+  },
+  {
+    "bloque": "F",
+    "componente": "Original: revisión y diseño",
+    "peso": 8,
+    "requisito": "3 bases,5 cadenas, snowballing, fuente/adaptación, tercero; hipótesis falsable y bitácora.",
+    "estado": "Ningún mecanismo declarado original aún."
+  },
+  {
+    "bloque": "G",
+    "componente": "Original: implementación y demostración",
+    "peso": 10,
+    "requisito": "Mecanismo propio desde formulación; propiedad con prueba y comprobación numérica; ≥3 componentes aislados.",
+    "estado": "Candidato implementado y pruebas sintéticas previas; ablaciones propias no ejecutadas."
+  },
+  {
+    "bloque": "H",
+    "componente": "Evaluación ampliada",
+    "peso": 10,
+    "requisito": "3 conjuntos adicionales distintos en ≥2 ejes; toda la familia; mismos presupuestos; perturbaciones y escalabilidad.",
+    "estado": "No seleccionar conjuntos por buenos resultados. PCam ya observado no es automáticamente evidencia independiente."
+  },
+  {
+    "bloque": "I",
+    "componente": "Hipótesis y adecuación",
+    "peso": 15,
+    "requisito": "Piloto≥5; final≥10 o potencia90% superior; ≥3 pruebas por contraste, Holm, máximo p ajustado; potencia conjunta.",
+    "estado": "Piloto de cinco semillas en ejecución RunPod. Benchmark final y potencia conjunta no completados."
+  },
+  {
+    "bloque": "J",
+    "componente": "Jupyter Book",
+    "peso": 14,
+    "requisito": "12 capítulos; tabla maestra común, contenedor, DOI, fichas, autoría y reproducción independiente.",
+    "estado": "Libro local ampliado y receptor de resultados; faltan evidencia final, DOI y reproducción independiente."
+  },
+  {
+    "bloque": "K",
+    "componente": "Sustentación",
+    "peso": 7,
+    "requisito": "20 minutos y demostración en vivo; explicación y modificación del mecanismo.",
+    "estado": "Preparar después de diseño, con ejercicios de defensa."
+  }
+]

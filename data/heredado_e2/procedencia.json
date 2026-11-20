@@ -1,0 +1,37 @@
+[
+  {
+    "origen": "evidencias/cierre_reserva_20261116/metricas_por_semilla.csv",
+    "copia": "data/heredado_e2/metricas_por_semilla.csv",
+    "sha256": "a07aeff97105bc50a0d090ae7e929da1f36ede306cc852c3491f73d6f25430ad",
+    "version_origen": "b7dcfa6",
+    "alcance": "Evidencia histórica E2; no resultado confirmatorio E3"
+  },
+  {
+    "origen": "evidencias/cierre_reserva_20261116/resumen_reserva.csv",
+    "copia": "data/heredado_e2/resumen_reserva.csv",
+    "sha256": "d0553383b5d8aefa2b093b5acce0b4744f566ef5e5658c0e6b02566da16391d2",
+    "version_origen": "b7dcfa6",
+    "alcance": "Evidencia histórica E2; no resultado confirmatorio E3"
+  },
+  {
+    "origen": "evidencias/cierre_reserva_20261116/costos_resumen.csv",
+    "copia": "data/heredado_e2/costos_resumen.csv",
+    "sha256": "98bc3c00dac1e23b9ef26fdeb09b399c5d9cb3d7bf6c915e88a251e1ddcfa9da",
+    "version_origen": "b7dcfa6",
+    "alcance": "Evidencia histórica E2; no resultado confirmatorio E3"
+  },
+  {
+    "origen": "evidencias/experimentos_post_20261116/ablaciones_contrastes.csv",
+    "copia": "data/heredado_e2/ablaciones_contrastes.csv",
+    "sha256": "520dde5ebefd16e878c568bf9093e0e92d6ca5a68e6de37f83e8e44a195880c1",
+    "version_origen": "b7dcfa6",
+    "alcance": "Evidencia histórica E2; no resultado confirmatorio E3"
+  },
+  {
+    "origen": "evidencias/experimentos_post_20261116/ensembles/resumen_ensembles.csv",
+    "copia": "data/heredado_e2/resumen_ensembles.csv",
+    "sha256": "2961bc94dd933d12e87b3c373b31c3a8682b651ac754b4d7c395742faffb01fd",
+    "version_origen": "b7dcfa6",
+    "alcance": "Evidencia histórica E2; no resultado confirmatorio E3"
+  }
+]

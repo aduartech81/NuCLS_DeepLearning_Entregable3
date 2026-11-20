@@ -1,0 +1,15 @@
+{
+  "supuesto": "10 candidatos + 3 bases + 1 original, 4 datasets, 10 semillas; sin tuning, ablaciones ni repetición por potencia",
+  "corridas_minimas_teoricas": 560,
+  "horas_por_corrida": [
+    0.25,
+    0.5,
+    1
+  ],
+  "horas_gpu_secuenciales": [
+    140,
+    280,
+    560
+  ],
+  "nota": "Escenario ilustrativo, no duración medida. Conjunto de comparadores clásicos y reglas por dataset por fijar. Evidencia histórica reutilizable solo si compatible con protocolo; no garantiza confirmación independiente."
+}

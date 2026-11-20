@@ -1,0 +1,9 @@
+title: "NuCLS · Entregable 3"
+author: "Andrés Duarte"
+execute:
+  execute_notebooks: "off"
+html:
+  use_repository_button: false
+sphinx:
+  config:
+    language: es

@@ -1,0 +1,13 @@
+name: Verificar publicación web E3
+on: [push, pull_request]
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt -r requirements-book.txt pytest
+      - run: python -m pytest tests/test_dashboard.py tests/test_importar_piloto.py -q
+      - run: jupyter-book build book --warningiserror --keep-going

@@ -1,0 +1,25 @@
+{
+  "fecha": "2026-11-17",
+  "entrega": "2026-11-21",
+  "hora_limite": "10:00",
+  "protocolo_congelado": false,
+  "modelo_original_elegido": false,
+  "variantes_evaluadas": 0,
+  "benchmarks_congelados_e3": false,
+  "confirmacion_nueva_definida": false,
+  "semillas_finales": null,
+  "pcam": "E2 en curso; no intervenir",
+  "reservas_expuestas": [
+    "NuCLS reserva heredada E1/E2"
+  ],
+  "regla": "No ejecutar experimentos confirmatorios hasta fijar diseño, potencia, familia y datos independientes.",
+  "zona_horaria": "America/Bogota",
+  "candidato_provisional": "CICO: contexto acotado por desacuerdo de orientaciones",
+  "novedad_verificada": false,
+  "entrenamiento_e3_ejecutado": false,
+  "fecha_revision": "2026-11-18",
+  "piloto": "Código preparado; no ejecutado con datos reales",
+  "novedad": "Antecedentes cercanos identificados; verificación independiente pendiente",
+  "datos_externos": "Tres preseleccionados; sin descarga ni auditoría de independencia",
+  "protocolo_piloto": "protocolo.md; exploratorio, no preregistro confirmatorio"
+}

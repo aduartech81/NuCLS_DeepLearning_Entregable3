@@ -1,0 +1,35 @@
+{
+  "updated": "2026-11-20",
+  "source": "Registro de entrenamiento compartido; checkpoints aún no recibidos localmente.",
+  "status": "Piloto en curso",
+  "complete_seeds": 0,
+  "planned_seeds": 5,
+  "seed": 6101,
+  "verified_artifacts": false,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.767160668429027,
+      "val_macro_f1": 0.6134690642356873,
+      "seconds": 179.50021026199101
+    },
+    {
+      "epoch": 2,
+      "loss": 0.6932336617999363,
+      "val_macro_f1": 0.6264750361442566,
+      "seconds": 188.21186140802456
+    },
+    {
+      "epoch": 3,
+      "loss": 0.6843185770281227,
+      "val_macro_f1": 0.5964495539665222,
+      "seconds": 178.90210118400864
+    },
+    {
+      "epoch": 4,
+      "loss": 0.679734679739055,
+      "val_macro_f1": 0.6089430451393127,
+      "seconds": 184.40191443101503
+    }
+  ]
+}
