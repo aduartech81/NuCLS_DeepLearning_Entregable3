@@ -20,6 +20,6 @@ La inferencia CPU de CICO requiere recibir y validar pesos, preprocesamiento y e
 
 ## Histología integrada
 
-La [galería histológica](/histologia) reúne 36 núcleos diferentes de 21 pacientes de validación: 18 aciertos y 18 discrepancias seleccionados de tres modelos históricos, semilla 6113. Permite filtrar por clase, modelo y resultado; comparar el campo limpio con la anotación original, ampliar las imágenes y consultar probabilidades registradas.
+La [galería histológica](https://nucls-entregable3.onrender.com/histologia) reúne 36 núcleos diferentes de 21 pacientes de validación: 18 aciertos y 18 discrepancias seleccionados de tres modelos históricos, semilla 6113. Permite filtrar por clase, modelo y resultado; comparar el campo limpio con la anotación original, ampliar las imágenes y consultar probabilidades registradas.
 
 El campo de contexto no se presenta como la entrada exacta de 128 × 128. El contorno amarillo proviene de las coordenadas originales y no representa Grad-CAM. La selección ilustrativa no estima tasas. Las predicciones de CICO todavía no se han incorporado.
