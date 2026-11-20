@@ -1,9 +1,18 @@
-# Dashboard, privacidad y publicación
+# Dashboard integrado del proyecto final
 
-La aplicación Dash de E3 tiene páginas de contexto, datos, modelos, investigación, reproducibilidad y piloto. El servicio se prepara con un nombre independiente en Render. No reemplaza E2 ni publica archivos de Colab.
+La publicación reúne E1, E2 y E3 en [el portal del proyecto](https://nucls-entregable3.onrender.com/). Los originales y el ZIP entregado se preservan.
 
-La aplicación de presentación no importa Torch ni ejecuta entrenamiento. No incluye un formulario de carga de imágenes mientras no exista un modelo entrenado y exportado que haya superado controles. Así se evita ofrecer predicciones con pesos aleatorios.
+## Recorrido de lectura
 
-El panel de modelos distingue claramente la reserva histórica y el candidato con piloto en curso, cuya evidencia final aún no ha sido recibida. Los enlaces bibliográficos abren fuentes originales. El libro compilado se sirve bajo `/libro/` y la comprobación de salud bajo `/healthz`.
+- **Proyecto:** mapa conceptual y estado experimental.
+- **Datos y EDA:** clases, pacientes, dominio e histogramas de calidad agregados.
+- **Resultados E1–E2:** selector de etapa y arquitecturas; baselines E1 con 11 semillas; ampliación E2 de 22 semillas; reserva histórica E2 con 13 modelos y cinco semillas.
+- **CICO y literatura:** formulación, mecanismos, antecedentes y diagramas de arquitectura.
+- **Piloto:** curvas parciales reportadas, con procedencia y corte.
+- **Evidencia:** requisitos, límites y reproducción.
 
-La publicación requiere un repositorio remoto E3 y un servicio Render separado. El archivo de despliegue no demuestra que el servicio ya esté publicado. El contenedor debe verificarse en el entorno de destino antes de anunciar una URL pública.
+## Comparabilidad y privacidad
+
+No se mezclan las corridas de distintas etapas. Las barras de error de la reserva representan desviación entre semillas; los intervalos por paciente se muestran por separado. Las tablas permiten ordenar, filtrar y exportar CSV. Los histogramas de calidad se publican agregados, sin identificadores de pacientes. El ancho del diagrama de flujo conceptual no cuantifica datos.
+
+La inferencia CPU de CICO requiere recibir y validar pesos, preprocesamiento y exportación. La web no presenta predicciones aleatorias ni convierte el piloto en un benchmark final. PCam E2 continúa detenido según el último inventario recibido.

@@ -23,3 +23,9 @@ layout = html.Div([
 def detalle_antecedente(index):
  r=ROWS[int(index)]
  return [html.H3(r['titulo']),html.Small(r['lectura']),html.P(r['antecedente']),html.P(r['diferencia_o_limite']),html.A('Consultar fuente primaria ↗',href=r['url'],target='_blank',rel='noopener noreferrer')]
+
+import plotly.express as px
+lit=json.loads((ROOT/'data/proyecto/literatura.json').read_text())
+lf=px.bar(x=list(lit['estados_mutuamente_excluyentes']),y=list(lit['estados_mutuamente_excluyentes'].values()),labels={'x':'Decisión documentada','y':'Registros'},template='plotly_white',color_discrete_sequence=['#087f8c'])
+lf.update_layout(height=470,margin=dict(t=20,b=150),xaxis_tickangle=-35)
+layout.children.insert(3,html.Section([html.H2('E1 · trazabilidad de la revisión de literatura'),html.P('1.717 registros identificados en Scopus, Web of Science e IEEE Xplore; 1.330 unidades de cribado. Corte documental: 8 noviembre 2026.'),dcc.Graph(figure=lf),html.P(lit['nota'],className='note'),html.P('Estos conteos pertenecen a la revisión heredada; no se suman a los antecedentes de novedad E3.')],className='panel'))

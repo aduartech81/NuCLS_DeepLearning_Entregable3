@@ -1,0 +1,32 @@
+[
+  {
+    "archivo": "e1_resumen.csv",
+    "fuente": "work/nucls/resultados_analizados/cierre_11/resumen_experimento.csv",
+    "sha256": "57837c83c78f608a41407bac5dd07f413d10f1d8c1ed843f05d2d9c1c3a00b70"
+  },
+  {
+    "archivo": "bases22.csv",
+    "fuente": "work/entregable2/repo/evidencias/estadistica_22/resumen.csv",
+    "sha256": "4c5cea967dd6d215125f212144e3f61ec24d9d360502f553823b9827c9ac9065"
+  },
+  {
+    "archivo": "contrastes22.csv",
+    "fuente": "work/entregable2/repo/evidencias/estadistica_22/contrastes_pareados.csv",
+    "sha256": "08d273505751b4b3b223ea0540741de5e5b5bf8c2a03f964d851702602937797"
+  },
+  {
+    "archivo": "clases.csv",
+    "fuente": "work/nucls/evidencias/seleccion_clases.csv",
+    "sha256": "2cfccdd4d4f9ed0c00690fe12363ec3837f7c4604d2e869bcb86bd650ea57504"
+  },
+  {
+    "archivo": "literatura.json",
+    "fuente": "work/nucls/evidencias/literatura/flujo_prisma_parcial.json",
+    "sha256": "346591a9ef786751d7102eafd1e03b00556fd2cf4ec2ffa428d0832a54fa9d1f"
+  },
+  {
+    "archivo": "dominio.json",
+    "fuente": "work/nucls/resultados_analizados/eda_cierre/resumen.json",
+    "sha256": "6074ff9999353ceee05c94140c107575161089016476e90db33644cbffb99621"
+  }
+]
