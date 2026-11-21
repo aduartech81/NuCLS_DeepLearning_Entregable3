@@ -18,7 +18,7 @@
     "componente": "Dashboard: contexto y EDA",
     "peso": 8,
     "requisito": "Dash multipágina, filtros globales y callbacks; datos, calidad, dominio e interpretación.",
-    "estado": "Dash multipágina local con contexto y datos; falta validar filtros globales contra guía."
+    "estado": "Publicado: contexto, EDA, histología y filtros por página. Pendiente validar filtros globales y móvil."
   },
   {
     "bloque": "D",
@@ -32,7 +32,7 @@
     "componente": "Diseño, UX y despliegue",
     "peso": 5,
     "requisito": "Render Web Service independiente, responsividad, privacidad, validación de entrada y prueba de humo.",
-    "estado": "Paquete Render independiente preparado; despliegue público aún no acreditado."
+    "estado": "Render independiente publicado y probado en escritorio. Falta QA móvil y validación de entrada del futuro predictor."
   },
   {
     "bloque": "F",
@@ -60,14 +60,14 @@
     "componente": "Hipótesis y adecuación",
     "peso": 15,
     "requisito": "Piloto≥5; final≥10 o potencia90% superior; ≥3 pruebas por contraste, Holm, máximo p ajustado; potencia conjunta.",
-    "estado": "Piloto de cinco semillas en ejecución RunPod. Benchmark final y potencia conjunta no completados."
+    "estado": "6101 completa reportada, 6102 época 11, 6103–6105 sin épocas guardadas. Artefactos finales no recibidos; benchmark final y potencia pendientes."
   },
   {
     "bloque": "J",
     "componente": "Jupyter Book",
     "peso": 14,
     "requisito": "12 capítulos; tabla maestra común, contenedor, DOI, fichas, autoría y reproducción independiente.",
-    "estado": "Libro local ampliado y receptor de resultados; faltan evidencia final, DOI y reproducción independiente."
+    "estado": "Libro integrado E1/E2/E3 con imágenes histológicas y matriz común; pendientes evidencia final, DOI y reproducción independiente."
   },
   {
     "bloque": "K",

@@ -4,7 +4,9 @@ Actualización: 20 noviembre 2026, America/Bogota. Entrega: sábado 21, 10:00 a.
 
 ## Estado del piloto E3
 
-RunPod ejecuta el candidato CICO con la receta congelada: cinco semillas, máximo de 25 épocas y parada temprana. El registro recibido contiene cuatro épocas de 6101; el mejor macro-F1 de validación observado es 0,6265 (época 2). Es una instantánea comunicada, no evidencia final auditada. El tiempo medio observado es 182,8 segundos por época. No se garantiza una hora de finalización.
+El último registro comunicado por el autor informa **6101 completa (25 épocas)** y **6102 en época 11**; 6103, 6104 y 6105 no tienen épocas guardadas. El mayor macro-F1 visible de 6101 es **0,7174428 en época 22**; el último, 0,7050032 en época 25. En 6102, el mayor visible es 0,6627001 en época 9. Son máximos en validación, no métricas de prueba ni evidencia de superioridad.
+
+No se han recibido aquí los checkpoints y predicciones finales. Faltan las épocas 5–7 de 6101 en el texto compartido; no se rellenan ni se interpolan. La política sigue siendo cinco semillas, hasta 25 épocas y parada temprana. Con ~3 minutos por época, las 89 épocas máximas que restaban al corte equivalen a unas 4,5 horas más gastos de evaluación y guardado, si el ritmo se mantiene. Es una estimación condicional, no una hora garantizada de finalización.
 
 ## Integración sin repetir entrenamiento
 
@@ -19,13 +21,13 @@ RunPod ejecuta el candidato CICO con la receta congelada: cinco semillas, máxim
 
 | Requisito | Situación y siguiente paso |
 |---|---|
-| Piloto ≥5 semillas | En ejecución; recibir y verificar resultados. |
+| Piloto ≥5 semillas | 1 completa reportada, segunda en época 11; recibir y verificar las cinco. |
 | Benchmark final ≥10 o tamaño mayor por potencia al 90 % | El piloto actual no lo completa. Calcular tamaño y fijar familia antes de nuevas corridas. |
 | Ablaciones de ≥3 componentes propios | Las de preprocesamiento E2 no las sustituyen; requieren variantes y corridas específicas. |
 | Tres conjuntos adicionales | Requieren auditoría, protocolo y evaluación de toda la familia. PCam observado no equivale automáticamente a prueba independiente. |
 | Inferencia CPU y exportación | Código previo disponible; falta validar artefactos entrenados, equivalencia, latencia y entradas fuera de dominio. |
 | Revisión de novedad y tercero | Conservar fuentes, cadenas y nivel de lectura. La implementación por sí sola no demuestra novedad. |
-| Publicación | Paquete preparado localmente; acreditar despliegue, enlaces, responsividad y prueba de humo. |
+| Publicación | Render publicado y verificado en escritorio; falta comprobar móvil y el flujo de inferencia cuando exista el modelo. |
 | Defensa | Preparar explicación de formulación, cotas, diferencias con antecedentes y límites experimentales. |
 
 No se equipara una entrega documental a completar los experimentos de la guía. Los resultados que no se hayan ejecutado no se presentan como cumplidos.

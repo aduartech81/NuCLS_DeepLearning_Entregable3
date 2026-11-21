@@ -8,7 +8,7 @@ El ejecutor guarda checkpoints por época, estado del optimizador y generadores 
 
 ## Paquete web
 
-`requirements.txt` define dependencias del servidor; `requirements-book.txt`, las del libro. Docker incluye la compilación HTML verificada del libro y arranca Gunicorn. El libro se recompila antes de empaquetar cambios documentales. No se incluyen imágenes de pacientes ni pesos de modelos en el paquete web.
+`requirements.txt` define dependencias del servidor; `requirements-book.txt`, las del libro. Docker incluye la compilación HTML verificada del libro y arranca Gunicorn. El libro se recompila antes de empaquetar cambios documentales. Se incluyen 36 campos del conjunto público NuCLS y sus anotaciones históricas cotejadas, con procedencia y hashes. No hay carga pública de nuevas imágenes ni pesos CICO disponibles.
 
 El manifiesto de publicación registra hashes de los archivos distribuidos. Esto verifica identidad de archivos, no validez científica de las conclusiones. La exportación ONNX futura debe comprobar equivalencia sobre imágenes de verificación; la fixture sintética previa no constituye un modelo clínico.
 

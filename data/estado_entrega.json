@@ -1,0 +1,151 @@
+{
+  "corte": "20 noviembre 2026, posterior al reporte 6102 época 11",
+  "plazo": "21 noviembre 2026, 10:00 America/Bogota",
+  "alcance": "Auditoría de evidencias disponibles y matriz local de requisitos; no certifica resultados aún no recibidos ni sustituye revisión del docente.",
+  "items": [
+    {
+      "etapa": "E1",
+      "componente": "Integración de evidencia",
+      "estado": "Integrado",
+      "ubicacion": "Libro y dashboard",
+      "evidencia": "Tres bases × 11 semillas; confusión, calibración, selección de clases y flujo de literatura.",
+      "falta": "Conservar las diferencias entre el corte E1 y el manifiesto V2; no modificar originales.",
+      "dependencia": "Documentación"
+    },
+    {
+      "etapa": "E2",
+      "componente": "Benchmark histórico y correcciones",
+      "estado": "Integrado con límites",
+      "ubicacion": "Libro y dashboard",
+      "evidencia": "13 arquitecturas × 5 en reserva; 22 semillas de las bases, 15 ablaciones de preprocesamiento y ensambles.",
+      "falta": "Cerrar la auditoría de las 66 corridas base y sus predicciones/curvas; no confundirlas con 65 evaluaciones de reserva.",
+      "dependencia": "Archivos E2"
+    },
+    {
+      "etapa": "E2",
+      "componente": "PCam",
+      "estado": "Detenido",
+      "ubicacion": "Último inventario comunicado",
+      "evidencia": "8301 completa, época 20; 8302 checkpoint época 16; 8303–8305 sin checkpoint.",
+      "falta": "Revisar checkpoint y optimizador, reanudar 8302 y ejecutar 8303–8305; consolidar métricas de réplica. No usar la GPU ocupada por E3.",
+      "dependencia": "GPU y checkpoints E2"
+    },
+    {
+      "etapa": "E2",
+      "componente": "Histología y análisis de errores",
+      "estado": "Parcial",
+      "ubicacion": "Libro y dashboard",
+      "evidencia": "36 núcleos, 21 pacientes, 18 aciertos y 18 discrepancias de tres modelos; huellas cotejadas.",
+      "falta": "Revisión de 100 errores por modelo principal, taxonomía y acuerdo/techo multi-rater con anotaciones independientes.",
+      "dependencia": "Revisión humana y anotaciones"
+    },
+    {
+      "etapa": "E2",
+      "componente": "Explicabilidad y fidelidad",
+      "estado": "Parcial",
+      "ubicacion": "Correcciones E2",
+      "evidencia": "48/48 mapas Inception constantes en evidencia anterior; no se presentan como explicaciones válidas.",
+      "falta": "Corregir capa o método y repetir fidelidad/estabilidad; completar incertidumbre y cobertura no acreditadas.",
+      "dependencia": "Modelos entrenados y evaluación"
+    },
+    {
+      "etapa": "E3 A",
+      "componente": "Correcciones, fuga y congelación",
+      "estado": "Parcial",
+      "ubicacion": "Trazabilidad de correcciones",
+      "evidencia": "Historial de exposición de reserva declarado y fuentes preservadas.",
+      "falta": "Auditar archivos primarios completos, pacientes/duplicados/versiones y congelar paquete final con hashes.",
+      "dependencia": "Archivos y auditoría"
+    },
+    {
+      "etapa": "E3 B/D",
+      "componente": "Exportación e inferencia CPU",
+      "estado": "Pendiente",
+      "ubicacion": "Código preparado; función web no habilitada",
+      "evidencia": "No hay checkpoint CICO recibido localmente.",
+      "falta": "Seleccionar por validación, exportar pesos y metadata, verificar ida/vuelta numérica, latencia/memoria CPU, entradas inválidas/fuera de dominio e incertidumbre. Verificar comparadores exigidos (Top10, bases y original).",
+      "dependencia": "Artefactos entrenados"
+    },
+    {
+      "etapa": "E3 C/E",
+      "componente": "Dashboard e integración visual",
+      "estado": "Publicado; verificación parcial",
+      "ubicacion": "Render",
+      "evidencia": "Portal integrado, histología, filtros por página y libro; pruebas locales y escritorio.",
+      "falta": "Comprobar responsividad móvil, filtros globales exigidos y flujo de predicción cuando exista inferencia. No hay prueba móvil acreditada.",
+      "dependencia": "QA web y modelo"
+    },
+    {
+      "etapa": "E3 F",
+      "componente": "Originalidad y revisión externa",
+      "estado": "Parcial",
+      "ubicacion": "Capítulo de literatura y matriz de novedad",
+      "evidencia": "Antecedentes cercanos y alcance de lectura declarados.",
+      "falta": "Completar evidencia de 3 bases/5 cadenas/snowballing, textos pendientes, fuente/adaptación y evaluación por tercero; no declarar novedad probada.",
+      "dependencia": "Búsqueda y revisión humana"
+    },
+    {
+      "etapa": "E3 G",
+      "componente": "Mecanismo y ablaciones propias",
+      "estado": "Parcial",
+      "ubicacion": "Implementación y propiedades sintéticas",
+      "evidencia": "CICO formulado; pruebas previas de D4, cota y gradientes.",
+      "falta": "Entrenar y analizar ≥3 componentes aislados del mecanismo, más control D4 definido; las ablaciones de preprocesamiento E2 no sustituyen estas.",
+      "dependencia": "Entrenamiento adicional"
+    },
+    {
+      "etapa": "E3 H",
+      "componente": "Tres conjuntos adicionales",
+      "estado": "Pendiente",
+      "ubicacion": "Candidatos documentados",
+      "evidencia": "PanNuke, Lizard y MoNuSAC son candidatos, no datasets externos auditados.",
+      "falta": "Auditar solapamiento/etiquetas/licencia, diferencias en ≥2 ejes; evaluar toda la familia con presupuestos comparables, perturbaciones y escalabilidad.",
+      "dependencia": "Datos y GPU"
+    },
+    {
+      "etapa": "E3 I",
+      "componente": "Piloto de cinco semillas",
+      "estado": "En curso, según registro comunicado",
+      "ubicacion": "6101 completa; 6102 época 11",
+      "evidencia": "6103–6105 sin épocas guardadas. 0 paquetes finales auditados aquí.",
+      "falta": "Completar 6102–6105; descargar resultados y notebook con salidas; importar, validar hashes y recalcular métricas.",
+      "dependencia": "RunPod existente; no interrumpir"
+    },
+    {
+      "etapa": "E3 I",
+      "componente": "Benchmark final y potencia",
+      "estado": "Pendiente",
+      "ubicacion": "No acreditado",
+      "evidencia": "Cinco semillas piloto no cumplen la evaluación final.",
+      "falta": "Dimensionar por potencia al 90 % y mínimo ≥10; toda la familia, ≥3 pruebas por contraste, Holm, máximo p ajustado y potencia conjunta.",
+      "dependencia": "Diseño, entrenamiento y estadística"
+    },
+    {
+      "etapa": "E3 J",
+      "componente": "Libro y tabla maestra",
+      "estado": "Integrado; cierre pendiente",
+      "ubicacion": "Libro publicado",
+      "evidencia": "Capítulos acumulados, imágenes explicadas, mismos CSV históricos y matriz de estado común.",
+      "falta": "Incorporar evidencia final CICO en tabla común, fichas finales, entorno/contenedor completo, DOI y reproducción independiente.",
+      "dependencia": "Resultados finales y tercero"
+    },
+    {
+      "etapa": "E3 K",
+      "componente": "Sustentación",
+      "estado": "Guion disponible; no ensayada",
+      "ubicacion": "20 minutos propuestos",
+      "evidencia": "Problema/datos, antecedentes, mecanismo, resultados y demostración.",
+      "falta": "Preparar diapositivas definitivas, ensayar demostración y explicación/modificación del mecanismo; respaldo local comprobado.",
+      "dependencia": "Autor"
+    },
+    {
+      "etapa": "Entrega",
+      "componente": "Congelación y envío final",
+      "estado": "Pendiente",
+      "ubicacion": "21 noviembre, 10:00 Bogotá",
+      "evidencia": "Portal accesible; paquete previo no equivale al paquete final de esta revisión.",
+      "falta": "Congelar versión, descargar respaldo independiente, generar hashes, revisar enlaces y adjuntos y enviar por el canal oficial.",
+      "dependencia": "Autor y paquete final"
+    }
+  ]
+}

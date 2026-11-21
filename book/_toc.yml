@@ -10,7 +10,9 @@ chapters:
   - file: 07_plan_lectura
   - file: 08_evaluacion_ampliada
   - file: 09_dashboard
+  - file: 09a_histologia
   - file: 10_conclusiones
   - file: 11_reproducibilidad
   - file: 12_trazabilidad
   - file: 13_cierre_operativo
+  - file: 14_estado_entrega
