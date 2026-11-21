@@ -48,7 +48,7 @@ E2 y E3 siguen abiertos científicamente. El dashboard, la galería histológica
 | 23 | Análisis de 100 errores/modelo | Sección 12.3 | Pendiente. Galería 36 casos no equivale a 100 errores adjudicados por modelo; faltan taxonomía excluyente, IC, errores compartidos y segmentos. |
 | 24 | Paper guía y réplica PCam | Sección 5 | PCam detenido; recuperación preparada. 8301 completa; 8302 guardada en 16; faltan 4 épocas de 8302 y 60 de 8303–8305, más evaluación. Reportar discrepancia/IC respecto del paper y limitación cuantificada en ≥3 modelos. |
 | 25 | Reproducción independiente y entorno | Sección 8 | Parcial. Entorno y checkpoints conservados; faltan reproducción independiente, auditoría completa de bases y comparación numérica. |
-| 26 | Libro, resultados y entrega | Sección 15 y requisitos finales | Publicado; cierre científico parcial. Libro/dashboard E3 integran E1/E2; no modificar el ZIP E2 entregado. Correcciones se documentan en nueva versión E3. |
+| 26 | Libro, resultados y entrega | Entregables, pp. 58–59 | Publicado; cierre científico parcial. Libro/dashboard E3 integran E1/E2; no modificar el ZIP E2 entregado. Correcciones se documentan en nueva versión E3. |
 | 27 | Sustentación y autoría | Sección requisitos finales | Pendiente de acreditación. Ensayo y defensa técnica por el autor; no se certifican por disponer de un guion. |
 
 ### E3
