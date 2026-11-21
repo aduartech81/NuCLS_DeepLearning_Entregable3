@@ -1,15 +1,17 @@
 from pathlib import Path
-import json
+import json,statistics
 import dash
-from dash import html,dcc
+from dash import html,dcc,dash_table
 import plotly.graph_objects as go
 ROOT=Path(__file__).resolve().parents[1]
 dash.register_page(__name__,path='/piloto',name='Piloto E3')
 def layout():
- d=json.loads((ROOT/'data/piloto_estado.json').read_text())
- fig=go.Figure()
- runs=d.get('runs',[{'seed':d.get('seed',6101),'history':d.get('history',[])}])
+ d=json.loads((ROOT/'data/piloto_estado.json').read_text());runs=d.get('runs',[])
+ fig=go.Figure();loss=go.Figure();rows=[]
  for run in runs:
-  h=run['history'];h=[next((v for v in h if v['epoch']==i),{'epoch':i,'val_macro_f1':None}) for i in range(1,max(v['epoch'] for v in h)+1)] if h else [];fig.add_trace(go.Scatter(x=[x['epoch'] for x in h],y=[x['val_macro_f1'] for x in h],mode='lines+markers',name=str(run['seed'])))
- fig.update_layout(template='plotly_white',xaxis_title='Época',yaxis_title='Macro-F1 de validación',yaxis_range=[0,1],legend_title='Semilla')
- return html.Div([html.Span('PILOTO / EVIDENCIA E3',className='eyebrow'),html.H1('Aprendizaje observado, alcance explícito.'),html.P('Actualizado: '+d['updated']+' · '+d['status'],className='lead'),html.Div([html.H2(str(d.get('reported_complete_seeds',d['complete_seeds']))+' / '+str(d['planned_seeds'])+' semillas completas reportadas'),html.P(str(d['complete_seeds'])+' semillas con artefactos finales recibidos y verificados aquí.'),html.P(d['source']),html.P('Esta página muestra una instantánea fechada; no consulta ni controla RunPod.')],className='panel'),dcc.Graph(figure=fig),html.P('Faltan las épocas 5–7 de 6101 en el registro recibido; el hueco no se interpola. Cada curva corresponde a validación. No es un resultado en reserva ni una comparación confirmatoria.'),html.Div([html.H2('Qué permite concluir el piloto'),html.P('Mide factibilidad, variación entre semillas y costo. Cinco semillas no sustituyen el mínimo final ni el análisis de potencia de la guía. No se ajusta el protocolo por el mejor punto observado.')],className='panel'),html.A('Procedimiento de integración y entrega →',href='/libro/13_cierre_operativo.html',className='button')])
+  h=run['history'];fig.add_trace(go.Scatter(x=[x['epoch'] for x in h],y=[x['val_macro_f1'] for x in h],mode='lines+markers',name=str(run['seed'])))
+  loss.add_trace(go.Scatter(x=[x['epoch'] for x in h],y=[x['loss'] for x in h],mode='lines+markers',name=str(run['seed'])))
+  rows.append({'Semilla':run['seed'],'Épocas':len(h),'Mejor época':run['best_epoch'],'Macro-F1 validación':round(run['val_macro_f1'],6)})
+ for f,y in [(fig,'Macro-F1 de validación'),(loss,'Pérdida de entrenamiento')]:f.update_layout(template='plotly_white',xaxis_title='Época',yaxis_title=y,legend_title='Semilla',font=dict(size=14))
+ fig.update_yaxes(range=[0,1]);scores=[x['val_macro_f1'] for x in runs]
+ return html.Div([html.Span('PILOTO / EVIDENCIA E3',className='eyebrow'),html.H1('Cinco semillas. Evidencia verificada.'),html.P('Actualizado: '+d['updated'],className='lead'),html.Div([html.H2(str(d['complete_seeds'])+' / '+str(d['planned_seeds'])+' semillas completas verificadas'),html.P(d['source']),html.P(f"Media ± DE: {statistics.mean(scores):.4f} ± {statistics.stdev(scores):.4f}. La DE no es un intervalo de confianza.")],className='panel'),dash_table.DataTable(data=rows,columns=[{'name':k,'id':k} for k in rows[0]],export_format='csv',style_table={'overflowX':'auto'},style_cell={'fontSize':16,'padding':14,'textAlign':'left'}),html.H2('Trayectorias de validación'),dcc.Graph(figure=fig),html.H2('Aprendizaje en entrenamiento'),dcc.Graph(figure=loss),html.Div([html.H2('Por qué tres semillas terminan en época 6'),html.P('6103–6105 tuvieron su mejor checkpoint en época 1 y acumularon cinco épocas sin mejora. La parada es coherente con el protocolo, pero evidencia variación entre semillas y exige discutir optimización y estabilidad. No se reiniciaron corridas para mejorar su resultado.')],className='panel'),html.P('Cada resultado corresponde al checkpoint seleccionado por validación. Esta misma validación no es una prueba independiente; no demuestra superioridad frente a E1/E2. Las cinco semillas no sustituyen el benchmark final ni la potencia exigida.'),html.A('Leer resultados y verificación',href='/libro/14_resultados_piloto.html',className='button'),html.A('Consultar pendientes',href='/libro/14_estado_entrega.html',className='button secondary')])

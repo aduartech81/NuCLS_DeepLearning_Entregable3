@@ -1,6 +1,6 @@
 # Estado de entrega: evidencia y pendientes
 
-**Fecha límite: sábado 21 de noviembre de 2026, 10:00 a. m. Bogotá.** Corte posterior al registro comunicado de 6102 en época 11. Este estado es el mismo que muestra el dashboard, generado desde `data/estado_entrega.json`.
+**Fecha límite: sábado 21 de noviembre de 2026, 10:00 a. m. Bogotá.** Corte del 21 de noviembre: cinco semillas piloto recibidas y verificadas. Este estado es el mismo que muestra el dashboard, generado desde `data/estado_entrega.json`.
 
 ## Diagnóstico
 
@@ -74,9 +74,9 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 **Estado:** Pendiente. **Ubicación:** Código preparado; función web no habilitada.
 
-**Evidencia disponible:** No hay checkpoint CICO recibido localmente.
+**Evidencia disponible:** Cinco checkpoints CICO recibidos y verificados por hash; no ejecutados en esta auditoría.
 
-**Falta exactamente:** Seleccionar por validación, exportar pesos y metadata, verificar ida/vuelta numérica, latencia/memoria CPU, entradas inválidas/fuera de dominio e incertidumbre. Verificar comparadores exigidos (Top10, bases y original).
+**Falta exactamente:** Definir selección por validación, exportar pesos y metadata, verificar ida/vuelta numérica, latencia/memoria CPU, entradas inválidas/fuera de dominio e incertidumbre. Verificar comparadores exigidos (Top10, bases y original).
 
 **Depende de:** Artefactos entrenados.
 
@@ -122,13 +122,13 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 ### E3 I · Piloto de cinco semillas
 
-**Estado:** En curso, según registro comunicado. **Ubicación:** 6101 completa; 6102 época 11.
+**Estado:** Completo y verificado. **Ubicación:** Libro y dashboard; ZIP respaldado.
 
-**Evidencia disponible:** 6103–6105 sin épocas guardadas. 0 paquetes finales auditados aquí.
+**Evidencia disponible:** Cinco checkpoints y predicciones cotejados; 2.049 imágenes / 21 pacientes por semilla; macro-F1 recalculado.
 
-**Falta exactamente:** Completar 6102–6105; descargar resultados y notebook con salidas; importar, validar hashes y recalcular métricas.
+**Falta exactamente:** No requiere repetir entrenamiento. Conservar archivos y separar piloto de evaluación final.
 
-**Depende de:** RunPod existente; no interrumpir.
+**Depende de:** Ninguna para cerrar recepción del piloto.
 
 ### E3 I · Benchmark final y potencia
 
@@ -144,9 +144,9 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 **Estado:** Integrado; cierre pendiente. **Ubicación:** Libro publicado.
 
-**Evidencia disponible:** Capítulos acumulados, imágenes explicadas, mismos CSV históricos y matriz de estado común.
+**Evidencia disponible:** Histología, tablas E1/E2 y cinco resultados CICO verificados integrados; misma fuente para libro/dashboard.
 
-**Falta exactamente:** Incorporar evidencia final CICO en tabla común, fichas finales, entorno/contenedor completo, DOI y reproducción independiente.
+**Falta exactamente:** Completar evidencia del benchmark final, fichas de exportación, entorno/contenedor de inferencia, DOI y reproducción independiente.
 
 **Depende de:** Resultados finales y tercero.
 
@@ -172,13 +172,9 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 ## Orden operativo hasta las 10:00
 
-1. **Ahora:** conservar el piloto activo. No relanzarlo ni usar su GPU para PCam. Preparar y revisar la documentación disponible.
-2. **Al completar cinco semillas:** ejecutar la celda 4 del cuaderno RunPod, descargar `NuCLS_E3_RUNPOD_RESULTADOS.zip` y el notebook con salidas. Verificar el respaldo antes de eliminar el Pod. No basta el texto de la consola.
-3. **Con archivos recibidos:** importar, cotejar hashes/métricas y actualizar curvas, tabla maestra y conclusiones de libro/dashboard. Exportar y probar inferencia si los artefactos permiten hacerlo a tiempo.
-4. **Antes de las 09:00 (corte propuesto):** consolidar solo resultados verificables. Si faltan experimentos, mantenerlos explícitos como pendientes, sin prometer cumplimiento total ni inventar datos.
-5. **09:00–09:30:** prueba de enlaces, visualización, libro, descargas, respaldo local y manifiesto de hashes de la versión final.
-6. **09:30–10:00:** margen para el envío por el canal oficial y comprobante. La hora de publicación en Render no sustituye el envío académico.
+1. Piloto recibido y respaldado: no relanzarlo.
+2. Priorizar exportación y comprobación CPU; mantener publicada solo la funcionalidad verificada.
+3. Consolidar resultados y limitaciones; el benchmark final, las ablaciones propias, los conjuntos externos y PCam siguen siendo brechas separadas.
+4. Antes de las 09:00, congelar evidencia verificable; 09:00–09:30, prueba de enlaces, libro, descargas y respaldo; 09:30–10:00, envío académico y comprobante. Es una planificación propuesta, no garantía de completar experimentos.
 
-La estimación de unas 4,5 horas restantes para el piloto al corte de 6102/11 supone 89 épocas máximas a ~3 minutos y excluye sobrecostos; la parada temprana puede reducirla y una interrupción ampliarla. No estima el tiempo para el benchmark final completo.
-
-[Ver estado en dashboard](https://nucls-entregable3.onrender.com/reproducibilidad).
+[Resultados piloto verificados](14_resultados_piloto.md).

@@ -11,7 +11,7 @@
     "componente": "Configuraciones y exportación",
     "peso": 7,
     "requisito": "Selección por validación; reentrenamiento de política común; exportación, metadata y round-trip; costo CPU.",
-    "estado": "Código de exportación preparado; falta artefacto entrenado, round-trip y costo CPU."
+    "estado": "Checkpoints recibidos y verificados por huellas; faltan exportación, round-trip y costo CPU."
   },
   {
     "bloque": "C",
@@ -60,14 +60,14 @@
     "componente": "Hipótesis y adecuación",
     "peso": 15,
     "requisito": "Piloto≥5; final≥10 o potencia90% superior; ≥3 pruebas por contraste, Holm, máximo p ajustado; potencia conjunta.",
-    "estado": "6101 completa reportada, 6102 época 11, 6103–6105 sin épocas guardadas. Artefactos finales no recibidos; benchmark final y potencia pendientes."
+    "estado": "Piloto de cinco semillas completo y verificado desde ZIP. Benchmark final y potencia conjunta pendientes."
   },
   {
     "bloque": "J",
     "componente": "Jupyter Book",
     "peso": 14,
     "requisito": "12 capítulos; tabla maestra común, contenedor, DOI, fichas, autoría y reproducción independiente.",
-    "estado": "Libro integrado E1/E2/E3 con imágenes histológicas y matriz común; pendientes evidencia final, DOI y reproducción independiente."
+    "estado": "Libro integrado con histología, resultados piloto verificados y matriz común; faltan benchmark final, DOI y reproducción independiente."
   },
   {
     "bloque": "K",

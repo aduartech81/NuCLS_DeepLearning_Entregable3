@@ -98,6 +98,23 @@ Son registros del entorno experimental histórico, no una medición de latencia 
 
 ## E3 · comparación todavía pendiente
 
-CICO tiene avance piloto comunicado. Falta recibir artefactos, completar cinco semillas y diseñar la evaluación final con toda la familia y tamaño suficiente. No existe todavía una tabla final que compare CICO con los 13 modelos bajo condiciones verificadamente iguales.
+CICO tiene cinco semillas piloto completas y verificadas. Falta diseñar y ejecutar la evaluación final con toda la familia y tamaño suficiente. No existe todavía una tabla final que compare CICO con los 13 modelos bajo condiciones verificadamente iguales.
 
 [Explorar estas mismas tablas y gráficos](https://nucls-entregable3.onrender.com/proyecto).
+
+### Resultados piloto CICO verificados
+
+| Semilla | Mejor época | Macro-F1 validación |
+|---|---:|---:|
+| 6101 | 22 | 0.717443 |
+| 6102 | 18 | 0.699306 |
+| 6103 | 1 | 0.642112 |
+| 6104 | 1 | 0.639904 |
+| 6105 | 1 | 0.642451 |
+
+Media ± DE entre cinco semillas: 0.668243 ± 0.037204. La DE no es un intervalo de confianza.
+
+Selección realizada por validación; no se acredita evaluación en reserva, superioridad ni benchmark final. Las curvas del dashboard usan la misma fuente validada.
+
+
+[Detalle de parada temprana y validación](14_resultados_piloto.md).

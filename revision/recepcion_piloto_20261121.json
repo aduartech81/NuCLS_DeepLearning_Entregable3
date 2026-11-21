@@ -1,0 +1,26 @@
+{
+  "fecha": "2026-11-21",
+  "archivos": [
+    {
+      "archivo": "NuCLS_E3_RUNPOD_RESULTADOS.zip",
+      "bytes": 12051369,
+      "sha256": "fe2ac1e3abcfbdca81f8f86b85f03a28c5c5cb037160057fb71192c8895dd2ba"
+    },
+    {
+      "archivo": "NuCLS_E3_RunPod-2.ipynb",
+      "bytes": 40130,
+      "sha256": "900c743a49b5bbaed605b84fc46f9a65ba9f621eb6880d5387618bfe1a6d87e8"
+    }
+  ],
+  "verificaciones": [
+    "Integridad CRC ZIP",
+    "Código y configuración idénticos al piloto local",
+    "Cinco semillas y única identidad de ejecución",
+    "Huellas de checkpoints y predicciones",
+    "Historias contiguas y mejor época coherente",
+    "2049 predicciones / 21 pacientes por semilla, mismo orden",
+    "Macro-F1 recalculado desde probabilidades"
+  ],
+  "alcance": "Pesos tratados como bytes; no ejecución, exportación ni inferencia CPU comprobadas",
+  "runpod": "No intervenido"
+}

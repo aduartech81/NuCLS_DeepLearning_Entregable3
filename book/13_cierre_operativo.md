@@ -1,27 +1,25 @@
 # Cierre operativo y recepción de evidencia
 
-Actualización: 20 noviembre 2026, America/Bogota. Entrega: sábado 21, 10:00 a. m.
+Actualización: 21 noviembre 2026, America/Bogota. Entrega: sábado 21, 10:00 a. m.
 
 ## Estado del piloto E3
 
-El último registro comunicado por el autor informa **6101 completa (25 épocas)** y **6102 en época 11**; 6103, 6104 y 6105 no tienen épocas guardadas. El mayor macro-F1 visible de 6101 es **0,7174428 en época 22**; el último, 0,7050032 en época 25. En 6102, el mayor visible es 0,6627001 en época 9. Son máximos en validación, no métricas de prueba ni evidencia de superioridad.
+Cinco semillas piloto completas y verificadas desde el ZIP recibido el 21 de noviembre. Macro-F1 de validación: media 0.6682 ± DE 0.0372. No es un resultado de prueba ni una demostración de superioridad.
 
-No se han recibido aquí los checkpoints y predicciones finales. Faltan las épocas 5–7 de 6101 en el texto compartido; no se rellenan ni se interpolan. La política sigue siendo cinco semillas, hasta 25 épocas y parada temprana. Con ~3 minutos por época, las 89 épocas máximas que restaban al corte equivalen a unas 4,5 horas más gastos de evaluación y guardado, si el ritmo se mantiene. Es una estimación condicional, no una hora garantizada de finalización.
+[Resultados por semilla y auditoría](14_resultados_piloto.md). El ZIP y el notebook se copiaron a una carpeta independiente y se registraron sus hashes. El paquete pasó integridad y verificación de las predicciones. No hace falta repetir el piloto.
 
-## Integración sin repetir entrenamiento
+## Siguiente paso sin repetir entrenamiento
 
-1. Esperar el cierre de las cinco semillas. Consultar únicamente la celda 3 del cuaderno RunPod.
-2. Ejecutar su celda 4 y descargar `NuCLS_E3_RUNPOD_RESULTADOS.zip`. Descargar también el notebook con sus salidas.
-3. Ejecutar localmente `python tools/importar_piloto.py RUTA_AL_ZIP`. El receptor valida las cinco semillas, huellas de pesos y predicciones, identidad común y coherencia de las métricas. No carga Torch ni entrena.
-4. Revisar el resumen agregado y las curvas. La tabla y el capítulo generado provienen del mismo archivo de resultados.
-5. Exportar el checkpoint seleccionado por validación con su preprocesamiento; comprobar equivalencia numérica e inferencia CPU antes de habilitar predicción web. Conservar GPU, versiones y hashes del entorno original.
-6. Compilar el libro y comprobar rutas del dashboard. Publicar únicamente en un servicio E3 independiente y verificar sus enlaces.
+1. Conservar el ZIP original recibido y el notebook con salidas.
+2. Seleccionar y documentar la política de exportación usando validación; comprobar preprocesamiento e ida/vuelta numérica.
+3. Medir latencia y memoria CPU y validar entradas antes de habilitar predicción web.
+4. Mantener separados los resultados piloto y la evaluación final pendiente.
 
 ## Qué todavía exige evidencia adicional
 
 | Requisito | Situación y siguiente paso |
 |---|---|
-| Piloto ≥5 semillas | 1 completa reportada, segunda en época 11; recibir y verificar las cinco. |
+| Piloto ≥5 semillas | Cinco completas, recibidas y verificadas; piloto cerrado. |
 | Benchmark final ≥10 o tamaño mayor por potencia al 90 % | El piloto actual no lo completa. Calcular tamaño y fijar familia antes de nuevas corridas. |
 | Ablaciones de ≥3 componentes propios | Las de preprocesamiento E2 no las sustituyen; requieren variantes y corridas específicas. |
 | Tres conjuntos adicionales | Requieren auditoría, protocolo y evaluación de toda la familia. PCam observado no equivale automáticamente a prueba independiente. |

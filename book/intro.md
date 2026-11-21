@@ -1,6 +1,6 @@
 # NuCLS · Proyecto final E1 + E2 + E3
 
-**Corte: 20 de noviembre de 2026. Entrega prevista: 21 de noviembre, 10:00 a. m., Bogotá.**
+**Corte: 21 de noviembre de 2026. Entrega prevista: 21 de noviembre, 10:00 a. m., Bogotá.**
 
 Este libro reúne la evidencia acumulada: datos y tres modelos base de E1, comparación ampliada y correcciones de E2, y formulación y piloto CICO de E3. La integración documental no equivale a completar los experimentos pendientes.
 
@@ -13,6 +13,6 @@ Este libro reúne la evidencia acumulada: datos y tres modelos base de E1, compa
 - [Diseño CICO](05_modelo_diseno.md), [protocolo](06_protocolo_piloto.md) y [evaluación ampliada](08_evaluacion_ampliada.md).
 - [Estado exacto y pendientes de entrega](14_estado_entrega.md).
 
-El último registro comunicado informa 6101 completa (25 épocas) y 6102 en época 11; 6103–6105 sin épocas guardadas. No se han recibido aquí los checkpoints finales. E2/PCam permanece detenido según el último inventario comunicado. RunPod no fue intervenido para esta actualización.
+Cinco semillas piloto completas y verificadas desde el ZIP recibido el 21 de noviembre. Macro-F1 de validación: media 0.6682 ± DE 0.0372. No es un resultado de prueba ni una demostración de superioridad. [Resultados y verificación](14_resultados_piloto.md). E2/PCam sigue detenido según el último inventario; no se intervino RunPod.
 
 Se trabaja sobre copias de la evidencia. E1 y el ZIP E2 entregado conservan su identidad; este libro es una integración posterior fechada. [Dashboard del proyecto](https://nucls-entregable3.onrender.com/).

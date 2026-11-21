@@ -7,7 +7,7 @@ app.layout = html.Div([
     html.Header([html.A("NuCLS / RESEARCH", href="/", className="brand"),
         html.Nav([html.A("Proyecto",href="/"),html.A("Histología",href="/histologia"),html.A("Resultados E1–E2",href="/proyecto"),html.A("Datos y EDA",href="/datos"),html.A("CICO",href="/modelos"),html.A("Literatura",href="/investigacion"),html.A("Evidencia",href="/reproducibilidad"),html.A("Piloto",href="/piloto"),html.A("Libro",href="/libro/")])]),
     html.Main(dash.page_container),
-    html.Footer("NuCLS · Proyecto final · E1 + E2 + E3 · Corte: 20 noviembre 2026 · Resultados identificados por etapa")])
+    html.Footer("NuCLS · Proyecto final · E1 + E2 + E3 · Corte: 21 noviembre 2026 · Resultados identificados por etapa")])
 
 from flask import send_from_directory, jsonify, abort
 BOOK_HTML = Path(__file__).resolve().parent / 'book/_build/html'

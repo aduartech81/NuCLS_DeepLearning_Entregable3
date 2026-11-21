@@ -1,5 +1,5 @@
 {
-  "corte": "20 noviembre 2026, posterior al reporte 6102 época 11",
+  "corte": "21 noviembre 2026 · ZIP y notebook RunPod recibidos y verificados",
   "plazo": "21 noviembre 2026, 10:00 America/Bogota",
   "alcance": "Auditoría de evidencias disponibles y matriz local de requisitos; no certifica resultados aún no recibidos ni sustituye revisión del docente.",
   "items": [
@@ -62,8 +62,8 @@
       "componente": "Exportación e inferencia CPU",
       "estado": "Pendiente",
       "ubicacion": "Código preparado; función web no habilitada",
-      "evidencia": "No hay checkpoint CICO recibido localmente.",
-      "falta": "Seleccionar por validación, exportar pesos y metadata, verificar ida/vuelta numérica, latencia/memoria CPU, entradas inválidas/fuera de dominio e incertidumbre. Verificar comparadores exigidos (Top10, bases y original).",
+      "evidencia": "Cinco checkpoints CICO recibidos y verificados por hash; no ejecutados en esta auditoría.",
+      "falta": "Definir selección por validación, exportar pesos y metadata, verificar ida/vuelta numérica, latencia/memoria CPU, entradas inválidas/fuera de dominio e incertidumbre. Verificar comparadores exigidos (Top10, bases y original).",
       "dependencia": "Artefactos entrenados"
     },
     {
@@ -105,11 +105,11 @@
     {
       "etapa": "E3 I",
       "componente": "Piloto de cinco semillas",
-      "estado": "En curso, según registro comunicado",
-      "ubicacion": "6101 completa; 6102 época 11",
-      "evidencia": "6103–6105 sin épocas guardadas. 0 paquetes finales auditados aquí.",
-      "falta": "Completar 6102–6105; descargar resultados y notebook con salidas; importar, validar hashes y recalcular métricas.",
-      "dependencia": "RunPod existente; no interrumpir"
+      "estado": "Completo y verificado",
+      "ubicacion": "Libro y dashboard; ZIP respaldado",
+      "evidencia": "Cinco checkpoints y predicciones cotejados; 2.049 imágenes / 21 pacientes por semilla; macro-F1 recalculado.",
+      "falta": "No requiere repetir entrenamiento. Conservar archivos y separar piloto de evaluación final.",
+      "dependencia": "Ninguna para cerrar recepción del piloto"
     },
     {
       "etapa": "E3 I",
@@ -125,8 +125,8 @@
       "componente": "Libro y tabla maestra",
       "estado": "Integrado; cierre pendiente",
       "ubicacion": "Libro publicado",
-      "evidencia": "Capítulos acumulados, imágenes explicadas, mismos CSV históricos y matriz de estado común.",
-      "falta": "Incorporar evidencia final CICO en tabla común, fichas finales, entorno/contenedor completo, DOI y reproducción independiente.",
+      "evidencia": "Histología, tablas E1/E2 y cinco resultados CICO verificados integrados; misma fuente para libro/dashboard.",
+      "falta": "Completar evidencia del benchmark final, fichas de exportación, entorno/contenedor de inferencia, DOI y reproducción independiente.",
       "dependencia": "Resultados finales y tercero"
     },
     {
