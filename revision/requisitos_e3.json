@@ -4,76 +4,76 @@
     "componente": "Correcciones E2",
     "peso": 7,
     "requisito": "Trazabilidad con evidencia e impacto; auditoría de fuga; congelar resultados con hashes.",
-    "estado": "Parcial: ver tabla de correcciones."
+    "estado": "Parcial: completar observación–acción–evidencia–impacto, ranking antes/después y auditoría de fuga; congelar benchmarks sin reajuste con reserva."
   },
   {
     "bloque": "B",
     "componente": "Configuraciones y exportación",
     "peso": 7,
     "requisito": "Selección por validación; reentrenamiento de política común; exportación, metadata y round-trip; costo CPU.",
-    "estado": "Checkpoints recibidos y verificados por huellas; faltan exportación, round-trip y costo CPU."
+    "estado": "Parcial: CICO 6101 ONNX verificado y publicado. Falta selección por configuración media, política común de reentrenamiento/exportación de comparadores, costos CPU y metadatos completos."
   },
   {
     "bloque": "C",
     "componente": "Dashboard: contexto y EDA",
     "peso": 8,
     "requisito": "Dash multipágina, filtros globales y callbacks; datos, calidad, dominio e interpretación.",
-    "estado": "Publicado: contexto, EDA, histología y filtros por página. Pendiente validar filtros globales y móvil."
+    "estado": "Parcial: contexto/EDA/histología publicados. EDA tiene selector de característica, pero no filtros globales que actualicen todos los gráficos; falta QA tablet."
   },
   {
     "bloque": "D",
     "componente": "Dashboard: modelos",
     "peso": 9,
     "requisito": "Top10, baselines y original; inferencia CPU, incertidumbre, explicación y aviso fuera de dominio.",
-    "estado": "Referencias históricas y curva piloto disponibles; inferencia CPU aún no habilitada."
+    "estado": "Parcial: subida y predicción CICO funcionan. Faltan selector de modelos, calibración, cobertura, explicación local, detección fuera de dominio, latencia y comparación final completa."
   },
   {
     "bloque": "E",
     "componente": "Diseño, UX y despliegue",
     "peso": 5,
     "requisito": "Render Web Service independiente, responsividad, privacidad, validación de entrada y prueba de humo.",
-    "estado": "Render independiente publicado y probado en escritorio. Falta QA móvil y validación de entrada del futuro predictor."
+    "estado": "Parcial: Render probado y entrada validada; falta QA tablet/accesibilidad/memoria, consistencia automática y revisión CI. La guía pide dash-bootstrap-components, no instalado actualmente."
   },
   {
     "bloque": "F",
     "componente": "Original: revisión y diseño",
     "peso": 8,
     "requisito": "3 bases,5 cadenas, snowballing, fuente/adaptación, tercero; hipótesis falsable y bitácora.",
-    "estado": "Ningún mecanismo declarado original aún."
+    "estado": "Parcial: matriz y antecedentes existentes; falta acreditar 3 bases/5 cadenas, snowballing, actualización de búsqueda y tercero. No declarar novedad demostrada."
   },
   {
     "bloque": "G",
     "componente": "Original: implementación y demostración",
     "peso": 10,
     "requisito": "Mecanismo propio desde formulación; propiedad con prueba y comprobación numérica; ≥3 componentes aislados.",
-    "estado": "Candidato implementado y pruebas sintéticas previas; ablaciones propias no ejecutadas."
+    "estado": "Parcial: implementación y pruebas previas. Cola de 15 ablaciones en curso según último reporte; también faltan base sin componentes, componentes solos, controles de capacidad y explicación/fidelidad."
   },
   {
     "bloque": "H",
     "componente": "Evaluación ampliada",
     "peso": 10,
     "requisito": "3 conjuntos adicionales distintos en ≥2 ejes; toda la familia; mismos presupuestos; perturbaciones y escalabilidad.",
-    "estado": "No seleccionar conjuntos por buenos resultados. PCam ya observado no es automáticamente evidencia independiente."
+    "estado": "Pendiente: 3 datasets adicionales auditados que difieran en ≥2 ejes, misma tarea, toda la familia; sensibilidad, perturbaciones, escalabilidad y cambio de dominio."
   },
   {
     "bloque": "I",
     "componente": "Hipótesis y adecuación",
     "peso": 15,
     "requisito": "Piloto≥5; final≥10 o potencia90% superior; ≥3 pruebas por contraste, Holm, máximo p ajustado; potencia conjunta.",
-    "estado": "Piloto de cinco semillas completo y verificado desde ZIP. Benchmark final y potencia conjunta pendientes."
+    "estado": "Piloto CICO completo (5). Final pendiente: ≥10 semillas para toda la familia o más por potencia ≥0,90, ≥3 pruebas/contraste, Holm, máximo p ajustado, IC/efectos y potencia conjunta. No hay superioridad acreditada."
   },
   {
     "bloque": "J",
     "componente": "Jupyter Book",
     "peso": 14,
     "requisito": "12 capítulos; tabla maestra común, contenedor, DOI, fichas, autoría y reproducción independiente.",
-    "estado": "Libro integrado con histología, resultados piloto verificados y matriz común; faltan benchmark final, DOI y reproducción independiente."
+    "estado": "Parcial: libro compilado/publicado e integrado. Faltan contenidos experimentales finales, tabla maestra completa, protocolo final/tag previo, fichas, DOI, autoría firmada y reproducción independiente."
   },
   {
     "bloque": "K",
     "componente": "Sustentación",
     "peso": 7,
     "requisito": "20 minutos y demostración en vivo; explicación y modificación del mecanismo.",
-    "estado": "Preparar después de diseño, con ejercicios de defensa."
+    "estado": "Pendiente: exposición 20 minutos, demostración y explicación/modificación en vivo por el autor; diapositivas y ensayo final."
   }
 ]

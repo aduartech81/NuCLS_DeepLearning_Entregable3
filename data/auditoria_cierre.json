@@ -1,0 +1,322 @@
+{
+  "corte": "21 noviembre 2026 · revisión directa de las guías E2 (65 páginas) y E3 (60 páginas); inferencia pública comprobada",
+  "alcance": "Auditoría documental contra las guías originales y evidencias recibidas. El avance de ablaciones sigue siendo el último comunicado, no monitoreo en vivo. No acredita cumplimiento experimental total ni envío académico.",
+  "fuentes": [
+    {
+      "documento": "Entregable2DeepLearningProject.pdf",
+      "paginas": 65,
+      "sha256": "93499dcfda6a36d9621524a81821470017ba114ca6b08241a35de5a54f74a654"
+    },
+    {
+      "documento": "Entregable3DeepLearningProject.pdf",
+      "paginas": 60,
+      "sha256": "d6048aebd7b3db85a59231a5a89b01bc3f8ad8cb581a96b462e341d21ff1f364"
+    }
+  ],
+  "filas": [
+    {
+      "entregable": "E2",
+      "id": "01",
+      "requisito": "Problema, RQ, hipótesis y utilidad",
+      "guia": "Sección 1",
+      "estado": "Documentado; cierre parcial",
+      "falta_o_condicion": "Responder cada RQ con cifras y límites del benchmark final."
+    },
+    {
+      "entregable": "E2",
+      "id": "02",
+      "requisito": "Contrato de datos, particiones y fuga",
+      "guia": "Sección 10",
+      "estado": "Parcial",
+      "falta_o_condicion": "Completar auditoría de pacientes/duplicados/transformaciones; documentar reserva expuesta y hashes."
+    },
+    {
+      "entregable": "E2",
+      "id": "03",
+      "requisito": "EDA orientado a decisiones",
+      "guia": "Sección 2",
+      "estado": "Parcial",
+      "falta_o_condicion": "Integrado con histología; cotejar todas las decisiones, segmentos y controles con los datos finales."
+    },
+    {
+      "entregable": "E2",
+      "id": "04",
+      "requisito": "Búsqueda sistemática y PRISMA",
+      "guia": "Sección 3.1",
+      "estado": "Parcial",
+      "falta_o_condicion": "Conservar consultas exactas, fechas, filtros y conteos en ≥2 bases primarias; búsquedas de mecanismos en ≥3 modalidades. arXiv es complemento."
+    },
+    {
+      "entregable": "E2",
+      "id": "05",
+      "requisito": "Cribado y sensibilidad del ranking",
+      "guia": "Sección 3.1–3.2",
+      "estado": "Parcial",
+      "falta_o_condicion": "166 fichas; completar 12 textos no recuperados, tabla de puntuación total, exclusiones y sensibilidad."
+    },
+    {
+      "entregable": "E2",
+      "id": "06",
+      "requisito": "Top 10 diverso",
+      "guia": "Sección 3.2",
+      "estado": "Documentado; verificación bibliográfica parcial",
+      "falta_o_condicion": "Diez candidatos adicionales y tres bases integrados; completar campos NR y comprobar fuentes de cada ficha."
+    },
+    {
+      "entregable": "E2",
+      "id": "07",
+      "requisito": "Fichas completas, diagramas y análisis crítico",
+      "guia": "Sección 3.3",
+      "estado": "Parcial",
+      "falta_o_condicion": "Completar campos no reportados con fuentes verificadas, motivación y diagrama por modelo."
+    },
+    {
+      "entregable": "E2",
+      "id": "08",
+      "requisito": "Gap y limitación cuantificada",
+      "guia": "Sección 3.4 y 5",
+      "estado": "Parcial",
+      "falta_o_condicion": "Justificar limitación medible, hipótesis falsable y probar su presencia en ≥3 Top10."
+    },
+    {
+      "entregable": "E2",
+      "id": "09",
+      "requisito": "Preregistro y control de decisiones",
+      "guia": "Sección 9",
+      "estado": "Parcial",
+      "falta_o_condicion": "Distinguir decisiones previas de posteriores; congelar correcciones sin fingir preregistro retrospectivo."
+    },
+    {
+      "entregable": "E2",
+      "id": "10",
+      "requisito": "Equidad de ajuste y búsqueda condicional",
+      "guia": "Sección 4.1–4.4,11,14",
+      "estado": "Parcial",
+      "falta_o_condicion": "Cotejar presupuestos, espacios, regularización, criterio común y costo de búsqueda; 1000 arquitecturas solo donde aplique §14."
+    },
+    {
+      "entregable": "E2",
+      "id": "11",
+      "requisito": "Auditoría de corridas y predicciones",
+      "guia": "Sección 4",
+      "estado": "Parcial",
+      "falta_o_condicion": "66 registros de desarrollo disponibles; falta cerrar cotejo de todas las predicciones y curvas. Distintos de las 65 evaluaciones de reserva."
+    },
+    {
+      "entregable": "E2",
+      "id": "12",
+      "requisito": "Repeticiones y potencia",
+      "guia": "Sección 4.3 y 9.2",
+      "estado": "Piloto disponible; cierre parcial",
+      "falta_o_condicion": "13 arquitecturas × 5 en reserva; justificar R por potencia ≥0,80 o declarar MDE y límites. No repetir las 65 evaluaciones ya cerradas."
+    },
+    {
+      "entregable": "E2",
+      "id": "13",
+      "requisito": "Baselines trivial y clásico",
+      "guia": "Sección 4.1",
+      "estado": "Evaluados; ajuste por verificar",
+      "falta_o_condicion": "estado.json del cierre 65 confirma mayoritaria y logística guardada evaluadas. Falta acreditar suficiencia del ajuste del clásico."
+    },
+    {
+      "entregable": "E2",
+      "id": "14",
+      "requisito": "Costos y eficiencia",
+      "guia": "Sección 11.4",
+      "estado": "Parcial",
+      "falta_o_condicion": "Costos GPU, parámetros, FLOPs y Pareto históricos integrados. Completar costo total de búsqueda y condiciones comparables."
+    },
+    {
+      "entregable": "E2",
+      "id": "15",
+      "requisito": "Inferencia y agregación estadística",
+      "guia": "Sección 6.3,7.3,13",
+      "estado": "Calculado con límites",
+      "falta_o_condicion": "Cierre 65 contiene contrastes, Holm, Friedman/Nemenyi y CD; integrar adecuación, potencia y tres pruebas admisibles por contraste. Reserva expuesta y seis pacientes limitan inferencia."
+    },
+    {
+      "entregable": "E2",
+      "id": "16",
+      "requisito": "Ajuste/sobreajuste y sanidad",
+      "guia": "Sección 4.5",
+      "estado": "Parcial",
+      "falta_o_condicion": "Sanidad positiva Inception (33 recortes) y brechas disponibles; completar controles exigidos de ajuste/sobreajuste y respetar dependencia por paciente."
+    },
+    {
+      "entregable": "E2",
+      "id": "17",
+      "requisito": "Calibración y segmentos",
+      "guia": "Sección 4.5",
+      "estado": "Parcial",
+      "falta_o_condicion": "ECE fijo/adaptativo, Brier y brechas integrados; pendiente calibración independiente, pendiente/intercepto e IC por subgrupo."
+    },
+    {
+      "entregable": "E2",
+      "id": "18",
+      "requisito": "Robustez y dominio",
+      "guia": "Sección 4.6",
+      "estado": "Parcial; evidencia por consolidar",
+      "falta_o_condicion": "Separar robustez histórica de la nueva evaluación; verificar tres severidades, curva e índice, cambio de dominio y remuestreo por paciente."
+    },
+    {
+      "entregable": "E2",
+      "id": "19",
+      "requisito": "Explicabilidad y fidelidad",
+      "guia": "Sección 4.6",
+      "estado": "Parcial; falla identificada",
+      "falta_o_condicion": "144 mapas examinados; 48/48 de Inception constantes. Corregir explicación del modelo principal y verificar fidelidad/estabilidad."
+    },
+    {
+      "entregable": "E2",
+      "id": "20",
+      "requisito": "Ablaciones del mejor modelo",
+      "guia": "Sección 4.6",
+      "estado": "Ejecutada para tres intervenciones",
+      "falta_o_condicion": "15 corridas de preprocesamiento E2 integradas; inferencia sin significación. No confundir con ablaciones CICO ni inferir equivalencia."
+    },
+    {
+      "entregable": "E2",
+      "id": "21",
+      "requisito": "Incertidumbre y cobertura",
+      "guia": "Sección 12.2",
+      "estado": "Parcial",
+      "falta_o_condicion": "Ensambles, entropía y riesgo-retención disponibles; faltan cobertura nominal/empírica y condicional cuando aplique."
+    },
+    {
+      "entregable": "E2",
+      "id": "22",
+      "requisito": "Techo y margen gamma",
+      "guia": "Sección 12.1",
+      "estado": "Pendiente",
+      "falta_o_condicion": "Estimar techo comparable y gamma; multi-rater es una opción, no la única permitida. No convertir kappa directamente en macro-F1."
+    },
+    {
+      "entregable": "E2",
+      "id": "23",
+      "requisito": "Análisis de 100 errores/modelo",
+      "guia": "Sección 12.3",
+      "estado": "Pendiente",
+      "falta_o_condicion": "Galería 36 casos no equivale a 100 errores adjudicados por modelo; faltan taxonomía excluyente, IC, errores compartidos y segmentos."
+    },
+    {
+      "entregable": "E2",
+      "id": "24",
+      "requisito": "Paper guía y réplica PCam",
+      "guia": "Sección 5",
+      "estado": "PCam detenido; recuperación preparada",
+      "falta_o_condicion": "8301 completa; 8302 guardada en 16; faltan 4 épocas de 8302 y 60 de 8303–8305, más evaluación. Reportar discrepancia/IC respecto del paper y limitación cuantificada en ≥3 modelos."
+    },
+    {
+      "entregable": "E2",
+      "id": "25",
+      "requisito": "Reproducción independiente y entorno",
+      "guia": "Sección 8",
+      "estado": "Parcial",
+      "falta_o_condicion": "Entorno y checkpoints conservados; faltan reproducción independiente, auditoría completa de bases y comparación numérica."
+    },
+    {
+      "entregable": "E2",
+      "id": "26",
+      "requisito": "Libro, resultados y entrega",
+      "guia": "Sección 15 y requisitos finales",
+      "estado": "Publicado; cierre científico parcial",
+      "falta_o_condicion": "Libro/dashboard E3 integran E1/E2; no modificar el ZIP E2 entregado. Correcciones se documentan en nueva versión E3."
+    },
+    {
+      "entregable": "E2",
+      "id": "27",
+      "requisito": "Sustentación y autoría",
+      "guia": "Sección requisitos finales",
+      "estado": "Pendiente de acreditación",
+      "falta_o_condicion": "Ensayo y defensa técnica por el autor; no se certifican por disponer de un guion."
+    },
+    {
+      "entregable": "E3",
+      "id": "A",
+      "requisito": "Correcciones E2 (7%)",
+      "guia": "§4, pp.4–5",
+      "estado": "Parcial / pendiente",
+      "falta_o_condicion": "Parcial: completar observación–acción–evidencia–impacto, ranking antes/después y auditoría de fuga; congelar benchmarks sin reajuste con reserva."
+    },
+    {
+      "entregable": "E3",
+      "id": "B",
+      "requisito": "Configuraciones y exportación (7%)",
+      "guia": "§5, pp.5–7",
+      "estado": "Parcial / pendiente",
+      "falta_o_condicion": "Parcial: CICO 6101 ONNX verificado y publicado. Falta selección por configuración media, política común de reentrenamiento/exportación de comparadores, costos CPU y metadatos completos."
+    },
+    {
+      "entregable": "E3",
+      "id": "C",
+      "requisito": "Dashboard: contexto y EDA (8%)",
+      "guia": "§9.4.1–2, p.32",
+      "estado": "Parcial / pendiente",
+      "falta_o_condicion": "Parcial: contexto/EDA/histología publicados. EDA tiene selector de característica, pero no filtros globales que actualicen todos los gráficos; falta QA tablet."
+    },
+    {
+      "entregable": "E3",
+      "id": "D",
+      "requisito": "Dashboard: modelos (9%)",
+      "guia": "§9.4.3, pp.33–34",
+      "estado": "Parcial / pendiente",
+      "falta_o_condicion": "Parcial: subida y predicción CICO funcionan. Faltan selector de modelos, calibración, cobertura, explicación local, detección fuera de dominio, latencia y comparación final completa."
+    },
+    {
+      "entregable": "E3",
+      "id": "E",
+      "requisito": "Diseño, UX y despliegue (5%)",
+      "guia": "§9.5–10, pp.34–37",
+      "estado": "Parcial / pendiente",
+      "falta_o_condicion": "Parcial: Render probado y entrada validada; falta QA tablet/accesibilidad/memoria, consistencia automática y revisión CI. La guía pide dash-bootstrap-components, no instalado actualmente."
+    },
+    {
+      "entregable": "E3",
+      "id": "F",
+      "requisito": "Original: revisión y diseño (8%)",
+      "guia": "§6.3–7, pp.11–20",
+      "estado": "Parcial / pendiente",
+      "falta_o_condicion": "Parcial: matriz y antecedentes existentes; falta acreditar 3 bases/5 cadenas, snowballing, actualización de búsqueda y tercero. No declarar novedad demostrada."
+    },
+    {
+      "entregable": "E3",
+      "id": "G",
+      "requisito": "Original: implementación y demostración (10%)",
+      "guia": "§6.5 y 7.4, pp.13–20",
+      "estado": "Parcial / pendiente",
+      "falta_o_condicion": "Parcial: implementación y pruebas previas. Cola de 15 ablaciones en curso según último reporte; también faltan base sin componentes, componentes solos, controles de capacidad y explicación/fidelidad."
+    },
+    {
+      "entregable": "E3",
+      "id": "H",
+      "requisito": "Evaluación ampliada (10%)",
+      "guia": "§8.3 y 8.8, pp.23,28–29",
+      "estado": "Parcial / pendiente",
+      "falta_o_condicion": "Pendiente: 3 datasets adicionales auditados que difieran en ≥2 ejes, misma tarea, toda la familia; sensibilidad, perturbaciones, escalabilidad y cambio de dominio."
+    },
+    {
+      "entregable": "E3",
+      "id": "I",
+      "requisito": "Hipótesis y adecuación (15%)",
+      "guia": "§8, pp.21–29",
+      "estado": "Parcial / pendiente",
+      "falta_o_condicion": "Piloto CICO completo (5). Final pendiente: ≥10 semillas para toda la familia o más por potencia ≥0,90, ≥3 pruebas/contraste, Holm, máximo p ajustado, IC/efectos y potencia conjunta. No hay superioridad acreditada."
+    },
+    {
+      "entregable": "E3",
+      "id": "J",
+      "requisito": "Jupyter Book (14%)",
+      "guia": "§11–12 y tabla7, pp.38–40,58",
+      "estado": "Parcial / pendiente",
+      "falta_o_condicion": "Parcial: libro compilado/publicado e integrado. Faltan contenidos experimentales finales, tabla maestra completa, protocolo final/tag previo, fichas, DOI, autoría firmada y reproducción independiente."
+    },
+    {
+      "entregable": "E3",
+      "id": "K",
+      "requisito": "Sustentación (7%)",
+      "guia": "§13, pp.40–41",
+      "estado": "Pendiente",
+      "falta_o_condicion": "Pendiente: exposición 20 minutos, demostración y explicación/modificación en vivo por el autor; diapositivas y ensayo final."
+    }
+  ]
+}

@@ -40,6 +40,7 @@ La variación entre semillas no sustituye incertidumbre por paciente. Cinco semi
 
 ## Qué se verificó
 
-Código y configuración frente al piloto local; integridad del ZIP; hashes de pesos y predicciones; cinco semillas con una misma identidad; historias continuas; coherencia de mejor época; 2.049 predicciones de 21 pacientes por semilla, mismo orden y clases; probabilidades válidas y macro-F1 recalculado. No se ejecutaron los checkpoints para esta auditoría. La equivalencia de exportación y la inferencia CPU siguen pendientes.
+Código y configuración frente al piloto local; integridad del ZIP; hashes de pesos y predicciones; cinco semillas con una misma identidad; historias continuas; coherencia de mejor época; 2.049 predicciones de 21 pacientes por semilla, mismo orden y clases; probabilidades válidas y macro-F1 recalculado. No se ejecutaron los checkpoints para esta auditoría. Actualización posterior: CICO 6101 se exportó y verificó sobre 2.049 imágenes; su inferencia CPU se publicó y comprobó en Render. Ver capítulo 16.
 
 Se conservó también el notebook con sus salidas. Contiene un error histórico de lanzamiento duplicado; no se borró ese historial. La presencia de resultados finales coherentes se verificó con los archivos, no solo con la consola.
+

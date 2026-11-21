@@ -39,3 +39,8 @@ Referencia técnica: [API de ONNX Runtime](https://onnxruntime.ai/docs/api/pytho
 ## Verificación completa del flujo de imágenes
 
 Se cotejaron las 2.049 imágenes originales de validación (21 pacientes), sus huellas y el manifiesto, usando el mismo decodificador, normalización y modelo ONNX del formulario. Las 2.049 clases predichas coinciden con el registro de RunPod; el error máximo de probabilidad fue 3,7252903 × 10⁻⁷. Es una comprobación de equivalencia, no un conjunto de prueba independiente. Las siete pruebas de entradas e integridad pasaron.
+
+
+## Prueba pública en Render
+
+El 21 de noviembre se publicó el commit `e1aaf882516020400a748df0e07b5e1eb569364b`. Desde Safari se cargó un recorte de validación y se obtuvo tumor 93,7%, linfocito 2,5%, estroma 3,8%, coincidiendo con el checkpoint. El endpoint rechazó dimensiones incorrectas y bloqueó el análisis sin confirmación. El estado público confirmó modelo disponible. Esto verifica funcionamiento, no calibración ni capacidad clínica.

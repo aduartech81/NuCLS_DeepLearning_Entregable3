@@ -1,7 +1,7 @@
 {
-  "corte": "21 noviembre 2026 · ZIP y notebook RunPod recibidos y verificados",
+  "corte": "21 noviembre 2026 · revisión directa de las guías E2 (65 páginas) y E3 (60 páginas); inferencia pública comprobada",
   "plazo": "21 noviembre 2026, 10:00 America/Bogota",
-  "alcance": "Auditoría de evidencias disponibles y matriz local de requisitos; no certifica resultados aún no recibidos ni sustituye revisión del docente.",
+  "alcance": "Auditoría documental contra las guías originales y evidencias recibidas. El avance de ablaciones sigue siendo el último comunicado, no monitoreo en vivo. No acredita cumplimiento experimental total ni envío académico.",
   "items": [
     {
       "etapa": "E1",
@@ -36,7 +36,7 @@
       "estado": "Parcial",
       "ubicacion": "Libro y dashboard",
       "evidencia": "36 núcleos, 21 pacientes, 18 aciertos y 18 discrepancias de tres modelos; huellas cotejadas.",
-      "falta": "Revisión de 100 errores por modelo principal, taxonomía y acuerdo/techo multi-rater con anotaciones independientes.",
+      "falta": "100 errores por modelo principal con taxonomía/IC, errores compartidos y techo comparable (la guía admite acuerdo multi-rater u otra cota justificada); calcular distancia gamma.",
       "dependencia": "Revisión humana y anotaciones"
     },
     {
@@ -60,10 +60,10 @@
     {
       "etapa": "E3 B/D",
       "componente": "Exportación e inferencia CPU",
-      "estado": "CICO exportado; verificación local completada",
-      "ubicacion": "Código preparado; función web no habilitada",
-      "evidencia": "CICO 6101 exportado; 2.049/2.049 clases idénticas a RunPod usando las imágenes originales; hash ONNX y 7 pruebas de entradas/integridad.",
-      "falta": "Verificar inferencia en Render y medir memoria/latencia del servidor; calibración, fuera de dominio y exportación de comparadores pendientes.",
+      "estado": "CICO publicado y probado en Render",
+      "ubicacion": "/prediccion y libro/16_exportacion_inferencia.html",
+      "evidencia": "CICO 6101 exportado; 2.049/2.049 clases idénticas a RunPod usando las imágenes originales; hash ONNX y 7 pruebas de entradas/integridad. Prueba pública desde Safari: tumor 93,7%, linfocito 2,5%, estroma 3,8%; rechazo de dimensiones incorrectas y confirmación obligatoria verificados.",
+      "falta": "Exportar comparadores bajo política común, selector, probabilidades calibradas, incertidumbre con cobertura, explicación local, detección fuera de dominio y latencia/memoria del servidor.",
       "dependencia": "Artefactos entrenados"
     },
     {
@@ -72,7 +72,7 @@
       "estado": "Publicado; verificación parcial",
       "ubicacion": "Render",
       "evidencia": "Portal integrado, histología, filtros por página y libro; pruebas locales y escritorio.",
-      "falta": "Comprobar responsividad móvil, filtros globales exigidos y flujo de predicción cuando exista inferencia. No hay prueba móvil acreditada.",
+      "falta": "Filtros globales para todos los gráficos de EDA, QA tablet/móvil, tabla completa con costos y diagnósticos del modelo elegido. La predicción CICO básica ya funciona.",
       "dependencia": "QA web y modelo"
     },
     {
@@ -90,7 +90,7 @@
       "estado": "En ejecución reportada; parcial",
       "ubicacion": "Implementación y propiedades sintéticas",
       "evidencia": "Tres variantes × cinco semillas: cuatro completas reportadas, una reanudada con época 3 guardada, diez pendientes.",
-      "falta": "Recibir y verificar las quince corridas; análisis emparejado y control sin D4 aún pendiente.",
+      "falta": "Recibir y verificar 15 corridas; completar base sin componentes y cada componente añadido solo (guía §7.4), control sin D4 y capacidad cuando corresponda; inferencia emparejada con Holm. No cambiar la cola en curso.",
       "dependencia": "Entrenamiento adicional"
     },
     {
@@ -126,7 +126,7 @@
       "estado": "Integrado; cierre pendiente",
       "ubicacion": "Libro publicado",
       "evidencia": "Histología, tablas E1/E2 y cinco resultados CICO verificados integrados; misma fuente para libro/dashboard.",
-      "falta": "Completar evidencia del benchmark final, fichas de exportación, entorno/contenedor de inferencia, DOI y reproducción independiente.",
+      "falta": "Benchmark final y tabla maestra completa; fichas MODEL_CARD/DATA_STATEMENT, CITATION/licencia, protocolo final con tag previo, DOI, autoría firmada y reproducción por tercero. Contenedor web existente no acredita reproducción independiente.",
       "dependencia": "Resultados finales y tercero"
     },
     {

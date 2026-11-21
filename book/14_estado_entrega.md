@@ -1,16 +1,12 @@
 # Estado de entrega: evidencia y pendientes
 
-**Fecha límite: sábado 21 de noviembre de 2026, 10:00 a. m. Bogotá.** Corte del 21 de noviembre: cinco semillas piloto recibidas y verificadas. Este estado es el mismo que muestra el dashboard, generado desde `data/estado_entrega.json`.
+21 noviembre 2026 · revisión directa de las guías E2 (65 páginas) y E3 (60 páginas); inferencia pública comprobada.
 
-## Diagnóstico
+Auditoría documental contra las guías originales y evidencias recibidas. El avance de ablaciones sigue siendo el último comunicado, no monitoreo en vivo. No acredita cumplimiento experimental total ni envío académico.
 
-Libro y dashboard reúnen la evidencia disponible de E1, E2 y E3. **No está acreditado el cumplimiento experimental total.** Publicar y documentar no resuelve PCam, el benchmark final, las ablaciones propias ni los conjuntos externos. Tampoco puede garantizarse completar esas brechas antes de la fecha límite con el tiempo de ejecución disponible.
+[Auditoría detallada de las guías E2/E3](17_auditoria_cierre.md). La fecha prevista fue 21 noviembre, 10:00 Bogotá; esta revisión no acredita envío dentro de plazo.
 
-La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en el proyecto. Distingue evidencia integrada, avance comunicado y verificación pendiente; no convierte archivos antiguos de auditoría en nuevos experimentos.
-
-## Matriz única de cierre
-
-### E1 · Integración de evidencia
+## E1 · Integración de evidencia
 
 **Estado:** Integrado.
 
@@ -18,7 +14,7 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 **Falta:** Conservar las diferencias entre el corte E1 y el manifiesto V2; no modificar originales.
 
-### E2 · Benchmark histórico y correcciones
+## E2 · Benchmark histórico y correcciones
 
 **Estado:** Integrado con límites.
 
@@ -26,7 +22,7 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 **Falta:** Cerrar la auditoría de las 66 corridas base y sus predicciones/curvas; no confundirlas con 65 evaluaciones de reserva.
 
-### E2 · PCam
+## E2 · PCam
 
 **Estado:** Detenido; recuperación preparada.
 
@@ -34,15 +30,15 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 **Falta:** Comprobar entorno aislado en RunPod, cargar optimizador y reanudar; descargar datos oficiales; completar semillas y evaluación. Esperar GPU libre de E3.
 
-### E2 · Histología y análisis de errores
+## E2 · Histología y análisis de errores
 
 **Estado:** Parcial.
 
 **Evidencia:** 36 núcleos, 21 pacientes, 18 aciertos y 18 discrepancias de tres modelos; huellas cotejadas.
 
-**Falta:** Revisión de 100 errores por modelo principal, taxonomía y acuerdo/techo multi-rater con anotaciones independientes.
+**Falta:** 100 errores por modelo principal con taxonomía/IC, errores compartidos y techo comparable (la guía admite acuerdo multi-rater u otra cota justificada); calcular distancia gamma.
 
-### E2 · Explicabilidad y fidelidad
+## E2 · Explicabilidad y fidelidad
 
 **Estado:** Parcial.
 
@@ -50,7 +46,7 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 **Falta:** Corregir capa o método y repetir fidelidad/estabilidad; completar incertidumbre y cobertura no acreditadas.
 
-### E3 A · Correcciones, fuga y congelación
+## E3 A · Correcciones, fuga y congelación
 
 **Estado:** Parcial.
 
@@ -58,23 +54,23 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 **Falta:** Auditar archivos primarios completos, pacientes/duplicados/versiones y congelar paquete final con hashes.
 
-### E3 B/D · Exportación e inferencia CPU
+## E3 B/D · Exportación e inferencia CPU
 
-**Estado:** CICO exportado; verificación local completada.
+**Estado:** CICO publicado y probado en Render.
 
-**Evidencia:** CICO 6101 exportado; 2.049/2.049 clases idénticas a RunPod usando las imágenes originales; hash ONNX y 7 pruebas de entradas/integridad.
+**Evidencia:** CICO 6101 exportado; 2.049/2.049 clases idénticas a RunPod usando las imágenes originales; hash ONNX y 7 pruebas de entradas/integridad. Prueba pública desde Safari: tumor 93,7%, linfocito 2,5%, estroma 3,8%; rechazo de dimensiones incorrectas y confirmación obligatoria verificados.
 
-**Falta:** Verificar inferencia en Render y medir memoria/latencia del servidor; calibración, fuera de dominio y exportación de comparadores pendientes.
+**Falta:** Exportar comparadores bajo política común, selector, probabilidades calibradas, incertidumbre con cobertura, explicación local, detección fuera de dominio y latencia/memoria del servidor.
 
-### E3 C/E · Dashboard e integración visual
+## E3 C/E · Dashboard e integración visual
 
 **Estado:** Publicado; verificación parcial.
 
 **Evidencia:** Portal integrado, histología, filtros por página y libro; pruebas locales y escritorio.
 
-**Falta:** Comprobar responsividad móvil, filtros globales exigidos y flujo de predicción cuando exista inferencia. No hay prueba móvil acreditada.
+**Falta:** Filtros globales para todos los gráficos de EDA, QA tablet/móvil, tabla completa con costos y diagnósticos del modelo elegido. La predicción CICO básica ya funciona.
 
-### E3 F · Originalidad y revisión externa
+## E3 F · Originalidad y revisión externa
 
 **Estado:** Parcial.
 
@@ -82,15 +78,15 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 **Falta:** Completar evidencia de 3 bases/5 cadenas/snowballing, textos pendientes, fuente/adaptación y evaluación por tercero; no declarar novedad probada.
 
-### E3 G · Mecanismo y ablaciones propias
+## E3 G · Mecanismo y ablaciones propias
 
 **Estado:** En ejecución reportada; parcial.
 
 **Evidencia:** Tres variantes × cinco semillas: cuatro completas reportadas, una reanudada con época 3 guardada, diez pendientes.
 
-**Falta:** Recibir y verificar las quince corridas; análisis emparejado y control sin D4 aún pendiente.
+**Falta:** Recibir y verificar 15 corridas; completar base sin componentes y cada componente añadido solo (guía §7.4), control sin D4 y capacidad cuando corresponda; inferencia emparejada con Holm. No cambiar la cola en curso.
 
-### E3 H · Tres conjuntos adicionales
+## E3 H · Tres conjuntos adicionales
 
 **Estado:** Pendiente.
 
@@ -98,7 +94,7 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 **Falta:** Auditar solapamiento/etiquetas/licencia, diferencias en ≥2 ejes; evaluar toda la familia con presupuestos comparables, perturbaciones y escalabilidad.
 
-### E3 I · Piloto de cinco semillas
+## E3 I · Piloto de cinco semillas
 
 **Estado:** Completo y verificado.
 
@@ -106,7 +102,7 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 **Falta:** No requiere repetir entrenamiento. Conservar archivos y separar piloto de evaluación final.
 
-### E3 I · Benchmark final y potencia
+## E3 I · Benchmark final y potencia
 
 **Estado:** Pendiente.
 
@@ -114,15 +110,15 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 **Falta:** Dimensionar por potencia al 90 % y mínimo ≥10; toda la familia, ≥3 pruebas por contraste, Holm, máximo p ajustado y potencia conjunta.
 
-### E3 J · Libro y tabla maestra
+## E3 J · Libro y tabla maestra
 
 **Estado:** Integrado; cierre pendiente.
 
 **Evidencia:** Histología, tablas E1/E2 y cinco resultados CICO verificados integrados; misma fuente para libro/dashboard.
 
-**Falta:** Completar evidencia del benchmark final, fichas de exportación, entorno/contenedor de inferencia, DOI y reproducción independiente.
+**Falta:** Benchmark final y tabla maestra completa; fichas MODEL_CARD/DATA_STATEMENT, CITATION/licencia, protocolo final con tag previo, DOI, autoría firmada y reproducción por tercero. Contenedor web existente no acredita reproducción independiente.
 
-### E3 K · Sustentación
+## E3 K · Sustentación
 
 **Estado:** Guion disponible; no ensayada.
 
@@ -130,7 +126,7 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 **Falta:** Preparar diapositivas definitivas, ensayar demostración y explicación/modificación del mecanismo; respaldo local comprobado.
 
-### Entrega · Congelación y envío final
+## Entrega · Congelación y envío final
 
 **Estado:** Pendiente.
 
@@ -138,16 +134,3 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 **Falta:** Congelar versión, descargar respaldo independiente, generar hashes, revisar enlaces y adjuntos y enviar por el canal oficial.
 
-
-## Orden operativo hasta las 10:00
-
-1. Piloto recibido y respaldado: no relanzarlo.
-2. Priorizar exportación y comprobación CPU; mantener publicada solo la funcionalidad verificada.
-3. Consolidar resultados y limitaciones; el benchmark final, las ablaciones propias, los conjuntos externos y PCam siguen siendo brechas separadas.
-4. Antes de las 09:00, congelar evidencia verificable; 09:00–09:30, prueba de enlaces, libro, descargas y respaldo; 09:30–10:00, envío académico y comprobante. Es una planificación propuesta, no garantía de completar experimentos.
-
-[Resultados piloto verificados](14_resultados_piloto.md).
-
-## Actualización de ablaciones y PCam
-
-[Consultar el avance reportado, límites y transición preparada](15_ablaciones_y_transicion.md). PCam dispone ahora de respaldo local verificado y cuaderno de recuperación; todavía no se inició en RunPod. Las ablaciones registran cuatro corridas completas reportadas, no quince verificadas.

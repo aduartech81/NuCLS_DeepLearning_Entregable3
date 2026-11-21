@@ -15,7 +15,7 @@ La publicación reúne E1, E2 y E3 en [el portal del proyecto](https://nucls-ent
 
 No se mezclan las corridas de distintas etapas. Las barras de error de la reserva representan desviación entre semillas; los intervalos por paciente se muestran por separado. Las tablas permiten ordenar, filtrar y exportar CSV. Los histogramas de calidad se publican agregados, sin identificadores de pacientes. El ancho del diagrama de flujo conceptual no cuantifica datos.
 
-La inferencia CPU de CICO requiere recibir y validar pesos, preprocesamiento y exportación. La web no presenta predicciones aleatorias ni convierte el piloto en un benchmark final. PCam E2 continúa detenido según el último inventario recibido.
+La inferencia CPU de CICO 6101 está publicada y comprobada en /prediccion; conserva el preprocesamiento verificado. Faltan calibración, explicación local, incertidumbre y selector de comparadores. La web no presenta predicciones aleatorias ni convierte el piloto en un benchmark final. PCam E2 continúa detenido según el último inventario recibido.
 
 
 ## Histología integrada
@@ -23,3 +23,4 @@ La inferencia CPU de CICO requiere recibir y validar pesos, preprocesamiento y e
 La [galería histológica](https://nucls-entregable3.onrender.com/histologia) reúne 36 núcleos diferentes de 21 pacientes de validación: 18 aciertos y 18 discrepancias seleccionados de tres modelos históricos, semilla 6113. Permite filtrar por clase, modelo y resultado; comparar el campo limpio con la anotación original, ampliar las imágenes y consultar probabilidades registradas.
 
 El campo de contexto no se presenta como la entrada exacta de 128 × 128. El contorno amarillo proviene de las coordenadas originales y no representa Grad-CAM. La selección ilustrativa no estima tasas. Las predicciones de CICO todavía no se han incorporado.
+

@@ -8,12 +8,13 @@ El ejecutor guarda checkpoints por época, estado del optimizador y generadores 
 
 ## Paquete web
 
-`requirements.txt` define dependencias del servidor; `requirements-book.txt`, las del libro. Docker incluye la compilación HTML verificada del libro y arranca Gunicorn. El libro se recompila antes de empaquetar cambios documentales. Se incluyen 36 campos del conjunto público NuCLS y sus anotaciones históricas cotejadas, con procedencia y hashes. No hay carga pública de nuevas imágenes. Se recibieron y verificaron los checkpoints CICO, conservados fuera del paquete web; su exportación e inferencia CPU están pendientes.
+`requirements.txt` define dependencias del servidor; `requirements-book.txt`, las del libro. Docker incluye la compilación HTML verificada del libro y arranca Gunicorn. El libro se recompila antes de empaquetar cambios documentales. Se incluyen 36 campos del conjunto público NuCLS y sus anotaciones históricas cotejadas, con procedencia y hashes. La carga pública de recortes está habilitada en /prediccion. CICO 6101 se exportó a ONNX y se probó en Render; los archivos subidos se procesan en memoria. No se publican los checkpoints de entrenamiento completos.
 
-El manifiesto de publicación registra hashes de los archivos distribuidos. Esto verifica identidad de archivos, no validez científica de las conclusiones. La exportación ONNX futura debe comprobar equivalencia sobre imágenes de verificación; la fixture sintética previa no constituye un modelo clínico.
+El manifiesto de publicación registra hashes de los archivos distribuidos. Esto verifica identidad de archivos, no validez científica de las conclusiones. La exportación ONNX se cotejó con 2.049 imágenes originales de validación y con pruebas de entrada; no constituye validación clínica. Véase el capítulo 16.
 
 ## Autoría y defensa
 
 Se declara asistencia de IA para preparación de código, documentación y revisión. El autor debe comprender y defender las decisiones, verificar referencias y asumir responsabilidad por el informe. La revisión por un tercero y la réplica independiente no se declaran realizadas.
 
 Guion de 20 minutos: problema/datos (3), antecedentes e hipótesis (4), mecanismo y propiedad (4), diseño y resultados disponibles (5), demostración y límites (4). Explicar por qué ocho vistas no son ocho pacientes y por qué la reserva E2 no es una confirmación nueva.
+
