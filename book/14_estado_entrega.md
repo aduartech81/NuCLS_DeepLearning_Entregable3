@@ -60,11 +60,11 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 ### E3 B/D · Exportación e inferencia CPU
 
-**Estado:** Pendiente.
+**Estado:** CICO exportado; verificación local completada.
 
-**Evidencia:** Cinco checkpoints CICO recibidos y verificados por hash; no ejecutados en esta auditoría.
+**Evidencia:** CICO 6101 exportado; 2.049/2.049 clases idénticas a RunPod usando las imágenes originales; hash ONNX y 7 pruebas de entradas/integridad.
 
-**Falta:** Definir selección por validación, exportar pesos y metadata, verificar ida/vuelta numérica, latencia/memoria CPU, entradas inválidas/fuera de dominio e incertidumbre. Verificar comparadores exigidos (Top10, bases y original).
+**Falta:** Verificar inferencia en Render y medir memoria/latencia del servidor; calibración, fuera de dominio y exportación de comparadores pendientes.
 
 ### E3 C/E · Dashboard e integración visual
 

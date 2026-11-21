@@ -3,9 +3,10 @@ import dash
 from dash import Dash, html
 app = Dash(__name__, use_pages=True, title="NuCLS · Proyecto final", suppress_callback_exceptions=True)
 server = app.server
+server.config["MAX_CONTENT_LENGTH"] = 3 * 1024 * 1024
 app.layout = html.Div([
     html.Header([html.A("NuCLS / RESEARCH", href="/", className="brand"),
-        html.Nav([html.A("Proyecto",href="/"),html.A("Histología",href="/histologia"),html.A("Resultados E1–E2",href="/proyecto"),html.A("Datos y EDA",href="/datos"),html.A("CICO",href="/modelos"),html.A("Literatura",href="/investigacion"),html.A("Evidencia",href="/reproducibilidad"),html.A("Piloto",href="/piloto"),html.A("Ablaciones",href="/ablaciones"),html.A("Libro",href="/libro/")])]),
+        html.Nav([html.A("Proyecto",href="/"),html.A("Histología",href="/histologia"),html.A("Resultados E1–E2",href="/proyecto"),html.A("Datos y EDA",href="/datos"),html.A("CICO",href="/modelos"),html.A("Literatura",href="/investigacion"),html.A("Evidencia",href="/reproducibilidad"),html.A("Piloto",href="/piloto"),html.A("Ablaciones",href="/ablaciones"),html.A("Analizar imagen",href="/prediccion"),html.A("Libro",href="/libro/")])]),
     html.Main(dash.page_container),
     html.Footer("NuCLS · Proyecto final · E1 + E2 + E3 · Corte: 21 noviembre 2026 · Resultados identificados por etapa")])
 
@@ -13,7 +14,12 @@ from flask import send_from_directory, jsonify, abort
 BOOK_HTML = Path(__file__).resolve().parent / 'book/_build/html'
 @server.get('/healthz')
 def healthz():
-    return jsonify(status='ok', project='NuCLS-E3', trained_model_available=False)
+    from src.inference import engine
+    try:
+        _, meta = engine()
+        return jsonify(status='ok', project='NuCLS-E3', trained_model_available=True, seed=meta['seed'])
+    except Exception:
+        return jsonify(status='ok', project='NuCLS-E3', trained_model_available=False)
 @server.get('/libro/')
 def book_home():
     if not (BOOK_HTML/'intro.html').is_file():

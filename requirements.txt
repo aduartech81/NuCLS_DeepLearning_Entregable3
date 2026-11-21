@@ -2,3 +2,7 @@ dash==4.5.0
 plotly==7.1.0
 pandas==3.1.1
 gunicorn==23.0.0
+
+onnxruntime==1.32.0
+Pillow==13.0.0
+numpy==2.4.6
