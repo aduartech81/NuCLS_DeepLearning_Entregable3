@@ -5,7 +5,7 @@ app = Dash(__name__, use_pages=True, title="NuCLS · Proyecto final", suppress_c
 server = app.server
 app.layout = html.Div([
     html.Header([html.A("NuCLS / RESEARCH", href="/", className="brand"),
-        html.Nav([html.A("Proyecto",href="/"),html.A("Histología",href="/histologia"),html.A("Resultados E1–E2",href="/proyecto"),html.A("Datos y EDA",href="/datos"),html.A("CICO",href="/modelos"),html.A("Literatura",href="/investigacion"),html.A("Evidencia",href="/reproducibilidad"),html.A("Piloto",href="/piloto"),html.A("Libro",href="/libro/")])]),
+        html.Nav([html.A("Proyecto",href="/"),html.A("Histología",href="/histologia"),html.A("Resultados E1–E2",href="/proyecto"),html.A("Datos y EDA",href="/datos"),html.A("CICO",href="/modelos"),html.A("Literatura",href="/investigacion"),html.A("Evidencia",href="/reproducibilidad"),html.A("Piloto",href="/piloto"),html.A("Ablaciones",href="/ablaciones"),html.A("Libro",href="/libro/")])]),
     html.Main(dash.page_container),
     html.Footer("NuCLS · Proyecto final · E1 + E2 + E3 · Corte: 21 noviembre 2026 · Resultados identificados por etapa")])
 

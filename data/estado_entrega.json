@@ -24,10 +24,10 @@
     {
       "etapa": "E2",
       "componente": "PCam",
-      "estado": "Detenido",
-      "ubicacion": "Último inventario comunicado",
-      "evidencia": "8301 completa, época 20; 8302 checkpoint época 16; 8303–8305 sin checkpoint.",
-      "falta": "Revisar checkpoint y optimizador, reanudar 8302 y ejecutar 8303–8305; consolidar métricas de réplica. No usar la GPU ocupada por E3.",
+      "estado": "Detenido; recuperación preparada",
+      "ubicacion": "Carpeta recibida y respaldo local verificados",
+      "evidencia": "8301 completa verificada por hash; 8302 historia hasta época 16; integridad interna de cuatro checkpoints verificada.",
+      "falta": "Comprobar entorno aislado en RunPod, cargar optimizador y reanudar; descargar datos oficiales; completar semillas y evaluación. Esperar GPU libre de E3.",
       "dependencia": "GPU y checkpoints E2"
     },
     {
@@ -87,10 +87,10 @@
     {
       "etapa": "E3 G",
       "componente": "Mecanismo y ablaciones propias",
-      "estado": "Parcial",
+      "estado": "En ejecución reportada; parcial",
       "ubicacion": "Implementación y propiedades sintéticas",
-      "evidencia": "CICO formulado; pruebas previas de D4, cota y gradientes.",
-      "falta": "Entrenar y analizar ≥3 componentes aislados del mecanismo, más control D4 definido; las ablaciones de preprocesamiento E2 no sustituyen estas.",
+      "evidencia": "Tres variantes × cinco semillas: cuatro completas reportadas, una reanudada con época 3 guardada, diez pendientes.",
+      "falta": "Recibir y verificar las quince corridas; análisis emparejado y control sin D4 aún pendiente.",
       "dependencia": "Entrenamiento adicional"
     },
     {

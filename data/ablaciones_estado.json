@@ -1,0 +1,101 @@
+{
+  "corte": "21 noviembre 2026 · último registro compartido por el autor",
+  "fuente": "Salida de celda 3; no es monitoreo en vivo ni recepción de artefactos",
+  "completas_reportadas": 4,
+  "total": 15,
+  "cola": "EJECUTANDO reportado",
+  "variante": "sin_amortiguacion",
+  "semilla": 6102,
+  "runs": [
+    {
+      "variante": "sin_contraste",
+      "semilla": 6101,
+      "estado": "Completa reportada",
+      "ultima_epoca_guardada": null
+    },
+    {
+      "variante": "sin_contraste",
+      "semilla": 6102,
+      "estado": "Completa reportada",
+      "ultima_epoca_guardada": null
+    },
+    {
+      "variante": "sin_contraste",
+      "semilla": 6103,
+      "estado": "Pendiente",
+      "ultima_epoca_guardada": null
+    },
+    {
+      "variante": "sin_contraste",
+      "semilla": 6104,
+      "estado": "Pendiente",
+      "ultima_epoca_guardada": null
+    },
+    {
+      "variante": "sin_contraste",
+      "semilla": 6105,
+      "estado": "Pendiente",
+      "ultima_epoca_guardada": null
+    },
+    {
+      "variante": "sin_amortiguacion",
+      "semilla": 6101,
+      "estado": "Completa reportada",
+      "ultima_epoca_guardada": null
+    },
+    {
+      "variante": "sin_amortiguacion",
+      "semilla": 6102,
+      "estado": "Reanudación reportada",
+      "ultima_epoca_guardada": 3
+    },
+    {
+      "variante": "sin_amortiguacion",
+      "semilla": 6103,
+      "estado": "Pendiente",
+      "ultima_epoca_guardada": null
+    },
+    {
+      "variante": "sin_amortiguacion",
+      "semilla": 6104,
+      "estado": "Pendiente",
+      "ultima_epoca_guardada": null
+    },
+    {
+      "variante": "sin_amortiguacion",
+      "semilla": 6105,
+      "estado": "Pendiente",
+      "ultima_epoca_guardada": null
+    },
+    {
+      "variante": "sin_contexto",
+      "semilla": 6101,
+      "estado": "Completa reportada",
+      "ultima_epoca_guardada": null
+    },
+    {
+      "variante": "sin_contexto",
+      "semilla": 6102,
+      "estado": "Pendiente",
+      "ultima_epoca_guardada": null
+    },
+    {
+      "variante": "sin_contexto",
+      "semilla": 6103,
+      "estado": "Pendiente",
+      "ultima_epoca_guardada": null
+    },
+    {
+      "variante": "sin_contexto",
+      "semilla": 6104,
+      "estado": "Pendiente",
+      "ultima_epoca_guardada": null
+    },
+    {
+      "variante": "sin_contexto",
+      "semilla": 6105,
+      "estado": "Pendiente",
+      "ultima_epoca_guardada": null
+    }
+  ]
+}

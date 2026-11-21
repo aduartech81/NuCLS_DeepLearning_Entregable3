@@ -12,163 +12,132 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 
 ### E1 · Integración de evidencia
 
-**Estado:** Integrado. **Ubicación:** Libro y dashboard.
+**Estado:** Integrado.
 
-**Evidencia disponible:** Tres bases × 11 semillas; confusión, calibración, selección de clases y flujo de literatura.
+**Evidencia:** Tres bases × 11 semillas; confusión, calibración, selección de clases y flujo de literatura.
 
-**Falta exactamente:** Conservar las diferencias entre el corte E1 y el manifiesto V2; no modificar originales.
-
-**Depende de:** Documentación.
+**Falta:** Conservar las diferencias entre el corte E1 y el manifiesto V2; no modificar originales.
 
 ### E2 · Benchmark histórico y correcciones
 
-**Estado:** Integrado con límites. **Ubicación:** Libro y dashboard.
+**Estado:** Integrado con límites.
 
-**Evidencia disponible:** 13 arquitecturas × 5 en reserva; 22 semillas de las bases, 15 ablaciones de preprocesamiento y ensambles.
+**Evidencia:** 13 arquitecturas × 5 en reserva; 22 semillas de las bases, 15 ablaciones de preprocesamiento y ensambles.
 
-**Falta exactamente:** Cerrar la auditoría de las 66 corridas base y sus predicciones/curvas; no confundirlas con 65 evaluaciones de reserva.
-
-**Depende de:** Archivos E2.
+**Falta:** Cerrar la auditoría de las 66 corridas base y sus predicciones/curvas; no confundirlas con 65 evaluaciones de reserva.
 
 ### E2 · PCam
 
-**Estado:** Detenido. **Ubicación:** Último inventario comunicado.
+**Estado:** Detenido; recuperación preparada.
 
-**Evidencia disponible:** 8301 completa, época 20; 8302 checkpoint época 16; 8303–8305 sin checkpoint.
+**Evidencia:** 8301 completa verificada por hash; 8302 historia hasta época 16; integridad interna de cuatro checkpoints verificada.
 
-**Falta exactamente:** Revisar checkpoint y optimizador, reanudar 8302 y ejecutar 8303–8305; consolidar métricas de réplica. No usar la GPU ocupada por E3.
-
-**Depende de:** GPU y checkpoints E2.
+**Falta:** Comprobar entorno aislado en RunPod, cargar optimizador y reanudar; descargar datos oficiales; completar semillas y evaluación. Esperar GPU libre de E3.
 
 ### E2 · Histología y análisis de errores
 
-**Estado:** Parcial. **Ubicación:** Libro y dashboard.
+**Estado:** Parcial.
 
-**Evidencia disponible:** 36 núcleos, 21 pacientes, 18 aciertos y 18 discrepancias de tres modelos; huellas cotejadas.
+**Evidencia:** 36 núcleos, 21 pacientes, 18 aciertos y 18 discrepancias de tres modelos; huellas cotejadas.
 
-**Falta exactamente:** Revisión de 100 errores por modelo principal, taxonomía y acuerdo/techo multi-rater con anotaciones independientes.
-
-**Depende de:** Revisión humana y anotaciones.
+**Falta:** Revisión de 100 errores por modelo principal, taxonomía y acuerdo/techo multi-rater con anotaciones independientes.
 
 ### E2 · Explicabilidad y fidelidad
 
-**Estado:** Parcial. **Ubicación:** Correcciones E2.
+**Estado:** Parcial.
 
-**Evidencia disponible:** 48/48 mapas Inception constantes en evidencia anterior; no se presentan como explicaciones válidas.
+**Evidencia:** 48/48 mapas Inception constantes en evidencia anterior; no se presentan como explicaciones válidas.
 
-**Falta exactamente:** Corregir capa o método y repetir fidelidad/estabilidad; completar incertidumbre y cobertura no acreditadas.
-
-**Depende de:** Modelos entrenados y evaluación.
+**Falta:** Corregir capa o método y repetir fidelidad/estabilidad; completar incertidumbre y cobertura no acreditadas.
 
 ### E3 A · Correcciones, fuga y congelación
 
-**Estado:** Parcial. **Ubicación:** Trazabilidad de correcciones.
+**Estado:** Parcial.
 
-**Evidencia disponible:** Historial de exposición de reserva declarado y fuentes preservadas.
+**Evidencia:** Historial de exposición de reserva declarado y fuentes preservadas.
 
-**Falta exactamente:** Auditar archivos primarios completos, pacientes/duplicados/versiones y congelar paquete final con hashes.
-
-**Depende de:** Archivos y auditoría.
+**Falta:** Auditar archivos primarios completos, pacientes/duplicados/versiones y congelar paquete final con hashes.
 
 ### E3 B/D · Exportación e inferencia CPU
 
-**Estado:** Pendiente. **Ubicación:** Código preparado; función web no habilitada.
+**Estado:** Pendiente.
 
-**Evidencia disponible:** Cinco checkpoints CICO recibidos y verificados por hash; no ejecutados en esta auditoría.
+**Evidencia:** Cinco checkpoints CICO recibidos y verificados por hash; no ejecutados en esta auditoría.
 
-**Falta exactamente:** Definir selección por validación, exportar pesos y metadata, verificar ida/vuelta numérica, latencia/memoria CPU, entradas inválidas/fuera de dominio e incertidumbre. Verificar comparadores exigidos (Top10, bases y original).
-
-**Depende de:** Artefactos entrenados.
+**Falta:** Definir selección por validación, exportar pesos y metadata, verificar ida/vuelta numérica, latencia/memoria CPU, entradas inválidas/fuera de dominio e incertidumbre. Verificar comparadores exigidos (Top10, bases y original).
 
 ### E3 C/E · Dashboard e integración visual
 
-**Estado:** Publicado; verificación parcial. **Ubicación:** Render.
+**Estado:** Publicado; verificación parcial.
 
-**Evidencia disponible:** Portal integrado, histología, filtros por página y libro; pruebas locales y escritorio.
+**Evidencia:** Portal integrado, histología, filtros por página y libro; pruebas locales y escritorio.
 
-**Falta exactamente:** Comprobar responsividad móvil, filtros globales exigidos y flujo de predicción cuando exista inferencia. No hay prueba móvil acreditada.
-
-**Depende de:** QA web y modelo.
+**Falta:** Comprobar responsividad móvil, filtros globales exigidos y flujo de predicción cuando exista inferencia. No hay prueba móvil acreditada.
 
 ### E3 F · Originalidad y revisión externa
 
-**Estado:** Parcial. **Ubicación:** Capítulo de literatura y matriz de novedad.
+**Estado:** Parcial.
 
-**Evidencia disponible:** Antecedentes cercanos y alcance de lectura declarados.
+**Evidencia:** Antecedentes cercanos y alcance de lectura declarados.
 
-**Falta exactamente:** Completar evidencia de 3 bases/5 cadenas/snowballing, textos pendientes, fuente/adaptación y evaluación por tercero; no declarar novedad probada.
-
-**Depende de:** Búsqueda y revisión humana.
+**Falta:** Completar evidencia de 3 bases/5 cadenas/snowballing, textos pendientes, fuente/adaptación y evaluación por tercero; no declarar novedad probada.
 
 ### E3 G · Mecanismo y ablaciones propias
 
-**Estado:** Parcial. **Ubicación:** Implementación y propiedades sintéticas.
+**Estado:** En ejecución reportada; parcial.
 
-**Evidencia disponible:** CICO formulado; pruebas previas de D4, cota y gradientes.
+**Evidencia:** Tres variantes × cinco semillas: cuatro completas reportadas, una reanudada con época 3 guardada, diez pendientes.
 
-**Falta exactamente:** Entrenar y analizar ≥3 componentes aislados del mecanismo, más control D4 definido; las ablaciones de preprocesamiento E2 no sustituyen estas.
-
-**Depende de:** Entrenamiento adicional.
+**Falta:** Recibir y verificar las quince corridas; análisis emparejado y control sin D4 aún pendiente.
 
 ### E3 H · Tres conjuntos adicionales
 
-**Estado:** Pendiente. **Ubicación:** Candidatos documentados.
+**Estado:** Pendiente.
 
-**Evidencia disponible:** PanNuke, Lizard y MoNuSAC son candidatos, no datasets externos auditados.
+**Evidencia:** PanNuke, Lizard y MoNuSAC son candidatos, no datasets externos auditados.
 
-**Falta exactamente:** Auditar solapamiento/etiquetas/licencia, diferencias en ≥2 ejes; evaluar toda la familia con presupuestos comparables, perturbaciones y escalabilidad.
-
-**Depende de:** Datos y GPU.
+**Falta:** Auditar solapamiento/etiquetas/licencia, diferencias en ≥2 ejes; evaluar toda la familia con presupuestos comparables, perturbaciones y escalabilidad.
 
 ### E3 I · Piloto de cinco semillas
 
-**Estado:** Completo y verificado. **Ubicación:** Libro y dashboard; ZIP respaldado.
+**Estado:** Completo y verificado.
 
-**Evidencia disponible:** Cinco checkpoints y predicciones cotejados; 2.049 imágenes / 21 pacientes por semilla; macro-F1 recalculado.
+**Evidencia:** Cinco checkpoints y predicciones cotejados; 2.049 imágenes / 21 pacientes por semilla; macro-F1 recalculado.
 
-**Falta exactamente:** No requiere repetir entrenamiento. Conservar archivos y separar piloto de evaluación final.
-
-**Depende de:** Ninguna para cerrar recepción del piloto.
+**Falta:** No requiere repetir entrenamiento. Conservar archivos y separar piloto de evaluación final.
 
 ### E3 I · Benchmark final y potencia
 
-**Estado:** Pendiente. **Ubicación:** No acreditado.
+**Estado:** Pendiente.
 
-**Evidencia disponible:** Cinco semillas piloto no cumplen la evaluación final.
+**Evidencia:** Cinco semillas piloto no cumplen la evaluación final.
 
-**Falta exactamente:** Dimensionar por potencia al 90 % y mínimo ≥10; toda la familia, ≥3 pruebas por contraste, Holm, máximo p ajustado y potencia conjunta.
-
-**Depende de:** Diseño, entrenamiento y estadística.
+**Falta:** Dimensionar por potencia al 90 % y mínimo ≥10; toda la familia, ≥3 pruebas por contraste, Holm, máximo p ajustado y potencia conjunta.
 
 ### E3 J · Libro y tabla maestra
 
-**Estado:** Integrado; cierre pendiente. **Ubicación:** Libro publicado.
+**Estado:** Integrado; cierre pendiente.
 
-**Evidencia disponible:** Histología, tablas E1/E2 y cinco resultados CICO verificados integrados; misma fuente para libro/dashboard.
+**Evidencia:** Histología, tablas E1/E2 y cinco resultados CICO verificados integrados; misma fuente para libro/dashboard.
 
-**Falta exactamente:** Completar evidencia del benchmark final, fichas de exportación, entorno/contenedor de inferencia, DOI y reproducción independiente.
-
-**Depende de:** Resultados finales y tercero.
+**Falta:** Completar evidencia del benchmark final, fichas de exportación, entorno/contenedor de inferencia, DOI y reproducción independiente.
 
 ### E3 K · Sustentación
 
-**Estado:** Guion disponible; no ensayada. **Ubicación:** 20 minutos propuestos.
+**Estado:** Guion disponible; no ensayada.
 
-**Evidencia disponible:** Problema/datos, antecedentes, mecanismo, resultados y demostración.
+**Evidencia:** Problema/datos, antecedentes, mecanismo, resultados y demostración.
 
-**Falta exactamente:** Preparar diapositivas definitivas, ensayar demostración y explicación/modificación del mecanismo; respaldo local comprobado.
-
-**Depende de:** Autor.
+**Falta:** Preparar diapositivas definitivas, ensayar demostración y explicación/modificación del mecanismo; respaldo local comprobado.
 
 ### Entrega · Congelación y envío final
 
-**Estado:** Pendiente. **Ubicación:** 21 noviembre, 10:00 Bogotá.
+**Estado:** Pendiente.
 
-**Evidencia disponible:** Portal accesible; paquete previo no equivale al paquete final de esta revisión.
+**Evidencia:** Portal accesible; paquete previo no equivale al paquete final de esta revisión.
 
-**Falta exactamente:** Congelar versión, descargar respaldo independiente, generar hashes, revisar enlaces y adjuntos y enviar por el canal oficial.
+**Falta:** Congelar versión, descargar respaldo independiente, generar hashes, revisar enlaces y adjuntos y enviar por el canal oficial.
 
-**Depende de:** Autor y paquete final.
 
 ## Orden operativo hasta las 10:00
 
@@ -178,3 +147,7 @@ La revisión usa la matriz de requisitos E3 y la trazabilidad E2 conservadas en 
 4. Antes de las 09:00, congelar evidencia verificable; 09:00–09:30, prueba de enlaces, libro, descargas y respaldo; 09:30–10:00, envío académico y comprobante. Es una planificación propuesta, no garantía de completar experimentos.
 
 [Resultados piloto verificados](14_resultados_piloto.md).
+
+## Actualización de ablaciones y PCam
+
+[Consultar el avance reportado, límites y transición preparada](15_ablaciones_y_transicion.md). PCam dispone ahora de respaldo local verificado y cuaderno de recuperación; todavía no se inició en RunPod. Las ablaciones registran cuatro corridas completas reportadas, no quince verificadas.
