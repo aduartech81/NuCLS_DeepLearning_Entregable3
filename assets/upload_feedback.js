@@ -30,7 +30,7 @@
     reader.onload = function () {
       if (ticket !== generation) return;
       const data = String(reader.result).replace(/^data:[^;]*;/, 'data:' + type + ';');
-      message('Archivo leído. Comprobando formato y dimensiones…');
+      message('Archivo leído. La validación del servidor aparece debajo.');
       update('pred-upload', {contents: data, filename: file.name, last_modified: file.lastModified / 1000});
     };
     reader.readAsDataURL(file);

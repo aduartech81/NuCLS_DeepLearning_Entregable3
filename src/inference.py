@@ -16,7 +16,11 @@ def decode_upload(contents):
   raw=base64.b64decode(encoded,validate=True)
   if not raw or len(raw)>MAX_BYTES:raise ValueError('Tamaño de archivo inválido.')
   with Image.open(io.BytesIO(raw)) as im:
-   if im.format not in ('PNG','JPEG') or im.mode!='RGB' or im.size!=(128,128) or getattr(im,'n_frames',1)!=1:raise ValueError('Usa un recorte RGB de 128 × 128 píxeles, sin transparencia ni animación. No se redimensiona automáticamente.')
+   if im.format not in ('PNG','JPEG') or im.size!=(128,128) or getattr(im,'n_frames',1)!=1:raise ValueError('Usa PNG/JPEG de 128 × 128 píxeles, sin animación. No se redimensiona automáticamente.')
+   if im.mode=='RGBA':
+    if im.getchannel('A').getextrema()!=(255,255):raise ValueError('El canal alfa contiene transparencia. Usa RGB o RGBA totalmente opaco.')
+    im=im.convert('RGB')
+   if im.mode!='RGB':raise ValueError('Modo de color no admitido: usa RGB o RGBA totalmente opaco.')
    im.load();a=np.asarray(im,dtype=np.float32)/255.
  except (binascii.Error,UnidentifiedImageError,OSError,Image.DecompressionBombError) as e:raise ValueError('No se pudo leer una imagen válida.') from e
  return a
@@ -35,7 +39,7 @@ def engine():
  return session,meta
 
 def predict(contents):
- start=time.perf_counter();a=decode_upload(contents);session,meta=engine()
+ start=time.perf_counter();a=decode_upload(contents);check_basic_input(a);session,meta=engine()
  x=np.ascontiguousarray(((a-np.asarray(meta['mean'],np.float32))/np.asarray(meta['std'],np.float32)).transpose(2,0,1)[None])
  with LOCK:logits=session.run(['logits'],{'image':x})[0][0]
  if logits.shape!=(3,) or not np.isfinite(logits).all():raise RuntimeError('Salida inválida del modelo.')
@@ -46,7 +50,7 @@ def predict(contents):
 def explain_occlusion(contents):
  """64 disjoint 16px occlusions; replace by image mean. Sensitivity, not segmentation."""
  import time
- start=time.perf_counter();a=decode_upload(contents);session,meta=engine()
+ start=time.perf_counter();a=decode_upload(contents);check_basic_input(a);session,meta=engine()
  mean=np.asarray(meta['mean'],np.float32);std=np.asarray(meta['std'],np.float32)
  def infer(rgb):
   x=np.ascontiguousarray(((rgb-mean)/std).transpose(2,0,1)[None])
@@ -60,3 +64,9 @@ def explain_occlusion(contents):
     masked=a.copy();masked[row*16:(row+1)*16,col*16:(col+1)*16]=fill
     effects[row,col]=float(original[target]-infer(masked)[target])
  return {'target':meta['labels_es'][target],'effects':effects.tolist(),'seconds':time.perf_counter()-start,'patch_px':16,'method':'occlusion_image_mean','scope':'Sensibilidad local a oclusión; no segmentación, causalidad ni explicación validada clínicamente.'}
+
+
+def check_basic_input(a):
+ # Deterministic quality rejection, NOT a validated OOD detector.
+ if float(a.std(axis=(0,1)).max()) < 1/255:
+  raise ValueError('No se analiza una imagen uniforme o casi uniforme. Esta comprobación de calidad no certifica que otras imágenes sean histológicas.')

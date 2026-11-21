@@ -14,3 +14,6 @@ def update(model):
  fig.update_traces(marker_color=colors);fig.update_layout(height=520,margin=dict(t=20,l=20,r=20,b=30),xaxis_range=[0,1])
  r=df[df.modelo==model].iloc[0]
  return fig,[html.H3(model),html.P(f"Media: {r.macro_f1_media:.4f} · DE: {r.macro_f1_sd:.4f} · R: {int(r.R)}"),html.P(f"IC95 por paciente: [{r.IC95_paciente_inf:.4f}, {r.IC95_paciente_sup:.4f}]. La barra anterior representa DE entre semillas, no este intervalo.")]
+
+
+layout.children.insert(2,html.Div([html.A('Diagnósticos y contraste con tres bases',href='/diagnosticos',className='button'),html.A('Pregunta, hipótesis, pseudocódigo y ficha',href='/documentacion',className='button secondary'),html.A('Costos y frontera descriptiva E2',href='/costos',className='button secondary')],className='panel'))

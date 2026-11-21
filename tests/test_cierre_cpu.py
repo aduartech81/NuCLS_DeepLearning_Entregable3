@@ -1,4 +1,5 @@
 import json
+import pytest
 import numpy as np
 from app import app
 from pages.datos import filter_eda,classes
@@ -19,10 +20,11 @@ def test_filtered_counts_and_empty_selection():
  assert filter_eda([],[])[3]=='0 recortes seleccionados'
 
 def test_occlusion_constant_input_and_latency():
- image=upload(np.zeros((128,128,3),dtype='uint8'))
+ with pytest.raises(ValueError,match='uniforme'):explain_occlusion(upload(np.zeros((128,128,3),dtype='uint8')))
+ image=upload(np.random.default_rng(5).integers(0,256,(128,128,3),dtype='uint8'))
  result=explain_occlusion(image)
  assert np.asarray(result['effects']).shape==(8,8)
- np.testing.assert_allclose(result['effects'],0,atol=1e-7)
+ assert np.isfinite(result['effects']).all()
  pred=predict(image)
  assert pred['latency_ms']>0 and 0<=pred['entropy']<=np.log(3)+1e-6
 

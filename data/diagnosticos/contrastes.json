@@ -1,0 +1,234 @@
+{
+  "scope": "Comparación exploratoria post hoc en validación compartida: 2.049 recortes, 21 pacientes, cinco semillas emparejadas. No test sellado ni comparación de presupuestos de ajuste equivalentes.",
+  "tests": [
+    {
+      "modelo": "softmaxcnn_bn",
+      "semillas": [
+        6101,
+        6102,
+        6103,
+        6104,
+        6105
+      ],
+      "valores": [
+        [
+          6101,
+          0.7174428033876797,
+          0.7436091289623175
+        ],
+        [
+          6102,
+          0.6993059105789229,
+          0.7532583071919451
+        ],
+        [
+          6103,
+          0.642111689126215,
+          0.723376261374936
+        ],
+        [
+          6104,
+          0.6399039493148139,
+          0.7650357595003415
+        ],
+        [
+          6105,
+          0.6424510123300566,
+          0.7693669449472503
+        ]
+      ],
+      "cico_media": 0.6682430729475376,
+      "base_media": 0.750929280395358,
+      "diferencia_media": -0.08268620744782047,
+      "sd_diferencia": 0.044102289506933096,
+      "dz": -1.874873354019904,
+      "p": 0.0625,
+      "mde80_normal_aprox": 0.06381622336147154,
+      "p_holm": 0.1875
+    },
+    {
+      "modelo": "densenet121",
+      "semillas": [
+        6101,
+        6102,
+        6103,
+        6104,
+        6105
+      ],
+      "valores": [
+        [
+          6101,
+          0.7174428033876797,
+          0.7792279738182829
+        ],
+        [
+          6102,
+          0.6993059105789229,
+          0.7382409984861781
+        ],
+        [
+          6103,
+          0.642111689126215,
+          0.7351158781399331
+        ],
+        [
+          6104,
+          0.6399039493148139,
+          0.8042247861817448
+        ],
+        [
+          6105,
+          0.6424510123300566,
+          0.7892418599405411
+        ]
+      ],
+      "cico_media": 0.6682430729475376,
+      "base_media": 0.769210299313336,
+      "diferencia_media": -0.10096722636579836,
+      "sd_diferencia": 0.05375898506395214,
+      "dz": -1.8781460670376664,
+      "p": 0.0625,
+      "mde80_normal_aprox": 0.07778950791177994,
+      "p_holm": 0.1875
+    },
+    {
+      "modelo": "resnet50",
+      "semillas": [
+        6101,
+        6102,
+        6103,
+        6104,
+        6105
+      ],
+      "valores": [
+        [
+          6101,
+          0.7174428033876797,
+          0.7836513071353589
+        ],
+        [
+          6102,
+          0.6993059105789229,
+          0.7952387904283401
+        ],
+        [
+          6103,
+          0.642111689126215,
+          0.7503443400678576
+        ],
+        [
+          6104,
+          0.6399039493148139,
+          0.7883063638160904
+        ],
+        [
+          6105,
+          0.6424510123300566,
+          0.8037812684956619
+        ]
+      ],
+      "cico_media": 0.6682430729475376,
+      "base_media": 0.7842644139886618,
+      "diferencia_media": -0.11602134104112416,
+      "sd_diferencia": 0.0388811022025126,
+      "dz": -2.9840033967356656,
+      "p": 0.0625,
+      "mde80_normal_aprox": 0.056261140417793565,
+      "p_holm": 0.1875
+    }
+  ],
+  "sources": [
+    {
+      "model": "softmaxcnn_bn",
+      "seed": 6101,
+      "base_sha256": "6cdd3892dbf1535f0854c0c630ed13d99d6ee1a27de293fe8fbacf1b2e4daabb",
+      "cico_sha256": "b04d6e3148628e3a12cf7d91aefe88ebfefba4ae0e734b1dc95e52d2e914e3da"
+    },
+    {
+      "model": "softmaxcnn_bn",
+      "seed": 6102,
+      "base_sha256": "9648785c627d2a4a93ea06bf89560dde1b0b77140c3be35e4c2a541633b7ce43",
+      "cico_sha256": "4f8988197de26d0f4d9884a034a893e1af6807834f8b96e2969ed872deb02fd8"
+    },
+    {
+      "model": "softmaxcnn_bn",
+      "seed": 6103,
+      "base_sha256": "b7a8661a83f702c4935363305fa9fca1b9503f3de98e2c6bb80a6d0698ae19ea",
+      "cico_sha256": "d106782b27349d210c5e7a0a0b4765158d4490bba01fcb22ffb124f23a87c48b"
+    },
+    {
+      "model": "softmaxcnn_bn",
+      "seed": 6104,
+      "base_sha256": "81859a7551c1bbdd15359f1384004c9a8cce4c2e2cff4a18b992a165ffa738ec",
+      "cico_sha256": "013d013a206ae6da6094e330d1eba8351ed7304190888227c3681c5750e4f3eb"
+    },
+    {
+      "model": "softmaxcnn_bn",
+      "seed": 6105,
+      "base_sha256": "6824df020c1ec25bba2911842f127126634dd5aeb983f5be053444e5462ee534",
+      "cico_sha256": "2ca456207f52b4a7d700a2fb7066ec6f5269c101933b86cd68102f03d961d23a"
+    },
+    {
+      "model": "densenet121",
+      "seed": 6101,
+      "base_sha256": "4d543fcd2cdbb1a45c5bd34f7963c6cc235f937c7618fe4e6dbc6ed4323c7149",
+      "cico_sha256": "b04d6e3148628e3a12cf7d91aefe88ebfefba4ae0e734b1dc95e52d2e914e3da"
+    },
+    {
+      "model": "densenet121",
+      "seed": 6102,
+      "base_sha256": "37a234951b2743cf155294d5fdfa344c9e86fe4303ef6222554cbb44f717bad6",
+      "cico_sha256": "4f8988197de26d0f4d9884a034a893e1af6807834f8b96e2969ed872deb02fd8"
+    },
+    {
+      "model": "densenet121",
+      "seed": 6103,
+      "base_sha256": "db1a86d5f345ba37941dbb63a57eb85394f9fd42199365036bced2e0a79c0693",
+      "cico_sha256": "d106782b27349d210c5e7a0a0b4765158d4490bba01fcb22ffb124f23a87c48b"
+    },
+    {
+      "model": "densenet121",
+      "seed": 6104,
+      "base_sha256": "0feed7c5d6e51859095791b6a96cb77313e2b694abb6514b7a290c5f08f08e04",
+      "cico_sha256": "013d013a206ae6da6094e330d1eba8351ed7304190888227c3681c5750e4f3eb"
+    },
+    {
+      "model": "densenet121",
+      "seed": 6105,
+      "base_sha256": "2c355c651c33e1394219d8bbc7bdd4a57467d8423947238988915bb09a64ca40",
+      "cico_sha256": "2ca456207f52b4a7d700a2fb7066ec6f5269c101933b86cd68102f03d961d23a"
+    },
+    {
+      "model": "resnet50",
+      "seed": 6101,
+      "base_sha256": "a3b4d26f1f4da1e1c1803e8505434a4523b1c54d02c031147520e4767927c2bd",
+      "cico_sha256": "b04d6e3148628e3a12cf7d91aefe88ebfefba4ae0e734b1dc95e52d2e914e3da"
+    },
+    {
+      "model": "resnet50",
+      "seed": 6102,
+      "base_sha256": "61cb00b8f0d5775e91d140ee355091016f4e480e460e0f7990984143982a64ef",
+      "cico_sha256": "4f8988197de26d0f4d9884a034a893e1af6807834f8b96e2969ed872deb02fd8"
+    },
+    {
+      "model": "resnet50",
+      "seed": 6103,
+      "base_sha256": "b8cae57b74cc1fcd6a345b19848406a91f874fa3b4361b941d7213dc57e621f0",
+      "cico_sha256": "d106782b27349d210c5e7a0a0b4765158d4490bba01fcb22ffb124f23a87c48b"
+    },
+    {
+      "model": "resnet50",
+      "seed": 6104,
+      "base_sha256": "d49ed8ed4b775ad8c1c57377a489b9a3d513bcfd84d9b74f686299bb34d32167",
+      "cico_sha256": "013d013a206ae6da6094e330d1eba8351ed7304190888227c3681c5750e4f3eb"
+    },
+    {
+      "model": "resnet50",
+      "seed": 6105,
+      "base_sha256": "28aca146e00fb8d643f28b39131be806c7041d6f9d09627b9f788da7032c4702",
+      "cico_sha256": "2ca456207f52b4a7d700a2fb7066ec6f5269c101933b86cd68102f03d961d23a"
+    }
+  ],
+  "power": "Con cinco diferencias no nulas, el menor p bilateral exacto de Wilcoxon es 2/32=0,0625: no puede alcanzar alfa 0,05, incluso antes de Holm. No se acredita potencia 0,80. MDE normal aproximada (Bonferroni 3, 80%) es orientativa para planificación, no potencia del test exacto ni garantía de tamaño muestral.",
+  "seed_uncertainty": "El pareamiento mide variación entre entrenamientos sobre pacientes fijos; no sustituye incertidumbre por paciente ni demuestra generalización. Los presupuestos históricos de entrenamiento y selección difieren."
+}

@@ -28,3 +28,7 @@ En validación, las cinco semillas sitúan InceptionV3 (0,8235), EfficientNet-B0
 ## Transición a E3
 
 La evidencia de E2 se hereda con su historial de exposición. La reserva consultada no se renombra como prueba sellada. El diseño de E3 necesita separar desarrollo y confirmación, auditar pacientes y fuentes, fijar la familia completa, calcular potencia y congelar el protocolo antes de los experimentos definitivos. Los ensambles uniformes y las ablaciones de preprocesamiento de E2 no se presentan como mecanismo original de E3.
+
+## Adenda CPU del 21 de noviembre
+
+Se añaden [diagnósticos y contraste mínimo CICO](19_contexto_y_diagnosticos.md), cinco semillas emparejadas en validación, sin afirmar superioridad. Se publica EDA del manifiesto E3 y [ejemplos originales](20_ejemplos_prediccion.md). Las observaciones históricas anteriores se conservan por trazabilidad; esta adenda no acredita test sellado, potencia suficiente ni cierre de PCam.

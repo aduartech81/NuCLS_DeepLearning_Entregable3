@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 dash.register_page(__name__,path='/prediccion',name='Predicción CICO')
 layout=html.Div([
  html.Span('CICO / DEMOSTRACIÓN EXPLORATORIA',className='eyebrow'),html.H1('Explorar un recorte histológico'),
- html.P('Carga un recorte RGB de 128 × 128 píxeles, centrado en un núcleo y preparado como los recortes NuCLS. PNG o JPEG, máximo 2 MB. No se admiten láminas completas ni se redimensiona la imagen.',className='lead'),
+ html.P('Carga un recorte RGB de 128 × 128 píxeles, centrado en un núcleo y preparado como los recortes NuCLS. PNG o JPEG, máximo 2 MB. También se admite RGBA completamente opaco. No se admiten láminas completas ni se redimensiona la imagen.',className='lead'),
  html.Div([html.Strong('Modelo piloto · semilla 6101'),html.P('Seleccionado por el mayor macro-F1 de validación entre cinco semillas. Clasifica entre tumor, linfocito y estroma. No detecta automáticamente imágenes fuera del dominio ni acredita utilidad clínica.')],className='notice'),
  dcc.Checklist(id='pred-consent',options=[{'label':'Confirmo que es un recorte histológico sin datos personales y entiendo que el resultado es experimental, no un diagnóstico.','value':'yes'}],value=[]),
  dcc.Upload(id='pred-upload',children=html.Div([html.Strong('Seleccionar imagen PNG o JPG'),html.P('También puedes arrastrarla aquí. Primero marca la confirmación de arriba.')]),accept='.png,.jpg,.jpeg,image/png,image/jpeg',disabled=True,multiple=False,max_size=2*1024*1024,style={'border':'2px dashed #137d73','padding':'32px','margin':'24px 0','borderRadius':'12px'}),
@@ -17,7 +17,7 @@ layout=html.Div([
  dcc.Loading(html.Div(id='pred-result',role='status',style={'marginTop':'24px'})),
  html.P('Al seleccionar una imagen, se envía al servidor de Render para comprobarla y se procesa en memoria. La aplicación no la escribe en archivos ni la incorpora al entrenamiento. Las probabilidades no están calibradas y no expresan certeza clínica.'),
  html.Section([html.H2('¿Qué zonas influyen en esta puntuación?'),html.P('Oculta 64 regiones con el color medio del recorte y mide el cambio en la probabilidad de la clase elegida. Una caída positiva indica sensibilidad a esa región; no identifica células ni demuestra causalidad.'),html.Button('Calcular sensibilidad local',id='explain-run',n_clicks=0,className='button secondary',disabled=True),dcc.Loading(html.Div(id='explain-result',role='status'))],className='panel'),
- html.A('Leer validación de exportación',href='/libro/16_exportacion_inferencia.html',className='button secondary')])
+ html.A('Descargar ejemplos con clase de referencia',href='/ejemplos',className='button'),html.A('Ver diagnósticos y calibración observada',href='/diagnosticos',className='button secondary'),html.A('Leer validación de exportación',href='/libro/16_exportacion_inferencia.html',className='button secondary')])
 
 @callback(Output('pred-result','children'),Input('pred-run','n_clicks'),State('pred-upload','contents'),State('pred-consent','value'),prevent_initial_call=True)
 def analyze(n,contents,consent):
@@ -26,7 +26,7 @@ def analyze(n,contents,consent):
  try:r=predict(contents)
  except ValueError as e:return html.P(str(e))
  except Exception:return html.P('El modelo no está disponible o no superó su comprobación. No se generó una predicción.')
- return html.Div([html.Img(src=contents,alt='Recorte analizado',style={'width':'256px','imageRendering':'auto','maxWidth':'100%'}),html.H2('Clase con mayor puntuación: '+r['prediction']),html.Table([html.Thead(html.Tr([html.Th('Clase'),html.Th('Probabilidad del modelo')])) ,html.Tbody([html.Tr([html.Td(label),html.Td(f'{p:.1%}')]) for label,p in zip(r['labels'],r['probabilities'])])]),html.P(f"Tiempo de procesamiento en servidor: {r['latency_ms']:.1f} ms (sin red). Entropía: {r['entropy']:.3f} nats; dispersión de puntuaciones, no cobertura ni certeza clínica."),html.P('Semilla 6101 · tres clases posibles. El modelo siempre asigna una de ellas, incluso si el contenido no corresponde; no usar para decisiones clínicas.')],className='panel')
+ return html.Div([html.Img(src=contents,alt='Recorte analizado',style={'width':'256px','imageRendering':'auto','maxWidth':'100%'}),html.Div('DOMINIO NO VERIFICADO: una imagen ajena a histología también puede recibir una puntuación alta. No interpretes esta salida si el recorte no corresponde a NuCLS.',className='notice'),html.H2('Clase con mayor puntuación: '+r['prediction']),html.Table([html.Thead(html.Tr([html.Th('Clase'),html.Th('Probabilidad del modelo')])) ,html.Tbody([html.Tr([html.Td(label),html.Td(f'{p:.1%}')]) for label,p in zip(r['labels'],r['probabilities'])])]),html.P(f"Tiempo de procesamiento en servidor: {r['latency_ms']:.1f} ms (sin red). Entropía: {r['entropy']:.3f} nats; dispersión de puntuaciones, no cobertura ni certeza clínica."),html.P('Semilla 6101 · tres clases posibles. El modelo siempre asigna una de ellas, incluso si el contenido no corresponde; no usar para decisiones clínicas.')],className='panel')
 
 
 @callback(Output('explain-result','children'),Input('explain-run','n_clicks'),State('pred-upload','contents'),State('pred-consent','value'),prevent_initial_call=True)

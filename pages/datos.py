@@ -32,3 +32,5 @@ def filter_eda(splits,labels):
 def histogram(feature):
  if feature not in quality.variable.unique():feature='laplaciano_var'
  d=quality[quality.variable==feature];f=px.bar(d,x='centro',y='cantidad',template='plotly_white',labels={'centro':feature.replace('_',' '),'cantidad':'Imágenes por intervalo'});f.update_traces(marker_color='#087f8c');return f
+
+layout.children.insert(2,html.Div([html.H2('Nuevo: EDA del piloto con filtros comunes'),html.P('Distribuciones RGB por clase, recuentos y duplicados exactos del manifiesto E3; sus tres gráficos responden a los mismos filtros.'),html.A('Abrir EDA E3',href='/eda-e3',className='button')],className='panel'))

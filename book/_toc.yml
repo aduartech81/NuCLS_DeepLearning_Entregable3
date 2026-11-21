@@ -23,3 +23,6 @@ chapters:
 
   - file: 17_auditoria_cierre
   - file: 18_cierre_cpu
+
+  - file: 19_contexto_y_diagnosticos
+  - file: 20_ejemplos_prediccion

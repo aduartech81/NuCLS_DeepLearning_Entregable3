@@ -1,0 +1,1 @@
+{"parametros": 7671, "FLOPs_cubiertos_profiler": 340312585, "batch": 1, "device": "CPU local", "limite": "Conteo de operaciones cubiertas por torch.profiler; no cuenta todas las operaciones elementales. No comparable directamente con latencia GPU batch32 E2."}

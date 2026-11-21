@@ -12,3 +12,5 @@ Las cargas se procesan en memoria y el código no escribe imágenes a disco. Req
 
 Pesos ONNX SHA-256: da64160bc772eb3486107ff1f10ad97327ff0d61f7d8a642727003799ca6bcb5.
 Procedencia, contrato y verificación detallados: models/cico_6101.json y libro, capítulo 16.
+
+Actualización de interfaz 21 noviembre: se rechazan imágenes uniformes mediante un filtro de calidad, sin detector de dominio validado. Se admite RGBA totalmente opaco convirtiendo a RGB. Diagnósticos sin recalibración y comparación exploratoria están en /diagnosticos; CICO no demuestra superioridad.
