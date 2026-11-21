@@ -22,3 +22,4 @@ chapters:
   - file: 16_exportacion_inferencia
 
   - file: 17_auditoria_cierre
+  - file: 18_cierre_cpu

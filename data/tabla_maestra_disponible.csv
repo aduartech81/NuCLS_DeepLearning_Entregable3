@@ -1,0 +1,21 @@
+etapa,modelo,semillas,macro_f1,sd_semillas,fuente
+E1 validación histórica,softmaxcnn_bn,11,0.7567657563501498,0.025474546031169183,data/proyecto/e1_resumen.csv
+E1 validación histórica,densenet121,11,0.7782560617133533,0.025383899473607193,data/proyecto/e1_resumen.csv
+E1 validación histórica,resnet50,11,0.7934042575225426,0.0173410747375601,data/proyecto/e1_resumen.csv
+E2 desarrollo auditado,softmaxcnn_bn,22,0.7600301575125372,0.021915483060680543,data/proyecto/bases22.csv
+E2 desarrollo auditado,densenet121,22,0.7845878824242412,0.02172120725058925,data/proyecto/bases22.csv
+E2 desarrollo auditado,resnet50,22,0.792242021309482,0.022710219524443534,data/proyecto/bases22.csv
+E2 reserva expuesta,softmaxcnn_bn,5,0.4741601800513616,0.061858124108737075,data/heredado_e2/resumen_reserva.csv
+E2 reserva expuesta,densenet121,5,0.637878819367336,0.06003339888618033,data/heredado_e2/resumen_reserva.csv
+E2 reserva expuesta,resnet50,5,0.6669428475714803,0.034906592451046596,data/heredado_e2/resumen_reserva.csv
+E2 reserva expuesta,resnet18,5,0.52597981474472,0.06537292823244073,data/heredado_e2/resumen_reserva.csv
+E2 reserva expuesta,mobilenetv3_small_100,5,0.6503881809894067,0.02975954415791121,data/heredado_e2/resumen_reserva.csv
+E2 reserva expuesta,efficientnet_b0,5,0.6758276585203243,0.031198878073050225,data/heredado_e2/resumen_reserva.csv
+E2 reserva expuesta,deit_tiny_patch16_224,5,0.6117397692281695,0.02820774185539024,data/heredado_e2/resumen_reserva.csv
+E2 reserva expuesta,swin_tiny_patch4_window7_224,5,0.4941650050949374,0.049900683181718725,data/heredado_e2/resumen_reserva.csv
+E2 reserva expuesta,mobilevit_xxs,5,0.6053163506095707,0.07221756615079117,data/heredado_e2/resumen_reserva.csv
+E2 reserva expuesta,mixer_s16_224,5,0.6006939507249859,0.02686444349363479,data/heredado_e2/resumen_reserva.csv
+E2 reserva expuesta,convnext_tiny,5,0.5161768927282566,0.02687965494313854,data/heredado_e2/resumen_reserva.csv
+E2 reserva expuesta,inception_v3,5,0.7204186342143556,0.03327922950501943,data/heredado_e2/resumen_reserva.csv
+E2 reserva expuesta,sequencer2d_s,5,0.4332291199301017,0.04919272289254892,data/heredado_e2/resumen_reserva.csv
+E3 validación piloto,CICO,5,0.6682430729475376,0.037204498708759505,data/piloto_resumen.csv

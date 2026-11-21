@@ -33,13 +33,13 @@ E2 y E3 siguen abiertos científicamente. El dashboard, la galería histológica
 | 08 | Gap y limitación cuantificada | Sección 3.4 y 5 | Parcial. Justificar limitación medible, hipótesis falsable y probar su presencia en ≥3 Top10. |
 | 09 | Preregistro y control de decisiones | Sección 9 | Parcial. Distinguir decisiones previas de posteriores; congelar correcciones sin fingir preregistro retrospectivo. |
 | 10 | Equidad de ajuste y búsqueda condicional | Sección 4.1–4.4,11,14 | Parcial. Cotejar presupuestos, espacios, regularización, criterio común y costo de búsqueda; 1000 arquitecturas solo donde aplique §14. |
-| 11 | Auditoría de corridas y predicciones | Sección 4 | Parcial. 66 registros de desarrollo disponibles; falta cerrar cotejo de todas las predicciones y curvas. Distintos de las 65 evaluaciones de reserva. |
+| 11 | Auditoría de corridas y predicciones | Sección 4 | Parcial. 66 corridas y 330 archivos cotejados; predicciones, curvas y métricas verificadas. Falta reproducción independiente y pesos. Distintos de las 65 evaluaciones de reserva. |
 | 12 | Repeticiones y potencia | Sección 4.3 y 9.2 | Piloto disponible; cierre parcial. 13 arquitecturas × 5 en reserva; justificar R por potencia ≥0,80 o declarar MDE y límites. No repetir las 65 evaluaciones ya cerradas. |
 | 13 | Baselines trivial y clásico | Sección 4.1 | Evaluados; ajuste por verificar. estado.json del cierre 65 confirma mayoritaria y logística guardada evaluadas. Falta acreditar suficiencia del ajuste del clásico. |
 | 14 | Costos y eficiencia | Sección 11.4 | Parcial. Costos GPU, parámetros, FLOPs y Pareto históricos integrados. Completar costo total de búsqueda y condiciones comparables. |
 | 15 | Inferencia y agregación estadística | Sección 6.3,7.3,13 | Calculado con límites. Cierre 65 contiene contrastes, Holm, Friedman/Nemenyi y CD; integrar adecuación, potencia y tres pruebas admisibles por contraste. Reserva expuesta y seis pacientes limitan inferencia. |
 | 16 | Ajuste/sobreajuste y sanidad | Sección 4.5 | Parcial. Sanidad positiva Inception (33 recortes) y brechas disponibles; completar controles exigidos de ajuste/sobreajuste y respetar dependencia por paciente. |
-| 17 | Calibración y segmentos | Sección 4.5 | Parcial. ECE fijo/adaptativo, Brier y brechas integrados; pendiente calibración independiente, pendiente/intercepto e IC por subgrupo. |
+| 17 | Calibración y segmentos | Sección 4.5 | Parcial. ECE fijo/adaptativo, Brier y brechas integrados; pendiente/intercepto ya calculados en la tabla histórica; faltan calibración independiente e IC por subgrupo. |
 | 18 | Robustez y dominio | Sección 4.6 | Parcial; evidencia por consolidar. Separar robustez histórica de la nueva evaluación; verificar tres severidades, curva e índice, cambio de dominio y remuestreo por paciente. |
 | 19 | Explicabilidad y fidelidad | Sección 4.6 | Parcial; falla identificada. 144 mapas examinados; 48/48 de Inception constantes. Corregir explicación del modelo principal y verificar fidelidad/estabilidad. |
 | 20 | Ablaciones del mejor modelo | Sección 4.6 | Ejecutada para tres intervenciones. 15 corridas de preprocesamiento E2 integradas; inferencia sin significación. No confundir con ablaciones CICO ni inferir equivalencia. |
@@ -48,7 +48,7 @@ E2 y E3 siguen abiertos científicamente. El dashboard, la galería histológica
 | 23 | Análisis de 100 errores/modelo | Sección 12.3 | Pendiente. Galería 36 casos no equivale a 100 errores adjudicados por modelo; faltan taxonomía excluyente, IC, errores compartidos y segmentos. |
 | 24 | Paper guía y réplica PCam | Sección 5 | PCam detenido; recuperación preparada. 8301 completa; 8302 guardada en 16; faltan 4 épocas de 8302 y 60 de 8303–8305, más evaluación. Reportar discrepancia/IC respecto del paper y limitación cuantificada en ≥3 modelos. |
 | 25 | Reproducción independiente y entorno | Sección 8 | Parcial. Entorno y checkpoints conservados; faltan reproducción independiente, auditoría completa de bases y comparación numérica. |
-| 26 | Libro, resultados y entrega | Entregables, pp. 58–59 | Publicado; cierre científico parcial. Libro/dashboard E3 integran E1/E2; no modificar el ZIP E2 entregado. Correcciones se documentan en nueva versión E3. |
+| 26 | Libro, resultados y entrega | Sección 15 y requisitos finales | Publicado; cierre científico parcial. Libro/dashboard E3 integran E1/E2; no modificar el ZIP E2 entregado. Correcciones se documentan en nueva versión E3. |
 | 27 | Sustentación y autoría | Sección requisitos finales | Pendiente de acreditación. Ensayo y defensa técnica por el autor; no se certifican por disponer de un guion. |
 
 ### E3
@@ -57,9 +57,9 @@ E2 y E3 siguen abiertos científicamente. El dashboard, la galería histológica
 |---|---|---|---|
 | A | Correcciones E2 (7%) | §4, pp.4–5 | Parcial / pendiente. Parcial: completar observación–acción–evidencia–impacto, ranking antes/después y auditoría de fuga; congelar benchmarks sin reajuste con reserva. |
 | B | Configuraciones y exportación (7%) | §5, pp.5–7 | Parcial / pendiente. Parcial: CICO 6101 ONNX verificado y publicado. Falta selección por configuración media, política común de reentrenamiento/exportación de comparadores, costos CPU y metadatos completos. |
-| C | Dashboard: contexto y EDA (8%) | §9.4.1–2, p.32 | Parcial / pendiente. Parcial: contexto/EDA/histología publicados. EDA tiene selector de característica, pero no filtros globales que actualicen todos los gráficos; falta QA tablet. |
-| D | Dashboard: modelos (9%) | §9.4.3, pp.33–34 | Parcial / pendiente. Parcial: subida y predicción CICO funcionan. Faltan selector de modelos, calibración, cobertura, explicación local, detección fuera de dominio, latencia y comparación final completa. |
-| E | Diseño, UX y despliegue (5%) | §9.5–10, pp.34–37 | Parcial / pendiente. Parcial: Render probado y entrada validada; falta QA tablet/accesibilidad/memoria, consistencia automática y revisión CI. La guía pide dash-bootstrap-components, no instalado actualmente. |
+| C | Dashboard: contexto y EDA (8%) | §9.4.1–2, p.32 | Parcial / pendiente. Parcial: contexto/EDA/histología publicados. EDA tiene selector de característica, pero ahora filtros conjuntos de clase/partición para tres gráficos; diagnósticos agregados de otra población se mantienen separados; falta QA tablet. |
+| D | Dashboard: modelos (9%) | §9.4.3, pp.33–34 | Parcial / pendiente. Parcial: subida y predicción CICO funcionan. Faltan selector de modelos, calibración, cobertura, detección fuera de dominio y comparación final completa. Se añaden latencia, entropía y oclusión local; falta validar fidelidad/estabilidad. |
+| E | Diseño, UX y despliegue (5%) | §9.5–10, pp.34–37 | Parcial / pendiente. Parcial: Render probado y entrada validada; falta QA tablet/accesibilidad/memoria, consistencia automática y revisión CI. Se incorpora dash-bootstrap-components; quedan pruebas integrales de accesibilidad y tablet. |
 | F | Original: revisión y diseño (8%) | §6.3–7, pp.11–20 | Parcial / pendiente. Parcial: matriz y antecedentes existentes; falta acreditar 3 bases/5 cadenas, snowballing, actualización de búsqueda y tercero. No declarar novedad demostrada. |
 | G | Original: implementación y demostración (10%) | §6.5 y 7.4, pp.13–20 | Parcial / pendiente. Parcial: implementación y pruebas previas. Cola de 15 ablaciones en curso según último reporte; también faltan base sin componentes, componentes solos, controles de capacidad y explicación/fidelidad. |
 | H | Evaluación ampliada (10%) | §8.3 y 8.8, pp.23,28–29 | Parcial / pendiente. Pendiente: 3 datasets adicionales auditados que difieran en ≥2 ejes, misma tarea, toda la familia; sensibilidad, perturbaciones, escalabilidad y cambio de dominio. |
@@ -73,6 +73,9 @@ La adjudicación de 100 errores por modelo, una cota de techo comparable, las b�
 
 ## Estado de la función predictiva
 
-[Analizar imagen en Render](https://nucls-entregable3.onrender.com/prediccion): PNG/JPEG RGB 128×128 hasta 2 MB. CICO 6101 exportado y cotejado en 2.049 imágenes; prueba de carga pública desde Safari, probabilidades conocidas, rechazo de tamaño y confirmación verificados. No hay aún calibración validada, explicación local ni detector de dominio: el aviso de uso experimental no reemplaza estos requisitos.
+[Analizar imagen en Render](https://nucls-entregable3.onrender.com/prediccion): PNG/JPEG RGB 128×128 hasta 2 MB. CICO 6101 exportado y cotejado en 2.049 imágenes; prueba de carga pública desde Safari, probabilidades conocidas, rechazo de tamaño y confirmación verificados. Se añade oclusión local exploratoria. No hay aún calibración validada ni detector de dominio: el aviso de uso experimental no reemplaza estos requisitos.
 
 [Exportación y pruebas](16_exportacion_inferencia.md) · [Estado resumido](14_estado_entrega.md).
+
+
+Actualización documental y resultados CPU: [capítulo 18](18_cierre_cpu.md). Las fichas y citación están preparadas; firma, licencia y DOI siguen pendientes.

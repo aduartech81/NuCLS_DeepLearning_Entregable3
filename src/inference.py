@@ -1,5 +1,5 @@
 """CPU-only inference. Uploaded images are decoded in memory, never written to disk."""
-import base64,binascii,hashlib,io,json,threading
+import base64,binascii,hashlib,io,json,threading,time
 from functools import lru_cache
 from pathlib import Path
 import numpy as np
@@ -35,9 +35,28 @@ def engine():
  return session,meta
 
 def predict(contents):
- a=decode_upload(contents);session,meta=engine()
+ start=time.perf_counter();a=decode_upload(contents);session,meta=engine()
  x=np.ascontiguousarray(((a-np.asarray(meta['mean'],np.float32))/np.asarray(meta['std'],np.float32)).transpose(2,0,1)[None])
  with LOCK:logits=session.run(['logits'],{'image':x})[0][0]
  if logits.shape!=(3,) or not np.isfinite(logits).all():raise RuntimeError('Salida inválida del modelo.')
  p=np.exp(logits-logits.max());p/=p.sum()
- return dict(seed=meta['seed'],labels=meta['labels_es'],probabilities=p.tolist(),prediction=meta['labels_es'][int(p.argmax())])
+ return dict(seed=meta['seed'],labels=meta['labels_es'],probabilities=p.tolist(),prediction=meta['labels_es'][int(p.argmax())],latency_ms=1000*(time.perf_counter()-start),entropy=float(-np.sum(p*np.log(np.clip(p,1e-12,1)))))
+
+
+def explain_occlusion(contents):
+ """64 disjoint 16px occlusions; replace by image mean. Sensitivity, not segmentation."""
+ import time
+ start=time.perf_counter();a=decode_upload(contents);session,meta=engine()
+ mean=np.asarray(meta['mean'],np.float32);std=np.asarray(meta['std'],np.float32)
+ def infer(rgb):
+  x=np.ascontiguousarray(((rgb-mean)/std).transpose(2,0,1)[None])
+  logits=session.run(['logits'],{'image':x})[0][0]
+  if logits.shape!=(3,) or not np.isfinite(logits).all():raise RuntimeError('Salida inválida')
+  p=np.exp(logits-logits.max());return p/p.sum()
+ with LOCK:
+  original=infer(a);target=int(original.argmax());fill=a.mean((0,1));effects=np.zeros((8,8))
+  for row in range(8):
+   for col in range(8):
+    masked=a.copy();masked[row*16:(row+1)*16,col*16:(col+1)*16]=fill
+    effects[row,col]=float(original[target]-infer(masked)[target])
+ return {'target':meta['labels_es'][target],'effects':effects.tolist(),'seconds':time.perf_counter()-start,'patch_px':16,'method':'occlusion_image_mean','scope':'Sensibilidad local a oclusión; no segmentación, causalidad ni explicación validada clínicamente.'}

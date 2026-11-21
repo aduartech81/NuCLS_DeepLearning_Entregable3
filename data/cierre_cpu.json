@@ -1,0 +1,166 @@
+{
+  "alcance": "Auditoría CPU de predicciones recibidas. Ningún entrenamiento ni modificación de fuentes.",
+  "bases66": {
+    "corridas": 66,
+    "modelos": 3,
+    "semillas_por_modelo": 22,
+    "archivos": 330,
+    "predicciones_por_corrida": 2049,
+    "pacientes": 21,
+    "comprobado": [
+      "hash resultado contra índice",
+      "probabilidades y etiquetas",
+      "F1 recalculado",
+      "historias y curvas idénticas",
+      "mejor época",
+      "métricas por paciente"
+    ],
+    "limite": "Auditoría de archivos recibidos; no ejecución independiente ni verificación de pesos, que no se incluyen en esta carpeta."
+  },
+  "reserva65": {
+    "corridas": 65,
+    "huellas_verificadas": 390,
+    "top3_por_validacion": [
+      "inception_v3",
+      "efficientnet_b0",
+      "resnet18"
+    ],
+    "diagnosticos_ensambles": [
+      {
+        "modelo": "inception_v3",
+        "unidad": "ensamble de cinco semillas; selección por media de validación",
+        "n": 969,
+        "pacientes": 6,
+        "errores": 117,
+        "errores_muestreados": 100,
+        "metricas": {
+          "macro_f1": 0.7496347613738917,
+          "accuracy": 0.8792569659442725,
+          "brier": 0.19162608278295867,
+          "log_loss": 0.34558804274777444,
+          "ece_fijo10": 0.0689146348066682
+        },
+        "IC95_bootstrap_paciente_2000": {
+          "macro_f1": [
+            0.561009361009361,
+            0.8052212671319352
+          ],
+          "accuracy": [
+            0.8224716777071786,
+            0.9416477147502339
+          ],
+          "brier": [
+            0.11195887594754754,
+            0.267419549924739
+          ],
+          "log_loss": [
+            0.22082046622318446,
+            0.465721207007363
+          ],
+          "ece_fijo10": [
+            0.05665040967197348,
+            0.08340948178161917
+          ]
+        },
+        "limites": "Reserva histórica expuesta, solo seis pacientes. Intervalos descriptivos, condicionados al ensamble; sin calibración ajustada ni garantía de cobertura."
+      },
+      {
+        "modelo": "efficientnet_b0",
+        "unidad": "ensamble de cinco semillas; selección por media de validación",
+        "n": 969,
+        "pacientes": 6,
+        "errores": 134,
+        "errores_muestreados": 100,
+        "metricas": {
+          "macro_f1": 0.7275006194437474,
+          "accuracy": 0.8617131062951496,
+          "brier": 0.2270796254729782,
+          "log_loss": 0.4023040838470151,
+          "ece_fijo10": 0.08415779689955452
+        },
+        "IC95_bootstrap_paciente_2000": {
+          "macro_f1": [
+            0.5215863453815262,
+            0.7989523790150329
+          ],
+          "accuracy": [
+            0.8057140654257077,
+            0.9208704253214639
+          ],
+          "brier": [
+            0.13266379304232206,
+            0.3190381094438838
+          ],
+          "log_loss": [
+            0.25731250882399753,
+            0.5436766026059919
+          ],
+          "ece_fijo10": [
+            0.0600083148390953,
+            0.1027602444709662
+          ]
+        },
+        "limites": "Reserva histórica expuesta, solo seis pacientes. Intervalos descriptivos, condicionados al ensamble; sin calibración ajustada ni garantía de cobertura."
+      },
+      {
+        "modelo": "resnet18",
+        "unidad": "ensamble de cinco semillas; selección por media de validación",
+        "n": 969,
+        "pacientes": 6,
+        "errores": 394,
+        "errores_muestreados": 100,
+        "metricas": {
+          "macro_f1": 0.5268071376857693,
+          "accuracy": 0.5933952528379773,
+          "brier": 0.474269781350537,
+          "log_loss": 0.8168666141980446,
+          "ece_fijo10": 0.11136486584164965
+        },
+        "IC95_bootstrap_paciente_2000": {
+          "macro_f1": [
+            0.2589056336376225,
+            0.7014277556673577
+          ],
+          "accuracy": [
+            0.27602158828064766,
+            0.9012016021361816
+          ],
+          "brier": [
+            0.15791924453852624,
+            0.8017124193667585
+          ],
+          "log_loss": [
+            0.2929554963526181,
+            1.3668092009836306
+          ],
+          "ece_fijo10": [
+            0.05569180964843841,
+            0.3129517470290432
+          ]
+        },
+        "limites": "Reserva histórica expuesta, solo seis pacientes. Intervalos descriptivos, condicionados al ensamble; sin calibración ajustada ni garantía de cobertura."
+      }
+    ],
+    "errores_compartidos": [
+      {
+        "modelo_a": "inception_v3",
+        "modelo_b": "efficientnet_b0",
+        "errores_comunes": 91,
+        "union": 160
+      },
+      {
+        "modelo_a": "inception_v3",
+        "modelo_b": "resnet18",
+        "errores_comunes": 89,
+        "union": 422
+      },
+      {
+        "modelo_a": "efficientnet_b0",
+        "modelo_b": "resnet18",
+        "errores_comunes": 98,
+        "union": 430
+      }
+    ],
+    "revision_humana": "Preparada, NO adjudicada. No equivale a cerrar 100 errores por modelo."
+  }
+}

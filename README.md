@@ -1,23 +1,14 @@
-# NuCLS · Entregable 3
+# NuCLS: E1, E2 y E3 integrados
 
-Actualización: 20 noviembre 2026. Entrega: sábado 21 noviembre, 10:00 Bogotá.
+Dashboard y libro: https://nucls-entregable3.onrender.com/
 
-Aplicación Dash y Jupyter Book independientes para el candidato CICO. Incluye seis páginas interactivas, trece capítulos numerados y la introducción, referencias con nivel de lectura y tablas históricas E2 identificadas como tales. El piloto está en ejecución; se muestra una instantánea de sus primeras cuatro épocas, identificada como registro comunicado. No hay inferencia pública habilitada. Novedad y superioridad no acreditadas.
+Versión de cierre CPU del 21 de noviembre de 2026. Integra evidencia histórica, histología real, cinco semillas piloto CICO verificadas, predicción ONNX CPU, sensibilidad por oclusión y auditoría de 66 corridas de desarrollo / 65 evaluaciones de reserva. No acredita cierre científico completo.
 
 ## Ejecución web
+Instalar requirements.txt y ejecutar `python app.py`. El modelo y sus metadatos deben estar en models; se comprueba su huella al cargar. No se requiere GPU para la web. Construir libro con requirements-book.txt y `jupyter-book build book --warningiserror --keep-going`.
 
-Instalar `requirements.txt` y `requirements-book.txt`; compilar con `jupyter-book build book --warningiserror --keep-going`; iniciar con `python app.py`. El libro se sirve bajo `/libro/` y la comprobación de salud en `/healthz`. El servicio web no importa Torch ni inicia experimentos.
+## Evidencia
+Consultar libro capítulos 17 y 18, MODEL_CARD.md, DATA_STATEMENT.md, LICENSE_STATUS.md y CIERRE_Y_DEFENSA.md. Ejecutar `python -m pytest tests/test_dashboard.py tests/test_inference.py tests/test_cierre_cpu.py` para verificar la aplicación y los nuevos cálculos/controles. tools/cierre_cpu.py audita las fuentes recibidas y exige un directorio de salida nuevo; no modifica fuentes.
 
-## Piloto
-
-La ejecución vigente en RunPod utiliza `../RUNPOD/NuCLS_E3_RunPod.ipynb`; el cuaderno Colab se conserva como antecedente y no debe lanzarse en paralelo. Protocolo y receta permanecen sin cambios. No ejecutar en paralelo con PCam en la misma GPU. Cinco semillas no equivalen al benchmark final requerido.
-
-## Publicación
-
-Crear un repositorio E3 y un servicio Render nuevos usando `render.yaml`. No vincular el servicio de E2. `Dockerfile` compila el libro en una etapa separada y arranca Gunicorn; el plan free se prepara para una vista previa; su capacidad y disponibilidad deben comprobarse al desplegar. Ninguna URL E3 se anuncia como publicada antes de verificar el despliegue.
-
-## Evidencia y límites
-
-`revision/` conserva las verificaciones, búsquedas y requisitos. `data/heredado_e2/procedencia.json` identifica tablas históricas. Las pruebas de modelo/exportación anteriores fueron sintéticas en CPU; no representan entrenamientos reales ni equivalencia entre entornos GPU. El paquete web no contiene imágenes de pacientes, checkpoints ni credenciales.
-
-E1 y el ZIP E2 entregado no se modifican. El trabajo y publicación E3 tienen alcance separado. Se declara asistencia de IA y responsabilidad del autor en verificar y defender el contenido.
+## Pendiente
+Recibir ablaciones, finalizar PCam y evaluación final E3, controles/datasets externos, calibración/cobertura, fidelidad/estabilidad, adjudicación humana, literatura y reproducción independiente. Mantener E1 y el ZIP entregado intactos. No lanzar entrenamiento desde el dashboard.

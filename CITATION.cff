@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite esta versión como software experimental; no implica validación clínica."
+title: "NuCLS: integración E1, E2 y piloto CICO E3"
+type: software
+authors:
+  - name: "aduartech81"
+repository-code: "https://github.com/aduartech81/NuCLS_DeepLearning_Entregable3"
+version: "cierre-cpu-20261121"
+date-released: "2026-11-21"

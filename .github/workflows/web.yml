@@ -9,5 +9,6 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install -r requirements.txt -r requirements-book.txt pytest
-      - run: python -m pytest tests/test_dashboard.py tests/test_importar_piloto.py -q
+      - run: python -m pytest tests/test_dashboard.py tests/test_importar_piloto.py tests/test_inference.py tests/test_cierre_cpu.py -q
       - run: jupyter-book build book --warningiserror --keep-going
+

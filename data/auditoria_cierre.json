@@ -100,7 +100,7 @@
       "requisito": "Auditoría de corridas y predicciones",
       "guia": "Sección 4",
       "estado": "Parcial",
-      "falta_o_condicion": "66 registros de desarrollo disponibles; falta cerrar cotejo de todas las predicciones y curvas. Distintos de las 65 evaluaciones de reserva."
+      "falta_o_condicion": "66 corridas / 330 archivos cotejados: predicciones, curvas y métricas verificadas. Pesos y reproducción independiente pendientes. Distintos de las 65 evaluaciones de reserva."
     },
     {
       "entregable": "E2",
@@ -148,7 +148,7 @@
       "requisito": "Calibración y segmentos",
       "guia": "Sección 4.5",
       "estado": "Parcial",
-      "falta_o_condicion": "ECE fijo/adaptativo, Brier y brechas integrados; pendiente calibración independiente, pendiente/intercepto e IC por subgrupo."
+      "falta_o_condicion": "ECE fijo/adaptativo, Brier y brechas integrados; pendiente/intercepto ya presentes; faltan calibración independiente e IC por subgrupo."
     },
     {
       "entregable": "E2",
@@ -212,7 +212,7 @@
       "requisito": "Reproducción independiente y entorno",
       "guia": "Sección 8",
       "estado": "Parcial",
-      "falta_o_condicion": "Entorno y checkpoints conservados; faltan reproducción independiente, auditoría completa de bases y comparación numérica."
+      "falta_o_condicion": "Entorno y checkpoints conservados; bases auditadas numéricamente; faltan pesos y reproducción independiente."
     },
     {
       "entregable": "E2",
@@ -252,7 +252,7 @@
       "requisito": "Dashboard: contexto y EDA (8%)",
       "guia": "§9.4.1–2, p.32",
       "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: contexto/EDA/histología publicados. EDA tiene selector de característica, pero no filtros globales que actualicen todos los gráficos; falta QA tablet."
+      "falta_o_condicion": "Parcial: contexto/EDA/histología publicados. EDA incorpora filtros conjuntos para tres gráficos de clase/partición; agregados históricos separados. Falta QA tablet."
     },
     {
       "entregable": "E3",
@@ -260,7 +260,7 @@
       "requisito": "Dashboard: modelos (9%)",
       "guia": "§9.4.3, pp.33–34",
       "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: subida y predicción CICO funcionan. Faltan selector de modelos, calibración, cobertura, explicación local, detección fuera de dominio, latencia y comparación final completa."
+      "falta_o_condicion": "Parcial: subida y predicción CICO funcionan. Oclusión local, latencia y entropía incorporadas; faltan selector, calibración, cobertura, detector de dominio, comparación final y validación de explicaciones."
     },
     {
       "entregable": "E3",
@@ -268,7 +268,7 @@
       "requisito": "Diseño, UX y despliegue (5%)",
       "guia": "§9.5–10, pp.34–37",
       "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: Render probado y entrada validada; falta QA tablet/accesibilidad/memoria, consistencia automática y revisión CI. La guía pide dash-bootstrap-components, no instalado actualmente."
+      "falta_o_condicion": "Parcial: Render probado y entrada validada; falta QA tablet/accesibilidad/memoria, consistencia automática y revisión CI. Bootstrap incorporado y pruebas CPU aprobadas; QA tablet pendiente."
     },
     {
       "entregable": "E3",
