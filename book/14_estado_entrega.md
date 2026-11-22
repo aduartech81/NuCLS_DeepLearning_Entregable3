@@ -2,7 +2,7 @@
 
 22 noviembre 2026 · auditoría documental contra las guías originales E2/E3
 
-15 ablaciones verificadas. Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado.
+15 ablaciones verificadas. Último reporte del autor (22 de noviembre): 8301 y 8302 completas; 8303 entrenando época 1, lote 1500/4096 en Colab; 8304–8305 pendientes. Test final no completado. Reporte operativo, no monitoreo en vivo ni respaldo nuevo auditado.
 
 El corte documental no acredita envío ni cumplimiento total; la meta interna anterior no es una fecha oficial.
 
@@ -32,9 +32,9 @@ El corte documental no acredita envío ni cumplimiento total; la meta interna an
 
 **Estado:** Continuación en Colab comunicada por el autor.
 
-**Evidencia:** Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado.
+**Evidencia:** Último reporte del autor (22 de noviembre): 8301 y 8302 completas; 8303 entrenando época 1, lote 1500/4096 en Colab; 8304–8305 pendientes. Test final no completado. Reporte operativo, no monitoreo en vivo ni respaldo nuevo auditado.
 
-**Pendiente:** Desde ese respaldo quedan 61 épocas (1 de 8302 y 60 de 8303–8305), más test y resumen. Se omiten semillas completas y se recuperan pesos, optimizador y estados aleatorios; no se repite lo guardado. Evaluar test con política congelada y contrastar con el artículo.
+**Pendiente:** Completar 8303–8305 según reporte; recibir respaldo, verificar test y resumen, comparar con el artículo. No repetir semillas completas.
 
 **Dependencia:** GPU y checkpoints E2
 
@@ -72,7 +72,7 @@ El corte documental no acredita envío ni cumplimiento total; la meta interna an
 
 **Estado:** CICO publicado y probado en Render.
 
-**Evidencia:** CICO 6101 exportado; 2.049/2.049 clases idénticas a RunPod usando las imágenes originales; hash ONNX y 7 pruebas de entradas/integridad. Prueba pública desde Safari: tumor 93,7%, linfocito 2,5%, estroma 3,8%; rechazo de dimensiones incorrectas y confirmación obligatoria verificados.
+**Evidencia:** CICO 6101 exportado; 2.049/2.049 clases idénticas a RunPod usando las imágenes originales; hash ONNX y 7 pruebas de entradas/integridad. Prueba pública desde Safari: tumor 93,7%, linfocito 2,5%, estroma 3,8%; rechazo de dimensiones incorrectas y confirmación obligatoria verificados. Se añaden seis controles descriptivos de eliminación/inserción y rotación, con diez órdenes aleatorios por ejemplo. No valida fidelidad clínica.
 
 **Pendiente:** Exportar comparadores bajo política común y selector; calibración independiente, cobertura, detector OOD y fidelidad/estabilidad. Oclusión local y latencia CPU ya disponibles; falta prueba de memoria/carga.
 
@@ -132,7 +132,7 @@ El corte documental no acredita envío ni cumplimiento total; la meta interna an
 
 **Estado:** Pendiente.
 
-**Evidencia:** Cinco semillas piloto no cumplen la evaluación final.
+**Evidencia:** Cinco semillas piloto no cumplen la evaluación final. Escenarios de tamaño aproximado por efecto disponibles; no equivalen a potencia conjunta demostrada.
 
 **Pendiente:** Dimensionar por potencia al 90 % y mínimo ≥10; toda la familia, ≥3 pruebas por contraste, Holm, máximo p ajustado y potencia conjunta.
 

@@ -1,6 +1,6 @@
 {
   "corte": "22 noviembre 2026 · auditoría documental contra las guías originales E2/E3",
-  "alcance": "15 ablaciones verificadas. Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado.",
+  "alcance": "15 ablaciones verificadas. Último reporte del autor (22 de noviembre): 8301 y 8302 completas; 8303 entrenando época 1, lote 1500/4096 en Colab; 8304–8305 pendientes. Test final no completado. Reporte operativo, no monitoreo en vivo ni respaldo nuevo auditado.",
   "fuentes": [
     {
       "documento": "Entregable2DeepLearningProject.pdf",
@@ -108,7 +108,7 @@
       "requisito": "Repeticiones y potencia",
       "guia": "Sección 4.3 y 9.2",
       "estado": "Piloto disponible; cierre parcial",
-      "falta_o_condicion": "13 arquitecturas × 5 en reserva; justificar R por potencia ≥0,80 o declarar MDE y límites. No repetir las 65 evaluaciones ya cerradas."
+      "falta_o_condicion": "MDE y potencia históricos para tres bases ×22 semillas integrados en capítulo 23; no justifican automáticamente las 13 arquitecturas ×5 de reserva. Cotejar supuestos y justificar R por potencia ≥0,80 o MDE/limitaciones para cada comparación final. No repetir las 65 evaluaciones cerradas."
     },
     {
       "entregable": "E2",
@@ -204,7 +204,7 @@
       "requisito": "Paper guía y réplica PCam",
       "guia": "Sección 5",
       "estado": "Continuación comunicada en Colab; cierre pendiente",
-      "falta_o_condicion": "Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado. Desde ese respaldo quedan 61 épocas (1 de 8302 y 60 de 8303–8305), más test y resumen. Se omiten semillas completas y se recuperan pesos, optimizador y estados aleatorios; no se repite lo guardado. Test final, discrepancia e IC respecto del artículo pendientes."
+      "falta_o_condicion": "Último reporte del autor (22 de noviembre): 8301 y 8302 completas; 8303 entrenando época 1, lote 1500/4096 en Colab; 8304–8305 pendientes. Test final no completado. Reporte operativo, no monitoreo en vivo ni respaldo nuevo auditado. El respaldo local auditado conserva 8301 completa y 8302 en época 19. El reporte posterior informa la finalización de 8302 y el inicio de 8303. No se repite lo completado; falta recibir y verificar el próximo respaldo y los resultados finales."
     },
     {
       "entregable": "E2",
@@ -260,7 +260,7 @@
       "requisito": "Dashboard: modelos (9%)",
       "guia": "§9.4.3, pp.33–34",
       "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Subida y predicción CICO, explicación por oclusión y latencia publicadas. Faltan selector de comparadores, calibración/cobertura y detector OOD validado; aviso de dominio no equivale a detector."
+      "falta_o_condicion": "Parcial: CICO con predicción CPU, oclusión y seis ejemplos precalculados; control descriptivo de eliminación/inserción frente a diez órdenes aleatorios y rotación 90°. Faltan comparadores, calibración/cobertura, detector OOD y fidelidad/estabilidad sobre muestra independiente de toda la familia."
     },
     {
       "entregable": "E3",
@@ -268,7 +268,7 @@
       "requisito": "Diseño, UX y despliegue (5%)",
       "guia": "§9.5–10, pp.34–37",
       "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: NuCLEA publicado, dash-bootstrap-components instalado, entradas e imágenes verificadas. Se añade consistencia automática libro/dashboard y CI con pruebas del modelo/exportación. Falta QA real tablet/accesibilidad integral y memoria/carga."
+      "falta_o_condicion": "Parcial: Render, validación de entradas, imágenes verificadas, rejilla Bootstrap y alertas; caché de resultados en memoria de pestaña con invalidación, tabla maestra y pruebas de consistencia/CI. Falta QA real tablet/accesibilidad integral, memoria/carga y confirmar ejecución remota del CI."
     },
     {
       "entregable": "E3",
@@ -300,7 +300,7 @@
       "requisito": "Hipótesis y adecuación (15%)",
       "guia": "§8, pp.21–29",
       "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Piloto CICO completo (5). Final pendiente: ≥10 semillas para toda la familia o más por potencia ≥0,90, ≥3 pruebas/contraste, Holm, máximo p ajustado, IC/efectos y potencia conjunta. No hay superioridad acreditada."
+      "falta_o_condicion": "Piloto CICO y 15 ablaciones verificados. Escenarios de planificación aproximada disponibles, sin acreditar potencia conjunta. Final pendiente: familia completa ≥10 semillas o más según potencia ≥0,90, pruebas admisibles, Holm, IC/efectos y prueba independiente; sin superioridad acreditada."
     },
     {
       "entregable": "E3",

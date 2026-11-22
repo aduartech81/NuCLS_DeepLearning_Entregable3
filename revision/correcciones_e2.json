@@ -92,7 +92,7 @@
   {
     "id": "A11",
     "observacion_docente": "Réplica del paper guía en PCam",
-    "accion_realizada": "Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado.",
+    "accion_realizada": "Último reporte del autor (22 de noviembre): 8301 y 8302 completas; 8303 entrenando época 1, lote 1500/4096 en Colab; 8304–8305 pendientes. Test final no completado. Reporte operativo, no monitoreo en vivo ni respaldo nuevo auditado.",
     "ubicacion_book": "06_discusion.html",
     "evidencia": "PCAM_CONTINUACION_RESPALDO_20261122T083540464366Z.zip",
     "impacto_y_limite": "No hay cierre PCam verificado; al llegar, contrastar receta y criterio con artículo.",

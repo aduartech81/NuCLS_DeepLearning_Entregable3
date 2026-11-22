@@ -32,5 +32,5 @@ def test_new_route_and_callback_registration():
  client=app.server.test_client()
  assert client.get('/cierre').status_code==200
  deps=client.get('/_dash-dependencies').get_json()
- assert any(x['output']=='explain-result.children' for x in deps)
+ assert any('explain-result.children' in x['output'] and 'explain-memory.data' in x['output'] for x in deps)
  assert any('eda-counts.figure' in x['output'] for x in deps)

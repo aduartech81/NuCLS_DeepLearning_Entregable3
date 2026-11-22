@@ -53,6 +53,6 @@ Las curvas completas y el archivo descargable están en [Ablaciones del dashboar
 
 ## PCam (E2)
 
-Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado. Desde ese respaldo quedan 61 épocas (1 de 8302 y 60 de 8303–8305), más test y resumen. Se omiten semillas completas y se recuperan pesos, optimizador y estados aleatorios; no se repite lo guardado.
+Último reporte del autor (22 de noviembre): 8301 y 8302 completas; 8303 entrenando época 1, lote 1500/4096 en Colab; 8304–8305 pendientes. Test final no completado. Reporte operativo, no monitoreo en vivo ni respaldo nuevo auditado. El respaldo local auditado conserva 8301 completa y 8302 en época 19. El reporte posterior informa la finalización de 8302 y el inicio de 8303. No se repite lo completado; falta recibir y verificar el próximo respaldo y los resultados finales.
 
 Respaldo de ablaciones SHA-256: `e7a0d21c4c9cb034ef6efc06de3ed3bc4db58b6fb2cdf8891ec0f5c0da9e0ed6`.

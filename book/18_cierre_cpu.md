@@ -34,8 +34,8 @@ El repositorio incorpora `MODEL_CARD.md`, `DATA_STATEMENT.md`, `CITATION.cff`, `
 
 ## Secuencia de cierre
 
-1. Conservar la cola de ablaciones. Recibir el paquete al finalizar y verificar las 15 corridas antes de interpretar efectos.
-2. Conservar una copia externa de E3; después usar el cuaderno PCam revisado. Este comprueba que E3 haya finalizado y recupera 8302 desde el checkpoint; no inicia desde cero.
+1. Las 15 ablaciones ya fueron recibidas y verificadas; conservar su respaldo y completar los controles pendientes.
+2. PCam continúa en Colab según el autor: 8301/8302 completas, 8303 en entrenamiento. Recibir y auditar el próximo respaldo; no intervenir el proceso.
 3. Completar los experimentos pendientes del protocolo final, controles y datasets externos. Cinco semillas piloto y quince ablaciones no sustituyen el benchmark final.
 4. Adjudicar errores, cerrar búsqueda bibliográfica, confirmar licencia/autoría y obtener reproducción externa.
 5. Integrar resultados finales, revisar enlaces y crear una entrega nueva con manifiesto de huellas. No sobrescribir la entrega anterior.
@@ -45,27 +45,4 @@ El repositorio incorpora `MODEL_CARD.md`, `DATA_STATEMENT.md`, `CITATION.cff`, `
 
 ## Tabla maestra de evidencia disponible
 
-Las filas pertenecen a cortes distintos: no forman un ranking conjunto. La desviación refleja semillas, no un intervalo por paciente. La familia final E3, PCam y ablaciones no se rellenan con valores inventados.
-
-| Etapa | Modelo | Semillas | Macro-F1 | DE semillas |
-|---|---|---:|---:|---:|
-| E1 validación histórica | softmaxcnn_bn | 11 | 0.7568 | 0.0255 |
-| E1 validación histórica | densenet121 | 11 | 0.7783 | 0.0254 |
-| E1 validación histórica | resnet50 | 11 | 0.7934 | 0.0173 |
-| E2 desarrollo auditado | softmaxcnn_bn | 22 | 0.7600 | 0.0219 |
-| E2 desarrollo auditado | densenet121 | 22 | 0.7846 | 0.0217 |
-| E2 desarrollo auditado | resnet50 | 22 | 0.7922 | 0.0227 |
-| E2 reserva expuesta | softmaxcnn_bn | 5 | 0.4742 | 0.0619 |
-| E2 reserva expuesta | densenet121 | 5 | 0.6379 | 0.0600 |
-| E2 reserva expuesta | resnet50 | 5 | 0.6669 | 0.0349 |
-| E2 reserva expuesta | resnet18 | 5 | 0.5260 | 0.0654 |
-| E2 reserva expuesta | mobilenetv3_small_100 | 5 | 0.6504 | 0.0298 |
-| E2 reserva expuesta | efficientnet_b0 | 5 | 0.6758 | 0.0312 |
-| E2 reserva expuesta | deit_tiny_patch16_224 | 5 | 0.6117 | 0.0282 |
-| E2 reserva expuesta | swin_tiny_patch4_window7_224 | 5 | 0.4942 | 0.0499 |
-| E2 reserva expuesta | mobilevit_xxs | 5 | 0.6053 | 0.0722 |
-| E2 reserva expuesta | mixer_s16_224 | 5 | 0.6007 | 0.0269 |
-| E2 reserva expuesta | convnext_tiny | 5 | 0.5162 | 0.0269 |
-| E2 reserva expuesta | inception_v3 | 5 | 0.7204 | 0.0333 |
-| E2 reserva expuesta | sequencer2d_s | 5 | 0.4332 | 0.0492 |
-| E3 validación piloto | CICO | 5 | 0.6682 | 0.0372 |
+Consulte la [tabla maestra compartida con NuCLEA](21_tabla_maestra.md). Se genera automáticamente desde la misma fuente y contiene las tres variantes de ablación verificadas, sin mezclar las poblaciones de E1, E2 y E3.

@@ -25,14 +25,14 @@
     "componente": "Dashboard: modelos",
     "peso": 9,
     "requisito": "Top10, baselines y original; inferencia CPU, incertidumbre, explicación y aviso fuera de dominio.",
-    "estado": "Subida y predicción CICO, explicación por oclusión y latencia publicadas. Faltan selector de comparadores, calibración/cobertura y detector OOD validado; aviso de dominio no equivale a detector."
+    "estado": "Parcial: CICO con predicción CPU, oclusión y seis ejemplos precalculados; control descriptivo de eliminación/inserción frente a diez órdenes aleatorios y rotación 90°. Faltan comparadores, calibración/cobertura, detector OOD y fidelidad/estabilidad sobre muestra independiente de toda la familia."
   },
   {
     "bloque": "E",
     "componente": "Diseño, UX y despliegue",
     "peso": 5,
     "requisito": "Render Web Service independiente, responsividad, privacidad, validación de entrada y prueba de humo.",
-    "estado": "Parcial: NuCLEA publicado, dash-bootstrap-components instalado, entradas e imágenes verificadas. Se añade consistencia automática libro/dashboard y CI con pruebas del modelo/exportación. Falta QA real tablet/accesibilidad integral y memoria/carga."
+    "estado": "Parcial: Render, validación de entradas, imágenes verificadas, rejilla Bootstrap y alertas; caché de resultados en memoria de pestaña con invalidación, tabla maestra y pruebas de consistencia/CI. Falta QA real tablet/accesibilidad integral, memoria/carga y confirmar ejecución remota del CI."
   },
   {
     "bloque": "F",
@@ -60,7 +60,7 @@
     "componente": "Hipótesis y adecuación",
     "peso": 15,
     "requisito": "Piloto≥5; final≥10 o potencia90% superior; ≥3 pruebas por contraste, Holm, máximo p ajustado; potencia conjunta.",
-    "estado": "Piloto CICO completo (5). Final pendiente: ≥10 semillas para toda la familia o más por potencia ≥0,90, ≥3 pruebas/contraste, Holm, máximo p ajustado, IC/efectos y potencia conjunta. No hay superioridad acreditada."
+    "estado": "Piloto CICO y 15 ablaciones verificados. Escenarios de planificación aproximada disponibles, sin acreditar potencia conjunta. Final pendiente: familia completa ≥10 semillas o más según potencia ≥0,90, pruebas admisibles, Holm, IC/efectos y prueba independiente; sin superioridad acreditada."
   },
   {
     "bloque": "J",

@@ -1,5 +1,8 @@
 from pathlib import Path
 import json
+PCAM_ESTADO=json.loads((Path(__file__).resolve().parents[1]/'data/pcam_estado.json').read_text())['estado']
+from pathlib import Path
+import json
 import dash
 from dash import html,dcc
 import plotly.graph_objects as go
@@ -8,7 +11,7 @@ e=json.loads((Path(__file__).resolve().parents[1]/'data/cierre_cpu.json').read_t
 rows=e['reserva65']['diagnosticos_ensambles']
 from src.plots import intervalos_por_paciente
 f=intervalos_por_paciente(rows)
-layout=html.Div([html.Span('EVIDENCIA / 21 NOVIEMBRE 2026',className='eyebrow'),html.H1('Cierre documental y análisis CPU'),html.P('66 corridas de desarrollo auditadas; 65 evaluaciones de reserva cotejadas. No se repitió ningún entrenamiento.',className='lead'),html.Div([html.H2('Qué se comprobó'),html.Ul([html.Li(x) for x in e['bases66']['comprobado']]),html.P(e['bases66']['limite'])],className='panel'),dcc.Graph(figure=f),html.P('Tres ensambles de cinco semillas seleccionados por validación. Reserva histórica expuesta: 969 recortes de solo seis pacientes. Los intervalos no acreditan confirmación independiente ni cobertura clínica.',className='notice'),html.H2('Errores listos para revisión humana'),html.P('Se prepararon 100 errores por ensamble, 300 filas en total. Las categorías y decisiones humanas siguen vacías. Esta preparación no cierra la adjudicación exigida por modelo.'),html.H2('Pendientes que siguen abiertos'),html.Ul([html.Li('15 ablaciones recibidas y verificadas; completar controles y evaluación final E3.'),html.Li('Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado.'),html.Li('Calibración independiente, cobertura, validación externa, fidelidad y estabilidad de explicaciones.'),html.Li('Revisión bibliográfica, licencia y autoría, reproducción por tercero y sustentación.')]),html.A('Leer cierre y paquete de reproducibilidad',href='/libro/18_cierre_cpu.html',className='button')])
+layout=html.Div([html.Span('EVIDENCIA / 21 NOVIEMBRE 2026',className='eyebrow'),html.H1('Cierre documental y análisis CPU'),html.P('66 corridas de desarrollo auditadas; 65 evaluaciones de reserva cotejadas. No se repitió ningún entrenamiento.',className='lead'),html.Div([html.H2('Qué se comprobó'),html.Ul([html.Li(x) for x in e['bases66']['comprobado']]),html.P(e['bases66']['limite'])],className='panel'),dcc.Graph(figure=f),html.P('Tres ensambles de cinco semillas seleccionados por validación. Reserva histórica expuesta: 969 recortes de solo seis pacientes. Los intervalos no acreditan confirmación independiente ni cobertura clínica.',className='notice'),html.H2('Errores listos para revisión humana'),html.P('Se prepararon 100 errores por ensamble, 300 filas en total. Las categorías y decisiones humanas siguen vacías. Esta preparación no cierra la adjudicación exigida por modelo.'),html.H2('Pendientes que siguen abiertos'),html.Ul([html.Li('15 ablaciones recibidas y verificadas; completar controles y evaluación final E3.'),html.Li(PCAM_ESTADO),html.Li('Calibración independiente, cobertura, validación externa, fidelidad y estabilidad de explicaciones.'),html.Li('Revisión bibliográfica, licencia y autoría, reproducción por tercero y sustentación.')]),html.A('Leer cierre y paquete de reproducibilidad',href='/libro/18_cierre_cpu.html',className='button')])
 
 import pandas as pd
 from dash import Input,Output,callback

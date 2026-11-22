@@ -1,0 +1,93 @@
+{
+  "alfa_familiar": 0.05,
+  "contrastes": 3,
+  "potencia_objetivo_individual": 0.9,
+  "formula": "n ≈ ((z(1−α/(2m)) + z(0,90)) × s_d / Δ)^2",
+  "alcance": "Sensibilidad de planificación basada en cinco diferencias pareadas del piloto y aproximación normal bilateral con Bonferroni m=3. No es potencia conjunta, análisis de potencia del test exacto, preregistro ni garantía del tamaño final. La varianza es inestable con n=5. La familia final puede tener más contrastes: debe recalcularse antes de congelar el protocolo. Los deltas son escenarios, no márgenes elegidos tras ver resultados.",
+  "filas": [
+    {
+      "variante": "sin_contraste",
+      "sd_diferencias": 0.011926683933712419,
+      "n_piloto": 5,
+      "mde90_n10": 0.013862445235374471,
+      "escenarios": [
+        {
+          "delta": 0.01,
+          "n_normal_aprox": 20,
+          "n_con_piso_guia": 20
+        },
+        {
+          "delta": 0.02,
+          "n_normal_aprox": 5,
+          "n_con_piso_guia": 10
+        },
+        {
+          "delta": 0.03,
+          "n_normal_aprox": 3,
+          "n_con_piso_guia": 10
+        },
+        {
+          "delta": 0.05,
+          "n_normal_aprox": 1,
+          "n_con_piso_guia": 10
+        }
+      ]
+    },
+    {
+      "variante": "sin_amortiguacion",
+      "sd_diferencias": 0.017940672392291548,
+      "n_piloto": 5,
+      "mde90_n10": 0.020852534527300327,
+      "escenarios": [
+        {
+          "delta": 0.01,
+          "n_normal_aprox": 44,
+          "n_con_piso_guia": 44
+        },
+        {
+          "delta": 0.02,
+          "n_normal_aprox": 11,
+          "n_con_piso_guia": 11
+        },
+        {
+          "delta": 0.03,
+          "n_normal_aprox": 5,
+          "n_con_piso_guia": 10
+        },
+        {
+          "delta": 0.05,
+          "n_normal_aprox": 2,
+          "n_con_piso_guia": 10
+        }
+      ]
+    },
+    {
+      "variante": "sin_contexto",
+      "sd_diferencias": 0.02111245851568107,
+      "n_piloto": 5,
+      "mde90_n10": 0.02453911762769794,
+      "escenarios": [
+        {
+          "delta": 0.01,
+          "n_normal_aprox": 61,
+          "n_con_piso_guia": 61
+        },
+        {
+          "delta": 0.02,
+          "n_normal_aprox": 16,
+          "n_con_piso_guia": 16
+        },
+        {
+          "delta": 0.03,
+          "n_normal_aprox": 7,
+          "n_con_piso_guia": 10
+        },
+        {
+          "delta": 0.05,
+          "n_normal_aprox": 3,
+          "n_con_piso_guia": 10
+        }
+      ]
+    }
+  ]
+}

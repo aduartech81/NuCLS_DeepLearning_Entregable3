@@ -9,6 +9,8 @@ import plotly.graph_objects as go
 
 dash.register_page(__name__,path='/prediccion',name='Predicción CICO')
 layout=html.Div([
+ dcc.Store(id="pred-memory",storage_type="memory"),
+ dcc.Store(id="explain-memory",storage_type="memory"),
  html.Div([html.Span('1 · Elige una imagen'),html.Span('2 · Analiza'),html.Span('3 · Interpreta con cautela')],className='prediction-steps'),
  html.Span('CICO / DEMOSTRACIÓN EXPLORATORIA',className='eyebrow'),html.H1('Explorar un recorte histológico'),
  html.P('Carga un recorte RGB de 128 × 128 píxeles, centrado en un núcleo y preparado como los recortes NuCLS. PNG o JPEG, máximo 2 MB. También se admite RGBA completamente opaco. No se admiten láminas completas ni se redimensiona la imagen.',className='lead'),
@@ -21,21 +23,19 @@ layout=html.Div([
  html.P('Si el archivo está en Google Drive o iCloud, descárgalo primero al computador. Elegir un nombre no garantiza que el archivo esté disponible.'),
  html.Button('Analizar recorte',id='pred-run',n_clicks=0,className='button',disabled=True),
  dcc.Loading(html.Div(id='pred-result',role='status',style={'marginTop':'24px'})),
- html.P('Al seleccionar una imagen, se envía al servidor de Render para comprobarla y se procesa en memoria. La aplicación no la escribe en archivos ni la incorpora al entrenamiento. Las probabilidades no están calibradas y no expresan certeza clínica.'),
+ html.P('Al seleccionar una imagen, se envía al servidor de Render para comprobarla y se procesa en memoria. La aplicación no la escribe en archivos ni la incorpora al entrenamiento. Los resultados se conservan solo en memoria de esta pestaña; al cambiar de imagen o retirar la confirmación se limpian. Las probabilidades no están calibradas y no expresan certeza clínica.'),
  html.Section([html.H2('¿Qué zonas influyen en esta puntuación?'),html.P('Oculta 64 regiones con el color medio del recorte y mide el cambio en la probabilidad de la clase elegida. Una caída positiva indica sensibilidad a esa región; no identifica células ni demuestra causalidad.'),html.Button('Calcular sensibilidad local',id='explain-run',n_clicks=0,className='button secondary',disabled=True),dcc.Loading(html.Div(id='explain-result',role='status'))],className='panel'),
  html.A('Descargar ejemplos con clase de referencia',href='/ejemplos',className='button'),html.A('Ver diagnósticos y calibración observada',href='/diagnosticos',className='button secondary'),html.A('Leer validación de exportación',href='/libro/16_exportacion_inferencia.html',className='button secondary')])
 
-@callback(Output('pred-result','children'),Input('pred-run','n_clicks'),State('pred-upload','contents'),State('pred-consent','value'),prevent_initial_call=True)
 def analyze(n,contents,consent):
  if 'yes' not in (consent or []):return dbc.Alert('Marca la confirmación antes de analizar.',color='warning')
  if not contents:return dbc.Alert('Selecciona primero una imagen PNG o JPEG.',color='warning')
  try:r=predict(contents)
  except ValueError as e:return dbc.Alert(str(e),color='warning')
  except Exception:return dbc.Alert('El modelo no está disponible o no superó su comprobación. No se generó una predicción.',color='danger')
- return html.Div([html.Img(src=contents,alt='Recorte analizado',style={'width':'256px','imageRendering':'auto','maxWidth':'100%'}),html.Div('DOMINIO NO VERIFICADO: una imagen ajena a histología también puede recibir una puntuación alta. No interpretes esta salida si el recorte no corresponde a NuCLS.',className='notice'),html.H2('Clase con mayor puntuación: '+r['prediction']),dcc.Graph(figure=go.Figure(go.Bar(x=r['probabilities'],y=r['labels'],orientation='h',text=[f'{p:.1%}' for p in r['probabilities']],textposition='auto',marker_color='#147d79')).update_layout(template='plotly_white',height=260,xaxis=dict(range=[0,1],tickformat='.0%',title='Puntuación del modelo · no calibrada'),margin=dict(l=90,r=25,t=15,b=50)),config={'displayModeBar':False}),html.Table([html.Thead(html.Tr([html.Th('Clase'),html.Th('Probabilidad del modelo')])) ,html.Tbody([html.Tr([html.Td(label),html.Td(f'{p:.1%}')]) for label,p in zip(r['labels'],r['probabilities'])])]),html.P(f"Tiempo de procesamiento en servidor: {r['latency_ms']:.1f} ms (sin red). Entropía: {r['entropy']:.3f} nats; dispersión de puntuaciones, no cobertura ni certeza clínica."),html.P('Semilla 6101 · tres clases posibles. El modelo siempre asigna una de ellas, incluso si el contenido no corresponde; no usar para decisiones clínicas.')],className='panel')
+ return html.Div([html.Img(src=contents,alt='Recorte analizado',style={'width':'256px','imageRendering':'auto','maxWidth':'100%'}),html.Div('DOMINIO NO VERIFICADO: una imagen ajena a histología también puede recibir una puntuación alta. No interpretes esta salida si el recorte no corresponde a NuCLS.',className='notice'),html.H2('Clase con mayor puntuación: '+r['prediction']),dcc.Graph(figure=go.Figure(go.Bar(x=r['probabilities'],y=r['labels'],orientation='h',text=[f'{p:.1%}' for p in r['probabilities']],textposition='auto',marker_color='#147d79')).update_layout(template='plotly_white',height=260,xaxis=dict(range=[0,1],tickformat='.0%',title='Puntuación del modelo · no calibrada'),margin=dict(l=90,r=25,t=15,b=50)),config={'displayModeBar':False}),html.Table([html.Thead(html.Tr([html.Th('Clase'),html.Th('Probabilidad del modelo')])) ,html.Tbody([html.Tr([html.Td(label),html.Td(f'{p:.1%}')]) for label,p in zip(r['labels'],r['probabilities'])])]),html.P(f"Tiempo del cálculo original en servidor (se reutiliza si la imagen no cambia): {r['latency_ms']:.1f} ms (sin red). Entropía: {r['entropy']:.3f} nats; dispersión de puntuaciones, no cobertura ni certeza clínica."),html.P('Semilla 6101 · tres clases posibles. El modelo siempre asigna una de ellas, incluso si el contenido no corresponde; no usar para decisiones clínicas.')],className='panel')
 
 
-@callback(Output('explain-result','children'),Input('explain-run','n_clicks'),State('pred-upload','contents'),State('pred-consent','value'),prevent_initial_call=True)
 def explain(n,contents,consent):
  if 'yes' not in (consent or []):return dbc.Alert('Marca la confirmación antes de analizar.',color='warning')
  if not contents:return dbc.Alert('Selecciona primero una imagen PNG o JPEG.',color='warning')
@@ -45,7 +45,7 @@ def explain(n,contents,consent):
   r=precomputed.get(key)
   if r is None:r=explain_occlusion(contents)
  except ValueError as e:return dbc.Alert(str(e),color='warning')
- except Exception:return html.P('No se pudo calcular la sensibilidad; no se muestra un mapa sustituto.')
+ except Exception:return dbc.Alert('No se pudo calcular la sensibilidad; no se muestra un mapa sustituto.',color='danger')
  fig=go.Figure(go.Heatmap(z=r['effects'],x=[8+16*i for i in range(8)],y=[8+16*i for i in range(8)],colorscale='RdBu_r',zmid=0,colorbar={'title':'Caída de prob.'},hovertemplate='x=%{x}, y=%{y}<br>Caída: %{z:.4f}<extra></extra>'))
  fig.update_layout(template='plotly_white',xaxis_title='Posición horizontal (px)',yaxis_title='Posición vertical (px)',yaxis={'autorange':'reversed','scaleanchor':'x'},margin={'t':20},height=420)
  return html.Div([html.H3('Sensibilidad de la puntuación: '+r['target']),dbc.Row([dbc.Col(html.Img(src=contents,alt='Recorte usado para sensibilidad local',style={'width':'100%','maxWidth':'400px'}),xs=12,md=6),dbc.Col(dcc.Graph(figure=fig),xs=12,md=6)]),html.P(f"64 regiones de 16 × 16 px · {r['seconds']:.2f} s de servidor. Rojo: al ocultar, baja la puntuación; azul: sube. Un mapa uniforme puede indicar poca sensibilidad a esta intervención."),html.P(r['scope'],className='note')])
@@ -67,3 +67,25 @@ def choose_example(case):
  if r is None:return dash.no_update,dash.no_update,dash.no_update
  data='data:image/png;base64,'+(root/r['png_file']).read_text().strip()
  return data,r['archivo_ejemplo'],html.P(r['explicacion']+' Marca la confirmación para habilitar el análisis.',className='note')
+
+
+def cached_view(action, contents, consent, cached, compute, n):
+ # Browser memory only. Cache is display-only, never scientific evidence or model input.
+ if action not in ('pred-run','explain-run') or 'yes' not in (consent or []) or not contents:
+  return None,None
+ model_sha=json.loads((Path(__file__).resolve().parents[1]/'models/cico_6101.json').read_text())['sha256']
+ key=hashlib.sha256((model_sha+contents).encode()).hexdigest()
+ if isinstance(cached,dict) and cached.get('key')==key and 'view' in cached:
+  return cached['view'],dash.no_update
+ view=compute(n,contents,consent)
+ # Failures are not cached: a transient failure must be retryable.
+ if isinstance(view,dbc.Alert):return view,None
+ return view,{'key':key,'view':view}
+
+@callback(Output('pred-result','children'),Output('pred-memory','data'),Input('pred-run','n_clicks'),Input('pred-upload','contents'),Input('pred-consent','value'),State('pred-memory','data'),prevent_initial_call=True)
+def analyze_cached(n,contents,consent,cached):
+ return cached_view(dash.ctx.triggered_id,contents,consent,cached,analyze,n)
+
+@callback(Output('explain-result','children'),Output('explain-memory','data'),Input('explain-run','n_clicks'),Input('pred-upload','contents'),Input('pred-consent','value'),State('explain-memory','data'),prevent_initial_call=True)
+def explain_cached(n,contents,consent,cached):
+ return cached_view(dash.ctx.triggered_id,contents,consent,cached,explain,n)

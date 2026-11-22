@@ -1,7 +1,7 @@
 {
   "corte": "22 noviembre 2026 · auditoría documental contra las guías originales E2/E3",
   "plazo": "El corte documental no acredita envío ni cumplimiento total; la meta interna anterior no es una fecha oficial.",
-  "alcance": "15 ablaciones verificadas. Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado.",
+  "alcance": "15 ablaciones verificadas. Último reporte del autor (22 de noviembre): 8301 y 8302 completas; 8303 entrenando época 1, lote 1500/4096 en Colab; 8304–8305 pendientes. Test final no completado. Reporte operativo, no monitoreo en vivo ni respaldo nuevo auditado.",
   "items": [
     {
       "etapa": "E1",
@@ -26,8 +26,8 @@
       "componente": "PCam",
       "estado": "Continuación en Colab comunicada por el autor",
       "ubicacion": "Carpeta recibida y respaldo local verificados",
-      "evidencia": "Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado.",
-      "falta": "Desde ese respaldo quedan 61 épocas (1 de 8302 y 60 de 8303–8305), más test y resumen. Se omiten semillas completas y se recuperan pesos, optimizador y estados aleatorios; no se repite lo guardado. Evaluar test con política congelada y contrastar con el artículo.",
+      "evidencia": "Último reporte del autor (22 de noviembre): 8301 y 8302 completas; 8303 entrenando época 1, lote 1500/4096 en Colab; 8304–8305 pendientes. Test final no completado. Reporte operativo, no monitoreo en vivo ni respaldo nuevo auditado.",
+      "falta": "Completar 8303–8305 según reporte; recibir respaldo, verificar test y resumen, comparar con el artículo. No repetir semillas completas.",
       "dependencia": "GPU y checkpoints E2"
     },
     {
@@ -62,7 +62,7 @@
       "componente": "Exportación e inferencia CPU",
       "estado": "CICO publicado y probado en Render",
       "ubicacion": "/prediccion y libro/16_exportacion_inferencia.html",
-      "evidencia": "CICO 6101 exportado; 2.049/2.049 clases idénticas a RunPod usando las imágenes originales; hash ONNX y 7 pruebas de entradas/integridad. Prueba pública desde Safari: tumor 93,7%, linfocito 2,5%, estroma 3,8%; rechazo de dimensiones incorrectas y confirmación obligatoria verificados.",
+      "evidencia": "CICO 6101 exportado; 2.049/2.049 clases idénticas a RunPod usando las imágenes originales; hash ONNX y 7 pruebas de entradas/integridad. Prueba pública desde Safari: tumor 93,7%, linfocito 2,5%, estroma 3,8%; rechazo de dimensiones incorrectas y confirmación obligatoria verificados. Se añaden seis controles descriptivos de eliminación/inserción y rotación, con diez órdenes aleatorios por ejemplo. No valida fidelidad clínica.",
       "falta": "Exportar comparadores bajo política común y selector; calibración independiente, cobertura, detector OOD y fidelidad/estabilidad. Oclusión local y latencia CPU ya disponibles; falta prueba de memoria/carga.",
       "dependencia": "Artefactos entrenados"
     },
@@ -116,7 +116,7 @@
       "componente": "Benchmark final y potencia",
       "estado": "Pendiente",
       "ubicacion": "No acreditado",
-      "evidencia": "Cinco semillas piloto no cumplen la evaluación final.",
+      "evidencia": "Cinco semillas piloto no cumplen la evaluación final. Escenarios de tamaño aproximado por efecto disponibles; no equivalen a potencia conjunta demostrada.",
       "falta": "Dimensionar por potencia al 90 % y mínimo ≥10; toda la familia, ≥3 pruebas por contraste, Holm, máximo p ajustado y potencia conjunta.",
       "dependencia": "Diseño, entrenamiento y estadística"
     },

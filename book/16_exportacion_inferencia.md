@@ -24,13 +24,13 @@ Clases en orden: tumor_nonMitotic (tumor), lymphocyte (linfocito), nonTILnonMQ_s
 | Latencia mediana local, lote 1 | 3.825 ms |
 | Percentil 95 de latencia local | 4.576 ms |
 
-La medición usa 5 calentamientos, 30 repeticiones y 2 hilos en macOS ARM64. **No es latencia de Render.** Debe completarse medición en el servidor. El esquema ONNX fue validado y su hash se comprueba antes de crear la sesión CPU.
+La medición usa 5 calentamientos, 30 repeticiones y 2 hilos en macOS ARM64. **No es latencia de Render.** Existe además una medición exploratoria de Render del 21 de noviembre: cinco solicitudes posteriores a la primera tuvieron mediana de 456,13 ms incluyendo red y 6,2 ms de procesamiento informado por servidor. Se usó una imagen sintética solo para medir funcionamiento. No es una prueba de carga ni memoria, y la primera solicitud no demuestra por sí sola arranque en frío. El esquema ONNX fue validado y su hash se comprueba antes de crear la sesión CPU.
 
 SHA256 ONNX: `da64160bc772eb3486107ff1f10ad97327ff0d61f7d8a642727003799ca6bcb5`.
 
 ## Manejo de imágenes y alcance
 
-El visitante confirma que el recorte no contiene datos personales y acepta el uso experimental. Al analizar se envía a Render; la aplicación lo decodifica en memoria, no lo escribe en archivos ni lo incorpora a entrenamiento. Se limita el tamaño de la petición. No se prometen diagnóstico, certeza clínica ni interpretación de láminas completas.
+El visitante confirma que el recorte no contiene datos personales y acepta el uso experimental. Al seleccionar se envía a Render; la aplicación lo decodifica en memoria, no lo escribe en archivos ni lo incorpora a entrenamiento. Se limita el tamaño de la petición. No se prometen diagnóstico, certeza clínica ni interpretación de láminas completas.
 
 La vista muestra imagen, clase con mayor puntuación y las tres probabilidades. Esta capacidad no completa exportación de toda la familia de comparadores, incertidumbre/calibración, robustez, evaluación externa o validación clínica.
 
@@ -44,3 +44,9 @@ Se cotejaron las 2.049 imágenes originales de validación (21 pacientes), sus h
 ## Prueba pública en Render
 
 El 21 de noviembre se publicó el commit `e1aaf882516020400a748df0e07b5e1eb569364b`. Desde Safari se cargó un recorte de validación y se obtuvo tumor 93,7%, linfocito 2,5%, estroma 3,8%, coincidiendo con el checkpoint. El endpoint rechazó dimensiones incorrectas y bloqueó el análisis sin confirmación. El estado público confirmó modelo disponible. Esto verifica funcionamiento, no calibración ni capacidad clínica.
+
+## Memoria de resultados en la pestaña
+
+NuCLEA utiliza `dcc.Store` con almacenamiento en memoria para evitar repetir el cálculo de una imagen ya analizada en esa pestaña. La clave incluye imagen y versión del modelo; al cambiar la imagen o retirar la confirmación se limpian resultado y memoria. No se usa almacenamiento persistente del navegador. Los seis mapas precalculados corresponden a los ejemplos públicos. Los valores guardados en la pestaña son presentación, nunca evidencia científica recibida del usuario.
+
+La [comprobación descriptiva de mapas](22_calidad_explicaciones.md) añade eliminación/inserción y simetría de rotación para seis ejemplos; no cierra fidelidad/estabilidad en toda la familia.

@@ -22,3 +22,5 @@ def figures(seed):
  for f in [roc,pr,cal]:f.update_xaxes(range=[0,1]);f.update_yaxes(range=[0,1])
  text=f"Semilla {seed} · Macro-F1 {r['macro_f1']:.4f} · exactitud {r['accuracy']:.4f} · Brier multiclase (suma) {r['brier']:.4f} · ECE de 10 intervalos {r['ece']:.4f}. Hallazgo: la distancia a la diagonal mide desajuste observado de confianza; no acredita calibración externa."
  return cm,roc,pr,cal,text
+
+layout.children.append(html.A('Comprobar mapas y planificación estadística',href='/calidad-explicaciones',className='button'))

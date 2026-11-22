@@ -34,7 +34,7 @@ No se equipara una entrega documental a completar los experimentos de la guía. 
 
 El cierre de reserva, las 15 ablaciones de preprocesamiento y los ensambles constan en la trazabilidad heredada. Antes de modificar la web E2 se cotejan contra sus archivos fuente; no se reentrena ni se vuelve a seleccionar sobre reserva.
 
-Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado. Desde ese respaldo quedan 61 épocas (1 de 8302 y 60 de 8303–8305), más test y resumen. Se omiten semillas completas y se recuperan pesos, optimizador y estados aleatorios; no se repite lo guardado.
+Último reporte del autor (22 de noviembre): 8301 y 8302 completas; 8303 entrenando época 1, lote 1500/4096 en Colab; 8304–8305 pendientes. Test final no completado. Reporte operativo, no monitoreo en vivo ni respaldo nuevo auditado. El respaldo local auditado conserva 8301 completa y 8302 en época 19. El reporte posterior informa la finalización de 8302 y el inicio de 8303. No se repite lo completado; falta recibir y verificar el próximo respaldo y los resultados finales.
 
 Inception presenta mapas Grad-CAM constantes en la evidencia revisada: requieren cambiar la capa o método y verificar fidelidad antes de mostrarlos como explicaciones válidas. El techo multi-rater requiere anotaciones independientes enlazadas; una máscara QC no lo sustituye. Sigue siendo necesaria la revisión de las 66 corridas base y la reproducción externa.
 
