@@ -92,11 +92,11 @@
   {
     "id": "A11",
     "observacion_docente": "Réplica del paper guía en PCam",
-    "accion_realizada": "PCam detenido, confirmado por el autor el 20 noviembre. Se conserva el inventario comunicado.",
+    "accion_realizada": "PCam reanudado desde checkpoint: 8301 completa; 8302 ejecuta época 17, lote 3500/4096 según último avance comunicado. Guardada hasta 16.",
     "ubicacion_book": "06_discusion.html",
     "evidencia": "8301: época 20 y marcador de finalización. 8302: última época guardada 16; sin marcador. 8303–8305 sin checkpoints en el inventario.",
     "impacto_y_limite": "No hay cierre PCam verificado; al llegar, contrastar receta y criterio con artículo.",
-    "estado": "Detenido; cierre PCam no acreditado"
+    "estado": "En ejecución; cierre y test pendientes"
   },
   {
     "id": "A12",

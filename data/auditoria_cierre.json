@@ -284,7 +284,7 @@
       "requisito": "Original: implementación y demostración (10%)",
       "guia": "§6.5 y 7.4, pp.13–20",
       "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: implementación y pruebas previas. Cola de 15 ablaciones en curso según último reporte; también faltan base sin componentes, componentes solos, controles de capacidad y explicación/fidelidad."
+      "falta_o_condicion": "Parcial: implementación y pruebas previas. 15 ablaciones verificadas desde respaldo, métricas recalculadas y análisis pareado exploratorio integrado; también faltan base sin componentes, componentes solos, controles de capacidad y explicación/fidelidad."
     },
     {
       "entregable": "E3",
