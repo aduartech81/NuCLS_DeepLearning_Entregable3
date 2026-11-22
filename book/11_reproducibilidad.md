@@ -1,8 +1,8 @@
 # Reproducibilidad y defensa
 
-## Ruta única
+## Rutas separadas por experimento
 
-Usar el cuaderno RunPod `NuCLS_E3_RunPod.ipynb`. La celda 1 audita datos, la 2 inicia un proceso independiente, la 3 consulta el avance y la 4 empaqueta al finalizar. La salida se conserva en `/workspace/NuCLS_E3_PILOTO_CICO_V1`; debe descargarse antes de eliminar el Pod. El cuaderno Colab es un antecedente y no es la ruta activa. No se debe iniciar mientras otro trabajo use la misma GPU.
+Usar el cuaderno RunPod `NuCLS_E3_RunPod.ipynb`. La celda 1 audita datos, la 2 inicia un proceso independiente, la 3 consulta el avance y la 4 empaqueta al finalizar. La salida se conserva en `/workspace/NuCLS_E3_PILOTO_CICO_V1`; debe descargarse antes de eliminar el Pod. Esta ruta corresponde al piloto E3, ya recibido y verificado; no es una instrucción para repetirlo. PCam E2 tiene su propia continuación en Colab y respaldos en Drive. No se debe iniciar mientras otro trabajo use la misma GPU.
 
 El ejecutor guarda checkpoints por época, estado del optimizador y generadores aleatorios. Verifica identidad y evidencias antes de omitir corridas. Una época incompleta puede repetirse. Los cambios de entorno y bloqueos provocan una detención conservadora; no se borran automáticamente.
 

@@ -13,4 +13,7 @@ Borrador para completar y firmar personalmente: identificar contribuciones propi
 0–2: pregunta, utilidad y límites. 2–5: datos, pacientes y fuga. 5–8: E1/E2, comparadores y réplica PCam. 8–11: diseño CICO y cota del contexto. 11–14: piloto, ablaciones y límites estadísticos. 14–17: demostración de histología, predicción y oclusión. 17–19: pendientes, reproducibilidad y generalización. 19–20: conclusiones vinculadas a las preguntas. Preparar demostración local si falla Internet. No mostrar resultados pendientes como completados.
 
 ## PCam
-Usar únicamente el cuaderno revisado del paquete CIERRE_E2_E3_20261121/PCAM cuando E3 esté completamente terminada y respaldada. 8301 se conserva; 8302 se retoma desde 16; 8303–8305 están pendientes. El entorno de PCam es independiente. No borrar bloqueos sin comprobar procesos. No arrancar PCam junto a las ablaciones actuales.
+PCam es la réplica E2 y continúa en Colab según el autor. El último avance cuantificado comunicado fue 8301/8302 completas y 8303 en época 1; posteriormente hubo reconexión y recuperación. El autor comunica que volvió a correr, sin una época nueva verificada. No interpretar el inventario local anterior como seguimiento en vivo. Preservar checkpoints, optimizador, estados aleatorios y respaldos; no borrar marcas sin comprobar procesos. No reiniciar semillas completas ni intervenir el entrenamiento desde la web.
+
+## Versión para nueva revisión
+Consultar libro capítulo 24: avances, criterios de aceptación y bloqueantes. La versión es revisable, pero no acredita cierre experimental de E3. No se asigna nota estimada ni firma del autor. La revisión solicitada debe diferenciar documentación/ingeniería de resultados aún pendientes.
