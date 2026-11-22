@@ -9,7 +9,7 @@ layout = html.Div([
  html.Span('04 / NOVEDAD Y PROTOCOLO · 18 NOV 2026', className='eyebrow'),
  html.H1(['Una diferencia concreta.', html.Br(), html.Span('Una prueba por construir.', className='accent')]),
  html.P('CICO explora una corrección contextual acotada por desacuerdo entre orientaciones. La revisión no acredita todavía originalidad ni superioridad.', className='lead'),
- html.Div([html.Div([html.Small('ANTECEDENTES'),html.H2(str(len(ROWS))),html.P('Con nivel de lectura explícito')],className='card'),html.Div([html.Small('PILOTO VERIFICADO'),html.H2('5'),html.P('Cinco semillas completas; resultados exploratorios en Piloto')],className='card'),html.Div([html.Small('FECHA OBJETIVO ORIGINAL'),html.H2('21 NOV'),html.P('21 noviembre · 10:00 a. m. Bogotá; no acredita entrega en plazo')],className='card')],className='grid'),
+ html.Div([html.Div([html.Small('ANTECEDENTES'),html.H2(str(len(ROWS))),html.P('Con nivel de lectura explícito')],className='card'),html.Div([html.Small('PILOTO VERIFICADO'),html.H2('5'),html.P('Cinco semillas completas; resultados exploratorios en Piloto')],className='card'),html.Div([html.Small('ABLACIONES VERIFICADAS'),html.H2('15 / 15'),html.P('Cinco semillas por variante; evidencia exploratoria')],className='card')],className='grid'),
  html.H2('Qué existe y qué propone CICO'),
  html.P('Selecciona un antecedente para ver el solapamiento, la diferencia candidata y el alcance de la lectura.'),
  dcc.Dropdown(id='antecedente-e3', options=[{'label':r['titulo'],'value':i} for i,r in enumerate(ROWS)], value=0,clearable=False),

@@ -1,5 +1,7 @@
 # Protocolo E3 — piloto de desarrollo v1
 
+> Documento histórico: fechas y estados siguientes corresponden a su elaboración, no al avance actual. Consulte la [auditoría vigente](17_auditoria_cierre.md).
+
 Fecha: 18 noviembre 2026. Límite de entrega: sábado 21 noviembre, 10:00 America/Bogota. **Este documento define el piloto exploratorio; NO es el preregistro final congelado de E3.** Al redactarse el protocolo (18 noviembre) no se había lanzado entrenamiento. Actualización de estado del 20 noviembre: el piloto corre en RunPod; no se modifica la receta ni el protocolo fuente. El hash del protocolo piloto se guarda con cada corrida.
 
 ## Pregunta y mecanismo

@@ -1,5 +1,7 @@
 # Plan de lectura del piloto y decisiones
 
+> Documento histórico: fechas y estados siguientes corresponden a su elaboración, no al avance actual. Consulte la [auditoría vigente](17_auditoria_cierre.md).
+
 Complemento documental del 18 noviembre 2026. No cambia el protocolo, el código ni la receta incorporados en el cuaderno vigente. Fecha de entrega: sábado 21 noviembre, 10:00 (Bogotá).
 
 ## Qué puede resolver el piloto

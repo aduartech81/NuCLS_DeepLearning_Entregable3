@@ -11,7 +11,7 @@ app.layout = html.Div([html.A("Saltar al contenido",href="#contenido",className=
     html.Header([html.A([html.Span("N",className="brand-symbol"),html.Span("NuCLEA"),html.Small("HISTOLOGÍA + INTELIGENCIA")], href="/", className="brand"),
         html.Nav([html.A("Inicio",href="/"),html.A("Explorar tejido",href="/histologia"),html.A("Comparar resultados",href="/proyecto"),html.A("Probar una imagen",href="/prediccion",className="nav-cta"),html.Details([html.Summary("Más del proyecto"),html.Div([html.A(label,href=url) for label,url in [("Datos y calidad","/eda-e3"),("Diseño CICO","/modelos"),("Diagnósticos","/diagnosticos"),("Ejemplos con referencia","/ejemplos"),("Ablaciones verificadas","/ablaciones"),("Piloto","/piloto"),("Costo y eficiencia","/costos"),("Literatura","/investigacion"),("Evidencia y pendientes","/reproducibilidad"),("Documentación","/documentacion"),("Libro completo","/libro/")]],className="nav-menu")],className="nav-more")],**{'aria-label':'Navegación principal'})]),
     html.Main(dash.page_container,id="contenido"),
-    html.Footer([html.P("NuCLS · Proyecto final · E1 + E2 + E3 · Revisión CPU: 21 noviembre 2026 · Resultados identificados por etapa"),html.A("Contexto y ficha del modelo",href="/documentacion"),html.Span(" · "),html.A("Privacidad",href="/documentacion#privacidad"),html.P("Demostración experimental: no diagnóstico. Las imágenes cargadas se procesan en memoria y no se usan para entrenar.")])])
+    html.Footer([html.P("NuCLEA · Proyecto NuCLS · E1 + E2 + E3 · Revisión CPU: 22 noviembre 2026 · Resultados identificados por etapa"),html.A("Contexto y ficha del modelo",href="/documentacion"),html.Span(" · "),html.A("Privacidad",href="/documentacion#privacidad"),html.P("Demostración experimental: no diagnóstico. Las imágenes cargadas se procesan en memoria y no se usan para entrenar.")])])
 
 from flask import send_from_directory, jsonify, abort
 BOOK_HTML = Path(__file__).resolve().parent / 'book/_build/html'
@@ -32,9 +32,6 @@ def book_home():
 def book_file(filename):
     return send_from_directory(BOOK_HTML, filename)
 
-if __name__ == "__main__":
-    import os
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT",8053)), debug=False)
 
 @server.get('/histologia-imagen/<case>/<mode>')
 def histology_image(case,mode):
@@ -61,3 +58,7 @@ def example_png(case):
  r=next((r for r in rows if r['caso']==case),None)
  if r is None:abort(404)
  return Response(base64.b64decode((Path(__file__).resolve().parent/r['png_file']).read_text()),mimetype='image/png',headers={'Content-Disposition':'attachment; filename="'+r['archivo_ejemplo']+'"'})
+
+if __name__ == "__main__":
+    import os
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT",8053)), debug=False)

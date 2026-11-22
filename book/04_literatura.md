@@ -84,3 +84,11 @@ Diagrama heredado de E2; representa la arquitectura documentada, no una explicac
 
 Diagrama heredado de E2; representa la arquitectura documentada, no una explicación de atención sobre una imagen.
 
+
+## Referencias de vigilancia E3
+
+Estos registros normalizan los antecedentes ya documentados; no añaden búsquedas ni acreditan lectura completa. El nivel de lectura permanece en la matriz de novedad.
+
+```{bibliography}
+:all:
+```

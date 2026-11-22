@@ -1,7 +1,7 @@
 {
-  "corte": "21 noviembre 2026 · revisión directa de las guías E2 (65 páginas) y E3 (60 páginas); inferencia pública comprobada",
-  "plazo": "Meta de trabajo original: 21 noviembre 2026 a las 10:00; no representa la fecha oficial de la plataforma.",
-  "alcance": "Respaldo de 15 ablaciones verificado y métricas recalculadas. PCam reanudado, último avance comunicado: época 17 lote 3500/4096. No es monitoreo en vivo ni cierre experimental total.",
+  "corte": "22 noviembre 2026 · auditoría documental contra las guías originales E2/E3",
+  "plazo": "El corte documental no acredita envío ni cumplimiento total; la meta interna anterior no es una fecha oficial.",
+  "alcance": "15 ablaciones verificadas. Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado.",
   "items": [
     {
       "etapa": "E1",
@@ -24,10 +24,10 @@
     {
       "etapa": "E2",
       "componente": "PCam",
-      "estado": "Reanudado desde checkpoint",
+      "estado": "Continuación en Colab comunicada por el autor",
       "ubicacion": "Carpeta recibida y respaldo local verificados",
-      "evidencia": "8301 completa; 8302 época 17 lote 3500/4096, última época guardada 16. Proceso 8496 según salida comunicada.",
-      "falta": "Completar 8302–8305, evaluar test con política congelada y comparar la réplica con el artículo.",
+      "evidencia": "Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado.",
+      "falta": "Desde ese respaldo quedan 61 épocas (1 de 8302 y 60 de 8303–8305), más test y resumen. Se omiten semillas completas y se recuperan pesos, optimizador y estados aleatorios; no se repite lo guardado. Evaluar test con política congelada y contrastar con el artículo.",
       "dependencia": "GPU y checkpoints E2"
     },
     {
@@ -63,7 +63,7 @@
       "estado": "CICO publicado y probado en Render",
       "ubicacion": "/prediccion y libro/16_exportacion_inferencia.html",
       "evidencia": "CICO 6101 exportado; 2.049/2.049 clases idénticas a RunPod usando las imágenes originales; hash ONNX y 7 pruebas de entradas/integridad. Prueba pública desde Safari: tumor 93,7%, linfocito 2,5%, estroma 3,8%; rechazo de dimensiones incorrectas y confirmación obligatoria verificados.",
-      "falta": "Exportar comparadores bajo política común, selector, probabilidades calibradas, incertidumbre con cobertura, explicación local, detección fuera de dominio y latencia/memoria del servidor.",
+      "falta": "Exportar comparadores bajo política común y selector; calibración independiente, cobertura, detector OOD y fidelidad/estabilidad. Oclusión local y latencia CPU ya disponibles; falta prueba de memoria/carga.",
       "dependencia": "Artefactos entrenados"
     },
     {
@@ -71,8 +71,8 @@
       "componente": "Dashboard e integración visual",
       "estado": "Publicado; verificación parcial",
       "ubicacion": "Render",
-      "evidencia": "Portal integrado, histología, filtros por página y libro; pruebas locales y escritorio.",
-      "falta": "Filtros globales para todos los gráficos de EDA, QA tablet/móvil, tabla completa con costos y diagnósticos del modelo elegido. La predicción CICO básica ya funciona.",
+      "evidencia": "NuCLEA publicado: histología, ejemplos reales, carga y predicción, curvas y comparación de 15 ablaciones. 72 vistas histológicas verificadas.",
+      "falta": "QA real tablet/móvil y accesibilidad integral; costos/diagnósticos para cada modelo seleccionable. Tres gráficos EDA ya comparten filtros.",
       "dependencia": "QA web y modelo"
     },
     {
@@ -126,7 +126,7 @@
       "estado": "Integrado; cierre pendiente",
       "ubicacion": "Libro publicado",
       "evidencia": "Histología, tablas E1/E2 y cinco resultados CICO verificados integrados; misma fuente para libro/dashboard.",
-      "falta": "Benchmark final y tabla maestra completa; fichas MODEL_CARD/DATA_STATEMENT, CITATION/licencia, protocolo final con tag previo, DOI, autoría firmada y reproducción por tercero. Contenedor web existente no acredita reproducción independiente.",
+      "falta": "Resultados confirmatorios y tabla completa; fichas MODEL_CARD/DATA_STATEMENT y CITATION ya preparadas, falta validación final, licencia, protocolo/tag previo a nuevas corridas, DOI, autoría firmada y reproducción por tercero.",
       "dependencia": "Resultados finales y tercero"
     },
     {
@@ -142,7 +142,7 @@
       "etapa": "Entrega",
       "componente": "Congelación y envío final",
       "estado": "Pendiente",
-      "ubicacion": "21 noviembre, 10:00 Bogotá",
+      "ubicacion": "Canal oficial; envío aún no acreditado",
       "evidencia": "Portal accesible; paquete previo no equivale al paquete final de esta revisión.",
       "falta": "Congelar versión, descargar respaldo independiente, generar hashes, revisar enlaces y adjuntos y enviar por el canal oficial.",
       "dependencia": "Autor y paquete final"

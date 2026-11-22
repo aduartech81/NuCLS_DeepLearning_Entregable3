@@ -32,7 +32,7 @@
     "componente": "Diseño, UX y despliegue",
     "peso": 5,
     "requisito": "Render Web Service independiente, responsividad, privacidad, validación de entrada y prueba de humo.",
-    "estado": "Parcial: Render probado y entrada validada; falta QA tablet/accesibilidad/memoria, consistencia automática y revisión CI. La guía pide dash-bootstrap-components, no instalado actualmente."
+    "estado": "Parcial: NuCLEA publicado, dash-bootstrap-components instalado, entradas e imágenes verificadas. Se añade consistencia automática libro/dashboard y CI con pruebas del modelo/exportación. Falta QA real tablet/accesibilidad integral y memoria/carga."
   },
   {
     "bloque": "F",
@@ -67,7 +67,7 @@
     "componente": "Jupyter Book",
     "peso": 14,
     "requisito": "12 capítulos; tabla maestra común, contenedor, DOI, fichas, autoría y reproducción independiente.",
-    "estado": "Parcial: libro compilado/publicado e integrado. Faltan contenidos experimentales finales, tabla maestra completa, protocolo final/tag previo, fichas, DOI, autoría firmada y reproducción independiente."
+    "estado": "Parcial: libro compilado e integrado; fichas y citación preparadas. Pendientes resultados confirmatorios, tabla maestra final, licencia, DOI, autoría firmada, protocolo/tag previo a nuevas corridas y reproducción independiente."
   },
   {
     "bloque": "K",

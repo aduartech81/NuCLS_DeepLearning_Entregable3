@@ -15,7 +15,7 @@ La publicación reúne E1, E2 y E3 en [el portal del proyecto](https://nucls-ent
 
 No se mezclan las corridas de distintas etapas. Las barras de error de la reserva representan desviación entre semillas; los intervalos por paciente se muestran por separado. Las tablas permiten ordenar, filtrar y exportar CSV. Los histogramas de calidad se publican agregados, sin identificadores de pacientes. El ancho del diagrama de flujo conceptual no cuantifica datos.
 
-La inferencia CPU de CICO 6101 está publicada y comprobada en /prediccion; conserva el preprocesamiento verificado. Faltan calibración, explicación local, incertidumbre y selector de comparadores. La web no presenta predicciones aleatorias ni convierte el piloto en un benchmark final. PCam E2 continúa detenido según el último inventario recibido.
+La inferencia CPU de CICO 6101 está publicada y comprobada en /prediccion; conserva el preprocesamiento verificado. Oclusión local exploratoria disponible. Faltan calibración, cobertura, fidelidad/estabilidad y selector de comparadores. La web no presenta predicciones aleatorias ni convierte el piloto en un benchmark final. Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado.
 
 
 ## Histología integrada

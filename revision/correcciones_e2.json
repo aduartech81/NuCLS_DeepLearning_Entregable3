@@ -92,11 +92,11 @@
   {
     "id": "A11",
     "observacion_docente": "Réplica del paper guía en PCam",
-    "accion_realizada": "PCam reanudado desde checkpoint: 8301 completa; 8302 ejecuta época 17, lote 3500/4096 según último avance comunicado. Guardada hasta 16.",
+    "accion_realizada": "Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado.",
     "ubicacion_book": "06_discusion.html",
-    "evidencia": "8301: época 20 y marcador de finalización. 8302: última época guardada 16; sin marcador. 8303–8305 sin checkpoints en el inventario.",
+    "evidencia": "PCAM_CONTINUACION_RESPALDO_20261122T083540464366Z.zip",
     "impacto_y_limite": "No hay cierre PCam verificado; al llegar, contrastar receta y criterio con artículo.",
-    "estado": "En ejecución; cierre y test pendientes"
+    "estado": "Parcial; continuación en Colab comunicada"
   },
   {
     "id": "A12",

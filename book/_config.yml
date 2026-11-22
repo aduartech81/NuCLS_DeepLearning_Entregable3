@@ -1,4 +1,4 @@
-title: "NuCLS · Proyecto final E1 + E2 + E3"
+title: "NuCLEA · Proyecto final NuCLS · E1 + E2 + E3"
 author: "Andrés Duarte"
 copyright: "2026"
 execute:
@@ -8,3 +8,6 @@ html:
 sphinx:
   config:
     language: es
+
+bibtex_bibfiles:
+  - references.bib

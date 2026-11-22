@@ -1,6 +1,6 @@
 {
-  "corte": "21 noviembre 2026 · revisión directa de las guías E2 (65 páginas) y E3 (60 páginas); inferencia pública comprobada",
-  "alcance": "15 ablaciones verificadas desde respaldo; PCam reanudado. Auditoría documental no equivale a cumplimiento total ni calificación oficial.",
+  "corte": "22 noviembre 2026 · auditoría documental contra las guías originales E2/E3",
+  "alcance": "15 ablaciones verificadas. Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado.",
   "fuentes": [
     {
       "documento": "Entregable2DeepLearningProject.pdf",
@@ -203,8 +203,8 @@
       "id": "24",
       "requisito": "Paper guía y réplica PCam",
       "guia": "Sección 5",
-      "estado": "PCam reanudado: 8301 completa; 8302 ejecuta época 17 (3500/4096), última época guardada 16; 8303–8305 pendientes. Falta evaluación final.",
-      "falta_o_condicion": "8301 completa; 8302 guardada en 16; faltan 4 épocas de 8302 y 60 de 8303–8305, más evaluación. Reportar discrepancia/IC respecto del paper y limitación cuantificada en ≥3 modelos."
+      "estado": "Continuación comunicada en Colab; cierre pendiente",
+      "falta_o_condicion": "Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado. Desde ese respaldo quedan 61 épocas (1 de 8302 y 60 de 8303–8305), más test y resumen. Se omiten semillas completas y se recuperan pesos, optimizador y estados aleatorios; no se repite lo guardado. Test final, discrepancia e IC respecto del artículo pendientes."
     },
     {
       "entregable": "E2",
@@ -244,7 +244,7 @@
       "requisito": "Configuraciones y exportación (7%)",
       "guia": "§5, pp.5–7",
       "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: CICO 6101 ONNX verificado y publicado. Falta selección por configuración media, política común de reentrenamiento/exportación de comparadores, costos CPU y metadatos completos."
+      "falta_o_condicion": "Parcial: exportación CICO ONNX y round-trip verificados, costo CPU medido. Faltan exportaciones de comparadores y política final común."
     },
     {
       "entregable": "E3",
@@ -252,7 +252,7 @@
       "requisito": "Dashboard: contexto y EDA (8%)",
       "guia": "§9.4.1–2, p.32",
       "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: contexto/EDA/histología publicados. EDA incorpora filtros conjuntos para tres gráficos de clase/partición; agregados históricos separados. Falta QA tablet."
+      "falta_o_condicion": "Contexto, histología y tres gráficos EDA con filtros compartidos publicados. Pendiente QA tablet y accesibilidad."
     },
     {
       "entregable": "E3",
@@ -260,7 +260,7 @@
       "requisito": "Dashboard: modelos (9%)",
       "guia": "§9.4.3, pp.33–34",
       "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: subida y predicción CICO funcionan. Oclusión local, latencia y entropía incorporadas; faltan selector, calibración, cobertura, detector de dominio, comparación final y validación de explicaciones."
+      "falta_o_condicion": "Subida y predicción CICO, explicación por oclusión y latencia publicadas. Faltan selector de comparadores, calibración/cobertura y detector OOD validado; aviso de dominio no equivale a detector."
     },
     {
       "entregable": "E3",
@@ -268,7 +268,7 @@
       "requisito": "Diseño, UX y despliegue (5%)",
       "guia": "§9.5–10, pp.34–37",
       "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: Render probado y entrada validada; falta QA tablet/accesibilidad/memoria, consistencia automática y revisión CI. Bootstrap incorporado y pruebas CPU aprobadas; QA tablet pendiente."
+      "falta_o_condicion": "Parcial: NuCLEA publicado, dash-bootstrap-components instalado, entradas e imágenes verificadas. Se añade consistencia automática libro/dashboard y CI con pruebas del modelo/exportación. Falta QA real tablet/accesibilidad integral y memoria/carga."
     },
     {
       "entregable": "E3",
@@ -284,7 +284,7 @@
       "requisito": "Original: implementación y demostración (10%)",
       "guia": "§6.5 y 7.4, pp.13–20",
       "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: implementación y pruebas previas. 15 ablaciones verificadas desde respaldo, métricas recalculadas y análisis pareado exploratorio integrado; también faltan base sin componentes, componentes solos, controles de capacidad y explicación/fidelidad."
+      "falta_o_condicion": "15 ablaciones verificadas, cinco semillas por variante. Faltan base sin componentes, componentes individuales, controles D4/capacidad y protocolo confirmatorio con potencia requerida."
     },
     {
       "entregable": "E3",
@@ -308,7 +308,7 @@
       "requisito": "Jupyter Book (14%)",
       "guia": "§11–12 y tabla7, pp.38–40,58",
       "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: libro compilado/publicado e integrado. Faltan contenidos experimentales finales, tabla maestra completa, protocolo final/tag previo, fichas, DOI, autoría firmada y reproducción independiente."
+      "falta_o_condicion": "Parcial: libro compilado e integrado; fichas y citación preparadas. Pendientes resultados confirmatorios, tabla maestra final, licencia, DOI, autoría firmada, protocolo/tag previo a nuevas corridas y reproducción independiente."
     },
     {
       "entregable": "E3",

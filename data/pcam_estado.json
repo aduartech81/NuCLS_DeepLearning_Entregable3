@@ -1,0 +1,9 @@
+{
+  "corte": "2026-11-22",
+  "respaldo": "PCAM_CONTINUACION_RESPALDO_20261122T083540464366Z.zip",
+  "epoca_8302": 19,
+  "epocas_pendientes_en_respaldo": 61,
+  "estado": "Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado.",
+  "continuacion": "Desde ese respaldo quedan 61 épocas (1 de 8302 y 60 de 8303–8305), más test y resumen. Se omiten semillas completas y se recuperan pesos, optimizador y estados aleatorios; no se repite lo guardado.",
+  "test_verificado": false
+}

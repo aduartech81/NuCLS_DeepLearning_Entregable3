@@ -34,7 +34,7 @@ No se equipara una entrega documental a completar los experimentos de la guía. 
 
 El cierre de reserva, las 15 ablaciones de preprocesamiento y los ensambles constan en la trazabilidad heredada. Antes de modificar la web E2 se cotejan contra sus archivos fuente; no se reentrena ni se vuelve a seleccionar sobre reserva.
 
-PCam está detenido (confirmación del autor, 20 de noviembre). El último inventario comunicado acredita la semilla 8301 completa y la 8302 hasta época 16; 8303–8305 no tienen checkpoints en ese inventario. No se afirma que PCam haya concluido. La reanudación requiere comprobar versiones y estado del optimizador, sin competir con el piloto E3 por la misma GPU.
+Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado. Desde ese respaldo quedan 61 épocas (1 de 8302 y 60 de 8303–8305), más test y resumen. Se omiten semillas completas y se recuperan pesos, optimizador y estados aleatorios; no se repite lo guardado.
 
 Inception presenta mapas Grad-CAM constantes en la evidencia revisada: requieren cambiar la capa o método y verificar fidelidad antes de mostrarlos como explicaciones válidas. El techo multi-rater requiere anotaciones independientes enlazadas; una máscara QC no lo sustituye. Sigue siendo necesaria la revisión de las 66 corridas base y la reproducción externa.
 

@@ -53,6 +53,6 @@ Las curvas completas y el archivo descargable están en [Ablaciones del dashboar
 
 ## PCam (E2)
 
-Última comprobación operativa: PCam reanudó la semilla 8302 desde el checkpoint de época 16 y entró en la época 17. La semilla 8301 estaba completa; quedan completar 8302–8305 y su evaluación. Este registro no es seguimiento en vivo. Se conserva el respaldo original y el trabajo usa una carpeta independiente.
+Respaldo verificado del 22 de noviembre: 8301 completa; 8302 con época 19 guardada; 8303–8305 pendientes en ese corte. El autor comunica continuación en Colab; no es monitoreo en vivo ni un resultado nuevo verificado. Desde ese respaldo quedan 61 épocas (1 de 8302 y 60 de 8303–8305), más test y resumen. Se omiten semillas completas y se recuperan pesos, optimizador y estados aleatorios; no se repite lo guardado.
 
 Respaldo de ablaciones SHA-256: `e7a0d21c4c9cb034ef6efc06de3ed3bc4db58b6fb2cdf8891ec0f5c0da9e0ed6`.
