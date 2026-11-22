@@ -7,10 +7,10 @@ import dash_bootstrap_components as dbc
 app = Dash(__name__, use_pages=True, title="NuCLS · Proyecto final", suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 server.config["MAX_CONTENT_LENGTH"] = 3 * 1024 * 1024
-app.layout = html.Div([
+app.layout = html.Div([html.A("Saltar al contenido",href="#contenido",className="skip-link"),
     html.Header([html.A("NuCLS / RESEARCH", href="/", className="brand"),
-        html.Nav([html.A("Proyecto",href="/"),html.A("Histología",href="/histologia"),html.A("Resultados E1–E2",href="/proyecto"),html.A("Datos y EDA",href="/datos"),html.A("CICO",href="/modelos"),html.A("Diagnósticos",href="/diagnosticos"),html.A("Ejemplos",href="/ejemplos"),html.A("Literatura",href="/investigacion"),html.A("Evidencia",href="/reproducibilidad"),html.A("Cierre CPU",href="/cierre"),html.A("Piloto",href="/piloto"),html.A("Ablaciones",href="/ablaciones"),html.A("Analizar imagen",href="/prediccion"),html.A("Libro",href="/libro/")])]),
-    html.Main(dash.page_container),
+        html.Nav([html.A("Inicio",href="/"),html.A("Explorar tejido",href="/histologia"),html.A("Comparar resultados",href="/proyecto"),html.A("Probar una imagen",href="/prediccion",className="nav-cta"),html.Details([html.Summary("Más del proyecto"),html.Div([html.A(label,href=url) for label,url in [("Datos y calidad","/eda-e3"),("Diseño CICO","/modelos"),("Diagnósticos","/diagnosticos"),("Ejemplos con referencia","/ejemplos"),("Ablaciones verificadas","/ablaciones"),("Piloto","/piloto"),("Costo y eficiencia","/costos"),("Literatura","/investigacion"),("Evidencia y pendientes","/reproducibilidad"),("Documentación","/documentacion"),("Libro completo","/libro/")]],className="nav-menu")],className="nav-more")],**{'aria-label':'Navegación principal'})]),
+    html.Main(dash.page_container,id="contenido"),
     html.Footer([html.P("NuCLS · Proyecto final · E1 + E2 + E3 · Revisión CPU: 21 noviembre 2026 · Resultados identificados por etapa"),html.A("Contexto y ficha del modelo",href="/documentacion"),html.Span(" · "),html.A("Privacidad",href="/documentacion#privacidad"),html.P("Demostración experimental: no diagnóstico. Las imágenes cargadas se procesan en memoria y no se usan para entrenar.")])])
 
 from flask import send_from_directory, jsonify, abort

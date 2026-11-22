@@ -1,3 +1,5 @@
+from pathlib import Path
+import json
 import dash
 from dash import html,dcc,Input,Output,State,callback
 from src.inference import predict,explain_occlusion,decode_upload
@@ -5,9 +7,11 @@ import plotly.graph_objects as go
 
 dash.register_page(__name__,path='/prediccion',name='Predicción CICO')
 layout=html.Div([
+ html.Div([html.Span('1 · Elige una imagen'),html.Span('2 · Analiza'),html.Span('3 · Interpreta con cautela')],className='prediction-steps'),
  html.Span('CICO / DEMOSTRACIÓN EXPLORATORIA',className='eyebrow'),html.H1('Explorar un recorte histológico'),
  html.P('Carga un recorte RGB de 128 × 128 píxeles, centrado en un núcleo y preparado como los recortes NuCLS. PNG o JPEG, máximo 2 MB. También se admite RGBA completamente opaco. No se admiten láminas completas ni se redimensiona la imagen.',className='lead'),
  html.Div([html.Strong('Modelo piloto · semilla 6101'),html.P('Seleccionado por el mayor macro-F1 de validación entre cinco semillas. Clasifica entre tumor, linfocito y estroma. No detecta automáticamente imágenes fuera del dominio ni acredita utilidad clínica.')],className='notice'),
+ html.Div([html.H2('¿Quieres empezar con un ejemplo?'),html.P('Selecciona un recorte real de 128 × 128. La referencia se revela junto al ejemplo; no es una prueba independiente del modelo.'),dcc.Dropdown(id='pred-example',options=[{'label':'Caso '+x['caso']+' · referencia: '+x['clase_referencia'],'value':x['caso']} for x in json.loads((Path(__file__).resolve().parents[1]/'data/ejemplos.json').read_text())],placeholder='Elegir un ejemplo histológico…',clearable=False),html.Div(id='pred-example-info')],className='panel'),
  dcc.Checklist(id='pred-consent',options=[{'label':'Confirmo que es un recorte histológico sin datos personales y entiendo que el resultado es experimental, no un diagnóstico.','value':'yes'}],value=[]),
  dcc.Upload(id='pred-upload',children=html.Div([html.Strong('Seleccionar imagen PNG o JPG'),html.P('También puedes arrastrarla aquí. Primero marca la confirmación de arriba.')]),accept='.png,.jpg,.jpeg,image/png,image/jpeg',disabled=True,multiple=False,max_size=2*1024*1024,style={'border':'2px dashed #137d73','padding':'32px','margin':'24px 0','borderRadius':'12px'}),
  html.Div(id='pred-upload-local',role='status',style={'whiteSpace':'pre-wrap'}),
@@ -26,7 +30,7 @@ def analyze(n,contents,consent):
  try:r=predict(contents)
  except ValueError as e:return html.P(str(e))
  except Exception:return html.P('El modelo no está disponible o no superó su comprobación. No se generó una predicción.')
- return html.Div([html.Img(src=contents,alt='Recorte analizado',style={'width':'256px','imageRendering':'auto','maxWidth':'100%'}),html.Div('DOMINIO NO VERIFICADO: una imagen ajena a histología también puede recibir una puntuación alta. No interpretes esta salida si el recorte no corresponde a NuCLS.',className='notice'),html.H2('Clase con mayor puntuación: '+r['prediction']),html.Table([html.Thead(html.Tr([html.Th('Clase'),html.Th('Probabilidad del modelo')])) ,html.Tbody([html.Tr([html.Td(label),html.Td(f'{p:.1%}')]) for label,p in zip(r['labels'],r['probabilities'])])]),html.P(f"Tiempo de procesamiento en servidor: {r['latency_ms']:.1f} ms (sin red). Entropía: {r['entropy']:.3f} nats; dispersión de puntuaciones, no cobertura ni certeza clínica."),html.P('Semilla 6101 · tres clases posibles. El modelo siempre asigna una de ellas, incluso si el contenido no corresponde; no usar para decisiones clínicas.')],className='panel')
+ return html.Div([html.Img(src=contents,alt='Recorte analizado',style={'width':'256px','imageRendering':'auto','maxWidth':'100%'}),html.Div('DOMINIO NO VERIFICADO: una imagen ajena a histología también puede recibir una puntuación alta. No interpretes esta salida si el recorte no corresponde a NuCLS.',className='notice'),html.H2('Clase con mayor puntuación: '+r['prediction']),dcc.Graph(figure=go.Figure(go.Bar(x=r['probabilities'],y=r['labels'],orientation='h',text=[f'{p:.1%}' for p in r['probabilities']],textposition='auto',marker_color='#147d79')).update_layout(template='plotly_white',height=260,xaxis=dict(range=[0,1],tickformat='.0%',title='Puntuación del modelo · no calibrada'),margin=dict(l=90,r=25,t=15,b=50)),config={'displayModeBar':False}),html.Table([html.Thead(html.Tr([html.Th('Clase'),html.Th('Probabilidad del modelo')])) ,html.Tbody([html.Tr([html.Td(label),html.Td(f'{p:.1%}')]) for label,p in zip(r['labels'],r['probabilities'])])]),html.P(f"Tiempo de procesamiento en servidor: {r['latency_ms']:.1f} ms (sin red). Entropía: {r['entropy']:.3f} nats; dispersión de puntuaciones, no cobertura ni certeza clínica."),html.P('Semilla 6101 · tres clases posibles. El modelo siempre asigna una de ellas, incluso si el contenido no corresponde; no usar para decisiones clínicas.')],className='panel')
 
 
 @callback(Output('explain-result','children'),Input('explain-run','n_clicks'),State('pred-upload','contents'),State('pred-consent','value'),prevent_initial_call=True)
@@ -48,3 +52,12 @@ def upload_status(contents,filename,consent):
  try:decode_upload(contents)
  except ValueError as e:return html.Div([html.Strong('La imagen no está lista para analizar. '),html.Span(str(e)),html.P('Elige otro recorte. No se cambia su tamaño automáticamente.')],className='notice'),True,True,False
  return html.Div([html.Strong('Imagen cargada y verificada: '+str(filename or 'recorte')),html.P('RGB · 128 × 128 píxeles. Ahora pulsa «Analizar recorte».'),html.Img(src=contents,alt='Vista previa del archivo cargado',style={'width':'128px','height':'128px'})],className='panel'),False,False,False
+
+@callback(Output('pred-upload','contents'),Output('pred-upload','filename'),Output('pred-example-info','children'),Input('pred-example','value'),prevent_initial_call=True)
+def choose_example(case):
+ root=Path(__file__).resolve().parents[1]
+ rows=json.loads((root/'data/ejemplos.json').read_text())
+ r=next((x for x in rows if x['caso']==case),None)
+ if r is None:return dash.no_update,dash.no_update,dash.no_update
+ data='data:image/png;base64,'+(root/r['png_file']).read_text().strip()
+ return data,r['archivo_ejemplo'],html.P(r['explicacion']+' Marca la confirmación para habilitar el análisis.',className='note')
