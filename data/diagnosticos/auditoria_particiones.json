@@ -1,0 +1,77 @@
+{
+  "fuente": "NuCLS_E3_DATOS_TRAIN_VALIDATION.zip",
+  "manifiesto_sha256": "623adf36520751addc324e44cd1b89d95e47842e53cda494914c0248a8be86d4",
+  "n_filas": 17557,
+  "archivos_train_validacion_verificados": 16588,
+  "particiones": {
+    "train": {
+      "n": 14539,
+      "pacientes": 83,
+      "campos": 1192
+    },
+    "reserva_candidata": {
+      "n": 969,
+      "pacientes": 6,
+      "campos": 24
+    },
+    "validation": {
+      "n": 2049,
+      "pacientes": 21,
+      "campos": 229
+    }
+  },
+  "cruces": [
+    {
+      "a": "reserva_candidata",
+      "b": "train",
+      "coincidencias": {
+        "paciente": 0,
+        "imagen": 0,
+        "sha_imagen": 0,
+        "sha_pixeles": 0,
+        "sha_archivo": 0
+      }
+    },
+    {
+      "a": "reserva_candidata",
+      "b": "validation",
+      "coincidencias": {
+        "paciente": 0,
+        "imagen": 0,
+        "sha_imagen": 0,
+        "sha_pixeles": 0,
+        "sha_archivo": 0
+      }
+    },
+    {
+      "a": "train",
+      "b": "validation",
+      "coincidencias": {
+        "paciente": 0,
+        "imagen": 0,
+        "sha_imagen": 0,
+        "sha_pixeles": 0,
+        "sha_archivo": 0
+      }
+    }
+  ],
+  "duplicados_internos": {
+    "train": {
+      "grupos_pixeles_duplicados": 0,
+      "copias_adicionales": 0
+    },
+    "reserva_candidata": {
+      "grupos_pixeles_duplicados": 0,
+      "copias_adicionales": 0
+    },
+    "validation": {
+      "grupos_pixeles_duplicados": 0,
+      "copias_adicionales": 0
+    }
+  },
+  "alcance": "Hash de bytes, píxeles RGB, dimensiones, identidad de pacientes y campos. Reserva candidata: solo metadatos del manifiesto; no se evalúa ni se utiliza para selección.",
+  "limites": [
+    "No detecta duplicados aproximados, identidad incorrecta del paciente ni errores de anotación.",
+    "Separación nominal no demuestra ausencia de fuga por decisiones previas; no certifica una prueba confirmatoria intacta."
+  ]
+}

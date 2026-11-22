@@ -30,3 +30,5 @@ lf=px.bar(x=list(lit['estados_mutuamente_excluyentes']),y=list(lit['estados_mutu
 lf.update_layout(height=470,margin=dict(t=20,b=150),xaxis_tickangle=-35)
 layout.children.insert(3,html.Section([html.H2('E1 · trazabilidad de la revisión de literatura'),html.P('1.717 registros identificados en Scopus, Web of Science e IEEE Xplore; 1.330 unidades de cribado. Corte documental: 8 noviembre 2026.'),dcc.Graph(figure=lf),html.P(lit['nota'],className='note'),html.P('Estos conteos pertenecen a la revisión heredada; no se suman a los antecedentes de novedad E3.')],className='panel'))
 
+
+layout.children.extend([html.H2('Actualización: búsqueda ejecutada en tres fuentes'),html.P('15 consultas: cinco cadenas en Europe PMC, Crossref y OpenAlex. 149 registros recuperados y 148 únicos. Recuperación y deduplicación completadas; cribado, textos completos y revisión por tercero todavía no acreditados.'),html.A('Consultar cadenas, fuentes y resultados',href='/libro/26_busqueda_ejecutada.html',className='button')])

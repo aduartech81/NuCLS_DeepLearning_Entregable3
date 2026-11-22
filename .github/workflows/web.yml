@@ -9,8 +9,8 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install -r requirements.txt -r requirements-book.txt pytest
-      - run: python -m pytest tests/test_dashboard.py tests/test_importar_piloto.py tests/test_inference.py tests/test_cierre_cpu.py tests/test_revision_cpu.py tests/test_upload_feedback.py tests/test_consistencia_entrega.py tests/test_avance_cpu.py -q
+      - run: python -m pytest tests/test_dashboard.py tests/test_importar_piloto.py tests/test_inference.py tests/test_cierre_cpu.py tests/test_revision_cpu.py tests/test_upload_feedback.py tests/test_consistencia_entrega.py tests/test_avance_cpu.py tests/test_auditoria_particiones.py -q
       - run: pip install torch==2.15.0 onnx==1.23.2 onnxscript
-      - run: python -m pytest tests/test_original_model.py tests/test_export.py -q
+      - run: python -m pytest tests/test_original_model.py tests/test_export.py tests/test_control_variants.py -q
       - run: jupyter-book build book --warningiserror --keep-going
 

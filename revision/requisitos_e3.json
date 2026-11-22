@@ -4,7 +4,7 @@
     "componente": "Correcciones E2",
     "peso": 7,
     "requisito": "Trazabilidad con evidencia e impacto; auditoría de fuga; congelar resultados con hashes.",
-    "estado": "Parcial: completar observación–acción–evidencia–impacto, ranking antes/después y auditoría de fuga; congelar benchmarks sin reajuste con reserva."
+    "estado": "Parcial: 16.588 imágenes verificadas por hash; cero cruces nominales de paciente/campo/píxeles entre particiones del paquete E3. Falta auditoría de decisiones históricas, duplicados aproximados, impacto de correcciones E2 y ranking antes/después."
   },
   {
     "bloque": "B",
@@ -32,21 +32,21 @@
     "componente": "Diseño, UX y despliegue",
     "peso": 5,
     "requisito": "Render Web Service independiente, responsividad, privacidad, validación de entrada y prueba de humo.",
-    "estado": "Parcial: Render, validación de entradas, imágenes verificadas, rejilla Bootstrap y alertas; caché de resultados en memoria de pestaña con invalidación, tabla maestra y pruebas de consistencia/CI. Falta QA real tablet/accesibilidad integral, memoria/carga y confirmar ejecución remota del CI."
+    "estado": "Parcial: prueba WSGI local de 180 predicciones sin errores, memoria RSS y latencias p50/p95, 72 rutas histológicas y recuperación tras entradas inválidas verificadas; CI remoto confirmado para 99db2bd. Falta QA real tablet/accesibilidad integral y medir memoria/carga del contenedor Render."
   },
   {
     "bloque": "F",
     "componente": "Original: revisión y diseño",
     "peso": 8,
     "requisito": "3 bases,5 cadenas, snowballing, fuente/adaptación, tercero; hipótesis falsable y bitácora.",
-    "estado": "Parcial: matriz y antecedentes existentes; falta acreditar 3 bases/5 cadenas, snowballing, actualización de búsqueda y tercero. No declarar novedad demostrada."
+    "estado": "15 consultas ejecutadas: cinco cadenas en Europe PMC, Crossref y OpenAlex; 149 registros y 148 únicos. Recuperación truncada a diez por consulta. Pendientes cribado, textos completos, snowballing, contraste de antecedentes y tercero; no acredita novedad."
   },
   {
     "bloque": "G",
     "componente": "Original: implementación y demostración",
     "peso": 10,
     "requisito": "Mecanismo propio desde formulación; propiedad con prueba y comprobación numérica; ≥3 componentes aislados.",
-    "estado": "15 ablaciones verificadas, cinco semillas por variante. Faltan base sin componentes, componentes individuales, controles D4/capacidad y protocolo confirmatorio con potencia requerida."
+    "estado": "Formulación y pruebas matemáticas documentadas; 15 ablaciones verificadas. Siete controles implementados con ocho pruebas de identidad, invariancia y gradientes; aún falta entrenar base/componentes/controles bajo protocolo común y evaluar capacidad activa y potencia."
   },
   {
     "bloque": "H",

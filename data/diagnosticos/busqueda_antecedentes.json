@@ -1,0 +1,2943 @@
+{
+  "objetivo": "Antecedentes del mecanismo CICO; búsqueda exploratoria posterior al piloto. No preregistro retrospectivo.",
+  "consultas": [
+    {
+      "base": "Europe PMC",
+      "cadena": 1,
+      "consulta": "histopathology rotation invariant group equivariant convolution",
+      "fecha_utc": "2026-11-22T20:30:29.345396+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=histopathology+rotation+invariant+group+equivariant+convolution&format=json&pageSize=10&resultType=core",
+      "http": 200,
+      "respuesta_sha256": "45a5045ed9b4cf6a395977dfcfec149b48b233c1633b74d6168c79b6806b3b32",
+      "total_declarado": 9,
+      "registros": [
+        {
+          "titulo": "Mod-SE(2): a geometric deep learning framework for brain tumor classification and segmentation in MRI images.",
+          "doi": "10.1186/s12929-025-01213-y",
+          "id": "41527065",
+          "url": "https://europepmc.org/article/MED/41527065",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "SE(3)-Equivariant and Noise-Invariant 3D Rigid Motion Tracking in Brain MRI.",
+          "doi": "10.1109/tmi.2024.3411989",
+          "id": "38857148",
+          "url": "https://europepmc.org/article/MED/38857148",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Recent Advances in Automated Mitosis Detection in Digital Pathology: A PRISMA-Guided Systematic Review with Evaluation-Regime Stratification (2018–2025)",
+          "doi": "",
+          "id": "PMC13296622",
+          "url": "https://europepmc.org/article/PMC/PMC13296622",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Graph Learning in Bioinformatics: A Survey of Graph Neural Network Architectures, Biological Graph Construction and Bioinformatics Applications.",
+          "doi": "10.3390/biom16020333",
+          "id": "41750401",
+          "url": "https://europepmc.org/article/MED/41750401",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Roto-translation equivariant convolutional networks: Application to histopathology image analysis.",
+          "doi": "10.1016/j.media.2020.101849",
+          "id": "33197715",
+          "url": "https://europepmc.org/article/MED/33197715",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "RCTE: A reliable and consistent temporal-ensembling framework for semi-supervised segmentation of COVID-19 lesions.",
+          "doi": "10.1016/j.ins.2021.07.059",
+          "id": "34305162",
+          "url": "https://europepmc.org/article/MED/34305162",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Transforming medical imaging with Transformers? A comparative review of key properties, current progresses, and future perspectives.",
+          "doi": "10.1016/j.media.2023.102762",
+          "id": "36738650",
+          "url": "https://europepmc.org/article/MED/36738650",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Computational pathology: A survey review and the way forward.",
+          "doi": "10.1016/j.jpi.2023.100357",
+          "id": "38420608",
+          "url": "https://europepmc.org/article/MED/38420608",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Pre-training in Medical Data: A Survey",
+          "doi": "",
+          "id": "PMC9942039",
+          "url": "https://europepmc.org/article/PMC/PMC9942039",
+          "abstract_disponible": false
+        }
+      ]
+    },
+    {
+      "base": "Europe PMC",
+      "cadena": 2,
+      "consulta": "histopathology nuclei center surround context classification",
+      "fecha_utc": "2026-11-22T20:30:30.143798+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=histopathology+nuclei+center+surround+context+classification&format=json&pageSize=10&resultType=core",
+      "http": 200,
+      "respuesta_sha256": "43d1b7bb169453d7b6ca04c778c633f5582fc5cd51c2fa09f575055aaf7f87e7",
+      "total_declarado": 285,
+      "registros": [
+        {
+          "titulo": "Neglected Trichilemmal Carcinoma with Severe Opportunistic Cutaneous Wound Myiasis: A First Case Report and Implications for Elderly Rural Populations.",
+          "doi": "10.2147/idr.s587439",
+          "id": "42261284",
+          "url": "https://europepmc.org/article/MED/42261284",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Bone Marrow Pathology in Cold Agglutinin-Mediated Autoimmune Hemolytic Anemia: A Study of 56 Cases.",
+          "doi": "10.1111/ejh.70194",
+          "id": "41994904",
+          "url": "https://europepmc.org/article/MED/41994904",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Advances in non-germ cell tumours of the testis: focus on new molecular developments in sex cord-stromal tumours.",
+          "doi": "10.1111/his.70006",
+          "id": "41384702",
+          "url": "https://europepmc.org/article/MED/41384702",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Diffuse Large B-Cell Lymphoma of the Thyroid in a Patient With Hashimoto Thyroiditis: A Diagnostic Dilemma.",
+          "doi": "10.1002/ccr3.71346",
+          "id": "41141239",
+          "url": "https://europepmc.org/article/MED/41141239",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Mapping Immunity With Cutting-Edge Spatial Biology and Tissue Cytometry Innovations.",
+          "doi": "10.1002/mco2.70775",
+          "id": "42253943",
+          "url": "https://europepmc.org/article/MED/42253943",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Cell-in-Cell Structures in Colorectal Cancer: A Proposed Assessment Method and Correlation with Established Poor Prognostic Factors.",
+          "doi": "10.3390/jpm15120591",
+          "id": "41440954",
+          "url": "https://europepmc.org/article/MED/41440954",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Intratumoral Fibrosis is a Potential Biomarker in Patients with Hepatocellular Carcinoma Undergoing Liver Resection.",
+          "doi": "10.2147/jhc.s608858",
+          "id": "42339018",
+          "url": "https://europepmc.org/article/MED/42339018",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Dysregulation of epithelial differentiation architecture underlies field cancerization in head and neck cancer",
+          "doi": "",
+          "id": "PMC13742683",
+          "url": "https://europepmc.org/article/PMC/PMC13742683",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Microscopic anatomy of the lungs of domestic animals, mice, and rats.",
+          "doi": "10.1177/10406387251413159",
+          "id": "41562526",
+          "url": "https://europepmc.org/article/MED/41562526",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "The Immunological Biography of the Carotid Plaque: From Trained Immunity and Clonal Lymphocytes to Spatial Immune Niches and Plaque Vulnerability.",
+          "doi": "10.3390/cells15211995",
+          "id": "43027352",
+          "url": "https://europepmc.org/article/MED/43027352",
+          "abstract_disponible": true
+        }
+      ]
+    },
+    {
+      "base": "Europe PMC",
+      "cadena": 3,
+      "consulta": "neural network bounded residual context gating",
+      "fecha_utc": "2026-11-22T20:30:31.109285+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=neural+network+bounded+residual+context+gating&format=json&pageSize=10&resultType=core",
+      "http": 200,
+      "respuesta_sha256": "79d051ebfcdccb5cb7ee77cd5689c06db3c546ece66c98967f0e3effcb5ba6fd",
+      "total_declarado": 444,
+      "registros": [
+        {
+          "titulo": "MSANet: a multi-scale spatiotemporal adaptive network for EEG-based driver fatigue recognition.",
+          "doi": "10.3389/fnins.2026.1939908",
+          "id": "42903183",
+          "url": "https://europepmc.org/article/MED/42903183",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Joint-Gated Continual Learning for Roadheader-Mounted Millimeter-Wave Radar Range Prediction in a Coal Mine.",
+          "doi": "10.3390/s26217051",
+          "id": "43029849",
+          "url": "https://europepmc.org/article/MED/43029849",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Dual-Channel Scale-Adaptive Clutter Suppression with Confidence-Derived Gating for Microwave Inspection of Curved Radar-Absorbing Materials.",
+          "doi": "10.3390/s26185854",
+          "id": "42817385",
+          "url": "https://europepmc.org/article/MED/42817385",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Adaptive Hierarchical Evidence Fusion for Sensitive Field Detection in Structured Data: A Gated Residual Correction Network",
+          "doi": "",
+          "id": "PMC13298699",
+          "url": "https://europepmc.org/article/PMC/PMC13298699",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "LARU-net: lesion-aware residual attention U-net for binary cucumber leaf lesion segmentation and continuous severity estimation.",
+          "doi": "10.3389/frai.2026.1918322",
+          "id": "43060654",
+          "url": "https://europepmc.org/article/MED/43060654",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "TFPAG-Net: A Time-Frequency Dual-Branch Fusion and PCMCI-Based Association-Guided Network for IIoT Intrusion Detection.",
+          "doi": "10.3390/s26185865",
+          "id": "42817433",
+          "url": "https://europepmc.org/article/MED/42817433",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "The neuroscience of transformers",
+          "doi": "",
+          "id": "PMC13650200",
+          "url": "https://europepmc.org/article/PMC/PMC13650200",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "A translational cross-modal control-cost framework for executive breakdown.",
+          "doi": "10.3389/fnins.2026.1837760",
+          "id": "42625785",
+          "url": "https://europepmc.org/article/MED/42625785",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Low-Intervention Boundary-Risk Graph Calibration for Cross-Domain Few-Shot Hyperspectral Image Classification.",
+          "doi": "10.3390/s26154903",
+          "id": "42590677",
+          "url": "https://europepmc.org/article/MED/42590677",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Time-Aware Graph Neural Network for Asynchronous Multi-Station Integrated Sensing and Communications Fusion in Open RAN.",
+          "doi": "10.3390/s26082376",
+          "id": "42076485",
+          "url": "https://europepmc.org/article/MED/42076485",
+          "abstract_disponible": true
+        }
+      ]
+    },
+    {
+      "base": "Europe PMC",
+      "cadena": 4,
+      "consulta": "orientation disagreement uncertainty neural networks",
+      "fecha_utc": "2026-11-22T20:30:31.821561+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=orientation+disagreement+uncertainty+neural+networks&format=json&pageSize=10&resultType=core",
+      "http": 200,
+      "respuesta_sha256": "bc5cb9d4f799a8ebb070fbdd8c0c6e8d6a3f570e48b9f015e796dc63186a7afd",
+      "total_declarado": 749,
+      "registros": [
+        {
+          "titulo": "Regulatory flexibility under pressure: an asymmetric brain-body model of leadership in high-stakes teams.",
+          "doi": "10.3389/fnins.2026.1957101",
+          "id": "42851432",
+          "url": "https://europepmc.org/article/MED/42851432",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "LightHARNet for smartphone sensor-based human activity recognition using lightweight depthwise attention convolution.",
+          "doi": "10.1371/journal.pone.0358047",
+          "id": "43056353",
+          "url": "https://europepmc.org/article/MED/43056353",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "A Survey on Intelligent Perception, State Estimation and Multimodal Navigation Technologies for Resource-Constrained Autonomous Systems.",
+          "doi": "10.3390/s26216728",
+          "id": "43029528",
+          "url": "https://europepmc.org/article/MED/43029528",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "GRAG-Net: A Gated Residual Autoregressive–Exogenous GRU Soft Sensor for Dynamic SO2 Estimation in Sulfur Recovery Units",
+          "doi": "",
+          "id": "PMC13667497",
+          "url": "https://europepmc.org/article/PMC/PMC13667497",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Making models disagree to learn how brains compute.",
+          "doi": "10.1038/s41583-026-01070-0",
+          "id": "42665676",
+          "url": "https://europepmc.org/article/MED/42665676",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Advances in computational biology approaches for digital modeling of tumor microenvironment.",
+          "doi": "10.1093/bib/bbag595",
+          "id": "42949536",
+          "url": "https://europepmc.org/article/MED/42949536",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Machine Learning for Structural Steels: Materials Design, Property Prediction, Durability, and Future Directions.",
+          "doi": "10.3390/ma19173612",
+          "id": "42738049",
+          "url": "https://europepmc.org/article/MED/42738049",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Physics-Informed and Explainable Artificial Intelligence for Nanomaterial-Based Biosensors: From Sensor Design and Signal Processing to Clinical Translation.",
+          "doi": "10.3390/bioengineering13101133",
+          "id": "42938989",
+          "url": "https://europepmc.org/article/MED/42938989",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Interlaminar Versus Transforaminal Full-Endoscopic Lumbar Discectomy for Lumbar Disc Herniation: A Structured Debate and International Practice Patterns.",
+          "doi": "10.14245/ns.26521606.0803",
+          "id": "43000798",
+          "url": "https://europepmc.org/article/MED/43000798",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Precision in Delivery, Variability in Response: A Multiscale Mechanistic Framework for Neuronavigated Transcranial Magnetic Stimulation.",
+          "doi": "10.3390/brainsci16090901",
+          "id": "42793326",
+          "url": "https://europepmc.org/article/MED/42793326",
+          "abstract_disponible": true
+        }
+      ]
+    },
+    {
+      "base": "Europe PMC",
+      "cadena": 5,
+      "consulta": "selective kernel attention context histology",
+      "fecha_utc": "2026-11-22T20:30:36.013622+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=selective+kernel+attention+context+histology&format=json&pageSize=10&resultType=core",
+      "http": 200,
+      "respuesta_sha256": "1a100c7c198f1798dcce2dafa9d7e0571dd9200448f00fe29a22d6c57d6e6d87",
+      "total_declarado": 600,
+      "registros": [
+        {
+          "titulo": "Efficient Medical Image Segmentation in Multisensor Imaging: A Survey in the Era of Mamba and Foundation Models.",
+          "doi": "10.3390/s26082558",
+          "id": "42076667",
+          "url": "https://europepmc.org/article/MED/42076667",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "HT-Net: A Task-Specific Dual-Branch Network for Tumor Segmentation in Histopathological Images.",
+          "doi": "10.3390/biomimetics11100739",
+          "id": "42930291",
+          "url": "https://europepmc.org/article/MED/42930291",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "MD-Mamba: A multi-scale dilated state-space network for breast cancer histopathology image classification.",
+          "doi": "10.1016/j.tranon.2026.102941",
+          "id": "42537429",
+          "url": "https://europepmc.org/article/MED/42537429",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "The intermediate hippocampus integrates shock-observation and spatial information during observational fear memory in male rats.",
+          "doi": "10.1038/s41467-026-78482-0",
+          "id": "42934262",
+          "url": "https://europepmc.org/article/MED/42934262",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Oxytocin neurons signal state-dependent transitions from rest to thermogenesis and behavioral arousal.",
+          "doi": "10.7554/elife.108212",
+          "id": "42960829",
+          "url": "https://europepmc.org/article/MED/42960829",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Applications of artificial intelligence in non-small cell lung cancer: from precision diagnosis to personalized prognosis and therapy.",
+          "doi": "10.1186/s12967-025-07591-z",
+          "id": "41437380",
+          "url": "https://europepmc.org/article/MED/41437380",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Thalamic quantitative susceptibility mapping and susceptibility source separation: a critical narrative review of evidence and interpretation",
+          "doi": "",
+          "id": "PMC13647462",
+          "url": "https://europepmc.org/article/PMC/PMC13647462",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "A Lightweight Skeletal Muscle Intelligent Segmentation Network Based on Planning CT for Cervical Cancer Radiotherapy.",
+          "doi": "10.1177/15330338261446535",
+          "id": "42041275",
+          "url": "https://europepmc.org/article/MED/42041275",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Single-cell reconstruction of whole-brain efferent projections from mouse ventral posteromedial thalamus.",
+          "doi": "10.1186/s40708-026-00315-z",
+          "id": "42323448",
+          "url": "https://europepmc.org/article/MED/42323448",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Reproducibility Before Treatment Decision Rules: A Targeted Scoping Review of AI-Assisted Coronary Plaque Characterization.",
+          "doi": "10.3390/diagnostics16213703",
+          "id": "43028574",
+          "url": "https://europepmc.org/article/MED/43028574",
+          "abstract_disponible": true
+        }
+      ]
+    },
+    {
+      "base": "Crossref",
+      "cadena": 1,
+      "consulta": "histopathology rotation invariant group equivariant convolution",
+      "fecha_utc": "2026-11-22T20:30:29.345736+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://api.crossref.org/works?query.bibliographic=histopathology+rotation+invariant+group+equivariant+convolution&rows=10",
+      "http": 200,
+      "respuesta_sha256": "c10fa4f509ec4dfffa0dedc9707a8b76378a894944a118884b1c94430f30ad69",
+      "total_declarado": 1220965,
+      "registros": [
+        {
+          "titulo": "Rotation-Invariant Point Convolution With Multiple Equivariant Alignments",
+          "doi": "10.1109/3dv50981.2020.00060",
+          "id": "10.1109/3dv50981.2020.00060",
+          "url": "https://doi.org/10.1109/3dv50981.2020.00060",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "PreCM: The Padding-Based Rotation Equivariant Convolution Mode for Semantic Segmentation_supp1-3558425.pdf",
+          "doi": "10.1109/tip.2025.3558425/mm1",
+          "id": "10.1109/tip.2025.3558425/mm1",
+          "url": "https://doi.org/10.1109/tip.2025.3558425/mm1",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "RSF-Conv: Rotation-and-Scale Equivariant Fourier Parameterized Convolution for Retinal Vessel Segmentation_supp1-3560082.pdf",
+          "doi": "10.1109/tnnls.2025.3560082/mm1",
+          "id": "10.1109/tnnls.2025.3560082/mm1",
+          "url": "https://doi.org/10.1109/tnnls.2025.3560082/mm1",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Rotation Equivariant Convolution-based Network for Semantic Segmentation of High Spatial Resolution Remote Sensing Imagery_supp1-3662255.pdf",
+          "doi": "10.1109/lgrs.2026.3662255/mm1",
+          "id": "10.1109/lgrs.2026.3662255/mm1",
+          "url": "https://doi.org/10.1109/lgrs.2026.3662255/mm1",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Equivariance-Guided Rotation-Invariant Self-Supervised Learning with p4-Equivariant CNNs",
+          "doi": "10.2139/ssrn.6177604",
+          "id": "10.2139/ssrn.6177604",
+          "url": "https://doi.org/10.2139/ssrn.6177604",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Equivariance-Guided Rotation-Invariant Self-Supervised Learning with p4-Equivariant CNNs",
+          "doi": "10.2139/ssrn.6778918",
+          "id": "10.2139/ssrn.6778918",
+          "url": "https://doi.org/10.2139/ssrn.6778918",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "RA-LoFTR: Rotation-Equivariant Annular Convolution for Robust Detector-Free Matching",
+          "doi": "10.3390/electronics15143130",
+          "id": "10.3390/electronics15143130",
+          "url": "https://doi.org/10.3390/electronics15143130",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Efficient Group-Equivariant Transformer using Group-Equivariant Convolution",
+          "doi": "10.9717/kmms.2023.26.3.472",
+          "id": "10.9717/kmms.2023.26.3.472",
+          "url": "https://doi.org/10.9717/kmms.2023.26.3.472",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Learning rotation-aware features: From invariant priors to equivariant descriptors",
+          "doi": "10.1109/cvpr.2012.6247909",
+          "id": "10.1109/cvpr.2012.6247909",
+          "url": "https://doi.org/10.1109/cvpr.2012.6247909",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Rotation-Equivariant Multi-Scale Convolution Via Adaptive Magnitude LBP",
+          "doi": "10.1109/icip61757.2026.11630361",
+          "id": "10.1109/icip61757.2026.11630361",
+          "url": "https://doi.org/10.1109/icip61757.2026.11630361",
+          "abstract_disponible": false
+        }
+      ]
+    },
+    {
+      "base": "Crossref",
+      "cadena": 2,
+      "consulta": "histopathology nuclei center surround context classification",
+      "fecha_utc": "2026-11-22T20:30:31.724369+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://api.crossref.org/works?query.bibliographic=histopathology+nuclei+center+surround+context+classification&rows=10",
+      "http": 200,
+      "respuesta_sha256": "ac67f2c01bcef09d158f9e5ceda046966e2a8bbda23c9bcaac10795f363defcd",
+      "total_declarado": 1892148,
+      "registros": [
+        {
+          "titulo": "Decision letter: Receptive field center-surround interactions mediate context-dependent spatial contrast encoding in the retina",
+          "doi": "10.7554/elife.38841.024",
+          "id": "10.7554/elife.38841.024",
+          "url": "https://doi.org/10.7554/elife.38841.024",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "CA-Net: Context Aggregation Network for Nuclei Classification in Histopathology Image",
+          "doi": "10.1088/1742-6596/2504/1/012031",
+          "id": "10.1088/1742-6596/2504/1/012031",
+          "url": "https://doi.org/10.1088/1742-6596/2504/1/012031",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Spatiotemporal Context Shapes Center-Surround Dynamics",
+          "doi": "10.1167/jov.25.9.2423",
+          "id": "10.1167/jov.25.9.2423",
+          "url": "https://doi.org/10.1167/jov.25.9.2423",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Receptive field center-surround interactions mediate context-dependent spatial contrast encoding in the retina",
+          "doi": "10.7554/elife.38841",
+          "id": "10.7554/elife.38841",
+          "url": "https://doi.org/10.7554/elife.38841",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Receptive field center-surround interactions mediate context-dependent spatial contrast encoding in the retina",
+          "doi": "10.1101/252148",
+          "id": "10.1101/252148",
+          "url": "https://doi.org/10.1101/252148",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Author response: Receptive field center-surround interactions mediate context-dependent spatial contrast encoding in the retina",
+          "doi": "10.7554/elife.38841.025",
+          "id": "10.7554/elife.38841.025",
+          "url": "https://doi.org/10.7554/elife.38841.025",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Correction: Receptive field center-surround interactions mediate context-dependent spatial contrast encoding in the retina",
+          "doi": "10.7554/elife.100599",
+          "id": "10.7554/elife.100599",
+          "url": "https://doi.org/10.7554/elife.100599",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Figure 7. Spatial correlations in natural scenes promote nonlinear center-surround interactions.",
+          "doi": "10.7554/elife.38841.016",
+          "id": "10.7554/elife.38841.016",
+          "url": "https://doi.org/10.7554/elife.38841.016",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Mitotic Nuclei Segmentation and Classification Using Chaotic Butterfly Optimization Algorithm with Deep Learning on Histopathology Images",
+          "doi": "10.3390/biomimetics8060474",
+          "id": "10.3390/biomimetics8060474",
+          "url": "https://doi.org/10.3390/biomimetics8060474",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Nuclei Instance Segmentation and Classification in Histopathology Images with Stardist",
+          "doi": "10.1109/isbic56247.2022.9854534",
+          "id": "10.1109/isbic56247.2022.9854534",
+          "url": "https://doi.org/10.1109/isbic56247.2022.9854534",
+          "abstract_disponible": false
+        }
+      ]
+    },
+    {
+      "base": "Crossref",
+      "cadena": 3,
+      "consulta": "neural network bounded residual context gating",
+      "fecha_utc": "2026-11-22T20:30:34.186412+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://api.crossref.org/works?query.bibliographic=neural+network+bounded+residual+context+gating&rows=10",
+      "http": 200,
+      "respuesta_sha256": "c577e80369590cd50111d9ea33a3c20e68d1857ec8cd5715d4288959c166e1c3",
+      "total_declarado": 2607276,
+      "registros": [
+        {
+          "titulo": "Multi-modal sentiment recognition with residual gating network and emotion intensity attention",
+          "doi": "10.1016/j.neunet.2025.107483",
+          "id": "10.1016/j.neunet.2025.107483",
+          "url": "https://doi.org/10.1016/j.neunet.2025.107483",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "A Recursive Residual Multi-Scale Context Gating Network for Tiny Object Detection in Aerial Imagery",
+          "doi": "10.1109/iciss67859.2026.11453773",
+          "id": "10.1109/iciss67859.2026.11453773",
+          "url": "https://doi.org/10.1109/iciss67859.2026.11453773",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Hybrid graph-fourier neural operator with bounded residual multiplicative gating for learning PDE solution operators",
+          "doi": "10.1016/j.camwa.2026.10.031",
+          "id": "10.1016/j.camwa.2026.10.031",
+          "url": "https://doi.org/10.1016/j.camwa.2026.10.031",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Communication Signal Modulation Recognition Technology Using Global Context Residual Recurrent Neural Network",
+          "doi": "10.1109/icdsns62112.2024.10691119",
+          "id": "10.1109/icdsns62112.2024.10691119",
+          "url": "https://doi.org/10.1109/icdsns62112.2024.10691119",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "A Convolutional Neural Network for Pavement Surface Crack Segmentation Using Residual Connections and Attention Gating",
+          "doi": "10.1109/icip.2019.8803060",
+          "id": "10.1109/icip.2019.8803060",
+          "url": "https://doi.org/10.1109/icip.2019.8803060",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Visual product recommendation using neural aggregation network and context gating",
+          "doi": "10.1088/1742-6596/1368/3/032016",
+          "id": "10.1088/1742-6596/1368/3/032016",
+          "url": "https://doi.org/10.1088/1742-6596/1368/3/032016",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Sparsity as the Implicit Gating Mechanism for Residual Blocks",
+          "doi": "10.1109/ijcnn.2019.8851903",
+          "id": "10.1109/ijcnn.2019.8851903",
+          "url": "https://doi.org/10.1109/ijcnn.2019.8851903",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Molecular Dynamics and Neural Network Analysis Reveal Sequential Gating and Allosteric Communication in FMRFamide-Activated Sodium Channels",
+          "doi": "10.1021/acs.jcim.5c01255.s001",
+          "id": "10.1021/acs.jcim.5c01255.s001",
+          "url": "https://doi.org/10.1021/acs.jcim.5c01255.s001",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Molecular Dynamics and Neural Network Analysis Reveal Sequential Gating and Allosteric Communication in FMRFamide-Activated Sodium Channels",
+          "doi": "10.1021/acs.jcim.5c01255.s002",
+          "id": "10.1021/acs.jcim.5c01255.s002",
+          "url": "https://doi.org/10.1021/acs.jcim.5c01255.s002",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Gating improves neural network performance",
+          "doi": "10.1109/ijcnn.2001.938501",
+          "id": "10.1109/ijcnn.2001.938501",
+          "url": "https://doi.org/10.1109/ijcnn.2001.938501",
+          "abstract_disponible": false
+        }
+      ]
+    },
+    {
+      "base": "Crossref",
+      "cadena": 4,
+      "consulta": "orientation disagreement uncertainty neural networks",
+      "fecha_utc": "2026-11-22T20:30:36.569695+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://api.crossref.org/works?query.bibliographic=orientation+disagreement+uncertainty+neural+networks&rows=10",
+      "http": 200,
+      "respuesta_sha256": "05a02f1b84abe976f34d1c65d3913ee10719baaab882bb93497c510c21d2f4d1",
+      "total_declarado": 2313349,
+      "registros": [
+        {
+          "titulo": "Dissecting Machine Forecast Disagreement: Investor Disagreement versus Model Uncertainty",
+          "doi": "10.2139/ssrn.7355578",
+          "id": "10.2139/ssrn.7355578",
+          "url": "https://doi.org/10.2139/ssrn.7355578",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Oversmoothing as Disagreement Contraction inMessage-Passing Graph Neural Networks",
+          "doi": "10.21203/rs.3.rs-9446792/v1",
+          "id": "10.21203/rs.3.rs-9446792/v1",
+          "url": "https://doi.org/10.21203/rs.3.rs-9446792/v1",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Practical uncertainty in neural networks",
+          "doi": "10.5204/thesis.eprints.246038",
+          "id": "10.5204/thesis.eprints.246038",
+          "url": "https://doi.org/10.5204/thesis.eprints.246038",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Recognition of hand-written symbols by orientation-selective filtering",
+          "doi": "10.1016/0893-6080(88)90476-5",
+          "id": "10.1016/0893-6080(88)90476-5",
+          "url": "https://doi.org/10.1016/0893-6080(88)90476-5",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Uncertainty propagation for dropout-based Bayesian neural networks",
+          "doi": "10.1016/j.neunet.2021.09.005",
+          "id": "10.1016/j.neunet.2021.09.005",
+          "url": "https://doi.org/10.1016/j.neunet.2021.09.005",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Uncertainty propagation in feed-forward neural network models",
+          "doi": "10.1016/j.neunet.2025.108178",
+          "id": "10.1016/j.neunet.2025.108178",
+          "url": "https://doi.org/10.1016/j.neunet.2025.108178",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Disagreement orientation: exploring disagreement orientation and its impact on political participation among Norwegian adolescents",
+          "doi": "10.1057/s41269-024-00379-x",
+          "id": "10.1057/s41269-024-00379-x",
+          "url": "https://doi.org/10.1057/s41269-024-00379-x",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Uncertainty Quantification Using Neural Networks for Molecular Property Prediction",
+          "doi": "10.1021/acs.jcim.0c00502.s001",
+          "id": "10.1021/acs.jcim.0c00502.s001",
+          "url": "https://doi.org/10.1021/acs.jcim.0c00502.s001",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Information Aware max-norm Dirichlet networks for predictive uncertainty estimation",
+          "doi": "10.1016/j.neunet.2020.12.011",
+          "id": "10.1016/j.neunet.2020.12.011",
+          "url": "https://doi.org/10.1016/j.neunet.2020.12.011",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Neural networks for uncertainty management in vision systems",
+          "doi": "10.1109/ijcnn.1989.118462",
+          "id": "10.1109/ijcnn.1989.118462",
+          "url": "https://doi.org/10.1109/ijcnn.1989.118462",
+          "abstract_disponible": false
+        }
+      ]
+    },
+    {
+      "base": "Crossref",
+      "cadena": 5,
+      "consulta": "selective kernel attention context histology",
+      "fecha_utc": "2026-11-22T20:30:39.064949+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://api.crossref.org/works?query.bibliographic=selective+kernel+attention+context+histology&rows=10",
+      "http": 200,
+      "respuesta_sha256": "8ac4053627bd531fde017af936aed01e71b84ca9785e587419e86c57b1ef09dd",
+      "total_declarado": 1264807,
+      "registros": [
+        {
+          "titulo": "MixVIO: Selective Visual-Inertial Odometry Via Phase-Aware Attention and Hybrid Kernel Modeling_supp1-3707325.mp4",
+          "doi": "10.1109/lra.2026.3707325/mm1",
+          "id": "10.1109/lra.2026.3707325/mm1",
+          "url": "https://doi.org/10.1109/lra.2026.3707325/mm1",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "RIS-Kernel: A Model-agnostic Architecture for Long-context LLM Inference via Sparse Attention",
+          "doi": "10.2139/ssrn.6869438",
+          "id": "10.2139/ssrn.6869438",
+          "url": "https://doi.org/10.2139/ssrn.6869438",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "HARMONY: Hybrid Attention-Selective State Space Mixture for Long-Context Deep Learning",
+          "doi": "10.2139/ssrn.6147230",
+          "id": "10.2139/ssrn.6147230",
+          "url": "https://doi.org/10.2139/ssrn.6147230",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "High-Efficiency Visual Processing through Context-Aware Selective Attention",
+          "doi": "10.5772/intechopen.1014765",
+          "id": "10.5772/intechopen.1014765",
+          "url": "https://doi.org/10.5772/intechopen.1014765",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "ASK-HAR: Attention-Based Multi-Core Selective Kernel Convolution Network for Human Activity Recognition",
+          "doi": "10.1016/j.measurement.2024.115981",
+          "id": "10.1016/j.measurement.2024.115981",
+          "url": "https://doi.org/10.1016/j.measurement.2024.115981",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Intact selective attention supports context memory in adults with autism spectrum disorder",
+          "doi": "10.21203/rs.3.rs-257851/v1",
+          "id": "10.21203/rs.3.rs-257851/v1",
+          "url": "https://doi.org/10.21203/rs.3.rs-257851/v1",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Large Separable Kernel Attention: Rethinking the Large Kernel Attention Design in Cnn",
+          "doi": "10.2139/ssrn.4463661",
+          "id": "10.2139/ssrn.4463661",
+          "url": "https://doi.org/10.2139/ssrn.4463661",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Selective Kernel and Spatial Grouping Attention Network for Occluded Pedestrian Detection",
+          "doi": "10.1109/icvr55215.2022.9847953",
+          "id": "10.1109/icvr55215.2022.9847953",
+          "url": "https://doi.org/10.1109/icvr55215.2022.9847953",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Rolling Bearing Fault Diagnosis Method Based on Multi-scale Convolutional Neural Network with Selective Kernel Attention Mechanism",
+          "doi": "10.21203/rs.3.rs-4923538/v1",
+          "id": "10.21203/rs.3.rs-4923538/v1",
+          "url": "https://doi.org/10.21203/rs.3.rs-4923538/v1",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Memory-guided selective attention: Evidence for context-specific control using the trial-unique Stroop task.",
+          "doi": "10.31234/osf.io/wp4b8_v3",
+          "id": "10.31234/osf.io/wp4b8_v3",
+          "url": "https://doi.org/10.31234/osf.io/wp4b8_v3",
+          "abstract_disponible": true
+        }
+      ]
+    },
+    {
+      "base": "OpenAlex",
+      "cadena": 1,
+      "consulta": "histopathology rotation invariant group equivariant convolution",
+      "fecha_utc": "2026-11-22T20:30:29.345830+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://api.openalex.org/works?search=histopathology+rotation+invariant+group+equivariant+convolution&per-page=10",
+      "http": 200,
+      "respuesta_sha256": "c2564e2bfe3b3942ab7a339821c69fe14bf116e8440bcc88bee4f837daa6c0a8",
+      "total_declarado": 190,
+      "registros": [
+        {
+          "titulo": "Roto-translation equivariant convolutional networks: Application to histopathology image analysis",
+          "doi": "10.1016/j.media.2020.101849",
+          "id": "https://openalex.org/W3008425711",
+          "url": "https://doi.org/10.1016/j.media.2020.101849",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Attentive Group Equivariant Convolutional Networks",
+          "doi": "10.48550/arxiv.2002.03830",
+          "id": "https://openalex.org/W3035702705",
+          "url": "https://doi.org/10.48550/arxiv.2002.03830",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Equivariant convolutional networks",
+          "doi": "",
+          "id": "https://openalex.org/W3166192563",
+          "url": "https://openalex.org/W3166192563",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Rotation Equivariant CNNs for Digital Pathology",
+          "doi": "10.48550/arxiv.1806.03962",
+          "id": "https://openalex.org/W2952211505",
+          "url": "https://doi.org/10.48550/arxiv.1806.03962",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Equivariant Wavelets: Fast Rotation and Translation Invariant Wavelet Scattering Transforms",
+          "doi": "10.1109/tpami.2022.3165730",
+          "id": "https://openalex.org/W3157606622",
+          "url": "https://doi.org/10.1109/tpami.2022.3165730",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "EQUI-ViT: Rotational Equivariant Vision Transformer for Robust Histopathology Analysis",
+          "doi": "10.1109/isbi61048.2026.11515513",
+          "id": "https://openalex.org/W7161763081",
+          "url": "https://doi.org/10.1109/isbi61048.2026.11515513",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Classification of rotation-invariant biomedical images using equivariant neural networks",
+          "doi": "10.1038/s41598-024-65597-x",
+          "id": "https://openalex.org/W4400178053",
+          "url": "https://doi.org/10.1038/s41598-024-65597-x",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Equivariant Imaging Biomarkers for Robust Unsupervised Segmentation of Histopathology",
+          "doi": "10.48550/arxiv.2505.05689",
+          "id": "https://openalex.org/W4417085066",
+          "url": "https://doi.org/10.48550/arxiv.2505.05689",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Symmetry group equivariant convolutions for representation learning: a survey",
+          "doi": "10.1007/s41060-025-00994-7",
+          "id": "https://openalex.org/W7117456057",
+          "url": "https://doi.org/10.1007/s41060-025-00994-7",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "SRE-CONV: Symmetric Rotation Equivariant Convolution for Biomedical Image Classification",
+          "doi": "10.1109/isbi60581.2025.10981270",
+          "id": "https://openalex.org/W4410297721",
+          "url": "https://doi.org/10.1109/isbi60581.2025.10981270",
+          "abstract_disponible": true
+        }
+      ]
+    },
+    {
+      "base": "OpenAlex",
+      "cadena": 2,
+      "consulta": "histopathology nuclei center surround context classification",
+      "fecha_utc": "2026-11-22T20:30:30.086944+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://api.openalex.org/works?search=histopathology+nuclei+center+surround+context+classification&per-page=10",
+      "http": 200,
+      "respuesta_sha256": "790550a0b7ad2ace33405e6295a27308a3915d8604515ca6b144cede8791ab53",
+      "total_declarado": 1818,
+      "registros": [
+        {
+          "titulo": "Structure Embedded Nucleus Classification for Histopathology Images",
+          "doi": "10.1109/tmi.2024.3388328",
+          "id": "https://openalex.org/W4394744747",
+          "url": "https://doi.org/10.1109/tmi.2024.3388328",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Functional histopathology of keloid disease.",
+          "doi": "10.14670/hh-11-624",
+          "id": "https://openalex.org/W2249767100",
+          "url": "https://doi.org/10.14670/hh-11-624",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Detection and Classification of Nuclei in Histopathological Images",
+          "doi": "",
+          "id": "https://openalex.org/W7219385593",
+          "url": "https://openalex.org/W7219385593",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "A Multi-Stage Approach to Breast Cancer Classification Using Histopathology Images",
+          "doi": "10.3390/diagnostics13010126",
+          "id": "https://openalex.org/W4313471926",
+          "url": "https://doi.org/10.3390/diagnostics13010126",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Clinical Features, Histopathology and Differential Diagnosis of Sarcoidosis",
+          "doi": "10.3390/cells11010059",
+          "id": "https://openalex.org/W4200593354",
+          "url": "https://doi.org/10.3390/cells11010059",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Histopathology of the More Common Viral Skin Infections",
+          "doi": "10.1016/s1578-2190(10)70618-1",
+          "id": "https://openalex.org/W2113193738",
+          "url": "https://doi.org/10.1016/s1578-2190(10)70618-1",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Towards Effective and Efficient Context-aware Nucleus Detection in Histopathology Whole Slide Images",
+          "doi": "10.1609/aaai.v40i11.37860",
+          "id": "https://openalex.org/W7138382351",
+          "url": "https://doi.org/10.1609/aaai.v40i11.37860",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Histopathology - Reviews and Recent Advances",
+          "doi": "10.5772/2991",
+          "id": "https://openalex.org/W2488527918",
+          "url": "https://doi.org/10.5772/2991",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "A hierarchical conditional random field-based attention mechanism approach for gastric histopathology image classification",
+          "doi": "10.1007/s10489-021-02886-2",
+          "id": "https://openalex.org/W3131151352",
+          "url": "https://doi.org/10.1007/s10489-021-02886-2",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Biological insights and novel biomarker discovery through deep learning approaches in breast cancer histopathology",
+          "doi": "10.1038/s41523-023-00518-1",
+          "id": "https://openalex.org/W4362661579",
+          "url": "https://doi.org/10.1038/s41523-023-00518-1",
+          "abstract_disponible": true
+        }
+      ]
+    },
+    {
+      "base": "OpenAlex",
+      "cadena": 3,
+      "consulta": "neural network bounded residual context gating",
+      "fecha_utc": "2026-11-22T20:30:30.820338+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://api.openalex.org/works?search=neural+network+bounded+residual+context+gating&per-page=10",
+      "http": 200,
+      "respuesta_sha256": "3303ee581194ef4d3f3b2e732f8c229a0fc494813e055acc5fc1a7b1b8a20645",
+      "total_declarado": 44721,
+      "registros": [
+        {
+          "titulo": "Hierarchically Gated Recurrent Neural Network for Sequence Modeling",
+          "doi": "10.52202/075280-1442",
+          "id": "https://openalex.org/W7133201027",
+          "url": "https://doi.org/10.52202/075280-1442",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Gated Siamese Convolutional Neural Network Architecture for Human Re-identification",
+          "doi": "10.1007/978-3-319-46484-8_48",
+          "id": "https://openalex.org/W2502225121",
+          "url": "https://doi.org/10.1007/978-3-319-46484-8_48",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Improving the Gating Mechanism of Recurrent Neural Networks",
+          "doi": "10.48550/arxiv.1910.09890",
+          "id": "https://openalex.org/W3035332875",
+          "url": "https://doi.org/10.48550/arxiv.1910.09890",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Reversible Architectures for Arbitrarily Deep Residual Neural Networks",
+          "doi": "10.1609/aaai.v32i1.11668",
+          "id": "https://openalex.org/W2963359731",
+          "url": "https://doi.org/10.1609/aaai.v32i1.11668",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Gather-Excite: Exploiting Feature Context in Convolutional Neural Networks",
+          "doi": "10.48550/arxiv.1810.12348",
+          "id": "https://openalex.org/W2898732869",
+          "url": "https://doi.org/10.48550/arxiv.1810.12348",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "FastGRNN: A Fast, Accurate, Stable and Tiny Kilobyte Sized Gated Recurrent Neural Network",
+          "doi": "10.48550/arxiv.1901.02358",
+          "id": "https://openalex.org/W2890309926",
+          "url": "https://doi.org/10.48550/arxiv.1901.02358",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Pixel Recurrent Neural Networks",
+          "doi": "10.48550/arxiv.1601.06759",
+          "id": "https://openalex.org/W2267126114",
+          "url": "https://doi.org/10.48550/arxiv.1601.06759",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "On Interpretability of Artificial Neural Networks: A Survey",
+          "doi": "10.1109/trpms.2021.3066428",
+          "id": "https://openalex.org/W3154435685",
+          "url": "https://doi.org/10.1109/trpms.2021.3066428",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Solve routing problems with a residual edge-graph attention neural network",
+          "doi": "10.1016/j.neucom.2022.08.005",
+          "id": "https://openalex.org/W3157164925",
+          "url": "https://doi.org/10.1016/j.neucom.2022.08.005",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Gated Attention Coding for Training High-Performance and Efficient Spiking Neural Networks",
+          "doi": "10.1609/aaai.v38i1.27816",
+          "id": "https://openalex.org/W4393154986",
+          "url": "https://doi.org/10.1609/aaai.v38i1.27816",
+          "abstract_disponible": true
+        }
+      ]
+    },
+    {
+      "base": "OpenAlex",
+      "cadena": 4,
+      "consulta": "orientation disagreement uncertainty neural networks",
+      "fecha_utc": "2026-11-22T20:30:31.692530+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://api.openalex.org/works?search=orientation+disagreement+uncertainty+neural+networks&per-page=10",
+      "http": 200,
+      "respuesta_sha256": "42fabd88e681ab6bac891e3f3b9406b0dd545608a8f9355e0a6f1e9664800033",
+      "total_declarado": 10598,
+      "registros": [
+        {
+          "titulo": "Aleatoric uncertainty estimation with test-time augmentation for medical image segmentation with convolutional neural networks",
+          "doi": "10.1016/j.neucom.2019.01.103",
+          "id": "https://openalex.org/W2887976372",
+          "url": "https://doi.org/10.1016/j.neucom.2019.01.103",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Automatic Brain Tumor Segmentation Based on Cascaded Convolutional Neural Networks With Uncertainty Estimation",
+          "doi": "10.3389/fncom.2019.00056",
+          "id": "https://openalex.org/W2964980777",
+          "url": "https://doi.org/10.3389/fncom.2019.00056",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Uncertainty propagation networks for neural ordinary differential equations",
+          "doi": "10.1016/j.neucom.2026.133134",
+          "id": "https://openalex.org/W7131105385",
+          "url": "https://doi.org/10.1016/j.neucom.2026.133134",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "On the Binding Problem in Artificial Neural Networks",
+          "doi": "10.48550/arxiv.2012.05208",
+          "id": "https://openalex.org/W3113055895",
+          "url": "https://doi.org/10.48550/arxiv.2012.05208",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Self-Supervised Exploration via Disagreement",
+          "doi": "10.48550/arxiv.1906.04161",
+          "id": "https://openalex.org/W2948199691",
+          "url": "https://doi.org/10.48550/arxiv.1906.04161",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Nondeterminism and Instability in Neural Network Optimization",
+          "doi": "10.48550/arxiv.2103.04514",
+          "id": "https://openalex.org/W3126445456",
+          "url": "https://doi.org/10.48550/arxiv.2103.04514",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Test Selection for Deep Neural Networks using Meta-Models with Uncertainty Metrics",
+          "doi": "10.1145/3650212.3680312",
+          "id": "https://openalex.org/W4402457595",
+          "url": "https://doi.org/10.1145/3650212.3680312",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Uncertainty, Neuromodulation, and Attention",
+          "doi": "10.1016/j.neuron.2005.04.026",
+          "id": "https://openalex.org/W2154562678",
+          "url": "https://doi.org/10.1016/j.neuron.2005.04.026",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Hybrid neural network potential for multilayer graphene",
+          "doi": "10.1103/physrevb.100.195419",
+          "id": "https://openalex.org/W2973572202",
+          "url": "https://doi.org/10.1103/physrevb.100.195419",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Photometric redshifts for the Kilo-Degree Survey: Machine-learning analysis with artificial neural networks",
+          "doi": "10.1051/0004-6361/201731942",
+          "id": "https://openalex.org/W4289726834",
+          "url": "https://doi.org/10.1051/0004-6361/201731942",
+          "abstract_disponible": true
+        }
+      ]
+    },
+    {
+      "base": "OpenAlex",
+      "cadena": 5,
+      "consulta": "selective kernel attention context histology",
+      "fecha_utc": "2026-11-22T20:30:32.775966+00:00",
+      "limite": 10,
+      "orden": "relevancia predeterminada; primera página",
+      "intentos": [
+        200
+      ],
+      "url": "https://api.openalex.org/works?search=selective+kernel+attention+context+histology&per-page=10",
+      "http": 200,
+      "respuesta_sha256": "b6046b1ea16f65ed91e722ae0e6348ee057af795de4bab5e91998fe7592d62f4",
+      "total_declarado": 4100,
+      "registros": [
+        {
+          "titulo": "Deep Networks with Internal Selective Attention through Feedback Connections",
+          "doi": "10.48550/arxiv.1407.3068",
+          "id": "https://openalex.org/W2172010943",
+          "url": "https://doi.org/10.48550/arxiv.1407.3068",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Enhancing Local Context of Histology Features in Vision Transformers",
+          "doi": "10.1007/978-3-031-19660-7_15",
+          "id": "https://openalex.org/W4312894074",
+          "url": "https://doi.org/10.1007/978-3-031-19660-7_15",
+          "abstract_disponible": false
+        },
+        {
+          "titulo": "Entropy-Regularized Attention for Explainable Histological Classification with Convolutional and Hybrid Models",
+          "doi": "10.3390/e27070722",
+          "id": "https://openalex.org/W4411980211",
+          "url": "https://doi.org/10.3390/e27070722",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Locus coeruleus norepinephrine contributes to visual-spatial attention by selectively enhancing perceptual sensitivity",
+          "doi": "10.1016/j.neuron.2024.04.001",
+          "id": "https://openalex.org/W4396578424",
+          "url": "https://doi.org/10.1016/j.neuron.2024.04.001",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Feature-Selective Attention Adaptively Shifts Noise Correlations in Primary Auditory Cortex",
+          "doi": "10.1523/jneurosci.3169-16.2017",
+          "id": "https://openalex.org/W2606945192",
+          "url": "https://doi.org/10.1523/jneurosci.3169-16.2017",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Advanced Detection of Gastrointestinal Cancer & Classification Using ASHMSO and Multi-Kernel Attention Densenet",
+          "doi": "10.51483/ijaiml.6.1s.2026.384-402",
+          "id": "https://openalex.org/W7164815506",
+          "url": "https://doi.org/10.51483/ijaiml.6.1s.2026.384-402",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Convolutional neural network with parallel convolution scale attention module and ResCBAM for breast histology image classification",
+          "doi": "10.1016/j.heliyon.2024.e30889",
+          "id": "https://openalex.org/W4396725736",
+          "url": "https://doi.org/10.1016/j.heliyon.2024.e30889",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "The next layer: augmenting foundation models with structure-preserving and attention-guided learning for local patches to global context awareness in computational pathology",
+          "doi": "10.1038/s41698-026-01312-5",
+          "id": "https://openalex.org/W7127600082",
+          "url": "https://doi.org/10.1038/s41698-026-01312-5",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "MHCAF-Net: Multi-Scale Cross-Attention Fusion for Histological Grading of Invasive Ductal Carcinoma",
+          "doi": "10.5753/sbcas.2026.21032",
+          "id": "https://openalex.org/W7165617695",
+          "url": "https://doi.org/10.5753/sbcas.2026.21032",
+          "abstract_disponible": true
+        },
+        {
+          "titulo": "Fine-Tuning Pre-Trained Networks with Attention Mechanisms for Improved Multi-Classification of Breast Cancer Histology Images",
+          "doi": "10.18280/ts.420139",
+          "id": "https://openalex.org/W4408037351",
+          "url": "https://doi.org/10.18280/ts.420139",
+          "abstract_disponible": true
+        }
+      ]
+    }
+  ],
+  "recuperados": 149,
+  "unicos": 148,
+  "deduplicacion": "DOI normalizado; si falta, título sin signos ni espacios",
+  "registros_unicos": [
+    {
+      "titulo": "Mod-SE(2): a geometric deep learning framework for brain tumor classification and segmentation in MRI images.",
+      "doi": "10.1186/s12929-025-01213-y",
+      "id": "41527065",
+      "url": "https://europepmc.org/article/MED/41527065",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "SE(3)-Equivariant and Noise-Invariant 3D Rigid Motion Tracking in Brain MRI.",
+      "doi": "10.1109/tmi.2024.3411989",
+      "id": "38857148",
+      "url": "https://europepmc.org/article/MED/38857148",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Recent Advances in Automated Mitosis Detection in Digital Pathology: A PRISMA-Guided Systematic Review with Evaluation-Regime Stratification (2018–2025)",
+      "doi": "",
+      "id": "PMC13296622",
+      "url": "https://europepmc.org/article/PMC/PMC13296622",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Europe PMC:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Graph Learning in Bioinformatics: A Survey of Graph Neural Network Architectures, Biological Graph Construction and Bioinformatics Applications.",
+      "doi": "10.3390/biom16020333",
+      "id": "41750401",
+      "url": "https://europepmc.org/article/MED/41750401",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Roto-translation equivariant convolutional networks: Application to histopathology image analysis.",
+      "doi": "10.1016/j.media.2020.101849",
+      "id": "33197715",
+      "url": "https://europepmc.org/article/MED/33197715",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:1",
+        "OpenAlex:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "RCTE: A reliable and consistent temporal-ensembling framework for semi-supervised segmentation of COVID-19 lesions.",
+      "doi": "10.1016/j.ins.2021.07.059",
+      "id": "34305162",
+      "url": "https://europepmc.org/article/MED/34305162",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Transforming medical imaging with Transformers? A comparative review of key properties, current progresses, and future perspectives.",
+      "doi": "10.1016/j.media.2023.102762",
+      "id": "36738650",
+      "url": "https://europepmc.org/article/MED/36738650",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Computational pathology: A survey review and the way forward.",
+      "doi": "10.1016/j.jpi.2023.100357",
+      "id": "38420608",
+      "url": "https://europepmc.org/article/MED/38420608",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Pre-training in Medical Data: A Survey",
+      "doi": "",
+      "id": "PMC9942039",
+      "url": "https://europepmc.org/article/PMC/PMC9942039",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Europe PMC:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Neglected Trichilemmal Carcinoma with Severe Opportunistic Cutaneous Wound Myiasis: A First Case Report and Implications for Elderly Rural Populations.",
+      "doi": "10.2147/idr.s587439",
+      "id": "42261284",
+      "url": "https://europepmc.org/article/MED/42261284",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Bone Marrow Pathology in Cold Agglutinin-Mediated Autoimmune Hemolytic Anemia: A Study of 56 Cases.",
+      "doi": "10.1111/ejh.70194",
+      "id": "41994904",
+      "url": "https://europepmc.org/article/MED/41994904",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Advances in non-germ cell tumours of the testis: focus on new molecular developments in sex cord-stromal tumours.",
+      "doi": "10.1111/his.70006",
+      "id": "41384702",
+      "url": "https://europepmc.org/article/MED/41384702",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Diffuse Large B-Cell Lymphoma of the Thyroid in a Patient With Hashimoto Thyroiditis: A Diagnostic Dilemma.",
+      "doi": "10.1002/ccr3.71346",
+      "id": "41141239",
+      "url": "https://europepmc.org/article/MED/41141239",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Mapping Immunity With Cutting-Edge Spatial Biology and Tissue Cytometry Innovations.",
+      "doi": "10.1002/mco2.70775",
+      "id": "42253943",
+      "url": "https://europepmc.org/article/MED/42253943",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Cell-in-Cell Structures in Colorectal Cancer: A Proposed Assessment Method and Correlation with Established Poor Prognostic Factors.",
+      "doi": "10.3390/jpm15120591",
+      "id": "41440954",
+      "url": "https://europepmc.org/article/MED/41440954",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Intratumoral Fibrosis is a Potential Biomarker in Patients with Hepatocellular Carcinoma Undergoing Liver Resection.",
+      "doi": "10.2147/jhc.s608858",
+      "id": "42339018",
+      "url": "https://europepmc.org/article/MED/42339018",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Dysregulation of epithelial differentiation architecture underlies field cancerization in head and neck cancer",
+      "doi": "",
+      "id": "PMC13742683",
+      "url": "https://europepmc.org/article/PMC/PMC13742683",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Europe PMC:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Microscopic anatomy of the lungs of domestic animals, mice, and rats.",
+      "doi": "10.1177/10406387251413159",
+      "id": "41562526",
+      "url": "https://europepmc.org/article/MED/41562526",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "The Immunological Biography of the Carotid Plaque: From Trained Immunity and Clonal Lymphocytes to Spatial Immune Niches and Plaque Vulnerability.",
+      "doi": "10.3390/cells15211995",
+      "id": "43027352",
+      "url": "https://europepmc.org/article/MED/43027352",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "MSANet: a multi-scale spatiotemporal adaptive network for EEG-based driver fatigue recognition.",
+      "doi": "10.3389/fnins.2026.1939908",
+      "id": "42903183",
+      "url": "https://europepmc.org/article/MED/42903183",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Joint-Gated Continual Learning for Roadheader-Mounted Millimeter-Wave Radar Range Prediction in a Coal Mine.",
+      "doi": "10.3390/s26217051",
+      "id": "43029849",
+      "url": "https://europepmc.org/article/MED/43029849",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Dual-Channel Scale-Adaptive Clutter Suppression with Confidence-Derived Gating for Microwave Inspection of Curved Radar-Absorbing Materials.",
+      "doi": "10.3390/s26185854",
+      "id": "42817385",
+      "url": "https://europepmc.org/article/MED/42817385",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Adaptive Hierarchical Evidence Fusion for Sensitive Field Detection in Structured Data: A Gated Residual Correction Network",
+      "doi": "",
+      "id": "PMC13298699",
+      "url": "https://europepmc.org/article/PMC/PMC13298699",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Europe PMC:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "LARU-net: lesion-aware residual attention U-net for binary cucumber leaf lesion segmentation and continuous severity estimation.",
+      "doi": "10.3389/frai.2026.1918322",
+      "id": "43060654",
+      "url": "https://europepmc.org/article/MED/43060654",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "TFPAG-Net: A Time-Frequency Dual-Branch Fusion and PCMCI-Based Association-Guided Network for IIoT Intrusion Detection.",
+      "doi": "10.3390/s26185865",
+      "id": "42817433",
+      "url": "https://europepmc.org/article/MED/42817433",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "The neuroscience of transformers",
+      "doi": "",
+      "id": "PMC13650200",
+      "url": "https://europepmc.org/article/PMC/PMC13650200",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Europe PMC:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "A translational cross-modal control-cost framework for executive breakdown.",
+      "doi": "10.3389/fnins.2026.1837760",
+      "id": "42625785",
+      "url": "https://europepmc.org/article/MED/42625785",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Low-Intervention Boundary-Risk Graph Calibration for Cross-Domain Few-Shot Hyperspectral Image Classification.",
+      "doi": "10.3390/s26154903",
+      "id": "42590677",
+      "url": "https://europepmc.org/article/MED/42590677",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Time-Aware Graph Neural Network for Asynchronous Multi-Station Integrated Sensing and Communications Fusion in Open RAN.",
+      "doi": "10.3390/s26082376",
+      "id": "42076485",
+      "url": "https://europepmc.org/article/MED/42076485",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Regulatory flexibility under pressure: an asymmetric brain-body model of leadership in high-stakes teams.",
+      "doi": "10.3389/fnins.2026.1957101",
+      "id": "42851432",
+      "url": "https://europepmc.org/article/MED/42851432",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "LightHARNet for smartphone sensor-based human activity recognition using lightweight depthwise attention convolution.",
+      "doi": "10.1371/journal.pone.0358047",
+      "id": "43056353",
+      "url": "https://europepmc.org/article/MED/43056353",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "A Survey on Intelligent Perception, State Estimation and Multimodal Navigation Technologies for Resource-Constrained Autonomous Systems.",
+      "doi": "10.3390/s26216728",
+      "id": "43029528",
+      "url": "https://europepmc.org/article/MED/43029528",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "GRAG-Net: A Gated Residual Autoregressive–Exogenous GRU Soft Sensor for Dynamic SO2 Estimation in Sulfur Recovery Units",
+      "doi": "",
+      "id": "PMC13667497",
+      "url": "https://europepmc.org/article/PMC/PMC13667497",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Europe PMC:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Making models disagree to learn how brains compute.",
+      "doi": "10.1038/s41583-026-01070-0",
+      "id": "42665676",
+      "url": "https://europepmc.org/article/MED/42665676",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Advances in computational biology approaches for digital modeling of tumor microenvironment.",
+      "doi": "10.1093/bib/bbag595",
+      "id": "42949536",
+      "url": "https://europepmc.org/article/MED/42949536",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Machine Learning for Structural Steels: Materials Design, Property Prediction, Durability, and Future Directions.",
+      "doi": "10.3390/ma19173612",
+      "id": "42738049",
+      "url": "https://europepmc.org/article/MED/42738049",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Physics-Informed and Explainable Artificial Intelligence for Nanomaterial-Based Biosensors: From Sensor Design and Signal Processing to Clinical Translation.",
+      "doi": "10.3390/bioengineering13101133",
+      "id": "42938989",
+      "url": "https://europepmc.org/article/MED/42938989",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Interlaminar Versus Transforaminal Full-Endoscopic Lumbar Discectomy for Lumbar Disc Herniation: A Structured Debate and International Practice Patterns.",
+      "doi": "10.14245/ns.26521606.0803",
+      "id": "43000798",
+      "url": "https://europepmc.org/article/MED/43000798",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Precision in Delivery, Variability in Response: A Multiscale Mechanistic Framework for Neuronavigated Transcranial Magnetic Stimulation.",
+      "doi": "10.3390/brainsci16090901",
+      "id": "42793326",
+      "url": "https://europepmc.org/article/MED/42793326",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Efficient Medical Image Segmentation in Multisensor Imaging: A Survey in the Era of Mamba and Foundation Models.",
+      "doi": "10.3390/s26082558",
+      "id": "42076667",
+      "url": "https://europepmc.org/article/MED/42076667",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "HT-Net: A Task-Specific Dual-Branch Network for Tumor Segmentation in Histopathological Images.",
+      "doi": "10.3390/biomimetics11100739",
+      "id": "42930291",
+      "url": "https://europepmc.org/article/MED/42930291",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "MD-Mamba: A multi-scale dilated state-space network for breast cancer histopathology image classification.",
+      "doi": "10.1016/j.tranon.2026.102941",
+      "id": "42537429",
+      "url": "https://europepmc.org/article/MED/42537429",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "The intermediate hippocampus integrates shock-observation and spatial information during observational fear memory in male rats.",
+      "doi": "10.1038/s41467-026-78482-0",
+      "id": "42934262",
+      "url": "https://europepmc.org/article/MED/42934262",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Oxytocin neurons signal state-dependent transitions from rest to thermogenesis and behavioral arousal.",
+      "doi": "10.7554/elife.108212",
+      "id": "42960829",
+      "url": "https://europepmc.org/article/MED/42960829",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Applications of artificial intelligence in non-small cell lung cancer: from precision diagnosis to personalized prognosis and therapy.",
+      "doi": "10.1186/s12967-025-07591-z",
+      "id": "41437380",
+      "url": "https://europepmc.org/article/MED/41437380",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Thalamic quantitative susceptibility mapping and susceptibility source separation: a critical narrative review of evidence and interpretation",
+      "doi": "",
+      "id": "PMC13647462",
+      "url": "https://europepmc.org/article/PMC/PMC13647462",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Europe PMC:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "A Lightweight Skeletal Muscle Intelligent Segmentation Network Based on Planning CT for Cervical Cancer Radiotherapy.",
+      "doi": "10.1177/15330338261446535",
+      "id": "42041275",
+      "url": "https://europepmc.org/article/MED/42041275",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Single-cell reconstruction of whole-brain efferent projections from mouse ventral posteromedial thalamus.",
+      "doi": "10.1186/s40708-026-00315-z",
+      "id": "42323448",
+      "url": "https://europepmc.org/article/MED/42323448",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Reproducibility Before Treatment Decision Rules: A Targeted Scoping Review of AI-Assisted Coronary Plaque Characterization.",
+      "doi": "10.3390/diagnostics16213703",
+      "id": "43028574",
+      "url": "https://europepmc.org/article/MED/43028574",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Europe PMC:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Rotation-Invariant Point Convolution With Multiple Equivariant Alignments",
+      "doi": "10.1109/3dv50981.2020.00060",
+      "id": "10.1109/3dv50981.2020.00060",
+      "url": "https://doi.org/10.1109/3dv50981.2020.00060",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "PreCM: The Padding-Based Rotation Equivariant Convolution Mode for Semantic Segmentation_supp1-3558425.pdf",
+      "doi": "10.1109/tip.2025.3558425/mm1",
+      "id": "10.1109/tip.2025.3558425/mm1",
+      "url": "https://doi.org/10.1109/tip.2025.3558425/mm1",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "RSF-Conv: Rotation-and-Scale Equivariant Fourier Parameterized Convolution for Retinal Vessel Segmentation_supp1-3560082.pdf",
+      "doi": "10.1109/tnnls.2025.3560082/mm1",
+      "id": "10.1109/tnnls.2025.3560082/mm1",
+      "url": "https://doi.org/10.1109/tnnls.2025.3560082/mm1",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Rotation Equivariant Convolution-based Network for Semantic Segmentation of High Spatial Resolution Remote Sensing Imagery_supp1-3662255.pdf",
+      "doi": "10.1109/lgrs.2026.3662255/mm1",
+      "id": "10.1109/lgrs.2026.3662255/mm1",
+      "url": "https://doi.org/10.1109/lgrs.2026.3662255/mm1",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Equivariance-Guided Rotation-Invariant Self-Supervised Learning with p4-Equivariant CNNs",
+      "doi": "10.2139/ssrn.6177604",
+      "id": "10.2139/ssrn.6177604",
+      "url": "https://doi.org/10.2139/ssrn.6177604",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Equivariance-Guided Rotation-Invariant Self-Supervised Learning with p4-Equivariant CNNs",
+      "doi": "10.2139/ssrn.6778918",
+      "id": "10.2139/ssrn.6778918",
+      "url": "https://doi.org/10.2139/ssrn.6778918",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "RA-LoFTR: Rotation-Equivariant Annular Convolution for Robust Detector-Free Matching",
+      "doi": "10.3390/electronics15143130",
+      "id": "10.3390/electronics15143130",
+      "url": "https://doi.org/10.3390/electronics15143130",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Efficient Group-Equivariant Transformer using Group-Equivariant Convolution",
+      "doi": "10.9717/kmms.2023.26.3.472",
+      "id": "10.9717/kmms.2023.26.3.472",
+      "url": "https://doi.org/10.9717/kmms.2023.26.3.472",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Learning rotation-aware features: From invariant priors to equivariant descriptors",
+      "doi": "10.1109/cvpr.2012.6247909",
+      "id": "10.1109/cvpr.2012.6247909",
+      "url": "https://doi.org/10.1109/cvpr.2012.6247909",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Rotation-Equivariant Multi-Scale Convolution Via Adaptive Magnitude LBP",
+      "doi": "10.1109/icip61757.2026.11630361",
+      "id": "10.1109/icip61757.2026.11630361",
+      "url": "https://doi.org/10.1109/icip61757.2026.11630361",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Decision letter: Receptive field center-surround interactions mediate context-dependent spatial contrast encoding in the retina",
+      "doi": "10.7554/elife.38841.024",
+      "id": "10.7554/elife.38841.024",
+      "url": "https://doi.org/10.7554/elife.38841.024",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "CA-Net: Context Aggregation Network for Nuclei Classification in Histopathology Image",
+      "doi": "10.1088/1742-6596/2504/1/012031",
+      "id": "10.1088/1742-6596/2504/1/012031",
+      "url": "https://doi.org/10.1088/1742-6596/2504/1/012031",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Spatiotemporal Context Shapes Center-Surround Dynamics",
+      "doi": "10.1167/jov.25.9.2423",
+      "id": "10.1167/jov.25.9.2423",
+      "url": "https://doi.org/10.1167/jov.25.9.2423",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Receptive field center-surround interactions mediate context-dependent spatial contrast encoding in the retina",
+      "doi": "10.7554/elife.38841",
+      "id": "10.7554/elife.38841",
+      "url": "https://doi.org/10.7554/elife.38841",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Receptive field center-surround interactions mediate context-dependent spatial contrast encoding in the retina",
+      "doi": "10.1101/252148",
+      "id": "10.1101/252148",
+      "url": "https://doi.org/10.1101/252148",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Author response: Receptive field center-surround interactions mediate context-dependent spatial contrast encoding in the retina",
+      "doi": "10.7554/elife.38841.025",
+      "id": "10.7554/elife.38841.025",
+      "url": "https://doi.org/10.7554/elife.38841.025",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Correction: Receptive field center-surround interactions mediate context-dependent spatial contrast encoding in the retina",
+      "doi": "10.7554/elife.100599",
+      "id": "10.7554/elife.100599",
+      "url": "https://doi.org/10.7554/elife.100599",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Figure 7. Spatial correlations in natural scenes promote nonlinear center-surround interactions.",
+      "doi": "10.7554/elife.38841.016",
+      "id": "10.7554/elife.38841.016",
+      "url": "https://doi.org/10.7554/elife.38841.016",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Mitotic Nuclei Segmentation and Classification Using Chaotic Butterfly Optimization Algorithm with Deep Learning on Histopathology Images",
+      "doi": "10.3390/biomimetics8060474",
+      "id": "10.3390/biomimetics8060474",
+      "url": "https://doi.org/10.3390/biomimetics8060474",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Nuclei Instance Segmentation and Classification in Histopathology Images with Stardist",
+      "doi": "10.1109/isbic56247.2022.9854534",
+      "id": "10.1109/isbic56247.2022.9854534",
+      "url": "https://doi.org/10.1109/isbic56247.2022.9854534",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Multi-modal sentiment recognition with residual gating network and emotion intensity attention",
+      "doi": "10.1016/j.neunet.2025.107483",
+      "id": "10.1016/j.neunet.2025.107483",
+      "url": "https://doi.org/10.1016/j.neunet.2025.107483",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "A Recursive Residual Multi-Scale Context Gating Network for Tiny Object Detection in Aerial Imagery",
+      "doi": "10.1109/iciss67859.2026.11453773",
+      "id": "10.1109/iciss67859.2026.11453773",
+      "url": "https://doi.org/10.1109/iciss67859.2026.11453773",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Hybrid graph-fourier neural operator with bounded residual multiplicative gating for learning PDE solution operators",
+      "doi": "10.1016/j.camwa.2026.10.031",
+      "id": "10.1016/j.camwa.2026.10.031",
+      "url": "https://doi.org/10.1016/j.camwa.2026.10.031",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Communication Signal Modulation Recognition Technology Using Global Context Residual Recurrent Neural Network",
+      "doi": "10.1109/icdsns62112.2024.10691119",
+      "id": "10.1109/icdsns62112.2024.10691119",
+      "url": "https://doi.org/10.1109/icdsns62112.2024.10691119",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "A Convolutional Neural Network for Pavement Surface Crack Segmentation Using Residual Connections and Attention Gating",
+      "doi": "10.1109/icip.2019.8803060",
+      "id": "10.1109/icip.2019.8803060",
+      "url": "https://doi.org/10.1109/icip.2019.8803060",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Visual product recommendation using neural aggregation network and context gating",
+      "doi": "10.1088/1742-6596/1368/3/032016",
+      "id": "10.1088/1742-6596/1368/3/032016",
+      "url": "https://doi.org/10.1088/1742-6596/1368/3/032016",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Sparsity as the Implicit Gating Mechanism for Residual Blocks",
+      "doi": "10.1109/ijcnn.2019.8851903",
+      "id": "10.1109/ijcnn.2019.8851903",
+      "url": "https://doi.org/10.1109/ijcnn.2019.8851903",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Molecular Dynamics and Neural Network Analysis Reveal Sequential Gating and Allosteric Communication in FMRFamide-Activated Sodium Channels",
+      "doi": "10.1021/acs.jcim.5c01255.s001",
+      "id": "10.1021/acs.jcim.5c01255.s001",
+      "url": "https://doi.org/10.1021/acs.jcim.5c01255.s001",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Molecular Dynamics and Neural Network Analysis Reveal Sequential Gating and Allosteric Communication in FMRFamide-Activated Sodium Channels",
+      "doi": "10.1021/acs.jcim.5c01255.s002",
+      "id": "10.1021/acs.jcim.5c01255.s002",
+      "url": "https://doi.org/10.1021/acs.jcim.5c01255.s002",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Gating improves neural network performance",
+      "doi": "10.1109/ijcnn.2001.938501",
+      "id": "10.1109/ijcnn.2001.938501",
+      "url": "https://doi.org/10.1109/ijcnn.2001.938501",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Dissecting Machine Forecast Disagreement: Investor Disagreement versus Model Uncertainty",
+      "doi": "10.2139/ssrn.7355578",
+      "id": "10.2139/ssrn.7355578",
+      "url": "https://doi.org/10.2139/ssrn.7355578",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Oversmoothing as Disagreement Contraction inMessage-Passing Graph Neural Networks",
+      "doi": "10.21203/rs.3.rs-9446792/v1",
+      "id": "10.21203/rs.3.rs-9446792/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-9446792/v1",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Practical uncertainty in neural networks",
+      "doi": "10.5204/thesis.eprints.246038",
+      "id": "10.5204/thesis.eprints.246038",
+      "url": "https://doi.org/10.5204/thesis.eprints.246038",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Recognition of hand-written symbols by orientation-selective filtering",
+      "doi": "10.1016/0893-6080(88)90476-5",
+      "id": "10.1016/0893-6080(88)90476-5",
+      "url": "https://doi.org/10.1016/0893-6080(88)90476-5",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Uncertainty propagation for dropout-based Bayesian neural networks",
+      "doi": "10.1016/j.neunet.2021.09.005",
+      "id": "10.1016/j.neunet.2021.09.005",
+      "url": "https://doi.org/10.1016/j.neunet.2021.09.005",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Uncertainty propagation in feed-forward neural network models",
+      "doi": "10.1016/j.neunet.2025.108178",
+      "id": "10.1016/j.neunet.2025.108178",
+      "url": "https://doi.org/10.1016/j.neunet.2025.108178",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Disagreement orientation: exploring disagreement orientation and its impact on political participation among Norwegian adolescents",
+      "doi": "10.1057/s41269-024-00379-x",
+      "id": "10.1057/s41269-024-00379-x",
+      "url": "https://doi.org/10.1057/s41269-024-00379-x",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Uncertainty Quantification Using Neural Networks for Molecular Property Prediction",
+      "doi": "10.1021/acs.jcim.0c00502.s001",
+      "id": "10.1021/acs.jcim.0c00502.s001",
+      "url": "https://doi.org/10.1021/acs.jcim.0c00502.s001",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Information Aware max-norm Dirichlet networks for predictive uncertainty estimation",
+      "doi": "10.1016/j.neunet.2020.12.011",
+      "id": "10.1016/j.neunet.2020.12.011",
+      "url": "https://doi.org/10.1016/j.neunet.2020.12.011",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Neural networks for uncertainty management in vision systems",
+      "doi": "10.1109/ijcnn.1989.118462",
+      "id": "10.1109/ijcnn.1989.118462",
+      "url": "https://doi.org/10.1109/ijcnn.1989.118462",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "MixVIO: Selective Visual-Inertial Odometry Via Phase-Aware Attention and Hybrid Kernel Modeling_supp1-3707325.mp4",
+      "doi": "10.1109/lra.2026.3707325/mm1",
+      "id": "10.1109/lra.2026.3707325/mm1",
+      "url": "https://doi.org/10.1109/lra.2026.3707325/mm1",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "RIS-Kernel: A Model-agnostic Architecture for Long-context LLM Inference via Sparse Attention",
+      "doi": "10.2139/ssrn.6869438",
+      "id": "10.2139/ssrn.6869438",
+      "url": "https://doi.org/10.2139/ssrn.6869438",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "HARMONY: Hybrid Attention-Selective State Space Mixture for Long-Context Deep Learning",
+      "doi": "10.2139/ssrn.6147230",
+      "id": "10.2139/ssrn.6147230",
+      "url": "https://doi.org/10.2139/ssrn.6147230",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "High-Efficiency Visual Processing through Context-Aware Selective Attention",
+      "doi": "10.5772/intechopen.1014765",
+      "id": "10.5772/intechopen.1014765",
+      "url": "https://doi.org/10.5772/intechopen.1014765",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "ASK-HAR: Attention-Based Multi-Core Selective Kernel Convolution Network for Human Activity Recognition",
+      "doi": "10.1016/j.measurement.2024.115981",
+      "id": "10.1016/j.measurement.2024.115981",
+      "url": "https://doi.org/10.1016/j.measurement.2024.115981",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Intact selective attention supports context memory in adults with autism spectrum disorder",
+      "doi": "10.21203/rs.3.rs-257851/v1",
+      "id": "10.21203/rs.3.rs-257851/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-257851/v1",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Large Separable Kernel Attention: Rethinking the Large Kernel Attention Design in Cnn",
+      "doi": "10.2139/ssrn.4463661",
+      "id": "10.2139/ssrn.4463661",
+      "url": "https://doi.org/10.2139/ssrn.4463661",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Selective Kernel and Spatial Grouping Attention Network for Occluded Pedestrian Detection",
+      "doi": "10.1109/icvr55215.2022.9847953",
+      "id": "10.1109/icvr55215.2022.9847953",
+      "url": "https://doi.org/10.1109/icvr55215.2022.9847953",
+      "abstract_disponible": false,
+      "fuentes": [
+        "Crossref:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Rolling Bearing Fault Diagnosis Method Based on Multi-scale Convolutional Neural Network with Selective Kernel Attention Mechanism",
+      "doi": "10.21203/rs.3.rs-4923538/v1",
+      "id": "10.21203/rs.3.rs-4923538/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-4923538/v1",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Memory-guided selective attention: Evidence for context-specific control using the trial-unique Stroop task.",
+      "doi": "10.31234/osf.io/wp4b8_v3",
+      "id": "10.31234/osf.io/wp4b8_v3",
+      "url": "https://doi.org/10.31234/osf.io/wp4b8_v3",
+      "abstract_disponible": true,
+      "fuentes": [
+        "Crossref:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Attentive Group Equivariant Convolutional Networks",
+      "doi": "10.48550/arxiv.2002.03830",
+      "id": "https://openalex.org/W3035702705",
+      "url": "https://doi.org/10.48550/arxiv.2002.03830",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Equivariant convolutional networks",
+      "doi": "",
+      "id": "https://openalex.org/W3166192563",
+      "url": "https://openalex.org/W3166192563",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Rotation Equivariant CNNs for Digital Pathology",
+      "doi": "10.48550/arxiv.1806.03962",
+      "id": "https://openalex.org/W2952211505",
+      "url": "https://doi.org/10.48550/arxiv.1806.03962",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Equivariant Wavelets: Fast Rotation and Translation Invariant Wavelet Scattering Transforms",
+      "doi": "10.1109/tpami.2022.3165730",
+      "id": "https://openalex.org/W3157606622",
+      "url": "https://doi.org/10.1109/tpami.2022.3165730",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "EQUI-ViT: Rotational Equivariant Vision Transformer for Robust Histopathology Analysis",
+      "doi": "10.1109/isbi61048.2026.11515513",
+      "id": "https://openalex.org/W7161763081",
+      "url": "https://doi.org/10.1109/isbi61048.2026.11515513",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Classification of rotation-invariant biomedical images using equivariant neural networks",
+      "doi": "10.1038/s41598-024-65597-x",
+      "id": "https://openalex.org/W4400178053",
+      "url": "https://doi.org/10.1038/s41598-024-65597-x",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Equivariant Imaging Biomarkers for Robust Unsupervised Segmentation of Histopathology",
+      "doi": "10.48550/arxiv.2505.05689",
+      "id": "https://openalex.org/W4417085066",
+      "url": "https://doi.org/10.48550/arxiv.2505.05689",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Symmetry group equivariant convolutions for representation learning: a survey",
+      "doi": "10.1007/s41060-025-00994-7",
+      "id": "https://openalex.org/W7117456057",
+      "url": "https://doi.org/10.1007/s41060-025-00994-7",
+      "abstract_disponible": false,
+      "fuentes": [
+        "OpenAlex:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "SRE-CONV: Symmetric Rotation Equivariant Convolution for Biomedical Image Classification",
+      "doi": "10.1109/isbi60581.2025.10981270",
+      "id": "https://openalex.org/W4410297721",
+      "url": "https://doi.org/10.1109/isbi60581.2025.10981270",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:1"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Structure Embedded Nucleus Classification for Histopathology Images",
+      "doi": "10.1109/tmi.2024.3388328",
+      "id": "https://openalex.org/W4394744747",
+      "url": "https://doi.org/10.1109/tmi.2024.3388328",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Functional histopathology of keloid disease.",
+      "doi": "10.14670/hh-11-624",
+      "id": "https://openalex.org/W2249767100",
+      "url": "https://doi.org/10.14670/hh-11-624",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Detection and Classification of Nuclei in Histopathological Images",
+      "doi": "",
+      "id": "https://openalex.org/W7219385593",
+      "url": "https://openalex.org/W7219385593",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "A Multi-Stage Approach to Breast Cancer Classification Using Histopathology Images",
+      "doi": "10.3390/diagnostics13010126",
+      "id": "https://openalex.org/W4313471926",
+      "url": "https://doi.org/10.3390/diagnostics13010126",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Clinical Features, Histopathology and Differential Diagnosis of Sarcoidosis",
+      "doi": "10.3390/cells11010059",
+      "id": "https://openalex.org/W4200593354",
+      "url": "https://doi.org/10.3390/cells11010059",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Histopathology of the More Common Viral Skin Infections",
+      "doi": "10.1016/s1578-2190(10)70618-1",
+      "id": "https://openalex.org/W2113193738",
+      "url": "https://doi.org/10.1016/s1578-2190(10)70618-1",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Towards Effective and Efficient Context-aware Nucleus Detection in Histopathology Whole Slide Images",
+      "doi": "10.1609/aaai.v40i11.37860",
+      "id": "https://openalex.org/W7138382351",
+      "url": "https://doi.org/10.1609/aaai.v40i11.37860",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Histopathology - Reviews and Recent Advances",
+      "doi": "10.5772/2991",
+      "id": "https://openalex.org/W2488527918",
+      "url": "https://doi.org/10.5772/2991",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "A hierarchical conditional random field-based attention mechanism approach for gastric histopathology image classification",
+      "doi": "10.1007/s10489-021-02886-2",
+      "id": "https://openalex.org/W3131151352",
+      "url": "https://doi.org/10.1007/s10489-021-02886-2",
+      "abstract_disponible": false,
+      "fuentes": [
+        "OpenAlex:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Biological insights and novel biomarker discovery through deep learning approaches in breast cancer histopathology",
+      "doi": "10.1038/s41523-023-00518-1",
+      "id": "https://openalex.org/W4362661579",
+      "url": "https://doi.org/10.1038/s41523-023-00518-1",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:2"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Hierarchically Gated Recurrent Neural Network for Sequence Modeling",
+      "doi": "10.52202/075280-1442",
+      "id": "https://openalex.org/W7133201027",
+      "url": "https://doi.org/10.52202/075280-1442",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Gated Siamese Convolutional Neural Network Architecture for Human Re-identification",
+      "doi": "10.1007/978-3-319-46484-8_48",
+      "id": "https://openalex.org/W2502225121",
+      "url": "https://doi.org/10.1007/978-3-319-46484-8_48",
+      "abstract_disponible": false,
+      "fuentes": [
+        "OpenAlex:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Improving the Gating Mechanism of Recurrent Neural Networks",
+      "doi": "10.48550/arxiv.1910.09890",
+      "id": "https://openalex.org/W3035332875",
+      "url": "https://doi.org/10.48550/arxiv.1910.09890",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Reversible Architectures for Arbitrarily Deep Residual Neural Networks",
+      "doi": "10.1609/aaai.v32i1.11668",
+      "id": "https://openalex.org/W2963359731",
+      "url": "https://doi.org/10.1609/aaai.v32i1.11668",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Gather-Excite: Exploiting Feature Context in Convolutional Neural Networks",
+      "doi": "10.48550/arxiv.1810.12348",
+      "id": "https://openalex.org/W2898732869",
+      "url": "https://doi.org/10.48550/arxiv.1810.12348",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "FastGRNN: A Fast, Accurate, Stable and Tiny Kilobyte Sized Gated Recurrent Neural Network",
+      "doi": "10.48550/arxiv.1901.02358",
+      "id": "https://openalex.org/W2890309926",
+      "url": "https://doi.org/10.48550/arxiv.1901.02358",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Pixel Recurrent Neural Networks",
+      "doi": "10.48550/arxiv.1601.06759",
+      "id": "https://openalex.org/W2267126114",
+      "url": "https://doi.org/10.48550/arxiv.1601.06759",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "On Interpretability of Artificial Neural Networks: A Survey",
+      "doi": "10.1109/trpms.2021.3066428",
+      "id": "https://openalex.org/W3154435685",
+      "url": "https://doi.org/10.1109/trpms.2021.3066428",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Solve routing problems with a residual edge-graph attention neural network",
+      "doi": "10.1016/j.neucom.2022.08.005",
+      "id": "https://openalex.org/W3157164925",
+      "url": "https://doi.org/10.1016/j.neucom.2022.08.005",
+      "abstract_disponible": false,
+      "fuentes": [
+        "OpenAlex:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Gated Attention Coding for Training High-Performance and Efficient Spiking Neural Networks",
+      "doi": "10.1609/aaai.v38i1.27816",
+      "id": "https://openalex.org/W4393154986",
+      "url": "https://doi.org/10.1609/aaai.v38i1.27816",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:3"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Aleatoric uncertainty estimation with test-time augmentation for medical image segmentation with convolutional neural networks",
+      "doi": "10.1016/j.neucom.2019.01.103",
+      "id": "https://openalex.org/W2887976372",
+      "url": "https://doi.org/10.1016/j.neucom.2019.01.103",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Automatic Brain Tumor Segmentation Based on Cascaded Convolutional Neural Networks With Uncertainty Estimation",
+      "doi": "10.3389/fncom.2019.00056",
+      "id": "https://openalex.org/W2964980777",
+      "url": "https://doi.org/10.3389/fncom.2019.00056",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Uncertainty propagation networks for neural ordinary differential equations",
+      "doi": "10.1016/j.neucom.2026.133134",
+      "id": "https://openalex.org/W7131105385",
+      "url": "https://doi.org/10.1016/j.neucom.2026.133134",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "On the Binding Problem in Artificial Neural Networks",
+      "doi": "10.48550/arxiv.2012.05208",
+      "id": "https://openalex.org/W3113055895",
+      "url": "https://doi.org/10.48550/arxiv.2012.05208",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Self-Supervised Exploration via Disagreement",
+      "doi": "10.48550/arxiv.1906.04161",
+      "id": "https://openalex.org/W2948199691",
+      "url": "https://doi.org/10.48550/arxiv.1906.04161",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Nondeterminism and Instability in Neural Network Optimization",
+      "doi": "10.48550/arxiv.2103.04514",
+      "id": "https://openalex.org/W3126445456",
+      "url": "https://doi.org/10.48550/arxiv.2103.04514",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Test Selection for Deep Neural Networks using Meta-Models with Uncertainty Metrics",
+      "doi": "10.1145/3650212.3680312",
+      "id": "https://openalex.org/W4402457595",
+      "url": "https://doi.org/10.1145/3650212.3680312",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Uncertainty, Neuromodulation, and Attention",
+      "doi": "10.1016/j.neuron.2005.04.026",
+      "id": "https://openalex.org/W2154562678",
+      "url": "https://doi.org/10.1016/j.neuron.2005.04.026",
+      "abstract_disponible": false,
+      "fuentes": [
+        "OpenAlex:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Hybrid neural network potential for multilayer graphene",
+      "doi": "10.1103/physrevb.100.195419",
+      "id": "https://openalex.org/W2973572202",
+      "url": "https://doi.org/10.1103/physrevb.100.195419",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Photometric redshifts for the Kilo-Degree Survey: Machine-learning analysis with artificial neural networks",
+      "doi": "10.1051/0004-6361/201731942",
+      "id": "https://openalex.org/W4289726834",
+      "url": "https://doi.org/10.1051/0004-6361/201731942",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:4"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Deep Networks with Internal Selective Attention through Feedback Connections",
+      "doi": "10.48550/arxiv.1407.3068",
+      "id": "https://openalex.org/W2172010943",
+      "url": "https://doi.org/10.48550/arxiv.1407.3068",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Enhancing Local Context of Histology Features in Vision Transformers",
+      "doi": "10.1007/978-3-031-19660-7_15",
+      "id": "https://openalex.org/W4312894074",
+      "url": "https://doi.org/10.1007/978-3-031-19660-7_15",
+      "abstract_disponible": false,
+      "fuentes": [
+        "OpenAlex:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Entropy-Regularized Attention for Explainable Histological Classification with Convolutional and Hybrid Models",
+      "doi": "10.3390/e27070722",
+      "id": "https://openalex.org/W4411980211",
+      "url": "https://doi.org/10.3390/e27070722",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Locus coeruleus norepinephrine contributes to visual-spatial attention by selectively enhancing perceptual sensitivity",
+      "doi": "10.1016/j.neuron.2024.04.001",
+      "id": "https://openalex.org/W4396578424",
+      "url": "https://doi.org/10.1016/j.neuron.2024.04.001",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Feature-Selective Attention Adaptively Shifts Noise Correlations in Primary Auditory Cortex",
+      "doi": "10.1523/jneurosci.3169-16.2017",
+      "id": "https://openalex.org/W2606945192",
+      "url": "https://doi.org/10.1523/jneurosci.3169-16.2017",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Advanced Detection of Gastrointestinal Cancer & Classification Using ASHMSO and Multi-Kernel Attention Densenet",
+      "doi": "10.51483/ijaiml.6.1s.2026.384-402",
+      "id": "https://openalex.org/W7164815506",
+      "url": "https://doi.org/10.51483/ijaiml.6.1s.2026.384-402",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Convolutional neural network with parallel convolution scale attention module and ResCBAM for breast histology image classification",
+      "doi": "10.1016/j.heliyon.2024.e30889",
+      "id": "https://openalex.org/W4396725736",
+      "url": "https://doi.org/10.1016/j.heliyon.2024.e30889",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "The next layer: augmenting foundation models with structure-preserving and attention-guided learning for local patches to global context awareness in computational pathology",
+      "doi": "10.1038/s41698-026-01312-5",
+      "id": "https://openalex.org/W7127600082",
+      "url": "https://doi.org/10.1038/s41698-026-01312-5",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "MHCAF-Net: Multi-Scale Cross-Attention Fusion for Histological Grading of Invasive Ductal Carcinoma",
+      "doi": "10.5753/sbcas.2026.21032",
+      "id": "https://openalex.org/W7165617695",
+      "url": "https://doi.org/10.5753/sbcas.2026.21032",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    },
+    {
+      "titulo": "Fine-Tuning Pre-Trained Networks with Attention Mechanisms for Improved Multi-Classification of Breast Cancer Histology Images",
+      "doi": "10.18280/ts.420139",
+      "id": "https://openalex.org/W4408037351",
+      "url": "https://doi.org/10.18280/ts.420139",
+      "abstract_disponible": true,
+      "fuentes": [
+        "OpenAlex:5"
+      ],
+      "decision": "PENDIENTE cribado y texto completo"
+    }
+  ],
+  "limites": [
+    "Solo diez primeros resultados por consulta; cobertura truncada y no exhaustiva.",
+    "Crossref ordena consultas bibliográficas, no equivale a búsqueda booleana.",
+    "Cero artículos se marcan como revisados por haber recuperado metadatos.",
+    "Pendientes cribado, textos completos, snowballing y adjudicación independiente."
+  ]
+}

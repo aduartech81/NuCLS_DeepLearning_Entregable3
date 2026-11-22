@@ -23,13 +23,13 @@ El piloto CICO obtuvo macro-F1 medio **0,66824**, desviación entre semillas **0
 
 | Bloque | Componente | Peso de la guía | Estado y condición de cierre |
 |---|---|---:|---|
-| A | Correcciones E2 | 7 | Parcial: completar observación–acción–evidencia–impacto, ranking antes/después y auditoría de fuga; congelar benchmarks sin reajuste con reserva. |
+| A | Correcciones E2 | 7 | Parcial: 16.588 imágenes verificadas por hash; cero cruces nominales de paciente/campo/píxeles entre particiones del paquete E3. Falta auditoría de decisiones históricas, duplicados aproximados, impacto de correcciones E2 y ranking antes/después. |
 | B | Configuraciones y exportación | 7 | Parcial: exportación CICO ONNX y round-trip verificados, costo CPU medido. Faltan exportaciones de comparadores y política final común. |
 | C | Dashboard: contexto y EDA | 8 | Contexto, histología y tres gráficos EDA con filtros compartidos publicados. Pendiente QA tablet y accesibilidad. |
 | D | Dashboard: modelos | 9 | Parcial: CICO con predicción CPU, oclusión y seis ejemplos precalculados; control descriptivo de eliminación/inserción frente a diez órdenes aleatorios y rotación 90°. Faltan comparadores, calibración/cobertura, detector OOD y fidelidad/estabilidad sobre muestra independiente de toda la familia. |
-| E | Diseño, UX y despliegue | 5 | Parcial: Render, validación de entradas, imágenes verificadas, rejilla Bootstrap y alertas; caché de resultados en memoria de pestaña con invalidación, tabla maestra y pruebas de consistencia/CI. Falta QA real tablet/accesibilidad integral, memoria/carga y confirmar ejecución remota del CI. |
-| F | Original: revisión y diseño | 8 | Parcial: matriz y antecedentes existentes; falta acreditar 3 bases/5 cadenas, snowballing, actualización de búsqueda y tercero. No declarar novedad demostrada. |
-| G | Original: implementación y demostración | 10 | 15 ablaciones verificadas, cinco semillas por variante. Faltan base sin componentes, componentes individuales, controles D4/capacidad y protocolo confirmatorio con potencia requerida. |
+| E | Diseño, UX y despliegue | 5 | Parcial: prueba WSGI local de 180 predicciones sin errores, memoria RSS y latencias p50/p95, 72 rutas histológicas y recuperación tras entradas inválidas verificadas; CI remoto confirmado para 99db2bd. Falta QA real tablet/accesibilidad integral y medir memoria/carga del contenedor Render. |
+| F | Original: revisión y diseño | 8 | 15 consultas ejecutadas: cinco cadenas en Europe PMC, Crossref y OpenAlex; 149 registros y 148 únicos. Recuperación truncada a diez por consulta. Pendientes cribado, textos completos, snowballing, contraste de antecedentes y tercero; no acredita novedad. |
+| G | Original: implementación y demostración | 10 | Formulación y pruebas matemáticas documentadas; 15 ablaciones verificadas. Siete controles implementados con ocho pruebas de identidad, invariancia y gradientes; aún falta entrenar base/componentes/controles bajo protocolo común y evaluar capacidad activa y potencia. |
 | H | Evaluación ampliada | 10 | Pendiente: 3 datasets adicionales auditados que difieran en ≥2 ejes, misma tarea, toda la familia; sensibilidad, perturbaciones, escalabilidad y cambio de dominio. |
 | I | Hipótesis y adecuación | 15 | Piloto CICO y 15 ablaciones verificados. Escenarios de planificación aproximada disponibles, sin acreditar potencia conjunta. Final pendiente: familia completa ≥10 semillas o más según potencia ≥0,90, pruebas admisibles, Holm, IC/efectos y prueba independiente; sin superioridad acreditada. |
 | J | Jupyter Book | 14 | Parcial: libro compilado e integrado; fichas y citación preparadas. Pendientes resultados confirmatorios, tabla maestra final, licencia, DOI, autoría firmada, protocolo/tag previo a nuevas corridas y reproducción independiente. |
@@ -56,3 +56,7 @@ Los pesos no son notas obtenidas. La matriz detallada y los localizadores de la 
 - [Planificación de potencia](23_planificacion_potencia.md).
 
 La versión mantiene los resultados históricos de E1 y E2 como evidencia de sus propias poblaciones. No mezcla sus métricas con las de CICO ni modifica el ZIP entregado. Las nuevas correcciones documentales no cambian los pesos del modelo.
+
+[Comprobaciones ejecutadas sin GPU](25_comprobaciones_sin_gpu.md).
+
+[Búsqueda ejecutada](26_busqueda_ejecutada.md).

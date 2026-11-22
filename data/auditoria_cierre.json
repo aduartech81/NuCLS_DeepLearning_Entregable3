@@ -235,15 +235,15 @@
       "id": "A",
       "requisito": "Correcciones E2 (7%)",
       "guia": "§4, pp.4–5",
-      "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: completar observación–acción–evidencia–impacto, ranking antes/después y auditoría de fuga; congelar benchmarks sin reajuste con reserva."
+      "estado": "Parcial",
+      "falta_o_condicion": "Parcial: 16.588 imágenes verificadas por hash; cero cruces nominales de paciente/campo/píxeles entre particiones del paquete E3. Falta auditoría de decisiones históricas, duplicados aproximados, impacto de correcciones E2 y ranking antes/después."
     },
     {
       "entregable": "E3",
       "id": "B",
       "requisito": "Configuraciones y exportación (7%)",
       "guia": "§5, pp.5–7",
-      "estado": "Parcial / pendiente",
+      "estado": "Parcial",
       "falta_o_condicion": "Parcial: exportación CICO ONNX y round-trip verificados, costo CPU medido. Faltan exportaciones de comparadores y política final común."
     },
     {
@@ -251,7 +251,7 @@
       "id": "C",
       "requisito": "Dashboard: contexto y EDA (8%)",
       "guia": "§9.4.1–2, p.32",
-      "estado": "Parcial / pendiente",
+      "estado": "Parcial",
       "falta_o_condicion": "Contexto, histología y tres gráficos EDA con filtros compartidos publicados. Pendiente QA tablet y accesibilidad."
     },
     {
@@ -259,7 +259,7 @@
       "id": "D",
       "requisito": "Dashboard: modelos (9%)",
       "guia": "§9.4.3, pp.33–34",
-      "estado": "Parcial / pendiente",
+      "estado": "Parcial",
       "falta_o_condicion": "Parcial: CICO con predicción CPU, oclusión y seis ejemplos precalculados; control descriptivo de eliminación/inserción frente a diez órdenes aleatorios y rotación 90°. Faltan comparadores, calibración/cobertura, detector OOD y fidelidad/estabilidad sobre muestra independiente de toda la familia."
     },
     {
@@ -267,31 +267,31 @@
       "id": "E",
       "requisito": "Diseño, UX y despliegue (5%)",
       "guia": "§9.5–10, pp.34–37",
-      "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: Render, validación de entradas, imágenes verificadas, rejilla Bootstrap y alertas; caché de resultados en memoria de pestaña con invalidación, tabla maestra y pruebas de consistencia/CI. Falta QA real tablet/accesibilidad integral, memoria/carga y confirmar ejecución remota del CI."
+      "estado": "Parcial",
+      "falta_o_condicion": "Parcial: prueba WSGI local de 180 predicciones sin errores, memoria RSS y latencias p50/p95, 72 rutas histológicas y recuperación tras entradas inválidas verificadas; CI remoto confirmado para 99db2bd. Falta QA real tablet/accesibilidad integral y medir memoria/carga del contenedor Render."
     },
     {
       "entregable": "E3",
       "id": "F",
       "requisito": "Original: revisión y diseño (8%)",
       "guia": "§6.3–7, pp.11–20",
-      "estado": "Parcial / pendiente",
-      "falta_o_condicion": "Parcial: matriz y antecedentes existentes; falta acreditar 3 bases/5 cadenas, snowballing, actualización de búsqueda y tercero. No declarar novedad demostrada."
+      "estado": "Parcial",
+      "falta_o_condicion": "15 consultas ejecutadas: cinco cadenas en Europe PMC, Crossref y OpenAlex; 149 registros y 148 únicos. Recuperación truncada a diez por consulta. Pendientes cribado, textos completos, snowballing, contraste de antecedentes y tercero; no acredita novedad."
     },
     {
       "entregable": "E3",
       "id": "G",
       "requisito": "Original: implementación y demostración (10%)",
       "guia": "§6.5 y 7.4, pp.13–20",
-      "estado": "Parcial / pendiente",
-      "falta_o_condicion": "15 ablaciones verificadas, cinco semillas por variante. Faltan base sin componentes, componentes individuales, controles D4/capacidad y protocolo confirmatorio con potencia requerida."
+      "estado": "Parcial",
+      "falta_o_condicion": "Formulación y pruebas matemáticas documentadas; 15 ablaciones verificadas. Siete controles implementados con ocho pruebas de identidad, invariancia y gradientes; aún falta entrenar base/componentes/controles bajo protocolo común y evaluar capacidad activa y potencia."
     },
     {
       "entregable": "E3",
       "id": "H",
       "requisito": "Evaluación ampliada (10%)",
       "guia": "§8.3 y 8.8, pp.23,28–29",
-      "estado": "Parcial / pendiente",
+      "estado": "Parcial",
       "falta_o_condicion": "Pendiente: 3 datasets adicionales auditados que difieran en ≥2 ejes, misma tarea, toda la familia; sensibilidad, perturbaciones, escalabilidad y cambio de dominio."
     },
     {
@@ -299,7 +299,7 @@
       "id": "I",
       "requisito": "Hipótesis y adecuación (15%)",
       "guia": "§8, pp.21–29",
-      "estado": "Parcial / pendiente",
+      "estado": "Parcial",
       "falta_o_condicion": "Piloto CICO y 15 ablaciones verificados. Escenarios de planificación aproximada disponibles, sin acreditar potencia conjunta. Final pendiente: familia completa ≥10 semillas o más según potencia ≥0,90, pruebas admisibles, Holm, IC/efectos y prueba independiente; sin superioridad acreditada."
     },
     {
@@ -307,7 +307,7 @@
       "id": "J",
       "requisito": "Jupyter Book (14%)",
       "guia": "§11–12 y tabla7, pp.38–40,58",
-      "estado": "Parcial / pendiente",
+      "estado": "Parcial",
       "falta_o_condicion": "Parcial: libro compilado e integrado; fichas y citación preparadas. Pendientes resultados confirmatorios, tabla maestra final, licencia, DOI, autoría firmada, protocolo/tag previo a nuevas corridas y reproducción independiente."
     },
     {
@@ -315,7 +315,7 @@
       "id": "K",
       "requisito": "Sustentación (7%)",
       "guia": "§13, pp.40–41",
-      "estado": "Pendiente",
+      "estado": "Parcial",
       "falta_o_condicion": "Pendiente: exposición 20 minutos, demostración y explicación/modificación en vivo por el autor; diapositivas y ensayo final."
     }
   ]
