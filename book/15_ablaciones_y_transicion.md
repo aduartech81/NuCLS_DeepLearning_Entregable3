@@ -1,42 +1,58 @@
-# Ablaciones E3 y transición a PCam
+# Ablaciones verificadas y transición a PCam
 
-## Evidencia y fecha
+Se recibieron y verificaron **15/15 ablaciones** (tres variantes × cinco semillas), además del piloto CICO de cinco semillas. Los 91 archivos del respaldo coinciden con su manifiesto SHA-256. Pesos y predicciones coinciden con las huellas registradas. Las métricas se recalcularon desde las probabilidades.
 
-Corte: 21 noviembre 2026, último registro compartido por el autor. Este es un estado reportado de ejecución, no una recepción de pesos ni monitoreo en vivo. El piloto CICO de cinco semillas sí fue recibido y verificado por separado.
+Las 20 corridas comparten las mismas **2.049 imágenes de 21 pacientes**, en el mismo orden y con las mismas etiquetas. El checkpoint se seleccionó por validación: esta comparación es exploratoria, no un test independiente.
 
-## Diseño de ablaciones
+![Comparación de ablaciones](figuras/ablaciones_verificadas.svg)
 
-Tres intervenciones: desactivar contraste centro–entorno (`use_contrast=False`), amortiguación por dispersión (`use_dispersion=False`) o corrección contextual (`use_context=False`). Cada una conserva el resto de la arquitectura y la receta. Se usan semillas 6101–6105, máximo 25 épocas, paciencia 5 y el mismo manifiesto train/validation. El control sin D4 no forma parte de esta cola y continúa pendiente.
+| Variante | Macro-F1 medio | SD | Δ frente a CICO | p pareada | p Holm (3) |
+|---|---:|---:|---:|---:|---:|
+| CICO completo | 0.6682 | 0.0372 | +0.0000 | — | — |
+| Sin contraste | 0.6791 | 0.0309 | +0.0109 | 0.125 | 0.375 |
+| Sin amortiguación | 0.6610 | 0.0281 | -0.0072 | 1.0 | 1 |
+| Sin contexto | 0.6625 | 0.0209 | -0.0057 | 0.875 | 1 |
 
-| Variante | 6101 | 6102 | 6103 | 6104 | 6105 |
-|---|---|---|---|---|---|
-| Sin contraste | Completa reportada | Completa reportada | Pendiente | Pendiente | Pendiente |
-| Sin amortiguación | Completa reportada | Reanudada; época 3 guardada | Pendiente | Pendiente | Pendiente |
-| Sin contexto | Completa reportada | Pendiente | Pendiente | Pendiente | Pendiente |
+**Interpretación:** el modelo completo no supera consistentemente las variantes. Quitar contraste presenta una media mayor, pero ninguna comparación resulta significativa. Ausencia de significación no demuestra equivalencia ni ausencia de efecto. No se cambia el modelo desplegado por esta comparación post hoc.
 
-La cola pausó entre épocas al alcanzar su presupuesto y luego reportó reanudación con un presupuesto de 8 horas. Cuatro de quince corridas se reportan completas. No se extrapola actividad posterior ni se atribuyen los fragmentos del log a una variante sin su encabezado.
+La prueba exploratoria es una permutación exacta pareada bilateral de los signos de las diferencias entre semillas (32 asignaciones), seguida de Holm sobre tres contrastes. Con cinco semillas hay poca resolución; no sustituye las pruebas, potencia y mínimo de diez semillas exigidos en E3. SD describe variación entre entrenamientos y no incertidumbre sobre pacientes.
 
-## Análisis al recibir los resultados
+## Registro de corridas
 
-1. Verificar configuración, identidad, historias, checkpoints y predicciones por variante/semilla.
-2. Recalcular las métricas y comparar diferencias emparejadas con el piloto completo usando idénticas imágenes y etiquetas.
-3. Mostrar curvas completas, distribución entre semillas y tamaños de muestra efectivos; no tratar pendientes como ceros ni imputar resultados.
-4. Declarar la selección por validación y el carácter exploratorio; cinco semillas no sustituyen prueba independiente, potencia final ni revisión de multiplicidad.
+| Variante | Semilla | Mejor época | Última época | Macro-F1 |
+|---|---:|---:|---:|---:|
+| CICO completo | 6101 | 22 | 25 | 0.7174 |
+| CICO completo | 6102 | 18 | 23 | 0.6993 |
+| CICO completo | 6103 | 1 | 6 | 0.6421 |
+| CICO completo | 6104 | 1 | 6 | 0.6399 |
+| CICO completo | 6105 | 1 | 6 | 0.6425 |
+| Sin contraste | 6101 | 22 | 25 | 0.7081 |
+| Sin contraste | 6102 | 18 | 23 | 0.7168 |
+| Sin contraste | 6103 | 4 | 9 | 0.6617 |
+| Sin contraste | 6104 | 1 | 6 | 0.6497 |
+| Sin contraste | 6105 | 1 | 6 | 0.6594 |
+| Sin amortiguación | 6101 | 11 | 16 | 0.6783 |
+| Sin amortiguación | 6102 | 18 | 23 | 0.7025 |
+| Sin amortiguación | 6103 | 1 | 6 | 0.6421 |
+| Sin amortiguación | 6104 | 1 | 6 | 0.6399 |
+| Sin amortiguación | 6105 | 1 | 6 | 0.6425 |
+| Sin contexto | 6101 | 11 | 16 | 0.6753 |
+| Sin contexto | 6102 | 18 | 23 | 0.6933 |
+| Sin contexto | 6103 | 4 | 9 | 0.6480 |
+| Sin contexto | 6104 | 1 | 6 | 0.6460 |
+| Sin contexto | 6105 | 1 | 6 | 0.6501 |
 
-## PCam: recuperación preparada, no iniciada
+Las curvas completas y el archivo descargable están en [Ablaciones del dashboard](https://nucls-entregable3.onrender.com/ablaciones). Se conserva la parada temprana real; no se inventan épocas faltantes.
 
-Se recibió la carpeta original sin modificarla. El respaldo de transferencia contiene 874.153.429 bytes; todos sus archivos coinciden con las huellas de los originales y los cuatro checkpoints pasaron integridad interna. La marca de fin de 8301 coincide con el hash de su mejor checkpoint. 8302 tiene historia hasta época 16; el estado interno del optimizador debe comprobarse al cargarlo en el entorno compatible.
+## Qué falta
 
-El cuaderno restaura una copia independiente bajo `/workspace/PCAM_CONTINUACION`. Conserva el código original verificado y exige torch 2.14.1+cu130, torchvision 0.29.1+cu130 y NumPy 2.4.6 en un entorno aislado. La instalación y ejecución en RunPod aún no están verificadas. No se rebajan estas comprobaciones si fallan.
+- Controles base sin todos los componentes y cada componente por separado; control sin D4 y ajuste por capacidad cuando corresponda.
+- Benchmark final con Top10 y bases fuertes bajo política común, mínimo diez semillas y potencia objetivo 0,90.
+- Partición confirmatoria independiente, tres datasets externos y protocolo congelado antes de analizar sus resultados.
+- Pruebas complementarias exigidas, intervalos de efecto, corrección por familia y reporte de resultados negativos.
 
-Los datos oficiales PCam no están incluidos: deben descargarse y cotejarse con sus huellas. Las últimas épocas históricas duraron aproximadamente 90 minutos en Colab; no se promete la misma velocidad ni completar todas las semillas en RunPod.
+## PCam (E2)
 
-## Cambio seguro de tarea
+Última comprobación operativa: PCam reanudó la semilla 8302 desde el checkpoint de época 16 y entró en la época 17. La semilla 8301 estaba completa; quedan completar 8302–8305 y su evaluación. Este registro no es seguimiento en vivo. Se conserva el respaldo original y el trabajo usa una carpeta independiente.
 
-1. Confirmar fin o pausa controlada de E3; no basta una marca antigua. Comprobar que no haya proceso GPU activo.
-2. Respaldar resultados y código de las ablaciones antes de cambiar de tarea.
-3. Ejecutar preparación del entorno PCam; si falla una versión, conservar todo y revisar el diagnóstico.
-4. Iniciar PCam una sola vez. Debe omitir 8301 y recuperar 8302, sin cambiar la receta.
-5. Consultar la primera época nueva y medir duración antes de comprometer las horas restantes. Descargar resultados antes de apagar/eliminar el Pod.
-
-La cola PCam tiene un límite inicial de cinco horas revisado tras guardar una época; puede excederlo por una época completa. No apaga el Pod ni detiene su cobro. E1 y el ZIP entregado permanecen preservados.
+Respaldo de ablaciones SHA-256: `e7a0d21c4c9cb034ef6efc06de3ed3bc4db58b6fb2cdf8891ec0f5c0da9e0ed6`.

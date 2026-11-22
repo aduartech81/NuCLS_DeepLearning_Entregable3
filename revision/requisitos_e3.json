@@ -11,21 +11,21 @@
     "componente": "Configuraciones y exportación",
     "peso": 7,
     "requisito": "Selección por validación; reentrenamiento de política común; exportación, metadata y round-trip; costo CPU.",
-    "estado": "Parcial: CICO 6101 ONNX verificado y publicado. Falta selección por configuración media, política común de reentrenamiento/exportación de comparadores, costos CPU y metadatos completos."
+    "estado": "Parcial: exportación CICO ONNX y round-trip verificados, costo CPU medido. Faltan exportaciones de comparadores y política final común."
   },
   {
     "bloque": "C",
     "componente": "Dashboard: contexto y EDA",
     "peso": 8,
     "requisito": "Dash multipágina, filtros globales y callbacks; datos, calidad, dominio e interpretación.",
-    "estado": "Parcial: contexto/EDA/histología publicados. EDA tiene selector de característica, pero no filtros globales que actualicen todos los gráficos; falta QA tablet."
+    "estado": "Contexto, histología y tres gráficos EDA con filtros compartidos publicados. Pendiente QA tablet y accesibilidad."
   },
   {
     "bloque": "D",
     "componente": "Dashboard: modelos",
     "peso": 9,
     "requisito": "Top10, baselines y original; inferencia CPU, incertidumbre, explicación y aviso fuera de dominio.",
-    "estado": "Parcial: subida y predicción CICO funcionan. Faltan selector de modelos, calibración, cobertura, explicación local, detección fuera de dominio, latencia y comparación final completa."
+    "estado": "Subida y predicción CICO, explicación por oclusión y latencia publicadas. Faltan selector de comparadores, calibración/cobertura y detector OOD validado; aviso de dominio no equivale a detector."
   },
   {
     "bloque": "E",
@@ -46,7 +46,7 @@
     "componente": "Original: implementación y demostración",
     "peso": 10,
     "requisito": "Mecanismo propio desde formulación; propiedad con prueba y comprobación numérica; ≥3 componentes aislados.",
-    "estado": "Parcial: implementación y pruebas previas. Cola de 15 ablaciones en curso según último reporte; también faltan base sin componentes, componentes solos, controles de capacidad y explicación/fidelidad."
+    "estado": "15 ablaciones verificadas, cinco semillas por variante. Faltan base sin componentes, componentes individuales, controles D4/capacidad y protocolo confirmatorio con potencia requerida."
   },
   {
     "bloque": "H",

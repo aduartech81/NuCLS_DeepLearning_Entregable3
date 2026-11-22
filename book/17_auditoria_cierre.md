@@ -1,17 +1,17 @@
 # Auditoría contra las guías originales E2 y E3
 
-Revisión del 21 de noviembre de 2026, posterior al plazo indicado de las 10:00 (Bogotá). No acredita envío ni cumplimiento total. Fuentes: **Entregable2DeepLearningProject.pdf (65 páginas)** y **Entregable3DeepLearningProject.pdf (60 páginas)** suministrados por el autor. Las letras A–K de esta tabla corresponden a la rúbrica E3, no a los nombres de bloques de sus capítulos. Las huellas de las guías y la matriz completa están en `data/auditoria_cierre.json`.
+Revisión del 21 de noviembre de 2026, con referencia a la meta interna de trabajo de las 10:00 (Bogotá), no a la fecha oficial de la plataforma. No acredita envío ni cumplimiento total. Fuentes: **Entregable2DeepLearningProject.pdf (65 páginas)** y **Entregable3DeepLearningProject.pdf (60 páginas)** suministrados por el autor. Las letras A–K de esta tabla corresponden a la rúbrica E3, no a los nombres de bloques de sus capítulos. Las huellas de las guías y la matriz completa están en `data/auditoria_cierre.json`.
 
 ## Conclusión de cierre
 
-E2 y E3 siguen abiertos científicamente. El dashboard, la galería histológica, el libro integrado y la predicción CPU CICO están publicados; publicar no sustituye los experimentos exigidos. Las cinco semillas CICO piloto están verificadas. Las 65 evaluaciones de reserva E2 tienen cierre estadístico recibido y baselines evaluados: no deben repetirse por el antiguo error NaN. Esto es distinto de verificar las 66 corridas de desarrollo y de completar PCam.
+E2 y E3 siguen abiertos científicamente. El dashboard, la galería histológica, el libro integrado y la predicción CPU CICO están publicados; publicar no sustituye los experimentos exigidos. Las cinco semillas CICO piloto están verificadas. Las 65 evaluaciones de reserva E2 tienen cierre estadístico recibido y baselines evaluados: no deben repetirse por el antiguo error NaN. Las 66 corridas de desarrollo y 330 archivos también se auditaron; aún falta reproducibilidad independiente y completar PCam.
 
-**Las 15 ablaciones actuales no cubren por sí solas toda la sección 7.4 de E3:** faltan el modelo base sin componentes propios y cada componente añadido solo; además, control sin D4 y tamaño igualado cuando corresponda. No se modifica la cola en curso. El piloto completo tampoco satisface el benchmark final (mínimo diez semillas para cada integrante de la familia, o más según potencia).
+**Las 15 ablaciones actuales no cubren por sí solas toda la sección 7.4 de E3:** faltan el modelo base sin componentes propios y cada componente añadido solo; además, control sin D4 y tamaño igualado cuando corresponda. Las 15 ablaciones ya se verificaron desde su respaldo; PCam está en ejecución. El piloto completo tampoco satisface el benchmark final (mínimo diez semillas para cada integrante de la familia, o más según potencia).
 
 ## Secuencia de trabajo
 
-1. Dejar terminar la cola actual; recibir las 15 corridas con checkpoints, predicciones, historias y configuración. Verificar hashes y comparar variantes emparejadas, sin sustituir faltantes por ceros.
-2. Respaldar E3 fuera del Pod. Con cola completa y GPU libre, usar el cuaderno PCam revisado; no ejecutar todo ni compartir entorno de dependencias.
+1. Completado: recibir y verificar las 15 ablaciones, sus pesos, predicciones e historias; análisis emparejado disponible en el capítulo 15.
+2. Completado: respaldo E3 fuera del Pod y reanudación de PCam en entorno independiente. Último avance comunicado: 8302, época 17, lote 3500/4096; guardada hasta 16.
 3. PCam: omitir 8301 ya completa; cargar pesos, optimizador y estados aleatorios de 8302 y continuar desde la época siguiente al checkpoint (historia recibida: 16). Completar 8303–8305. Quedan 64 épocas según el inventario, más descarga y test; medir la primera época en RunPod antes de estimar tiempo. Los tiempos de Colab no predicen el rendimiento de la L4.
 4. Después de las cinco semillas, verificar test y resumen PCam y redactar discrepancia frente al paper. Es una réplica parcial con diferencias técnicas declaradas, no prueba automática de réplica exacta.
 5. Diseñar y congelar la evaluación final E3 antes de correrla: familia completa, partición de confirmación no usada para diseño, potencia y tres conjuntos externos. La reserva histórica expuesta no puede volverse sellada retrospectivamente.

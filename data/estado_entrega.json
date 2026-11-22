@@ -1,7 +1,7 @@
 {
   "corte": "21 noviembre 2026 · revisión directa de las guías E2 (65 páginas) y E3 (60 páginas); inferencia pública comprobada",
-  "plazo": "21 noviembre 2026, 10:00 America/Bogota",
-  "alcance": "Auditoría documental contra las guías originales y evidencias recibidas. El avance de ablaciones sigue siendo el último comunicado, no monitoreo en vivo. No acredita cumplimiento experimental total ni envío académico.",
+  "plazo": "Meta de trabajo original: 21 noviembre 2026 a las 10:00; no representa la fecha oficial de la plataforma.",
+  "alcance": "Respaldo de 15 ablaciones verificado y métricas recalculadas. PCam reanudado, último avance comunicado: época 17 lote 3500/4096. No es monitoreo en vivo ni cierre experimental total.",
   "items": [
     {
       "etapa": "E1",
@@ -18,16 +18,16 @@
       "estado": "Integrado con límites",
       "ubicacion": "Libro y dashboard",
       "evidencia": "13 arquitecturas × 5 en reserva; 22 semillas de las bases, 15 ablaciones de preprocesamiento y ensambles.",
-      "falta": "Cerrar la auditoría de las 66 corridas base y sus predicciones/curvas; no confundirlas con 65 evaluaciones de reserva.",
+      "falta": "Verificación independiente de reproducibilidad y pesos; las 66 corridas base y 330 archivos ya se auditaron. No confundir con 65 evaluaciones de reserva.",
       "dependencia": "Archivos E2"
     },
     {
       "etapa": "E2",
       "componente": "PCam",
-      "estado": "Detenido; recuperación preparada",
+      "estado": "Reanudado desde checkpoint",
       "ubicacion": "Carpeta recibida y respaldo local verificados",
-      "evidencia": "8301 completa verificada por hash; 8302 historia hasta época 16; integridad interna de cuatro checkpoints verificada.",
-      "falta": "Comprobar entorno aislado en RunPod, cargar optimizador y reanudar; descargar datos oficiales; completar semillas y evaluación. Esperar GPU libre de E3.",
+      "evidencia": "8301 completa; 8302 época 17 lote 3500/4096, última época guardada 16. Proceso 8496 según salida comunicada.",
+      "falta": "Completar 8302–8305, evaluar test con política congelada y comparar la réplica con el artículo.",
       "dependencia": "GPU y checkpoints E2"
     },
     {
@@ -87,10 +87,10 @@
     {
       "etapa": "E3 G",
       "componente": "Mecanismo y ablaciones propias",
-      "estado": "En ejecución reportada; parcial",
+      "estado": "15 ablaciones verificadas; controles adicionales pendientes",
       "ubicacion": "Implementación y propiedades sintéticas",
-      "evidencia": "Tres variantes × cinco semillas: cuatro completas reportadas, una reanudada con época 3 guardada, diez pendientes.",
-      "falta": "Recibir y verificar 15 corridas; completar base sin componentes y cada componente añadido solo (guía §7.4), control sin D4 y capacidad cuando corresponda; inferencia emparejada con Holm. No cambiar la cola en curso.",
+      "evidencia": "91 archivos verificados; 15 variantes y 5 CICO comparados sobre 2049 imágenes de 21 pacientes.",
+      "falta": "Base sin todos los componentes, cada componente solo, controles D4/capacidad y benchmark confirmatorio.",
       "dependencia": "Entrenamiento adicional"
     },
     {

@@ -1,101 +1,117 @@
 {
-  "corte": "21 noviembre 2026 · último registro compartido por el autor",
-  "fuente": "Salida de celda 3; no es monitoreo en vivo ni recepción de artefactos",
-  "completas_reportadas": 4,
+  "corte": "21 noviembre 2026 · respaldo recibido y verificado",
+  "fuente": "91 archivos verificados contra manifiesto SHA-256; métricas recalculadas desde predicciones",
+  "completas_reportadas": 15,
   "total": 15,
-  "cola": "EJECUTANDO reportado",
-  "variante": "sin_amortiguacion",
-  "semilla": 6102,
+  "cola": "COMPLETA verificada",
+  "variante": null,
+  "semilla": null,
   "runs": [
     {
       "variante": "sin_contraste",
       "semilla": 6101,
-      "estado": "Completa reportada",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 25,
+      "macro_f1": 0.7080554588108802
     },
     {
       "variante": "sin_contraste",
       "semilla": 6102,
-      "estado": "Completa reportada",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 23,
+      "macro_f1": 0.7167806495474309
     },
     {
       "variante": "sin_contraste",
       "semilla": 6103,
-      "estado": "Pendiente",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 9,
+      "macro_f1": 0.6617478958958981
     },
     {
       "variante": "sin_contraste",
       "semilla": 6104,
-      "estado": "Pendiente",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 6,
+      "macro_f1": 0.6497084692022537
     },
     {
       "variante": "sin_contraste",
       "semilla": 6105,
-      "estado": "Pendiente",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 6,
+      "macro_f1": 0.6594056213502419
     },
     {
       "variante": "sin_amortiguacion",
       "semilla": 6101,
-      "estado": "Completa reportada",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 16,
+      "macro_f1": 0.678251284701914
     },
     {
       "variante": "sin_amortiguacion",
       "semilla": 6102,
-      "estado": "Reanudación reportada",
-      "ultima_epoca_guardada": 3
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 23,
+      "macro_f1": 0.7025219441774007
     },
     {
       "variante": "sin_amortiguacion",
       "semilla": 6103,
-      "estado": "Pendiente",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 6,
+      "macro_f1": 0.642111689126215
     },
     {
       "variante": "sin_amortiguacion",
       "semilla": 6104,
-      "estado": "Pendiente",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 6,
+      "macro_f1": 0.6399039493148139
     },
     {
       "variante": "sin_amortiguacion",
       "semilla": 6105,
-      "estado": "Pendiente",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 6,
+      "macro_f1": 0.6424510123300566
     },
     {
       "variante": "sin_contexto",
       "semilla": 6101,
-      "estado": "Completa reportada",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 16,
+      "macro_f1": 0.6752671312507178
     },
     {
       "variante": "sin_contexto",
       "semilla": 6102,
-      "estado": "Pendiente",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 23,
+      "macro_f1": 0.6933326278303871
     },
     {
       "variante": "sin_contexto",
       "semilla": 6103,
-      "estado": "Pendiente",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 9,
+      "macro_f1": 0.6480276876070934
     },
     {
       "variante": "sin_contexto",
       "semilla": 6104,
-      "estado": "Pendiente",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 6,
+      "macro_f1": 0.6459707516347057
     },
     {
       "variante": "sin_contexto",
       "semilla": 6105,
-      "estado": "Pendiente",
-      "ultima_epoca_guardada": null
+      "estado": "Completa verificada",
+      "ultima_epoca_guardada": 6,
+      "macro_f1": 0.6501302968378339
     }
-  ]
+  ],
+  "completas_verificadas": 15
 }

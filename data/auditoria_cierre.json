@@ -1,6 +1,6 @@
 {
   "corte": "21 noviembre 2026 · revisión directa de las guías E2 (65 páginas) y E3 (60 páginas); inferencia pública comprobada",
-  "alcance": "Auditoría documental contra las guías originales y evidencias recibidas. El avance de ablaciones sigue siendo el último comunicado, no monitoreo en vivo. No acredita cumplimiento experimental total ni envío académico.",
+  "alcance": "15 ablaciones verificadas desde respaldo; PCam reanudado. Auditoría documental no equivale a cumplimiento total ni calificación oficial.",
   "fuentes": [
     {
       "documento": "Entregable2DeepLearningProject.pdf",
@@ -203,7 +203,7 @@
       "id": "24",
       "requisito": "Paper guía y réplica PCam",
       "guia": "Sección 5",
-      "estado": "PCam detenido; recuperación preparada",
+      "estado": "PCam reanudado: 8301 completa; 8302 ejecuta época 17 (3500/4096), última época guardada 16; 8303–8305 pendientes. Falta evaluación final.",
       "falta_o_condicion": "8301 completa; 8302 guardada en 16; faltan 4 épocas de 8302 y 60 de 8303–8305, más evaluación. Reportar discrepancia/IC respecto del paper y limitación cuantificada en ≥3 modelos."
     },
     {
