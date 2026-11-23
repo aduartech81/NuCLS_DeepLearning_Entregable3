@@ -7,6 +7,8 @@ Proyecto académico de aprendizaje profundo · Entregables E1, E2 y E3.
 
 Este libro reúne la evidencia acumulada: datos y tres modelos base de E1, comparación ampliada y correcciones de E2, y formulación y piloto CICO de E3. La integración documental no equivale a completar los experimentos pendientes.
 
+**Para el docente:** [síntesis, correcciones y sustentación](28_cierre_revision.md).
+
 ## Ruta de lectura
 
 - [Datos y versiones](02_datos.md): contrato, selección y diferencias de manifiesto.

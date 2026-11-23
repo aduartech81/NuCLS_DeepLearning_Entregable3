@@ -4,7 +4,8 @@ import hashlib
 import dash_bootstrap_components as dbc
 import dash
 from dash import html,dcc,Input,Output,State,callback
-from src.inference import predict,explain_occlusion,decode_upload
+from src.inference import predict,explain_occlusion,decode_upload,check_basic_input
+from src.domain_guard import enforce
 import plotly.graph_objects as go
 
 dash.register_page(__name__,path='/prediccion',name='Predicción CICO')
@@ -14,7 +15,7 @@ layout=html.Div([
  html.Div([html.Span('1 · Elige una imagen'),html.Span('2 · Analiza'),html.Span('3 · Interpreta con cautela')],className='prediction-steps'),
  html.Span('CICO / DEMOSTRACIÓN EXPLORATORIA',className='eyebrow'),html.H1('Explorar un recorte histológico'),
  html.P('Carga un recorte RGB de 128 × 128 píxeles, centrado en un núcleo y preparado como los recortes NuCLS. PNG o JPEG, máximo 2 MB. También se admite RGBA completamente opaco. No se admiten láminas completas ni se redimensiona la imagen.',className='lead'),
- html.Div([html.Strong('Modelo piloto · semilla 6101'),html.P('Seleccionado por el mayor macro-F1 de validación entre cinco semillas. Clasifica entre tumor, linfocito y estroma. No detecta automáticamente imágenes fuera del dominio ni acredita utilidad clínica.')],className='notice'),
+ html.Div([html.Strong('Modelo piloto · semilla 6101'),html.P('Seleccionado por el mayor macro-F1 de validación entre cinco semillas. Clasifica entre tumor, linfocito y estroma. Incluye un filtro experimental de apariencia: bloquea algunas entradas atípicas, pero no acredita que una imagen sea histológica ni su utilidad clínica.')],className='notice'),
  html.Div([html.H2('¿Quieres empezar con un ejemplo?'),html.P('Selecciona un recorte real de 128 × 128. La referencia se revela junto al ejemplo; no es una prueba independiente del modelo.'),dcc.Dropdown(id='pred-example',options=[{'label':'Caso '+x['caso']+' · referencia: '+x['clase_referencia'],'value':x['caso']} for x in json.loads((Path(__file__).resolve().parents[1]/'data/ejemplos.json').read_text())],placeholder='Elegir un ejemplo histológico…',clearable=False),html.Div(id='pred-example-info')],className='panel'),
  dcc.Checklist(id='pred-consent',options=[{'label':'Confirmo que es un recorte histológico sin datos personales y entiendo que el resultado es experimental, no un diagnóstico.','value':'yes'}],value=[]),
  dcc.Upload(id='pred-upload',children=html.Div([html.Button('Seleccionar imagen PNG o JPG',type='button',className='button',id='pred-file-button'),html.P('También puedes arrastrarla aquí. Primero marca la confirmación de arriba.')]),accept='.png,.jpg,.jpeg,image/png,image/jpeg',disabled=True,multiple=False,max_size=2*1024*1024,style={'border':'2px dashed #137d73','padding':'32px','margin':'24px 0','borderRadius':'12px'}),
@@ -30,16 +31,18 @@ layout=html.Div([
 def analyze(n,contents,consent):
  if 'yes' not in (consent or []):return dbc.Alert('Marca la confirmación antes de analizar.',color='warning')
  if not contents:return dbc.Alert('Selecciona primero una imagen PNG o JPEG.',color='warning')
- try:r=predict(contents)
+ try:
+  enforce(decode_upload(contents));r=predict(contents)
  except ValueError as e:return dbc.Alert(str(e),color='warning')
  except Exception:return dbc.Alert('El modelo no está disponible o no superó su comprobación. No se generó una predicción.',color='danger')
- return html.Div([html.Img(src=contents,alt='Recorte analizado',style={'width':'256px','imageRendering':'auto','maxWidth':'100%'}),html.Div('DOMINIO NO VERIFICADO: una imagen ajena a histología también puede recibir una puntuación alta. No interpretes esta salida si el recorte no corresponde a NuCLS.',className='notice'),html.H2('Clase con mayor puntuación: '+r['prediction']),dcc.Graph(figure=go.Figure(go.Bar(x=r['probabilities'],y=r['labels'],orientation='h',text=[f'{p:.1%}' for p in r['probabilities']],textposition='auto',marker_color='#147d79')).update_layout(template='plotly_white',height=260,xaxis=dict(range=[0,1],tickformat='.0%',title='Puntuación del modelo · no calibrada'),margin=dict(l=90,r=25,t=15,b=50)),config={'displayModeBar':False}),html.Table([html.Thead(html.Tr([html.Th('Clase'),html.Th('Probabilidad del modelo')])) ,html.Tbody([html.Tr([html.Td(label),html.Td(f'{p:.1%}')]) for label,p in zip(r['labels'],r['probabilities'])])]),html.P(f"Tiempo del cálculo original en servidor (se reutiliza si la imagen no cambia): {r['latency_ms']:.1f} ms (sin red). Entropía: {r['entropy']:.3f} nats; dispersión de puntuaciones, no cobertura ni certeza clínica."),html.P('Semilla 6101 · tres clases posibles. El modelo siempre asigna una de ellas, incluso si el contenido no corresponde; no usar para decisiones clínicas.')],className='panel')
+ return html.Div([html.Img(src=contents,alt='Recorte analizado',style={'width':'256px','imageRendering':'auto','maxWidth':'100%'}),html.Div('APARIENCIA COMPATIBLE CON EL FILTRO EXPERIMENTAL; DOMINIO NO CERTIFICADO. Una imagen ajena a histología que supere el filtro también puede recibir una puntuación alta.',className='notice'),html.H2('Clase con mayor puntuación: '+r['prediction']),dcc.Graph(figure=go.Figure(go.Bar(x=r['probabilities'],y=r['labels'],orientation='h',text=[f'{p:.1%}' for p in r['probabilities']],textposition='auto',marker_color='#147d79')).update_layout(template='plotly_white',height=260,xaxis=dict(range=[0,1],tickformat='.0%',title='Puntuación del modelo · no calibrada'),margin=dict(l=90,r=25,t=15,b=50)),config={'displayModeBar':False}),html.Table([html.Thead(html.Tr([html.Th('Clase'),html.Th('Probabilidad del modelo')])) ,html.Tbody([html.Tr([html.Td(label),html.Td(f'{p:.1%}')]) for label,p in zip(r['labels'],r['probabilities'])])]),html.P(f"Tiempo del cálculo original en servidor (se reutiliza si la imagen no cambia): {r['latency_ms']:.1f} ms (sin red). Entropía: {r['entropy']:.3f} nats; dispersión de puntuaciones, no cobertura ni certeza clínica."),html.P('Semilla 6101 · tres clases posibles. El modelo siempre asigna una de ellas, incluso si el contenido no corresponde; no usar para decisiones clínicas.')],className='panel')
 
 
 def explain(n,contents,consent):
  if 'yes' not in (consent or []):return dbc.Alert('Marca la confirmación antes de analizar.',color='warning')
  if not contents:return dbc.Alert('Selecciona primero una imagen PNG o JPEG.',color='warning')
  try:
+  enforce(decode_upload(contents))
   key=hashlib.sha256(contents.split(',',1)[1].strip().encode()).hexdigest()
   precomputed=json.loads((Path(__file__).resolve().parents[1]/'data/explicaciones_ejemplos.json').read_text())
   r=precomputed.get(key)
@@ -55,9 +58,10 @@ def explain(n,contents,consent):
 def upload_status(contents,filename,consent):
  if 'yes' not in (consent or []):return html.P('1. Marca la confirmación; después selecciona tu imagen.'),True,True,True
  if not contents:return html.P('2. Selecciona una imagen. Cuando esté cargada aparecerán aquí su nombre y vista previa.'),True,True,False
- try:decode_upload(contents)
+ try:
+  pixels=decode_upload(contents);check_basic_input(pixels);enforce(pixels)
  except ValueError as e:return html.Div([html.Strong('La imagen no está lista para analizar. '),html.Span(str(e)),html.P('Elige otro recorte. No se cambia su tamaño automáticamente.')],className='notice'),True,True,False
- return html.Div([html.Strong('Imagen cargada y verificada: '+str(filename or 'recorte')),html.P('RGB · 128 × 128 píxeles. Ahora pulsa «Analizar recorte».'),html.Img(src=contents,alt='Vista previa del archivo cargado',style={'width':'128px','height':'128px'})],className='panel'),False,False,False
+ return html.Div([html.Strong('Formato y apariencia aceptados: '+str(filename or 'recorte')),html.P('RGB · 128 × 128 píxeles. Ahora pulsa «Analizar recorte».'),html.Img(src=contents,alt='Vista previa del archivo cargado',style={'width':'128px','height':'128px'})],className='panel'),False,False,False
 
 @callback(Output('pred-upload','contents'),Output('pred-upload','filename'),Output('pred-example-info','children'),Input('pred-example','value'),prevent_initial_call=True)
 def choose_example(case):
@@ -89,3 +93,5 @@ def analyze_cached(n,contents,consent,cached):
 @callback(Output('explain-result','children'),Output('explain-memory','data'),Input('explain-run','n_clicks'),Input('pred-upload','contents'),Input('pred-consent','value'),State('explain-memory','data'),prevent_initial_call=True)
 def explain_cached(n,contents,consent,cached):
  return cached_view(dash.ctx.triggered_id,contents,consent,cached,explain,n)
+
+layout.children.append(html.Div([html.H2('Alcance del filtro de apariencia'),html.P('En 1.097 recortes de 11 pacientes de validación histórica no usados para fijar el umbral, aceptó el 79,9 %. Rechazó tejido válido: 44,5 % de linfocitos, 19,7 % de estroma y 5,6 % de tumor. Rechazó cinco patrones sintéticos; no se ha probado con una colección externa representativa. Pasar el filtro no valida el diagnóstico.'),html.A('Ver método y resultados del filtro',href='/libro/28_cierre_revision.html#control-de-apariencia')],className='panel'))

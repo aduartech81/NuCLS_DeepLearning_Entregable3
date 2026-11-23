@@ -1,9 +1,13 @@
-# Conclusiones y alcance actual
+# Conclusiones: resultado negativo y alcance
 
-CICO es una hipótesis implementada con corrección contextual acotada y agregación D4. Se han identificado antecedentes cercanos y límites de interpretación. No se acredita todavía novedad, superioridad ni cumplimiento experimental completo.
+**CICO obtuvo menor Macro-F1 que las tres bases en las cinco semillas emparejadas de esta validación.** Su media fue 0,6682, frente a 0,7509 de SoftmaxCNN-BN, 0,7692 de DenseNet121 y 0,7843 de ResNet50: diferencias de −8,27, −10,10 y −11,60 puntos porcentuales. La hipótesis de mejora no recibe apoyo en este corte; el sentido observado es contrario al esperado.
 
-El piloto de cinco semillas está completo y sus archivos fueron verificados desde el ZIP recibido el 21 de noviembre. Macro-F1 de validación: media 0.6682 ± DE 0.0372. No es un resultado de prueba ni una demostración de superioridad. No basta para la inferencia final exigida. La siguiente decisión debe basarse en artefactos de entrenamiento trazables y en el presupuesto medido, sin modificar retrospectivamente el protocolo.
+El contraste contextual tampoco muestra un beneficio consistente: eliminarlo eleva la media de 0,6682 a 0,6791. Sin amortiguación se obtiene 0,6610 y sin contexto 0,6625. Estos resultados no prueban equivalencia ni ausencia universal de utilidad del mecanismo. El diseño carece de un control entrenado de capacidad comparable que separe tamaño de arquitectura.
 
-Corte de revisión: 22 de noviembre de 2026. La anterior meta interna de trabajo no acredita el plazo oficial ni el envío. La prioridad es obtener evidencia real, conservar las limitaciones y mantener separados E1, el paquete E2 entregado y las actualizaciones E3.
+La inferencia tiene límites concretos: cinco semillas, validación utilizada para seleccionar checkpoints, presupuestos de ajuste históricos distintos y pacientes fijos. El Wilcoxon bilateral exacto no puede alcanzar 0,05 con cinco diferencias no nulas. Repetir análisis sobre estos datos no añade réplicas ni crea una prueba independiente.
 
-Las quince ablaciones están verificadas. La variante sin contraste tiene mayor media en este corte, pero los contrastes exploratorios corregidos no establecen superioridad ni equivalencia. Seis ejemplos de sensibilidad apoyan una comprobación local del comportamiento del mapa; no validan fidelidad clínica ni generalización. La respuesta actual a la hipótesis de mejora es **no demostrada**. Los resultados negativos o inconclusos se conservan y no se reemplazan por una afirmación de éxito.
+La contribución demostrada consiste en una implementación trazable de corrección contextual acotada, su propiedad D4, los resultados del piloto y quince ablaciones conservadas. La originalidad de la combinación requiere contrastar antecedentes; D4, contexto y atención no son contribuciones originales por sí solos.
+
+Tres semillas seleccionaron la época 1 porque las cinco épocas siguientes no superaron su Macro-F1; la pérdida de entrenamiento sí descendió. Esta observación explica el funcionamiento de la parada temprana, pero no identifica causalmente sobreajuste, capacidad o falta de entrenamiento.
+
+[Resumen de entrega, análisis adicional y defensa](28_cierre_revision.md). PCam y los controles pendientes se mantienen separados de los resultados completos. Esta edición posterior no acredita envío dentro del plazo ni cierre experimental de E3.

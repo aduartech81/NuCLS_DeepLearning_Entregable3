@@ -1,0 +1,142 @@
+{
+  "scope": "Diagnóstico post hoc de apariencia. Pacientes de validación histórica: no prueba confirmatoria independiente, no OOD clínicamente validado.",
+  "threshold": 11.08618961830846,
+  "patients_evaluacion": [
+    "TCGA-BH-A0WA",
+    "TCGA-BH-A18G",
+    "TCGA-BH-A18V",
+    "TCGA-BH-A1EW",
+    "TCGA-BH-A1F6",
+    "TCGA-OL-A5D6",
+    "TCGA-OL-A5D7",
+    "TCGA-OL-A5RW",
+    "TCGA-OL-A66I",
+    "TCGA-OL-A66P",
+    "TCGA-OL-A6VO"
+  ],
+  "resultados": [
+    {
+      "grupo": "ajuste_train",
+      "clase": "TODAS",
+      "n": 14539,
+      "aceptadas": 14482,
+      "fraccion_aceptada": 0.9960795102826879
+    },
+    {
+      "grupo": "ajuste_train",
+      "clase": "lymphocyte",
+      "n": 4460,
+      "aceptadas": 4442,
+      "fraccion_aceptada": 0.9959641255605381
+    },
+    {
+      "grupo": "ajuste_train",
+      "clase": "nonTILnonMQ_stromal",
+      "n": 3102,
+      "aceptadas": 3083,
+      "fraccion_aceptada": 0.9938749194068343
+    },
+    {
+      "grupo": "ajuste_train",
+      "clase": "tumor_nonMitotic",
+      "n": 6977,
+      "aceptadas": 6957,
+      "fraccion_aceptada": 0.9971334384405905
+    },
+    {
+      "grupo": "umbral_validacion",
+      "clase": "TODAS",
+      "n": 952,
+      "aceptadas": 905,
+      "fraccion_aceptada": 0.9506302521008403
+    },
+    {
+      "grupo": "umbral_validacion",
+      "clase": "lymphocyte",
+      "n": 253,
+      "aceptadas": 217,
+      "fraccion_aceptada": 0.857707509881423
+    },
+    {
+      "grupo": "umbral_validacion",
+      "clase": "nonTILnonMQ_stromal",
+      "n": 166,
+      "aceptadas": 166,
+      "fraccion_aceptada": 1.0
+    },
+    {
+      "grupo": "umbral_validacion",
+      "clase": "tumor_nonMitotic",
+      "n": 533,
+      "aceptadas": 522,
+      "fraccion_aceptada": 0.9793621013133208
+    },
+    {
+      "grupo": "comprobacion_validacion",
+      "clase": "TODAS",
+      "n": 1097,
+      "aceptadas": 877,
+      "fraccion_aceptada": 0.7994530537830447
+    },
+    {
+      "grupo": "comprobacion_validacion",
+      "clase": "lymphocyte",
+      "n": 344,
+      "aceptadas": 191,
+      "fraccion_aceptada": 0.5552325581395349
+    },
+    {
+      "grupo": "comprobacion_validacion",
+      "clase": "nonTILnonMQ_stromal",
+      "n": 178,
+      "aceptadas": 143,
+      "fraccion_aceptada": 0.8033707865168539
+    },
+    {
+      "grupo": "comprobacion_validacion",
+      "clase": "tumor_nonMitotic",
+      "n": 575,
+      "aceptadas": 543,
+      "fraccion_aceptada": 0.9443478260869566
+    }
+  ],
+  "sinteticos": [
+    {
+      "nombre": "ruido_rgb",
+      "accepted": false,
+      "distance": 87.11783780957892,
+      "threshold": 11.08618961830846,
+      "method": "Distancia de apariencia RGB y textura; no identificación semántica de tejido"
+    },
+    {
+      "nombre": "gradiente_ruido",
+      "accepted": false,
+      "distance": 59.61004568531866,
+      "threshold": 11.08618961830846,
+      "method": "Distancia de apariencia RGB y textura; no identificación semántica de tejido"
+    },
+    {
+      "nombre": "tablero_gris",
+      "accepted": false,
+      "distance": 235.25926088616023,
+      "threshold": 11.08618961830846,
+      "method": "Distancia de apariencia RGB y textura; no identificación semántica de tejido"
+    },
+    {
+      "nombre": "gradiente_colores",
+      "accepted": false,
+      "distance": 58.7545713554186,
+      "threshold": 11.08618961830846,
+      "method": "Distancia de apariencia RGB y textura; no identificación semántica de tejido"
+    },
+    {
+      "nombre": "ruido_rosado",
+      "accepted": false,
+      "distance": 22.14296167716859,
+      "threshold": 11.08618961830846,
+      "method": "Distancia de apariencia RGB y textura; no identificación semántica de tejido"
+    }
+  ],
+  "limitations": "No hay fotografías naturales ni tejidos externos etiquetados en esta comprobación. Puede aceptar imágenes sintéticas con apariencia similar y rechazar histología válida. No es calibración de probabilidades ni cobertura garantizada.",
+  "model_sha256": "df949e65797bc8a16e8a17585ef1a37dec9851e0883a6e436078bdb997456c14"
+}

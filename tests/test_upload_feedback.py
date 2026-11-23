@@ -7,7 +7,7 @@ def test_upload_requires_consent_and_valid_pixels():
  image=upload(np.zeros((128,128,3),dtype='uint8'))
  assert upload_status(image,'test.png',[])[1:]==(True,True,True)
  assert upload_status(None,None,['yes'])[1:]==(True,True,False)
- assert upload_status(image,'test.png',['yes'])[1:]==(False,False,False)
+ assert upload_status(image,'test.png',['yes'])[1:]==(True,True,False)
  assert upload_status(upload(np.zeros((64,64,3),dtype='uint8')),'small.png',['yes'])[1:]==(True,True,False)
  assert upload_status('data:image/png;base64,!!!','bad.png',['yes'])[1:]==(True,True,False)
 

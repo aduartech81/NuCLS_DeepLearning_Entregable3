@@ -15,3 +15,8 @@ Quince ablaciones ya verificadas. Finalizar PCam y evaluación final E3, control
 
 ## Revisión y comprobación
 Leer el capítulo 24 del libro. Ejecutar las pruebas del workflow `.github/workflows/web.yml`; sus verificaciones locales no sustituyen la reproducción por un tercero. Los capítulos 14, 17 y 21 se generan con `tools/sincronizar_auditoria.py`; los capítulos 22 y 23, con `tools/documentar_analisis_cpu.py`. No editar tablas generadas sin actualizar su fuente compartida.
+
+## Edición fija para entrega
+Autor: Andrés Duarte Chaves. El capítulo 28 resume correcciones posteriores, conclusiones negativas, tres análisis pareados, parada temprana y el filtro experimental de apariencia. La página local `/defensa` organiza la sustentación. Estas correcciones se incluyen en este paquete y no se presuponen desplegadas en la URL pública. Consultar `VERSION_ENTREGA.json` en la raíz del ZIP.
+
+No ejecutar `training/` ni los cuadernos durante PCam. La web usa CPU; las herramientas de auditoría leen sus insumos sin modificar entrenamientos. No se incluyen imágenes de entrenamiento ni checkpoints de PCam. El ONNX es la exportación CICO 6101 ya verificada.

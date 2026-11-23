@@ -1,0 +1,6 @@
+-r requirements.txt
+-r requirements-book.txt
+pytest==9.2.0
+torch==2.15.0
+onnx==1.23.2
+scipy==1.17.1

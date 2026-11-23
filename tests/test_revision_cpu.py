@@ -23,7 +23,7 @@ def test_new_diagnostics_and_empty_filters():
   for c in D[seed]['curves']:
    assert 0<=c['auc']<=1 and 0<=c['ap']<=1
  assert sum(r['n'] for r in G)==16588
- fs=show([],[]);assert len(fs[0].data)==0 and '0 recortes' in fs[-1]
+ fs=show([],[]);assert len(fs[0].data)==0 and '0 recortes' in fs[-1][0].children
 
 def test_example_download_matches_manifest():
  c=app.server.test_client()
