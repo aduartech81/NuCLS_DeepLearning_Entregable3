@@ -21,3 +21,11 @@ body{font-size:16px;background:#f4f6fa;color:#163344}header{position:sticky;top:
 @media(max-width:1100px){.visual-hero{padding:28px;gap:25px}.hero-copy h1{font-size:44px}.brand small{display:none}.hero-tissue{height:320px}}
 @media(max-width:800px){.visual-hero{padding:28px;border-radius:24px}.hero-copy h1{font-size:46px}.tissue-frame{transform:none}.hero-tissue{height:330px}}
 @media(max-width:480px){.visual-hero{padding:22px 18px}.hero-copy h1{font-size:37px}.hero-copy .lead{font-size:17px}.hero-tissue{height:280px}.visual-hero .button{padding:13px 17px}.brand{font-size:23px}}
+
+/* Autoría visible y foco legible en ambas superficies. */
+.author-credit{color:#e3d2f4;font-weight:700;font-size:16px;margin:8px 0 20px;letter-spacing:.03em}
+.footer-author{font-weight:700;color:#20313f;font-size:16px}
+:focus-visible{outline:3px solid #563f87;outline-offset:4px}
+.visual-hero :focus-visible,.book-banner :focus-visible{outline-color:#fff}
+html{scroll-padding-top:130px}
+@media(max-width:950px){html{scroll-padding-top:20px}}

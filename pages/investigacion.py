@@ -32,3 +32,5 @@ layout.children.insert(3,html.Section([html.H2('E1 · trazabilidad de la revisi�
 
 
 layout.children.extend([html.H2('Actualización: búsqueda ejecutada en tres fuentes'),html.P('15 consultas: cinco cadenas en Europe PMC, Crossref y OpenAlex. 149 registros recuperados y 148 únicos. Recuperación y deduplicación completadas; cribado, textos completos y revisión por tercero todavía no acreditados.'),html.A('Consultar cadenas, fuentes y resultados',href='/libro/26_busqueda_ejecutada.html',className='button')])
+
+layout.children.extend([html.H2('Lectura metodológica ampliada'),html.P('Tres fuentes primarias contrastadas: G-CNN, rotación en patología y Selective Kernel. Se distinguen los mecanismos compartidos de la hipótesis específica de CICO. No es una certificación de novedad.'),html.A('Leer las fichas y sus límites',href='/libro/27_autoria_revision.html',className='button')])
