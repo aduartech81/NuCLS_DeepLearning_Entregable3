@@ -4,14 +4,14 @@ from dash import Dash, html
 import plotly.express as px
 px.defaults.color_discrete_sequence=["#087f8c","#b36b45","#72518f","#54677a","#81965b"]
 import dash_bootstrap_components as dbc
-app = Dash(__name__, use_pages=True, title="NuCLEA · Histología e inteligencia", suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = Dash(__name__, use_pages=True, title="NuCLEA: clasificación de núcleos celulares en imágenes histológicas mediante aprendizaje profundo", suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 server.config["MAX_CONTENT_LENGTH"] = 3 * 1024 * 1024
 app.layout = html.Div([html.A("Saltar al contenido",href="#contenido",className="skip-link"),
     html.Header([html.A([html.Span("N",className="brand-symbol"),html.Span("NuCLEA"),html.Small("HISTOLOGÍA + INTELIGENCIA")], href="/", className="brand"),
         html.Nav([html.A("Inicio",href="/"),html.A("Explorar tejido",href="/histologia"),html.A("Comparar resultados",href="/proyecto"),html.A("Probar una imagen",href="/prediccion",className="nav-cta"),html.Details([html.Summary("Más del proyecto"),html.Div([html.A(label,href=url) for label,url in [("Entrega y sustentación","/defensa"),("Datos y calidad","/eda-e3"),("Diseño CICO","/modelos"),("Diagnósticos","/diagnosticos"),("Comprobar explicaciones","/calidad-explicaciones"),("Ejemplos con referencia","/ejemplos"),("Ablaciones verificadas","/ablaciones"),("Piloto","/piloto"),("Costo y eficiencia","/costos"),("Literatura","/investigacion"),("Evidencia y pendientes","/reproducibilidad"),("Documentación","/documentacion"),("Libro completo","/libro/")]],className="nav-menu")],className="nav-more")],**{'aria-label':'Navegación principal'})]),
     html.Main(dash.page_container,id="contenido",tabIndex=-1),
-    html.Footer([html.P("Autor: Andrés Duarte Chaves",className="footer-author"),html.P("NuCLEA · Proyecto NuCLS · E1 + E2 + E3 · Revisión CPU: 22 noviembre 2026 · Resultados identificados por etapa"),html.A("Contexto y ficha del modelo",href="/documentacion"),html.Span(" · "),html.A("Privacidad",href="/documentacion#privacidad"),html.P("Demostración experimental: no diagnóstico. Las imágenes cargadas se procesan en memoria y no se usan para entrenar.")])])
+    html.Footer([html.P("Autor: Andrés Duarte Chaves",className="footer-author"),html.P("NuCLEA: clasificación de núcleos celulares en imágenes histológicas mediante aprendizaje profundo"),html.P("E1 + E2 + E3 · Título actualizado: 23 noviembre 2026 · Evidencia experimental: corte del 22 noviembre 2026"),html.A("Contexto y ficha del modelo",href="/documentacion"),html.Span(" · "),html.A("Privacidad",href="/documentacion#privacidad"),html.P("Demostración experimental: no diagnóstico. Las imágenes cargadas se procesan en memoria y no se usan para entrenar.")])])
 
 from flask import send_from_directory, jsonify, abort
 BOOK_HTML = Path(__file__).resolve().parent / 'book/_build/html'

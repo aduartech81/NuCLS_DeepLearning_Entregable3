@@ -1,9 +1,9 @@
-# NuCLS · Proyecto final E1 + E2 + E3
+# NuCLEA: clasificación de núcleos celulares en imágenes histológicas mediante aprendizaje profundo
 
 **Autor: Andrés Duarte Chaves**  
 Proyecto académico de aprendizaje profundo · Entregables E1, E2 y E3.
 
-**NuCLEA · revisión del 22 de noviembre de 2026.** Estado documental y experimental separado; no acredita envío ni cumplimiento total.
+**Título definitivo aprobado por el autor el 23 de noviembre de 2026. Evidencia: corte del 22 de noviembre de 2026.** Estado documental y experimental separado; no acredita envío ni cumplimiento total.
 
 Este libro reúne la evidencia acumulada: datos y tres modelos base de E1, comparación ampliada y correcciones de E2, y formulación y piloto CICO de E3. La integración documental no equivale a completar los experimentos pendientes.
 

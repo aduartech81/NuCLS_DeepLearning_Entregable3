@@ -1,4 +1,4 @@
-# NuCLEA · Proyecto NuCLS: E1, E2 y E3 integrados
+# NuCLEA: clasificación de núcleos celulares en imágenes histológicas mediante aprendizaje profundo
 
 Dashboard y libro: https://nucls-entregable3.onrender.com/
 
