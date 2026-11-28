@@ -92,3 +92,8 @@ Estos registros normalizan los antecedentes ya documentados; no añaden búsqued
 ```{bibliography}
 :all:
 ```
+
+
+## Ampliación metodológica del 25 de noviembre
+
+[Comparación de CICO con NuClass: mecanismos, límites y controles necesarios](29_contraste_nuclass.md). Se ha contrastado el método del artículo con el código; no se incorpora una réplica ni un nuevo resultado experimental.

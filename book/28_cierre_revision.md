@@ -65,7 +65,7 @@ En los 1.097 recortes restantes aceptó 877 (79,95 %). Rechazó tejido válido: 
 
 ## Estado de cierre
 
-Completos y disponibles: cinco semillas piloto, quince ablaciones, exportación ONNX verificada, auditoría de datos, análisis descriptivos y libro integrado. PCam continúa según el último reporte del autor; no hay en este paquete un test final nuevo verificado. Faltan controles entrenados de capacidad y sin D4, ampliación de repeticiones justificada, benchmark confirmatorio y conjuntos externos. La novedad, calibración, cobertura y reproducción por tercero no se acreditan mediante esta edición.
+Completos y disponibles: cinco semillas piloto, quince ablaciones, exportación ONNX verificada, auditoría de datos, análisis descriptivos y libro integrado. PCam se presenta como réplica parcial: 8301/8302 completas, 8303 con época 5 guardada y 8304/8305 pendientes, según el reporte del autor del 26 de noviembre. No hay test final verificado. Faltan controles entrenados de capacidad y sin D4, ampliación de repeticiones justificada, benchmark confirmatorio y conjuntos externos. La novedad, calibración, cobertura y reproducción por tercero no se acreditan mediante esta edición.
 
 El cuaderno anterior de cinco semillas sigue siendo exploratorio: no debe interpretarse como cumplimiento del mínimo confirmatorio ni ejecutarse mientras PCam trabaja. Esta entrega no inicia entrenamientos.
 

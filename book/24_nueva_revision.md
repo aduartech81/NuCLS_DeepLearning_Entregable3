@@ -41,7 +41,7 @@ Los pesos no son notas obtenidas. La matriz detallada y los localizadores de la 
 
 1. **Congelar un protocolo prospectivo**: familia de modelos, partición independiente, hipótesis, presupuestos, semillas, métricas y política de selección. Revisar primero la disponibilidad de los tres conjuntos externos; no llamar “nuevo test” a una reserva ya usada para decisiones.
 2. **Completar la evidencia experimental**: base sin componentes, componentes aislados y controles D4/capacidad; familia completa y número de semillas justificado; evaluación externa, incertidumbre y contrastes con potencia requerida. Esto requiere datos y cómputo adicional.
-3. **Cerrar E2 por separado**: PCam continúa. El último reporte cuantificado del autor indicó 8301 y 8302 completas; después confirmó una reanudación tras una interrupción. No se dispone de una época nueva verificada ni del test final. Incorporar el próximo respaldo verificado antes de actualizar resultados.
+3. **PCam se presenta como réplica parcial**: según el reporte del autor del 26 de noviembre, 8301 y 8302 están completas, 8303 tiene época 5 guardada y 8304/8305 siguen pendientes. Test final no realizado. La entrega no espera a PCam y conserva su respaldo. Esta información operativa no equivale a una auditoría nueva de checkpoints.
 4. **Completar documentación y validación humana**: búsquedas/fichas y revisión por tercero, análisis de errores, permisos/licencia, DOI, autoría firmada, reproducción independiente y sustentación de 20 minutos. No se pueden sustituir con declaraciones automáticas.
 5. **Cerrar producto**: incorporar comparadores, calibración/cobertura y OOD validados; comprobar tablet, accesibilidad y carga. La inferencia CICO disponible es una demostración de investigación.
 

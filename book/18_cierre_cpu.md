@@ -35,7 +35,7 @@ El repositorio incorpora `MODEL_CARD.md`, `DATA_STATEMENT.md`, `CITATION.cff`, `
 ## Secuencia de cierre
 
 1. Las 15 ablaciones ya fueron recibidas y verificadas; conservar su respaldo y completar los controles pendientes.
-2. PCam continúa en Colab según el autor: 8301/8302 completas, 8303 en entrenamiento. Recibir y auditar el próximo respaldo; no intervenir el proceso.
+2. PCam se presenta como réplica parcial: 8301/8302 completas, 8303 con época 5 guardada y 8304/8305 pendientes, según el reporte del autor del 26 de noviembre. Test final no realizado. La presentación no espera a PCam; se conserva su respaldo.
 3. Completar los experimentos pendientes del protocolo final, controles y datasets externos. Cinco semillas piloto y quince ablaciones no sustituyen el benchmark final.
 4. Adjudicar errores, cerrar búsqueda bibliográfica, confirmar licencia/autoría y obtener reproducción externa.
 5. Integrar resultados finales, revisar enlaces y crear una entrega nueva con manifiesto de huellas. No sobrescribir la entrega anterior.

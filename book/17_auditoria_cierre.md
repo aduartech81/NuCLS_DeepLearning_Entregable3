@@ -13,9 +13,9 @@ Las 15 ablaciones y el piloto están verificados. No sustituyen el benchmark fin
 
 ## PCam: respaldo y continuación
 
-Último reporte del autor (22 de noviembre): 8301 y 8302 completas; 8303 entrenando época 1, lote 1500/4096 en Colab; 8304–8305 pendientes. Test final no completado. Reporte operativo, no monitoreo en vivo ni respaldo nuevo auditado.
+Réplica PCam parcial. Último estado comunicado por el autor el 26 de noviembre: 8301 y 8302 completas; 8303 con época 5 guardada; 8304 y 8305 pendientes. Test final no realizado. No es monitoreo en vivo.
 
-El respaldo local auditado conserva 8301 completa y 8302 en época 19. El reporte posterior informa la finalización de 8302 y el inicio de 8303. No se repite lo completado; falta recibir y verificar el próximo respaldo y los resultados finales.
+La presentación no espera la finalización de PCam. Se conserva el rescate en Drive reportado como verificado por el autor: PCAM_RESCATE_20261126T095034Z_ebc76149.zip (1.311.195.781 bytes). El contenido de ese ZIP no fue auditado nuevamente por el dashboard. No se publica como réplica completa.
 
 ## Matriz E2
 

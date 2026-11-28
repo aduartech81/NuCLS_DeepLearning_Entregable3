@@ -1,22 +1,26 @@
 {
-  "corte": "2026-11-22",
-  "respaldo": "PCAM_CONTINUACION_RESPALDO_20261122T083540464366Z.zip",
-  "epoca_8302": 19,
-  "epocas_pendientes_en_respaldo": 61,
-  "estado": "Último reporte del autor (22 de noviembre): 8301 y 8302 completas; 8303 entrenando época 1, lote 1500/4096 en Colab; 8304–8305 pendientes. Test final no completado. Reporte operativo, no monitoreo en vivo ni respaldo nuevo auditado.",
-  "continuacion": "El respaldo local auditado conserva 8301 completa y 8302 en época 19. El reporte posterior informa la finalización de 8302 y el inicio de 8303. No se repite lo completado; falta recibir y verificar el próximo respaldo y los resultados finales.",
+  "corte": "2026-11-28",
+  "estado": "Réplica PCam parcial. Último estado comunicado por el autor el 26 de noviembre: 8301 y 8302 completas; 8303 con época 5 guardada; 8304 y 8305 pendientes. Test final no realizado. No es monitoreo en vivo.",
+  "continuacion": "La presentación no espera la finalización de PCam. Se conserva el rescate en Drive reportado como verificado por el autor: PCAM_RESCATE_20261126T095034Z_ebc76149.zip (1.311.195.781 bytes). El contenido de ese ZIP no fue auditado nuevamente por el dashboard. No se publica como réplica completa.",
   "test_verificado": false,
   "ultimo_reporte_autor": {
-    "fecha": "2026-11-22",
+    "fecha": "2026-11-26",
     "completas": [
       8301,
       8302
     ],
-    "en_curso": 8303,
-    "epoca": 1,
-    "lote": 1500,
-    "lotes_totales": 4096,
+    "semilla_checkpoint": 8303,
+    "epoca_guardada_historia": 5,
+    "pendientes": [
+      8304,
+      8305
+    ],
     "test_final": false,
-    "respaldo_drive_existe": true
+    "respaldo_drive_verificado_segun_salida_autor": true
+  },
+  "respaldo_historico_auditado": {
+    "nombre": "PCAM_CONTINUACION_RESPALDO_20261122T083540464366Z.zip",
+    "epoca_8302": 19,
+    "epocas_pendientes_en_respaldo": 61
   }
 }

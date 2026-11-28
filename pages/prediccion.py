@@ -21,7 +21,7 @@ layout=html.Div([
  dcc.Upload(id='pred-upload',children=html.Div([html.Button('Seleccionar imagen PNG o JPG',type='button',className='button',id='pred-file-button'),html.P('También puedes arrastrarla aquí. Primero marca la confirmación de arriba.')]),accept='.png,.jpg,.jpeg,image/png,image/jpeg',disabled=True,multiple=False,max_size=2*1024*1024,style={'border':'2px dashed #137d73','padding':'32px','margin':'24px 0','borderRadius':'12px'}),
  html.Div(id='pred-upload-local',role='status',style={'whiteSpace':'pre-wrap'}),
  dcc.Loading(html.Div(id='pred-upload-status',role='status')),
- html.P('Si el archivo está en Google Drive o iCloud, descárgalo primero al computador. Elegir un nombre no garantiza que el archivo esté disponible.'),
+ html.P('Para probar el formulario, usa los PNG originales del paquete de ejemplos. No subas capturas de pantalla, campos completos ni imágenes ampliadas. Si están en Drive o iCloud, descárgalos primero al computador.'),html.A('Descargar imágenes listas para subir (ZIP)',href='/ejemplos-prueba.zip',className='button secondary'),
  html.Button('Analizar recorte',id='pred-run',n_clicks=0,className='button',disabled=True),
  dcc.Loading(html.Div(id='pred-result',role='status',style={'marginTop':'24px'})),
  html.P('Al seleccionar una imagen, se envía al servidor de Render para comprobarla y se procesa en memoria. La aplicación no la escribe en archivos ni la incorpora al entrenamiento. Los resultados se conservan solo en memoria de esta pestaña; al cambiar de imagen o retirar la confirmación se limpian. Las probabilidades no están calibradas y no expresan certeza clínica.'),
@@ -61,6 +61,7 @@ def upload_status(contents,filename,consent):
  try:
   pixels=decode_upload(contents);check_basic_input(pixels);enforce(pixels)
  except ValueError as e:return html.Div([html.Strong('La imagen no está lista para analizar. '),html.Span(str(e)),html.P('Elige otro recorte. No se cambia su tamaño automáticamente.')],className='notice'),True,True,False
+ except Exception:return html.Div('No se pudo comprobar la imagen en el servidor. Vuelve a intentarlo; no se ha generado una predicción.',className='notice'),True,True,False
  return html.Div([html.Strong('Formato y apariencia aceptados: '+str(filename or 'recorte')),html.P('RGB · 128 × 128 píxeles. Ahora pulsa «Analizar recorte».'),html.Img(src=contents,alt='Vista previa del archivo cargado',style={'width':'128px','height':'128px'})],className='panel'),False,False,False
 
 @callback(Output('pred-upload','contents'),Output('pred-upload','filename'),Output('pred-example-info','children'),Input('pred-example','value'),prevent_initial_call=True)
